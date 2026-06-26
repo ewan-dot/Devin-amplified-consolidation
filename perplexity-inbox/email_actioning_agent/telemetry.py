@@ -49,6 +49,7 @@ class RunReport:
     deterministic_pct: float
     tier_c_pending: int          # gated action-requests awaiting a human
     tokens: dict
+    subscriptions: dict = field(default_factory=dict)   # recurring-spend inventory summary
     errors: list = field(default_factory=list)
     warnings: list = field(default_factory=list)
     health: str = "OK"

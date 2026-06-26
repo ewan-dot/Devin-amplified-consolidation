@@ -72,6 +72,32 @@ def _cmd_health(_args) -> int:
     return {"OK": 0, "DEGRADED": 1}.get(verdict, 2)
 
 
+def _cmd_subscriptions(_args) -> int:
+    """Recurring-spend inventory from the captured mail (financial control)."""
+    import json as _json
+    from .servers.base import load_adapter
+    from .subscriptions import ledger
+    if not Path(config.CAPTURE_JSONL).exists():
+        print("No captured mail — run `run` first.", file=sys.stderr)
+        return 2
+    emails = []
+    for ib in config.INBOXES:
+        emails.extend(load_adapter(ib.key, config.CAPTURE_JSONL).fetch(limit=500))
+    lg = ledger(emails)
+    print(_json.dumps({k: v for k, v in lg.items() if k != "rows"}, indent=2))
+    if lg["overlaps"]:
+        print("\noverlapping tools (possible redundant spend):")
+        for o in lg["overlaps"]:
+            print(f"  {o['category']:18s} {', '.join(o['vendors'])}")
+    print("\ncancel-candidates & review (likely unused / needs a decision):")
+    for r in lg["rows"]:
+        if r["recommended_action"] != "keep":
+            amt = f"{r['amount'] or '?'} {r['cadence'] or ''}".strip()
+            print(f"  [{r['unused_risk']:6s}] {r['recommended_action']:16s} {r['vendor']:28s} "
+                  f"{r['signal_type']:18s} {amt}  | {r['subject'][:42]}")
+    return 0
+
+
 def _cmd_measure(_args) -> int:
     if not Path(config.MEASUREMENT_JSON).exists():
         print("No measurement yet — run `run` first.", file=sys.stderr)
@@ -97,6 +123,7 @@ def main(argv=None) -> int:
     r.add_argument("--limit", type=int, default=100)
     r.set_defaults(fn=_cmd_run)
     sub.add_parser("measure").set_defaults(fn=_cmd_measure)
+    sub.add_parser("subscriptions").set_defaults(fn=_cmd_subscriptions)
     sub.add_parser("health").set_defaults(fn=_cmd_health)
     sub.add_parser("scout").set_defaults(fn=_cmd_scout)
     args = p.parse_args(argv)

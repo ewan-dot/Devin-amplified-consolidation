@@ -171,6 +171,56 @@ def test_telemetry_health_verdict():
     assert health_verdict(RunReport(**{**base, "n_emails": 0})) == "FAILED"
 
 
+def test_subscription_payment_failed_is_cancel_candidate():
+    from email_actioning_agent.subscriptions import detect
+    e = mk(sender="failed-payments+acct_x@stripe.com",
+           subject="$240.00 payment to Cognition AI Inc. was unsuccessful",
+           body="We weren't able to charge the credit card you provided.")
+    s = detect(e)
+    assert s is not None and s.signal_type == "payment_failed"
+    assert s.recommended_action == "cancel_candidate"
+    assert s.vendor == "Cognition AI Inc."        # recovered from subject, not 'stripe.com'
+    assert s.amount == "$240.00"
+
+
+def test_subscription_trial_detected_despite_weak_core():
+    from email_actioning_agent.subscriptions import detect
+    e = mk(sender="learn@sentry.io", subject="Trial ending: Limits will apply",
+           body="Your trial is ending soon. You'll move to the free plan with limits.")
+    s = detect(e)
+    assert s is not None and s.signal_type == "trial_converting" and s.unused_risk == "high"
+
+
+def test_subscription_non_billing_email_is_none():
+    from email_actioning_agent.subscriptions import detect
+    e = mk(sender="friend@example.com", subject="lunch?", body="are you free thursday")
+    assert detect(e) is None
+
+
+def test_overlap_dedups_vendor_name_variants():
+    from email_actioning_agent.subscriptions import overlaps, detect
+    es = [
+        mk(msg_id="a", sender="learn@sentry.io", subject="Trial ending", body="your trial is ending"),
+        mk(msg_id="b", sender="noreply@md.getsentry.com", subject="trial has ended", body="your free trial has ended"),
+        mk(msg_id="c", sender="upcoming-invoice@stripe.com", subject="Your Kilo Code subscription will renew", body="renew"),
+    ]
+    subs = [s for s in (detect(e) for e in es) if s]
+    ov = overlaps(subs)
+    # sentry.io + md.getsentry.com collapse to one vendor -> no false observability overlap
+    assert not any(o["category"] == "observability" for o in ov)
+
+
+def test_jsonld_invoice_parser():
+    from email_actioning_agent.subscriptions import parse_invoice_jsonld
+    html = ('<html><script type="application/ld+json">'
+            '{"@type":"Invoice","provider":{"name":"Acme"},'
+            '"totalPaymentDue":{"price":"12.00","priceCurrency":"GBP"},'
+            '"billingPeriod":"P1M","paymentStatus":"PaymentDue"}</script></html>')
+    inv = parse_invoice_jsonld(html)
+    assert inv["provider"] == "Acme" and inv["amount"] == "12.00"
+    assert inv["currency"] == "GBP" and inv["billing_period"] == "P1M"
+
+
 def test_measure_per_email_saving_and_projection():
     emails = [mk(msg_id=f"m{i}", subject="s", body="word " * 500) for i in range(10)]
     routed = [{"msg_id": e.msg_id, "category": "NOISE", "route": "NOISE", "tier": "B"} for e in emails]

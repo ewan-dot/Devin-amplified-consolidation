@@ -46,16 +46,39 @@ Tier C (external send/publish/Drive/Beast-direct) is never auto-executed — it 
 surfaced for explicit human authorisation. Default run is **dry-run**; `--apply`
 performs only Tier A/B (reversible) actions.
 
+## Financial control — recurring-spend & unused-subscription detection
+
+`subscriptions.py` inventories recurring spend from email alone (no bank link) and
+flags likely-unused subscriptions — the thing that gives you financial control.
+Deterministic signals (keyword/regex + schema.org Invoice JSON-LD when present);
+the unused-detection heuristics (`payment_failed`, `trial_converting`, `winback`,
+`overdue`, `price_increase`, **duplicate/overlapping tools**) are the novel part —
+email-only waste detection is commercially unaddressed (see
+`../subscription-detection-prior-art__v01__2026-06-26.md`, validated against
+Track-Subs / Plaid / Gmail markup / patents US11799884-US12137117).
+
+```bash
+python -m email_actioning_agent subscriptions   # recurring-spend ledger: cancel-candidates, trials, overlaps
+```
+On real mail this surfaced 2 cancel-candidates ($330 in failed charges), 7 to
+review (trials/overdue), and a redundant-tool overlap (two AI coding agents). Output:
+`../subscription-ledger.jsonl`.
+
 ## Usage
 
 ```bash
-python -m email_actioning_agent inboxes      # configured inboxes + auth state
-python -m email_actioning_agent run          # dry-run: classify→route→emit→measure→witness
-python -m email_actioning_agent run --apply  # also perform Tier A/B (label/archive/emit); Tier C still gated
-python -m email_actioning_agent measure      # last real token measurement
-python -m email_actioning_agent health       # exit 0=OK 1=DEGRADED 2=FAILED (for cron/hooks)
-python -m email_actioning_agent scout        # route the brief into the Night Scout feed
+python -m email_actioning_agent inboxes        # configured inboxes + auth state
+python -m email_actioning_agent run            # dry-run: classify→route→extract→emit→measure→witness
+python -m email_actioning_agent run --apply    # also perform Tier A/B (label/archive/emit); Tier C still gated
+python -m email_actioning_agent subscriptions  # recurring-spend / unused-subscription ledger
+python -m email_actioning_agent measure        # last real token measurement
+python -m email_actioning_agent health         # exit 0=OK 1=DEGRADED 2=FAILED (for cron/hooks)
+python -m email_actioning_agent scout          # route the brief into the Night Scout feed
 ```
+
+Live actioning (2026-06-26, via a write-capable mail connector): 17 real emails
+actioned reversibly — 8 → `EAA/Subscription-Review`, 1 → `EAA/Suspected-Phishing`,
+4 → `EAA/Newsletter`, 4 archived. Tier C (notify/Drive/pay) never auto-run.
 
 ## Real capture (no mock data)
 

@@ -159,6 +159,7 @@ DATA_DIR = PKG_DIR / "data"                       # captured real mail + emitted
 CAPTURE_JSONL = DATA_DIR / "captured_emails.jsonl"        # real fetched emails (gitignored)
 ROUTED_JSONL = DATA_DIR / "routed_actions.jsonl"         # decisions + gated actions (gitignored)
 INFRA_FEED_JSONL = INBOX_SSOT / "infra-critical-feed.jsonl"   # INFRA_CRITICAL sink into the inbox
+SUBSCRIPTION_LEDGER_JSONL = INBOX_SSOT / "subscription-ledger.jsonl"   # recurring-spend inventory (financial control)
 MEASUREMENT_JSON = DATA_DIR / "token_measurement.json"   # real token numbers
 TELEMETRY_JSONL = DATA_DIR / "telemetry.jsonl"           # append-only run witness (local fallback)
 HEALTH_JSON = DATA_DIR / "health.json"                   # latest health snapshot (read by `health`)

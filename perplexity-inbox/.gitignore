@@ -16,3 +16,4 @@ email_actioning_agent/data/token_measurement.json
 infra-critical-feed.jsonl
 email_actioning_agent/data/telemetry.jsonl
 email_actioning_agent/data/health.json
+subscription-ledger.jsonl

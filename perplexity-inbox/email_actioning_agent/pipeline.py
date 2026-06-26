@@ -21,6 +21,7 @@ from .emit import emit_infra_feed, write_jsonl
 from .extract import extract_financial, extract_infra
 from .router import route_all
 from .servers.base import Email, load_adapter
+from .subscriptions import ledger as subscription_ledger
 from .telemetry import RunReport, _now, emit as emit_telemetry
 from .tokens import measure
 
@@ -88,6 +89,10 @@ def run(capture_jsonl: str | Path = config.CAPTURE_JSONL,
         enriched.append(row)
     write_jsonl(config.ROUTED_JSONL, enriched)
 
+    # 4b) subscription / recurring-spend inventory (financial control) — deterministic.
+    subs = subscription_ledger(emails)
+    write_jsonl(config.SUBSCRIPTION_LEDGER_JSONL, subs["rows"])
+
     # 5) measure — real tokens on the REAL FULL-body subset (honest baseline).
     by_id_class = {c.msg_id: c for c in classifications}
     by_id_routed = {r.msg_id: r for r in routed}
@@ -128,6 +133,7 @@ def run(capture_jsonl: str | Path = config.CAPTURE_JSONL,
         deterministic=det, needs_ai=ai, deterministic_pct=det_pct,
         tier_c_pending=tier_c_pending,
         tokens=(json.loads(m.to_json()) if m is not None else {}),
+        subscriptions={k: v for k, v in subs.items() if k != "rows"},
         errors=errors, warnings=warnings,
     )
     report = emit_telemetry(report)          # local witness always + best-effort Vellum

@@ -188,6 +188,52 @@ SNIP = [
 ]
 
 
+# ---- real subscription/billing rows (snippet-bodied) captured 2026-06-26 ----- #
+# High-signal recurring-spend mail across the inbox — the financial-control set.
+SUBS = [
+    ("19efe331fa53b6c7", "billing_at_hetzner.com_ampliand@duck.com",
+     "Final Payment Warning / Services blocked (K0173938926)",
+     "Dear Mr Ewan Bramley, Attached you will find your latest reminder as PDF file. Please contact us regarding your invoice. Final payment warning, services blocked.",
+     ["UNREAD", "IMPORTANT", "INBOX"]),
+    ("19efc895225c5cdb", "failed-payments+acct_1MkZiULG36r4uSlK@stripe.com",
+     "$90.00 payment to Circleback was unsuccessful",
+     "We weren't able to charge the credit card you provided. Your $90.00 payment to Circleback was unsuccessful.",
+     ["UNREAD", "IMPORTANT", "INBOX"]),
+    ("19efc1b5a6729a80", "noreply@md.getsentry.com",
+     "Your free 14-day Business trial has ended",
+     "Sentry Billing Period June 25 - July 24. Your free 14-day Business trial has ended. Your organization Amplified Partners has completed its 14-day free trial.",
+     ["UNREAD", "INBOX"]),
+    ("19efb27e9048872d", "upcoming-invoice+acct_1R1ePOJ7A6SsvrfS@stripe.com",
+     "Your Kilo Code subscription will renew soon",
+     "This is a friendly reminder that your Kilo Code subscription for Kilo Pass (Pro) will automatically renew on July 1, 2026.",
+     ["UNREAD", "IMPORTANT", "INBOX"]),
+    ("19efa11d44e1e286", "invoice+statements+acct_1Om98nD4cNvH28G6@stripe.com",
+     "Your receipt from Cognition AI Inc. #2769-1608",
+     "Your receipt from Cognition AI Inc. #2769-1608. Payment received.",
+     ["UNREAD", "INBOX"]),
+    ("19ef5e57fc975a7f", "workspace-noreply@google.com",
+     "IMPORTANT: Upcoming change to your AI Ultra Access subscription for bykerbusinesshelp.ai",
+     "Your AI Ultra Access subscription will transition to an AI Expanded Access subscription beginning July 8, 2026.",
+     ["UNREAD", "INBOX"]),
+    ("19ef590398c0cf8c", "support@cognition.ai",
+     "Payment Failed - Action Required",
+     "Your most recent payment failed - update your payment details to keep using Devin. The most recent charge for $240.00 on June 23, 2026 failed.",
+     ["UNREAD", "IMPORTANT", "INBOX"]),
+    ("19ef56367714fc26", "learn@sentry.io",
+     "Trial ending: Limits will apply",
+     "Your trial is ending soon. Here's what to expect after the trial. Your organization will move to the free plan with limits.",
+     ["UNREAD", "IMPORTANT", "INBOX"]),
+    ("19ef2052655555d6", "notifications@circleback.ai",
+     "Your Circleback trial ends in 2 days",
+     "Your trial ends on June 25. There's still time to give Circleback a try.",
+     ["UNREAD", "Label_36", "INBOX"]),
+    ("19eec0bf900b3d81", "hello@notify.railway.app",
+     "Subscription cancellation for the Provision PostgreSQL team in 5 days",
+     "Subscription cancellation warning. You have an unpaid invoice for the Provision PostgreSQL team. Please pay the outstanding balance to continue using Railway.",
+     ["UNREAD", "IMPORTANT", "INBOX"]),
+]
+
+
 def main() -> int:
     rows = []
     for d in FULL:
@@ -195,7 +241,7 @@ def main() -> int:
         d.setdefault("headers", {})["body_source"] = "full"
         d["snippet"] = d["body"][:120]
         rows.append(d)
-    for msg_id, sender, subject, snippet, labels in SNIP:
+    for msg_id, sender, subject, snippet, labels in SNIP + SUBS:
         rows.append(dict(
             inbox="byker", msg_id=msg_id, thread_id=msg_id, sender=sender,
             to=["ewan@bykerbusinesshelp.ai"], subject=subject, snippet=snippet,
