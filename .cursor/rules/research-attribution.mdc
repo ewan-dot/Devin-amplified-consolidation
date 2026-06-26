@@ -1,0 +1,12 @@
+---
+description: "Research pipe survivor attribution — cite URL/domain in artefact frontmatter + Vellum witness"
+alwaysApply: false
+---
+
+# Research attribution
+
+When implementing from a `RESEARCH-PIPE-RUN__*` artefact:
+
+- **Frontmatter** — list survivor sources (URL or domain) from the run's brutal-demote survivor table; not synthesis prose alone
+- **Vellum witness** — same source list on completion row
+- **Radical Attribution rod** — if survivors are missing from the run doc, stop and re-read primary run output before coding

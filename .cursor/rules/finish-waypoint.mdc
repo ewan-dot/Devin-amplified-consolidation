@@ -31,6 +31,10 @@ All four must PASS:
 - [ ] **GitHub pushed** — branch/PR on remote
 - [ ] **Vellum telemetry row** — publish/done witness on ledger
 
+## Goal telemetry
+
+**Moving toward goal** = processes work + tokens wise: track **completion %** (finish-waypoint doors passed per job) and **token cost per completed job**. Model: `perplexity-inbox/research-conclusion__doors-telemetry-completion__v01__2026-06-26__cursor.md`.
+
 ## Seat close
 
 Follow `relay-stop` PASS protocol: seat-pass → Vellum preform → baton. Stop hook reminds if finish checklist may be incomplete.
