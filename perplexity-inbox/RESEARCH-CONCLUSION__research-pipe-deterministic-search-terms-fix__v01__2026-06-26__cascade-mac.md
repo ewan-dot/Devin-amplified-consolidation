@@ -206,4 +206,56 @@ offline (FakeRouter), no Beast/SearXNG needed.
 
 ---
 
+## 6. Why an LLM working the research didn't catch the nonsense
+
+The transferable fleet lesson — why a capable reviewing LLM ran this exact pipe,
+quoted its output, and never noticed it was staging dictionary definitions of
+"external".
+
+**Mechanism: the reviewer read the dashboard, not the bytes.** The verify rerun
+in `RESEARCH-PIPE-RUN__hooks-harness-doorways__v01__2026-06-26__cursor.md`
+emitted a wall of **green metrics** — `8/8 probes success`, `160 SearXNG hits`,
+batch `1d501a25-…` with `packets_staged: 20`, `gate0_passed: 20`,
+`gate0_failed: 0`, `auto_promote: false`. The reviewing LLM quoted those numbers
+verbatim as evidence the run was healthy. They are all true and all
+**topology-blind**: they count probes fired, hits returned, packets shaped, and
+structural gate passes — none of them asserts the staged content is *about the
+claim*.
+
+**The actual research came from a different door.** The run doc labels its real
+findings `mac_supplement: WebSearch gap-fill` — the reviewer's **own parallel
+WebSearch**, not the staged SearXNG packets. The five survivors (Lampson 1973,
+Erlang OTP, Fowler event sourcing, Ashby, git-worktree) are clean and on-topic
+**because the LLM researched them itself in a side channel** and wrote those up.
+The pipe's `packets.jsonl` was never opened. So the dashboard said green, the
+prose was good, and the two facts had **nothing to do with each other**.
+
+**Proof by absence.** If anyone had opened
+`/opt/amplified-machine/apds/staging/1d501a25-…/packets.jsonl`, the staged claims
+(`external` definitions, word-frequency dumps) would have appeared in the run.
+They appear **nowhere** in the run doc's survivors, terms, or demote list — the
+demote stripped "Sally Beauty / Eventbrite" homonym junk it could *see* in its
+own WebSearch results, never the SearXNG noise it never loaded. The silence is
+the evidence: the staged bytes were never in the reviewer's context.
+
+**Why the stub made it invisible.** `gate0-promotion-stub` runs real *structural*
+checks (signed, hashed, non-empty, INTUITED-capped) and passes — `20/20` — on
+dictionary noise, because a definition of "external" is a perfectly
+well-structured packet. **A structural Gate0 stub is indistinguishable from a
+real relevance check until someone reads the bytes.** Green is the default state
+of a gate that doesn't look at meaning.
+
+**The lesson (and what this fix changes):** *point the reviewer at the returned
+CONTENT, not the dashboard.* Counts (hits, packets, pass-rate) are necessary but
+never sufficient — they cannot fail on off-topic results, so they cannot catch
+an off-topic run. The relevance judgement has to operate on the **actual staged
+titles/snippets**. That is exactly where the no-silent-failure guard (§2c) now
+puts it: `results_overlap_terms()` reads the result titles/snippets and refuses
+green when the claim's terms are absent. If a future LLM relevance gate is wired
+in (the thin final synthesis/demote step), it must receive the staged packet
+**content** as its input — never the metrics block. Dashboards measure that work
+*happened*; only the content can show whether it was the *right* work.
+
+---
+
 [CLOSURE] branch=IMPLEMENT | proxy=none (no push, no Vellum — drafted for human) | gates=human runs the 2 push commands + posts the Vellum row | inbox=RESEARCH-CONCLUSION__research-pipe-deterministic-search-terms-fix__v01__2026-06-26__cascade-mac.md | tier=INTUITED
