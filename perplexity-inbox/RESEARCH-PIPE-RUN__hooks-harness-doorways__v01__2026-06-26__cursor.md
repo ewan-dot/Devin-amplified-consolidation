@@ -8,12 +8,13 @@ author: cursor
 reader: ewan
 epistemic_tier: INTUITED
 run_host: Beast (research-pipe container + SearXNG L1)
-note: five_stage_orchestrator.py not deployed on Beast; run used M1Orchestrator + runner process-queue (canonical Beast entrypoint per WIRING.md)
+note: five_stage_orchestrator.py not deployed on Beast; run used M1Orchestrator + runner process-queue (canonical Beast entrypoint). Verify rerun 2026-06-26T18:13:50Z confirmed live.
+verify_rerun: 2026-06-26T18:13:50Z
 ---
 
 ## Human summary
 
-Ran on **Beast** (not Mac fallback): `research-pipe` container healthy; 8 SearXNG fan-out probes + one `runner process-queue` cycle for corpus `hooks-harness-doorways-fleet-2026-06-26`. Wide→narrow×3 across seven candidate domains (physical interlock/mantrap, git worktree agent isolation, aviation CRM challenge-response, Erlang OTP supervision, event-sourcing witness log, MCP-vs-CLI agent tooling, Ashby requisite variety). Brutal demote stripped homonym junk (Sally Beauty, Eventbrite, etc.). **Five survivors** converge on one mechanism: *sequential doorway* — only one permission transition live at a time, deterministic interlock between stages, append-only witness on pass. Beast staged **20 INTUITED packets** (batch `1fe59119-947e-486b-a6ca-f2d228533483`, Gate0 20/20). Cross-domain endpoint claim caps at INTUITED until ≥3 founding disciplines measured on fleet implementation, not search alone.
+Ran on **Beast** (not Mac fallback): `research-pipe` container healthy; 8 SearXNG fan-out probes + `runner process-queue` for corpus `hooks-harness-doorways-fleet-2026-06-26`. **Verify rerun** at 2026-06-26T18:13:50Z reproduced: 8/8 probes success, 160 SearXNG hits, new batch `1d501a25-9e71-4ee5-b238-1c1d4a6f4062` (20 packets, Gate0 20/20). Wide→narrow×3 across seven candidate domains (physical interlock/mantrap, git worktree agent isolation, aviation CRM challenge-response, Erlang OTP supervision, event-sourcing witness log, MCP-vs-CLI agent tooling, Ashby requisite variety). Brutal demote stripped homonym junk (Sally Beauty, Eventbrite, etc.). **Five survivors** converge on one mechanism: *sequential doorway* — only one permission transition live at a time, deterministic interlock between stages, append-only witness on pass. Cross-domain endpoint claim caps at INTUITED until ≥3 founding disciplines measured on fleet implementation, not search alone.
 
 ## Orchestrator payload
 
@@ -28,8 +29,11 @@ chunk_id: single-item
 survivor_count: 5
 run_host: beast
 beast_entrypoint: research_pipe.runner process-queue + M1Orchestrator
-beast_batch_id: 1fe59119-947e-486b-a6ca-f2d228533483
-beast_staging_path: /opt/amplified-machine/apds/staging/1fe59119-947e-486b-a6ca-f2d228533483/
+beast_batch_id: 1d501a25-9e71-4ee5-b238-1c1d4a6f4062
+beast_batch_id_prior: 1fe59119-947e-486b-a6ca-f2d228533483
+beast_alert_id: 80dd73d5-ffc7-4135-98f4-0f548a9768d0
+beast_staging_path: /opt/amplified-machine/apds/staging/1d501a25-9e71-4ee5-b238-1c1d4a6f4062/
+verify_rerun_at: 2026-06-26T18:13:50Z
 jsonl_witness: ~/amplified-pipeline/data/research-pipe-docs/2026-06-26_five-stage_hooks-harness-doorways-fleet-2026-06-26.jsonl
 searxng: search.beast.amplifiedpartners.ai (container http://searxng:8080)
 mac_supplement: WebSearch gap-fill only (labeled agent-seat, not Beast run)
@@ -92,12 +96,14 @@ mac_supplement: WebSearch gap-fill only (labeled agent-seat, not Beast run)
 
 ```yaml
 m1_fan_out_queries: 8
-searxng_hits_total: 159
-runner_alert_id: 944d68ca-2559-4b9c-9d80-4d949aed04be
+searxng_hits_total: 160
+runner_alert_id: 80dd73d5-ffc7-4135-98f4-0f548a9768d0
 packets_staged: 20
 gate0_passed: 20
 gate0_failed: 0
 auto_promote: false
+verify_rerun: true
+prior_run_batch: 1fe59119-947e-486b-a6ca-f2d228533483
 ```
 
 ### handoff
@@ -129,4 +135,4 @@ Terms: push-door permission, sequential doorway, git worktree, Agent Worktree Co
 Exclude: prior synthesis headings (door map, H1 H2 H3)
 ```
 
-[CLOSURE] branch=AUDIT | proxy=none | gates=Beast run complete; STRUCTURED promotion blocked on fleet wiring | inbox=RESEARCH-PIPE-RUN__hooks-harness-doorways__v01__2026-06-26__cursor.md | tier=INTUITED
+[CLOSURE] branch=AUDIT | proxy=none | gates=Beast verify rerun complete; local commit pending Devin push for F8 | inbox=RESEARCH-PIPE-RUN__hooks-harness-doorways__v01__2026-06-26__cursor.md | tier=INTUITED
