@@ -2,7 +2,7 @@
 
 Lean fleet harness at `~/.cursor/`. Hooks prevent waste; rules inject policy. SSOT for Cursor seat.
 
-**Repo copies:** `.cursor/hooks.json`, `.cursor/rules/constitutional-gate.mdc`, `perplexity-inbox/.cursor/hooks/before-submit-constitutional*.py`, Claude parity script `before-submit-constitutional-claude.py`.
+**Repo copies:** `.cursor/hooks.install.json` (install template → `~/.cursor/hooks.json`), `.cursor/hooks.json` (empty — project must not register hooks), `.cursor/rules/constitutional-gate.mdc`, `perplexity-inbox/.cursor/hooks/before-submit-constitutional*.py`, Claude parity script `before-submit-constitutional-claude.py`.
 
 ## Stays
 
