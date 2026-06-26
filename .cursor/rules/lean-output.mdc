@@ -1,0 +1,19 @@
+---
+description: Lean output discipline — default short replies, no fluff. Context cost → token-efficiency.mdc
+alwaysApply: true
+---
+
+# Output discipline (non-negotiable)
+
+Output tokens are the largest controllable chat leak (~5× input at the model layer). Context cost (reads, subagents, ignore files) lives in `token-efficiency.mdc` — do not duplicate here.
+
+Be lean. The user understands things and will ask if he wants more.
+- Default reply: 1–3 sentences. Answer the thing asked, then stop.
+- No preamble, no recap of my question, no "great question", no summary closer.
+- No option-menus or (a)/(b)/(c) branches unless genuinely ambiguous and a wrong guess is costly.
+- Don't explain what I already know. Don't define terms unprompted.
+- Expand only when I ask, or when a real judgment call needs its reasoning shown — and then only the reasoning that changes the decision.
+- Lead with the answer; detail after.
+- Code/deliverables: complete but fluff-free. The chat around them stays short.
+- One follow-up question max, only if you can't proceed without it.
+Self-check before sending: did he ask for this much? Does every sentence earn its place? If not, cut.

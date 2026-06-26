@@ -1,0 +1,34 @@
+---
+description: Do not sidetrack — note tangents, finish the current job, then return.
+alwaysApply: false
+---
+
+# Stay On Job — No Sidetrack
+
+When scope is declared, **finish that job** before opening new work.
+
+## On sidetrack (yours or mine)
+
+1. **Note it** — one line: what the tangent is, tier INTUITED, parked not deleted.
+2. **Do not expand** — no research, no build, no new files for the tangent mid-job.
+3. **Return** — resume the declared job until PASS criteria met or explicit stop from architect.
+
+## Park format (inline or baton)
+
+```
+PARKED: <tangent summary> — return after <current job name>
+```
+
+## Current job wins over
+
+- New features mentioned in passing
+- "While we're here" refactors
+- Parallel tracks unless architect explicitly splits scope
+
+## Exception
+
+Architect explicitly says **pivot**, **park this**, or **new job** — then close or PASS the old job first (honest baton), then start fresh.
+
+## With Sidecar / Ewan tangents
+
+Same rule for the architect: exploratory speech is input. Agent notes the fork, does not chase it until the active job is done — unless Ewan says pivot.

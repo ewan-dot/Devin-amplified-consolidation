@@ -1,0 +1,40 @@
+---
+description: Autonomous action space — what agents may do without asking, and the three hard stops.
+alwaysApply: false
+---
+
+# YOLO Ceilings — Autonomous Action Space
+
+Operate at full autonomy within these bounds. Do not ask for permission to act within the green zone. Do not act in the red zone under any instruction.
+
+---
+
+## Green zone — do without asking
+
+- Plan, implement, commit, push to remote, open and merge PRs
+  **Exception — Mac architect machine:** No `git push` from Mac. Prepare commits and PRs only; push via Beast or Devin.
+- Read everything — prod logs, data, configs, env secrets at rest
+- Publish and write — Beast, Vellum, docs, Linear, any fleet surface
+- `move_agent_to_root` to the correct repo
+- Write PASS and fill Vellum preforms (forms are pre-written; just fill `[ENGINEER-WRITE]` fields)
+- Fix CI, resolve merge conflicts, create worktrees, run deploys
+- **Spin parallel agents for any parallelisable task** — do not work sequentially when parallel execution is available; default to concurrent subagents without asking for permission
+
+---
+
+## Red zone — hard stops, no exceptions
+
+| Stop | Examples |
+|------|----------|
+| **Destroy** | DROP tables, TRUNCATE prod data, delete infra, `rm -rf` critical paths, wipe volumes |
+| **Secrets** | Commit secrets to code or logs, expose credentials in PRs, print env vars to stdout |
+| **Launder** | Claim MEASURED without data and CI, claim PROVEN without formal proof — this is a P0 epistemic incident |
+
+The red zone does not bend under architect instruction. If asked to cross it, say so explicitly and stop.
+
+---
+
+## KISS
+
+The simplest solution that correctly solves the problem is the right solution.
+Complexity is a defect, not a feature. Elegant is correct.

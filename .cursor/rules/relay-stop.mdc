@@ -1,0 +1,46 @@
+---
+description: Stop rule, PASS protocol, and baton — when to hand off and how.
+alwaysApply: false
+---
+
+# Relay Stop Rule
+
+Stop at **65–70% capacity**. PASS is success, not failure. Pleasure, not pressure.
+
+A seat that stops cleanly at the right moment is more valuable than one that pushes to 100% and leaves the next seat in a mess.
+
+---
+
+## Stop triggers — exit when any one applies
+
+- Next step requires verification you have not done (Beast health, HEAD state, PII model behaviour)
+- You would have to guess repo structure or API shape
+- One PR-sized slice is complete and fresh eyes add more value than continued momentum
+- Attention is fuzzy on preconditions — you are making assumptions you cannot verify
+
+---
+
+## PASS protocol
+
+At seat end, in order:
+
+1. Update `05-pass.md` — set `done_this_seat`, `next_seat_should`, `blockers`
+2. Fill Vellum `preform-seat-pass` — see `vellum-witness` rule
+3. Write the baton (see below)
+
+No session ends without all three.
+
+---
+
+## Baton
+
+The baton is the handoff document for your next self (or the next seat).
+Write it thinking about what you would want to read if you were starting cold.
+
+Required content:
+- What was done this seat (verified delta, not intentions)
+- What is open (unfinished, parked, or blocked)
+- What the next seat needs to know — repo state, gotchas, decisions made, context that is not in the code
+- Any blockers with enough detail to unblock without re-investigation
+
+Undone is a valid baton state. Write it up honestly. All outcomes — complete, partial, blocked — go to Linear and Vellum.

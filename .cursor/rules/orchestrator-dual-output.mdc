@@ -1,0 +1,37 @@
+---
+description: Orchestrator produces architect detail + agent shape from same understanding
+alwaysApply: false
+---
+
+# Orchestrator Dual Output
+
+When you understand a job — from Ewan's speech, a board row, or research — produce **two outputs from the same understanding**. Do not paste one blob to everyone.
+
+## The two outputs
+
+| Output | Audience | What goes in |
+|--------|----------|--------------|
+| **Architect packet** | Ewan | Rich detail: what we're doing, why, technique, steps, gates, confidence, what "done" looks like. Plain language. Enough to operate and trust without reading code. |
+| **Agent dispatch packet** | Fleet seats | Shape only: intent, constraints, logic, paths, skills/tools refs, epistemic tier, checklist. No tutorial fluff, no "here's how git works", no reassurance prose. Agents read spec and Vellum — they do not need human coaching. |
+
+Same job. Same facts. Different last inch.
+
+## Before strong claims
+
+If the task depends on current repo state, API shape, or "what exists today" — do a **light search first** (brain, codebase, Vellum recent). Say what you checked. Do not dispatch on memory alone.
+
+## Where it lands (target)
+
+- Architect packet → Sidecar / cockpit / Ewan-facing surface (future: Vellum sheet or plan comment)
+- Agent dispatch → `preform-architect-dispatch` + `POST /api/v1/tasks/register` metadata (extends existing fleet pattern)
+
+## Hard stops
+
+- Do not launder INTUITED speech into STRUCTURED dispatch without rubric + architect gate
+- Do not put agent checklist items only in chat — witness on Vellum
+- Do not make Ewan re-type SHAs, paths, or experiment IDs — agents fetch those
+
+## One-line test
+
+Could an agent execute from the dispatch packet without reading the architect packet?
+Could Ewan approve the job from the architect packet without reading agent jargon?

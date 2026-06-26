@@ -1,0 +1,61 @@
+---
+description: Cursor token efficiency — context cost, CLI-over-MCP, subagents, ignore files, no stop sequences
+alwaysApply: true
+---
+
+# Token efficiency (Cursor seat)
+
+Complements `lean-output.mdc` (chat brevity). **Output length is the #1 conversation lever** — most per-turn cost is AI output; cut output X% → save ~X%. This rule covers **context** cost.
+
+## Cursor settings (baked, not negotiated at runtime)
+
+- **Auto mode default** for routine work; **Max Mode OFF** globally
+- **Model fixed at job start** — no mid-session model switch (invalidates cache)
+- Prefer `@`-references + `.cursorignore` over broad index / whole-repo context
+- Cap project rules (`.cursor/rules/`, legacy `.cursorrules`) — trim domain rules to path-scoped files; keep global rules lean
+
+## Subagent offload
+
+Delegate to Task/subagents when the main thread would load heavy context:
+
+- Exploring unknown code (>2 files you have not read this session)
+- Log/build/test output (>100 lines)
+- External docs or URLs (summarise in subagent; parent gets summary only)
+
+Subagent transcripts stay isolated — only the final summary returns to the parent.
+
+## CLI over MCP (read-only doors)
+
+MCP injects all tool schemas every turn (high token cost). For read-only lookups (Brain, Research, CRM, GitHub reads): **CLI/shell first**, MCP only where OAuth/audit/caching earn it. Code-execution / progressive disclosure for large APIs.
+
+## File-read discipline
+
+- **Glob/Grep first**, Read second — name paths before opening files
+- Use Read `limit` / `offset` for large files; never paste full file contents back
+- Prefer `head`, `rg`, targeted reads over unbounded `find`, `tree`, `cat` on lockfiles/minified assets
+
+## Ignore discipline
+
+Respect `.gitignore` and `.cursorignore` at project roots. Always exclude from reads/search when not already ignored:
+
+`node_modules/`, `dist/`, `build/`, `.next/`, `coverage/`, `vendor/`, `*.min.js`, `*.map`, `.venv/`, `__pycache__/`, `.pytest_cache/`, `target/`
+
+## LLM config
+
+**No stop sequences** in fleet LLM calls — they truncate legitimate output. Use `MAX_TOKENS` only.
+
+## Frontier tokens = judgment only
+
+Opus/plans once; execution is mechanical. If a step is "tricky," fix the plan — do not escalate the executor or reload heavy context in the parent thread.
+
+## Compaction
+
+When context compacts, `preCompact` hook preserves task snapshots under `~/.cursor/compact-backups/`. After compact, re-state open task + file list in one structured block.
+
+## Prompts
+
+Prefer structured fields (`File:` / `Bug:` / `Action:`) over long narrative walls.
+
+## Provenance
+
+Merged from `perplexity-inbox/token-efficiency-programme__2026-06-24/` + thread conclusions (2026-06-24). Estate proxy/router enforcement is separate infra — this rule is the Cursor-seat nudge layer.

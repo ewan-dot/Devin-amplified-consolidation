@@ -1,0 +1,73 @@
+---
+description: How to interact with the architect — translation, correction, planning protocol, and what not to delegate back.
+alwaysApply: false
+---
+
+# Facilitator Interface — Interacting with the Architect
+
+Ewan is the architect: non-coder, but the designer, owner, and funder of this entire system. He speaks intuitively and exploratively. He is not a seat. Do not ask him to act like one.
+
+---
+
+## Translation
+
+Ewan's speech is input, not spec. Translate exploratory language into runnable intent.
+Do not ask him to re-phrase or be more precise — that is your job.
+When intent is ambiguous in a way that would change the work, ask **one** clarifying question and proceed on everything else.
+
+---
+
+## Correction
+
+If Ewan uses the wrong term, correct it immediately and directly. No hedging, no "you might mean", no asking permission. He expects it and prefers it.
+Example: wrong word → state the correct one, use it, move on.
+
+---
+
+## What you do, not him
+
+Do not ask Ewan to:
+- Run terminal commands or shell scripts
+- Re-type SHAs, experiment IDs, repo names, or anything already in the codebase
+- Do Phase 0 research, take GitHub snapshots, or run audits
+- Execute git operations (he uses GitKraken as a visual control tower, not CLI)
+- Paste things you can read directly
+
+Agents do all of that. Ewan copies and pastes batons between departments.
+
+---
+
+## Planning protocol
+
+Planning is not optional and is not lightweight — 40–50% of seat time.
+
+Architect prepares inputs: session packs, context docs, repo access, Vellum preforms. These are preparation for the plan, not the plan itself.
+
+Agent reads the preparation and produces the plan. If preparation is insufficient — missing context, wrong scope, gaps that would make the plan a guess — state exactly what is missing and stop. Do not plan on incomplete ground.
+
+The plan output should be the simplest architecture that solves the problem (KISS). Reject complexity that is not load-bearing.
+
+---
+
+## Do not reiterate
+
+Never quote Ewan's own words back to him. Do not restate what he just said as confirmation or preamble. If you understood it, act on it — that is the confirmation.
+
+Reiteration patterns to avoid:
+- "So what you're saying is..." 
+- Repeating back his instruction before acting on it
+- Summarising his speech back to him as your response
+
+---
+
+## Plan files are read-only
+
+When Ewan attaches a plan file or names one ("implement the plan as specified"), that file is a **read-only artefact**. Agents execute from it; they do not edit it. Create new files for notes, updates, or amendments — never modify the source plan document.
+
+---
+
+## Status and communication
+
+Follow the **Plain Language for Non-Coder Architect** rule for all status reports and explanations.
+
+Communication is bidirectional: agents are partners and experts. Ewan provides the environment; agents provide the judgement.

@@ -1,0 +1,50 @@
+---
+description: Default five-stage search shape for all Amplified Partners research (fleet-wide)
+alwaysApply: false
+---
+
+# Amplified Default Search Shape
+
+**Fleet decision (2026-06-19, INTUITED):** Unless the architect explicitly asks for a different approach on a specific job, every search Amplified Partners runs follows this five-stage shape.
+
+This is the default — not optional, not a suggestion. Reasonable validation is enough; gold standard is not required before adoption.
+
+## The five stages
+
+### 1. Fan-out
+
+Cast a wide, shallow net. Recover the real intent first (strip noise, pejoratives, and drift from the ask).
+
+Run parallel probes across the live engine roster when available (typically: web search, fleet meta-search, code search, library docs). Goal: neighbourhood discovery — scout vectors, not final answers.
+
+### 2. Brutal demote
+
+Cut hard. Keep roughly five survivors — the probes that actually earned their place. Drop homonym noise, empty engines, thin matches, and duplicates without sentiment.
+
+### 3. Dual-POV precision
+
+Re-check survivors from two angles:
+
+- **Methodology shape** — does this fit how we work?
+- **Completeness** — what is still missing?
+
+Tighten before spending more probe budget.
+
+### 4. Neighbourhood pudding
+
+On the survivors only, apply pudding-mass policy: one or two hops into the local neighbourhood around each strong hit. Stay shallow — expand context, not scope.
+
+### 5. Full Pudding Technique (downstream only)
+
+When a cross-domain bridge is genuinely needed — connecting web live to prior art, or fleet internal to external — run Swanson-style combine downstream. Do not start here; earn it through stages 1–4.
+
+## Exception clause
+
+**Architect explicit override only.** If Ewan says "use a different search approach for this one" — follow his instruction for that job. Otherwise, use this shape.
+
+## What agents should do
+
+- Default to this pipeline for research, fan-out, neighbourhood discovery, and probe design.
+- Name which stage you are in when reporting progress.
+- Do not invent a one-off search workflow without architect override.
+- Epistemic floor for this rule: **INTUITED** (fleet decision, not measured ranking).

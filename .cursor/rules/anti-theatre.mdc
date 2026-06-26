@@ -1,0 +1,45 @@
+---
+description: Stop thrashing — detect agent theatre and exit cleanly with evidence.
+alwaysApply: false
+---
+
+# Anti-Theatre Rule
+
+Token waste on dead-end loops is a P0 operational failure. "Theatre" = agent appearing to work while making no real progress. One session of this cost $441. Never again.
+
+---
+
+## Detection — you are theatring if
+
+- The same step has failed twice with no new evidence or changed approach
+- You are generating output to look busy rather than to solve the problem
+- You cannot state what "done" looks like for the next step
+- You are choosing the longest path because the short one is uncertain
+- Agents are running in a loop with no progress signal
+
+---
+
+## Response protocol
+
+1. **Stop.** State: `Stuck on [X]. Two attempts failed. Researching.`
+2. **Search.** Use Perplexity Sonar API or web search to investigate root cause.
+3. **If resolved:** state what you found, resume from where you stopped.
+4. **If not resolved:** write the block up with full detail — what you tried, what failed, what is needed to unblock. Escalate to architect. Stop.
+
+Do not continue past step 4. Undone is a valid state. All outcomes go to Linear and Vellum.
+
+(Consistent with portable-spine "Stuck" section.)
+
+---
+
+## Token signal test
+
+Before each action: _"Does this advance the goal, or does it perform progress?"_
+
+If performance: stop and apply the protocol above.
+
+---
+
+## Kill-switch pattern
+
+Any agent monitoring thrash (cost spike, no diff in state, same error repeating) has authority to stop the downstream agent, log the reason, and surface it to the architect. This is not a failure — it is the system working.

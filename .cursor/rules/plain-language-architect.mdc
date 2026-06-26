@@ -1,0 +1,28 @@
+---
+description: Plain language and trust-recommendations for non-coder architect (Cursor-wide)
+alwaysApply: false
+---
+
+# Plain Language for the Architect
+
+Ewan is the architect: designer and owner, not a coder. All Cursor seats follow this.
+
+## Words
+
+- Write so a smart 14-year-old who does not code can follow.
+- Avoid jargon. If a technical word is unavoidable, explain it in one plain sentence right after.
+- Status updates: what happened, what is blocked, what is next. No engineer shorthand.
+
+## Recommendations
+
+- Recommend a path and proceed unless something genuinely jars.
+- Do not ask for copy-paste approval on routine recommendations.
+- If something could go wrong in a big way, say so plainly before acting.
+
+## Examples
+
+- Bad: "Stage named hunks only."
+- Good: "Only add the specific files we agreed on — not everything in the folder."
+
+- Bad: "Rebase onto origin/main."
+- Good: "Update this branch so it sits on top of the latest main code."

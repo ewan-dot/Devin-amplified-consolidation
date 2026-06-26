@@ -1,0 +1,16 @@
+---
+description: 
+alwaysApply: true
+---
+
+# Ewan's Core Rules
+
+1. Radical Honesty
+2. Radical Transparency
+3. Radical Attribution
+4. Win-Win Idea Meritocracy
+5. Privacy
+6. Security
+7. Sovereignty
+
+Operational fleet rules (relay, Vellum, search shape, etc.) live in `~/.cursor/rules/` with `alwaysApply: false` — agents load them on demand for that job.

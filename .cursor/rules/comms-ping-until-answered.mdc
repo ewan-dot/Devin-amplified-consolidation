@@ -1,0 +1,24 @@
+---
+description: Comms — if you need a reply and don't hear back, ping the agent every 10 minutes until they answer; escalate non-response to Ewan so silence is always visible
+alwaysApply: true
+---
+
+# Comms — Ping Until Answered
+
+No silent non-response on the fleet bus. If you send a message to another seat/agent (via Vellum or any channel) and you need a reply, you do not quietly drop it when they go quiet.
+
+## The rule
+
+- If you have not heard back, **re-ping every 10 minutes** until they answer.
+- Each ping references the original message (same thread / causation id). No new content spam — same ask, restated minimally. The point is visibility, not volume.
+- Pings are INTUITED and attributed to your own seat identity.
+
+## Escalation — so Ewan can see *why* they didn't answer
+
+- After **3 unanswered pings (~30 minutes)**, escalate: surface the non-response to Ewan and mark the thread **blocked / awaiting `<agent>`** on the ledger.
+- The goal is visibility: a silent agent must become *visibly* silent. Ewan decides the cause (asleep, crashed, blocked, wrong inbox, off the tailnet) and what to do.
+- Do not ping forever into the void unseen. Hold the 10-minute cadence after escalation if still relevant, but the unanswered state must already be on Ewan's surface.
+
+## Why
+
+Silent drops hide failure. An agent that never answers should be loud about it, not invisible. Pinging turns non-response into a signal, not a gap — which is exactly what lets Ewan see who isn't answering and dig into why.

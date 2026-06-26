@@ -1,0 +1,27 @@
+---
+description: Fleet session opening — sensor chain, Vellum intent, cockpit read
+alwaysApply: true
+---
+
+# Session discipline
+
+**Every session (any workspace):** user `~/.cursor/hooks.json` fires sessionStart/End/stop/beforeSubmitPrompt/preCompact/subagentStop; user rules with `alwaysApply: true` inject policy. **Workspace-only by design:** inbox finish/testing rule, repo-specific context rules, fleet sensor script (when perplexity-inbox path exists).
+
+## Automatic (sessionStart hook)
+
+On each Cursor session, the hook runs:
+
+1. Vellum login (`~/.vellum/startup-login.sh`) — non-blocking
+2. Fleet sensor via `perplexity-inbox/scripts/session-start.sh` — logged to `~/.vellum/startup.log`
+
+Check the log for `VERDICT=proceed|warn|halt` before substantive work. **Halt** = nudge only — self-request the pathway (worktree door, Vellum, Ewan) rather than stopping cold.
+
+## Manual (agent responsibility)
+
+Before coding:
+
+1. Read `~/Code/FACILITATOR-COCKPIT.md` (current state of play)
+2. Post intent to Vellum task queue — include the VERDICT line from startup log
+3. Load on demand: `vellum-witness`, `finish-waypoint`, `worktree-door` (`token-efficiency` is alwaysApply)
+
+Policy lives in rules; hooks run the sensor chain — not the other way around.

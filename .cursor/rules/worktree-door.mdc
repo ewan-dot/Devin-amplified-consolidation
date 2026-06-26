@@ -1,0 +1,30 @@
+---
+description: Worktree door pattern — enter isolated, exit with shared artefact
+alwaysApply: true
+---
+
+# Worktree door
+
+Agents work from **worktrees** (isolated branch copies), not the main checkout, for feature work.
+
+**Push door:** new work = open the worktree door. Need access, a path, or a tool? Ask in seat — self-request is granted; the pathway opens. No pre-emptive blocking; hooks nudge waste, they do not gate curiosity.
+
+## Enter (door in)
+
+- [ ] Correct worktree path and branch match the task
+- [ ] Session sensor verdict logged (halt = nudge + self-request, not a hard stop)
+- [ ] Intent posted to Vellum
+
+## Inside
+
+- Drafts stay local until finished
+- Mac is **read-only for git push** — landing on Beast goes via Cascade-Mac / Devin PR
+
+## Exit (door out)
+
+- [ ] Tests/smoke pass where applicable
+- [ ] Artefact in a **shared company path** (not worktree-only)
+- [ ] Vellum witness + seat-pass if handing off
+- [ ] See `finish-waypoint` and `relay-stop` for PASS protocol
+
+No session ends inside the worktree without opening the door — share outward first.

@@ -1,0 +1,41 @@
+---
+description: Absorb useful work before abandoning branches, worktrees, or PRs (Cursor-wide)
+alwaysApply: false
+---
+
+# Branch Hygiene — Absorb Before Abandon
+
+Ewan's rule: throwing away a branch, worktree, or pull request is fine **only after** everything worth keeping has been moved into main (or another branch that is still alive).
+
+## The rule in plain words
+
+Do not close, delete, or walk away from a branch as "stale" or "superseded" until you have checked that nothing useful is left behind.
+
+## Before you abandon anything
+
+1. **Check the commits** — Look at what this branch changed. Anything worth keeping must already be on main, or sitting in an open pull request that branches off main.
+2. **Check uncommitted work** — Anything not yet committed but still useful must be saved first (see snapshot step below).
+3. **Say what happened** — In the handoff or status update, name what was absorbed and where it went. If nothing was worth keeping, say that plainly.
+
+## Snapshot uncommitted work first
+
+Before you switch branches, delete a worktree, or close a PR, save any in-progress changes you might need later:
+
+- Create a recoverable patch or stash — something you can bring back if you were wrong.
+- Name it so you know which branch it came from.
+
+Do not rely on memory. Uncommitted work disappears easily.
+
+## Remote branches
+
+Do not delete a branch on GitHub (or anywhere remote) until you have confirmed absorption on main or a living branch.
+
+When in doubt, leave the remote branch alone and note it in the handoff for a human to clean up later.
+
+## Plain-language examples
+
+- Bad: "This PR is stale — closing it."
+- Good: "This PR is outdated. I checked: the two useful commits are already on main via PR #42. Closing with a note that nothing was lost."
+
+- Bad: "Deleting worktree feat-old-thing."
+- Good: "Saving uncommitted CSS tweaks to a patch file, confirming the feature code merged to main yesterday, then removing the worktree."

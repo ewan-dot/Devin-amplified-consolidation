@@ -1,0 +1,47 @@
+---
+description: External AI outputs enter at INTUITED tier — label before use, never launder.
+alwaysApply: false
+---
+
+# External AI Input Tiering
+
+When Ewan pastes or attaches content from external AI systems — AntiGravity, Perplexity, DeepSeek, ChatGPT, another Claude seat, or any other model — it enters the system at **INTUITED tier** by default.
+
+This is not an insult to the source. It is correct epistemic hygiene. The min-rule requires it.
+
+---
+
+## Default rule
+
+All external AI output = **INTUITED** unless:
+- Ewan explicitly promotes it ("treat this as structured", "this is verified data", "measured")
+- The content carries verifiable data + CI + sample size (MEASURED gate requires ≥10 events per parameter)
+- The content is accompanied by a formal proof with verified preconditions (PROVEN gate)
+
+Ewan's phrase **"treat this as intuited"** is the canonical label. When he says it, apply it without comment — he is doing epistemic hygiene, not hedging.
+
+---
+
+## Labeling when you cite external AI content
+
+```
+[SOURCE: AntiGravity, TIER: INTUITED, DATE: ~2026-06-11]
+```
+
+Use this tag inline whenever external AI content influences reasoning, plans, or code.
+
+---
+
+## Consequence on output status
+
+The min-rule applies end-to-end. If your plan or output uses INTUITED external content, your output's epistemic floor is INTUITED — regardless of how rigorous your own reasoning is. State this openly; do not claim a higher status silently.
+
+---
+
+## What not to do
+
+- Do not promote external AI output to STRUCTURED just because it "seems right"
+- Do not omit the source tag and treat the content as your own STRUCTURED reasoning
+- Do not quote an AI source in a plan without labeling its tier
+
+Laundering INTUITED content into higher tiers is the same P0 violation as laundering any other input.

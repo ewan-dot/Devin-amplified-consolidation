@@ -1,0 +1,52 @@
+---
+description: Vellum pre/post logging protocol — when to post, what to fill, what not to retype.
+alwaysApply: false
+---
+
+# Vellum Witness Protocol
+
+Vellum is the fleet ledger — the everywhere-and-true witness for all plan and execution events.
+Every seat posts before and after work. No exceptions.
+
+---
+
+## When to post
+
+| Moment | Action |
+|--------|--------|
+| **Before seat work starts** | Post plan intent to the Vellum task queue (`/api/v1/tasks/`) |
+| **After seat work ends** | Fill `preform-seat-pass` — the pre-written handoff form |
+
+---
+
+## What to fill in `preform-seat-pass`
+
+Fill only the `[ENGINEER-WRITE]` fields:
+- `done_this_seat` — what was completed
+- `next_seat_should` — 3–5 concrete bullets for the next seat
+- `blockers` — anything that stopped progress
+- `feedback` — quality signal on the pack and preparation (`good` / `weak` / `missing`)
+- `delta_reason` — why the outcome differed from the prediction (if it did)
+
+Do **not** re-type: git SHA, timestamps, experiment IDs, seat duration. These are `[AUTO]` fields — the system fills them.
+
+---
+
+## Topology — verify before writing
+
+Beast `:8400` (`135.181.161.131:8400`) is the fleet ledger.
+`127.0.0.1:8400` is the AG dev sandbox — writes here do not reach the fleet.
+
+Before any write: check `~/Code/VELLUM-TOPOLOGY.md` to confirm ledger health.
+If Beast Vellum is down, hold the write and flag it — do not silently drop it.
+
+---
+
+## Identity and attribution
+
+Post using the correct seat identity. Attribution matters — work attributed to the wrong seat is invisible on the ledger.
+- Cursor seat: `cursor` slug
+- Antigravity seat (`~/Antigravity/`): `antigravity` slug
+- See `~/Code/FLEET-ROSTER.md` for full alias map
+
+Everybody in all seats, never the wrong identity.
