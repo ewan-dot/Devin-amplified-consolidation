@@ -1,0 +1,34 @@
+---
+description: Perplexity inbox — finish bar, Vellum+inbox posting, pytest expectations
+alwaysApply: false
+---
+
+# Perplexity inbox — finish and testing
+
+## Every work pass (Ewan rule 2026-06-26)
+
+| Step | Where |
+|---|---|
+| Status/completion file | `perplexity-inbox/` with `[CLOSURE]` line |
+| Witness row | Vellum Inbox — Ewan sheet |
+| Chat | Pointer only (path + subject), not a duplicate essay |
+
+Naming: `{topic}__{kind}__vNN__YYYY-MM-DD__{seat}.md`
+
+## Testing expectations
+
+- Unit tests: `pytest` in `tests/` (e.g. `tests/test_unified_sensor.py`)
+- Fleet smoke: `python3 monitor.py` or `python3 monitor.py --signals-only`
+- Permissions self-test: `python3 amplified_permissions.py` when touching grants
+
+## Key docs (load on demand)
+
+- `token-efficiency-inbox.mdc` — inbox token scope + pytest + source cross-refs
+- `AI-NATIVE-OPERATING-MODEL__v01__2026-06-25__cursor.md` — hooks + done ladder
+- `docs/INBOX-STATUS.md` — current snapshot
+- `docs/UNIFIED-SENSOR-PLAN.md` — waypoints and seat ownership
+- `OPERATING-RULE__post-inbox-and-vellum__v01__2026-06-26__cursor.md` — posting rule
+
+## Shared surfaces for this project
+
+Code/specs land in `perplexity-inbox/` root or `completed-by-{seat}__YYYY-MM-DD/`. Generated sensor output stays gitignored (`data/sensor_snapshot.json`).

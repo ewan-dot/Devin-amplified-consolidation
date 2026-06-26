@@ -1,0 +1,29 @@
+---
+description: "Perplexity inbox token rules — pytest scope, brief format, ignore paths. Parent: token-efficiency.mdc + inbox finish rule"
+alwaysApply: false
+---
+
+# Token efficiency — perplexity inbox (workspace)
+
+Global context rules: `~/.cursor/rules/token-efficiency.mdc`. Finish bar: `inbox-finish-and-testing.mdc`.
+
+## Inbox-specific scope
+
+- **Tests:** run targeted pytest only — `pytest tests/test_unified_sensor.py` (or the file you touched), not full estate sweeps
+- **Brief format:** structured fields over narrative; status files use `{topic}__{kind}__vNN__YYYY-MM-DD__{seat}.md` with `[CLOSURE]` footer
+- **Chat:** pointer only (path + subject) — full prose lives in inbox file + Vellum witness
+- **Generated output:** never read/index `data/sensor_snapshot.json`, `completed-by-*/`, `archived/`, `.claude/compact-backups/`
+
+## Source docs (load on demand)
+
+| Doc | Purpose |
+|---|---|
+| `claude-code-max__token-optimisation__hooks-and-harness-plan__v02__2026-06-24__perplexity.md` | Fleet harness plan (Cursor §A.3) |
+| `token-efficiency-thread__conclusions__v01__2026-06-24__perplexity.md` | Programme decisions + implement order |
+| `token-efficiency-programme__2026-06-24/token-efficiency__estate-spec__finish-and-prove__v01__2026-06-23__perplexity.md` | §9 PROOF-OF-LIFE (estate done gate) |
+| `HARNESS-CHECKLIST__doors-phase0__2026-06-26__cascade-mac.md` | Claude Code hook proof (reference for Cursor parity) |
+| `AI-NATIVE-OPERATING-MODEL__v01__2026-06-25__cursor.md` | Hooks + done ladder |
+
+## Project hooks
+
+`.cursor/hooks.json` mirrors global token hooks (bash guard, read block, post-tool redact, preCompact, prompt-lint). Portable copies under `.cursor/hooks/`.
