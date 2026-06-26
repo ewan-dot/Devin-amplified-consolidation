@@ -1,0 +1,36 @@
+---
+description: Done gate checklist — shared path, Vellum, tests, does it run
+alwaysApply: true
+---
+
+# Finish waypoint
+
+Shared is the **gate**, not the finish line. Target = working end-to-end.
+
+## Done ladder
+
+| Level | Bar |
+|---|---|
+| **Minimum** | Artefact in shared path **or** Vellum entry — company can find it |
+| **Preferred** | Working — tested, functional, smoke-checked |
+| **Ideal** | Witnessed **and** adopted by another seat or hook |
+
+## Before calling a job done
+
+- [ ] **Shared path** — `~/amplified-pipeline/`, `perplexity-inbox/`, control-centre, or Beast via PR (not worktree-only)
+- [ ] **Vellum** — intent and/or completion witnessed (INTUITED for AI rows)
+- [ ] **Tests** — unit/smoke pass where they matter
+- [ ] **Does it run?** — one honest execution check
+
+## Published (F8)
+
+All four must PASS:
+
+- [ ] **Constitutional pass (F-RODS)** — no rod violations in artefact or handoff; `constitutional-gate.mdc` satisfied (`pre_client`: logged warnings cleared; `client_live`: zero violations)
+- [ ] **perplexity-inbox artefact** — doc in shared inbox path
+- [ ] **GitHub pushed** — branch/PR on remote
+- [ ] **Vellum telemetry row** — publish/done witness on ledger
+
+## Seat close
+
+Follow `relay-stop` PASS protocol: seat-pass → Vellum preform → baton. Stop hook reminds if finish checklist may be incomplete.
