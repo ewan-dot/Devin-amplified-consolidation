@@ -33,7 +33,7 @@ All four must PASS:
 
 ## Goal telemetry
 
-**Moving toward goal** = processes work + tokens wise: track **completion %** (finish-waypoint doors passed per job) and **token cost per completed job**. Model: `perplexity-inbox/research-conclusion__doors-telemetry-completion__v01__2026-06-26__cursor.md`.
+**Moving toward goal** = processes work + tokens spent wisely: **completion %** (F1–F8 booleans) + **token cost per completed job**. Model: `research-conclusion__doors-telemetry-completion__v01__2026-06-26__cursor.md` §4–§7. **Compound signal:** new research gaps ↓ good; same-topic re-research without implement ↑ bad (`self-compound.mdc`).
 
 ## Seat close
 

@@ -125,4 +125,19 @@ Estate token programme §9 PROOF-OF-LIFE = same philosophy fleet-wide — 10 boo
 
 ---
 
+## 7. Compound signal (self-compound harness)
+
+**STRUCTURED:** Encoded in `self-compound.mdc` + stop hook `stop-self-compound-check.py`.
+
+| Signal | Direction | Meaning |
+|---|---|---|
+| New failure patterns in research | ↓ over time | **Good** — gaps closing, fleet learning encoded |
+| Same topic re-researched without implement | ↑ | **Bad** — token waste, chat-only fixes |
+| Repeated hook failures on encoded gaps | ↑ | **Bad** — SSOT not deployed or not read |
+| Completion % ↑ + token cost per completed job ↓ | ↑ / ↓ | **Good** — moving toward goal |
+
+Before research: check inbox + Vellum for prior same-topic runs. After gap fix: encode in rules/hooks/repo same session; post Vellum compound delta one-liner.
+
+---
+
 [CLOSURE] branch=PLAN | proxy=none | gates=Ewan reads completion model | inbox=research-conclusion__doors-telemetry-completion__v01__2026-06-26__cursor.md | tier=STRUCTURED

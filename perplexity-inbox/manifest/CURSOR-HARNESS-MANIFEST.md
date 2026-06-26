@@ -6,11 +6,11 @@ Lean fleet harness at `~/.cursor/`. Hooks prevent waste; rules inject policy. SS
 
 ## Stays
 
-**alwaysApply rules:** lean-output, ewan-core, constitutional-gate, comms-ping, session-discipline, token-efficiency, worktree-door, finish-waypoint.
+**alwaysApply rules:** lean-output, ewan-core, constitutional-gate, self-compound, comms-ping, session-discipline, token-efficiency, worktree-door, finish-waypoint.
 
-**Hooks (`hooks.json`):** sessionStart (preamble + Vellum/fleet sensor), sessionEnd, beforeSubmitPrompt (P0 secrets + constitutional P0/nudge), beforeShellExecution (token-bomb nudge), beforeReadFile (nudge), postToolUse (truncate), stop, preCompact, subagentStop.
+**Hooks (`hooks.json`):** sessionStart (preamble + Vellum/fleet sensor), sessionEnd, beforeSubmitPrompt (P0 secrets + constitutional P0/nudge), beforeShellExecution (token-bomb nudge), beforeReadFile (nudge), postToolUse (truncate), stop (compact nudge + **self-compound SSOT check**), preCompact, subagentStop.
 
-**On demand:** vellum-witness, relay-stop, amplified-search, facilitator-interface, yolo-ceilings, etc.
+**On demand:** vellum-witness, relay-stop, amplified-search, facilitator-interface, yolo-ceilings, research-attribution, etc.
 
 ## Push door
 

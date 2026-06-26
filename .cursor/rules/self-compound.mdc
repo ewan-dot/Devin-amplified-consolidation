@@ -1,0 +1,37 @@
+---
+description: Self-compound — encode every gap fix fleet-wide same session; research surfaces NEW gaps only
+alwaysApply: true
+---
+
+# Self-compound (harness)
+
+When you close a **tiny gap** (hook miss, rule hole, repeated failure, research finding → implement), the fix is **capital**, not chat. Encode it **same session** so the fleet inherits it deterministically.
+
+## Encode (never chat-only)
+
+| Fix type | Where (same session) |
+|---|---|
+| Policy / behaviour | `~/.cursor/rules/*.mdc` + repo copy under `ingestion-to-research-pipe/.cursor/rules/` |
+| Hook / sensor | `~/.cursor/hooks/` + repo SSOT `perplexity-inbox/.cursor/hooks/` or `.cursor/hooks.json` |
+| Fleet doc / operating rule | `perplexity-inbox/OPERATING-RULE__*` or manifest |
+| Schema / guard | repo SSOT path + Vellum compound delta one-liner |
+
+**Forbidden:** "fixed in chat only", worktree-only with no SSOT copy, closing a gap without checking whether it was already encoded.
+
+## Before research
+
+1. Search **inbox** (`perplexity-inbox/`, `RESEARCH-PIPE-RUN__*`) and **Vellum** for same-topic prior failures or runs.
+2. If prior run exists **without implement** → implement or cite blocker; do **not** re-research the same gap for tokens.
+3. Research should surface **NEW** failure patterns, not repeat encoded lessons.
+
+## After implement
+
+- Post **one-line Vellum compound delta**: what gap closed, where encoded (path/rule/hook).
+- Stop hook nudges if rules/hooks changed but repo SSOT not committed — obey the nudge.
+
+## Compound signal (telemetry)
+
+- **Good:** new failure patterns in research ↓ over time; completion % ↑; token cost per completed job ↓
+- **Bad:** same topic re-researched without implement ↑; repeated hook failures on encoded gaps ↑
+
+See `research-conclusion__doors-telemetry-completion__v01__2026-06-26__cursor.md` §7.
