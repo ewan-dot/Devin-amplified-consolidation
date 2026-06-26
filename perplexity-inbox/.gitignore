@@ -8,3 +8,11 @@ __pycache__/
 
 # Generated sensor output (regenerate via monitor.py / unified_sensor)
 data/sensor_snapshot.json
+
+# email_actioning_agent generated runtime data
+email_actioning_agent/data/captured_emails.jsonl
+email_actioning_agent/data/routed_actions.jsonl
+email_actioning_agent/data/token_measurement.json
+infra-critical-feed.jsonl
+email_actioning_agent/data/telemetry.jsonl
+email_actioning_agent/data/health.json
