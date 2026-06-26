@@ -1,5 +1,7 @@
 # Perplexity Inbox — Handoff Contract
 
+**GitHub:** [PR #1](https://github.com/ewan-dot/Devin-amplified-consolidation/pull/1) · branch `feat/unified-sensor-inbox` · commit `341c296`
+
 ## All seats — read this inbox first
 
 **Rule (2026-06-25):** Everything that's done must be written here (or `~/amplified-pipeline/` shared paths) so every seat knows what every other seat finished. Finish work → share → witness on Vellum when applicable.

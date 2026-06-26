@@ -153,3 +153,5 @@ At collection time the sensor correctly reported **halt** — Beast ingest unrea
 - Operating model: `AI-NATIVE-OPERATING-MODEL__v01__2026-06-25__cursor.md`
 - Priorities (done vs open): `AI-NATIVE-PRIORITIES__v01__2026-06-25__cursor.md`
 - Inbox index: `INBOX-INDEX__v02__2026-06-25__cursor.md`
+
+**GitHub:** [PR #1](https://github.com/ewan-dot/Devin-amplified-consolidation/pull/1) · branch `feat/unified-sensor-inbox` · commit `341c296`

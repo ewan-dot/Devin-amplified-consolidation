@@ -61,3 +61,8 @@
 | `unified_sensor/` + `monitor.py` + `tests/` + `data/sensor_snapshot.json` | Track A code |
 
 **Start here:** `INBOX-INDEX__v02__2026-06-25__cursor.md` · **Mac Mini handoff:** `HANDOFF__mac-mini-cursor__shared-inbox-ssot__v01__2026-06-25__cursor.md` · **Priorities:** `AI-NATIVE-PRIORITIES__v01__2026-06-25__cursor.md` · **Jun-24 backlog:** `INBOX-INDEX__v01__2026-06-24__perplexity.md`
+---
+
+## GitHub
+
+**GitHub:** [PR #1](https://github.com/ewan-dot/Devin-amplified-consolidation/pull/1) · branch `feat/unified-sensor-inbox` · commit `341c296`
