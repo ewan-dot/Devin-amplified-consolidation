@@ -1,0 +1,4279 @@
+[
+ {
+  "src": "clean-build/01_truth/schemas/2026-03_validation-methodology_v2.md",
+  "dept": "methodology",
+  "dest_dir": "02-methodology",
+  "status": "current",
+  "orig_name": "2026-03_validation-methodology_v2.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r60.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r60.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r32.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r32.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r39.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r39.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r30.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r30.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r29.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r29.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r90.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r90.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r48.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r48.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r134.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r134.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r3.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r3.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r135.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r135.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r48.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r48.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r94.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r94.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r39.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r39.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r33.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r33.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r89.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r89.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r18.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r18.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r63.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r63.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r101.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r101.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r23.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r23.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r94.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r94.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r52.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r52.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r24.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r24.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r31.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r31.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r82.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r82.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r58.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r58.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r42.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r42.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r37.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r37.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r25.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r25.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r77.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r77.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r49.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r49.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r63.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r63.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r51.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r51.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r60.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r60.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r89.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r89.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r75.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r75.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r78.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r78.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r77.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r77.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r58.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r58.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r17.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r17.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r25.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r25.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r91.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r91.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r35.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r35.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r96.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r96.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r34.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r34.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r44.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r44.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r93.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r93.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r51.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r51.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r54.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r54.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r84.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r84.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r81.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r81.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r40.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r40.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r57.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r57.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r16.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r16.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r16.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r16.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r92.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r92.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r94.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r94.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r11.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r11.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r56.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r56.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r82.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r82.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r83.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r83.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r75.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r75.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r45.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r45.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r35.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r35.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r38.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r38.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r32.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r32.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r84.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r84.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r105.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r105.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r80.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r80.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r46.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r46.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r133.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r133.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r137.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r137.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r31.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r31.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r64.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r64.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r148.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r148.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r52.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r52.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r97.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-22-r97.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r65.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r65.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r53.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r53.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r85.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-24-r85.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r64.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-23-r64.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r59.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r59.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r47.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-21-r47.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r88.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r88.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-25-r17.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-25-r17.md"
+ },
+ {
+  "src": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r13.md",
+  "dept": "ops-sessions",
+  "dest_dir": "_archive/ops-sessions",
+  "status": "archived",
+  "orig_name": "vault-monitor-2026-03-20-r13.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_staging/12-archive-raw/checklist-week-20260113-v1.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "checklist-week-20260113-v1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_staging/03-sales-marketing/bdb-weekly-blog-system-v1.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "bdb-weekly-blog-system-v1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_staging/03-sales-marketing/bdb-website-recipe-v1.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "bdb-website-recipe-v1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_staging/05-technology/audit-phase1-technical-discovery-v1.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "audit-phase1-technical-discovery-v1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/amplified-partners-overview-feb-2026.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "amplified-partners-overview-feb-2026.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/rubric/README.md",
+  "dept": "methodology",
+  "dest_dir": "02-methodology",
+  "status": "current",
+  "orig_name": "README.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-23-1408.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "SESSION-2026-02-23-1408.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-23-0327.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "SESSION-2026-02-23-0327.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-test-20260214-145805.md",
+  "dept": "unsorted",
+  "dest_dir": "99-unsorted",
+  "status": "current",
+  "orig_name": "SESSION-test-20260214-145805.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-SUMMARY-2026-02-11-v2.md",
+  "dept": "methodology",
+  "dest_dir": "02-methodology",
+  "status": "current",
+  "orig_name": "SESSION-SUMMARY-2026-02-11-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-12-RAW-CONVERSATION.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "SESSION-2026-02-12-RAW-CONVERSATION.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-22-RESEARCH-COMPLETE.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "SESSION-2026-02-22-RESEARCH-COMPLETE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-25-0600.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "SESSION-2026-02-25-0600.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-16-LANDING-PAGES-LIVE.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "SESSION-2026-02-16-LANDING-PAGES-LIVE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-21-1415.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "SESSION-2026-02-21-1415.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/SESSION-SUMMARY-2026-02-11.md",
+  "dept": "methodology",
+  "dest_dir": "02-methodology",
+  "status": "current",
+  "orig_name": "SESSION-SUMMARY-2026-02-11.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/gates/AI-REVIEW-REQUEST.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "AI-REVIEW-REQUEST.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/gates/API-TOKENS-TO-COLLECT.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "API-TOKENS-TO-COLLECT.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/gates/COMMITMENT-SYSTEM-REVIEW.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "COMMITMENT-SYSTEM-REVIEW.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/gates/COMMITMENT-SYSTEM-README.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "COMMITMENT-SYSTEM-README.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work/sessions/gates/content-draft-001-linkedin-ai-what-is-it.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-draft-001-linkedin-ai-what-is-it.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/PUBLISHING-SEQUENCE-v2.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "PUBLISHING-SEQUENCE-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v10.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v10.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v10.md",
+  "dept": "methodology",
+  "dest_dir": "_archive/methodology",
+  "status": "archived",
+  "orig_name": "recent-sessions-v10.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v25.md",
+  "dept": "research",
+  "dest_dir": "_archive/research",
+  "status": "archived",
+  "orig_name": "recent-sessions-v25.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SOUL-v2.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "SOUL-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPT-DISCOVERY-FINAL-v2.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "TRANSCRIPT-DISCOVERY-FINAL-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-12-0220-v2.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "sam-2026-02-12-0220-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/ZAPIER-SEO-STRATEGY-HYPERLOCAL.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "ZAPIER-SEO-STRATEGY-HYPERLOCAL.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/DAVE-AGENT-CREATED.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "DAVE-AGENT-CREATED.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/DEEP-RESEARCH-OPENCLAW-SUCCESS-STORIES.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "DEEP-RESEARCH-OPENCLAW-SUCCESS-STORIES.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/THE-PLAN-v2.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "THE-PLAN-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SEO-IMPLEMENTATION-GUIDE-v2.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "SEO-IMPLEMENTATION-GUIDE-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-12-0220.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "sam-2026-02-12-0220.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/AI-REVIEW-REQUEST-v3.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "AI-REVIEW-REQUEST-v3.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SEO-LANDING-PAGE-FACTORY.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "SEO-LANDING-PAGE-FACTORY.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/AGENTS.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "AGENTS.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v15.md",
+  "dept": "methodology",
+  "dest_dir": "_archive/methodology",
+  "status": "archived",
+  "orig_name": "recent-sessions-v15.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/LANDING-PAGE-KEYWORD-MATRIX-v2.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "LANDING-PAGE-KEYWORD-MATRIX-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/jaunty-kindling-shore-v2.md",
+  "dept": "content-marketing",
+  "dest_dir": "_archive/content-marketing",
+  "status": "archived",
+  "orig_name": "jaunty-kindling-shore-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v30.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "recent-sessions-v30.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v29.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "SHARED-BOARD-v29.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/content-calendar-2026-02.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-calendar-2026-02.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/CLAWD-FULL-CAPABILITY-BUILD.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "CLAWD-FULL-CAPABILITY-BUILD.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v22.md",
+  "dept": "research",
+  "dest_dir": "_archive/research",
+  "status": "archived",
+  "orig_name": "recent-sessions-v22.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/openclaw-skills-security-research-report.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "openclaw-skills-security-research-report.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v13.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v13.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/PUDDING-RESULTS-INITIAL.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "PUDDING-RESULTS-INITIAL.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v8.md",
+  "dept": "engineering-infra",
+  "dest_dir": "_archive/engineering-infra",
+  "status": "archived",
+  "orig_name": "recent-sessions-v8.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/AI-REVIEW-REQUEST-v2.md",
+  "dept": "doctrine",
+  "dest_dir": "_archive/doctrine",
+  "status": "archived",
+  "orig_name": "AI-REVIEW-REQUEST-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TESTING-PERSONAS-DETAILED.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "TESTING-PERSONAS-DETAILED.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/REVIEW-v2.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "REVIEW-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/cuddly-munching-popcorn.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "cuddly-munching-popcorn.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v23.md",
+  "dept": "research",
+  "dest_dir": "_archive/research",
+  "status": "archived",
+  "orig_name": "recent-sessions-v23.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/AI-REVIEW-REQUEST.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "AI-REVIEW-REQUEST.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/PUBLISHING-SEQUENCE.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "PUBLISHING-SEQUENCE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/jaunty-kindling-shore-v3.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "jaunty-kindling-shore-v3.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/voice-ai-platform-comparison-2026.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "voice-ai-platform-comparison-2026.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/logical-percolating-swan.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "logical-percolating-swan.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v5.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v5.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/COVERED-AI-VOICE-PLATFORM.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "COVERED-AI-VOICE-PLATFORM.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v7.md",
+  "dept": "engineering-infra",
+  "dest_dir": "_archive/engineering-infra",
+  "status": "archived",
+  "orig_name": "recent-sessions-v7.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-22-0628.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "sam-2026-02-22-0628.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/ROOM-INFRASTRUCTURE.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "ROOM-INFRASTRUCTURE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/2026-02-19.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-19.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/DEPLOY-BLOCKERS.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "DEPLOY-BLOCKERS.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/HUMAN-COLLABORATION-PATTERNS-RESEARCH.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "HUMAN-COLLABORATION-PATTERNS-RESEARCH.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v13.md",
+  "dept": "methodology",
+  "dest_dir": "_archive/methodology",
+  "status": "archived",
+  "orig_name": "recent-sessions-v13.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SEO-IMPLEMENTATION-GUIDE.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "SEO-IMPLEMENTATION-GUIDE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/ZAPIER-SEO-STRATEGY-HYPERLOCAL-v2.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "ZAPIER-SEO-STRATEGY-HYPERLOCAL-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPTION-SOURCES-FOUND.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "TRANSCRIPTION-SOURCES-FOUND.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/API-TOKENS-TO-COLLECT.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "API-TOKENS-TO-COLLECT.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/COORDINATION-PLAN-TODAY-v2.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "COORDINATION-PLAN-TODAY-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/AGENTS-v2.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "AGENTS-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/MANIFEST.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "MANIFEST.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/jaunty-kindling-shore.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "jaunty-kindling-shore.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPTION-SOURCES-FOUND-v2.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "TRANSCRIPTION-SOURCES-FOUND-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/PERSONA-TECH-STACKS.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "PERSONA-TECH-STACKS.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v12.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v12.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPT-DISCOVERY-FINAL.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "TRANSCRIPT-DISCOVERY-FINAL.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/REVIEW.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "REVIEW.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/content-calendar-2026-02-v2.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-calendar-2026-02-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v8.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v8.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v29.md",
+  "dept": "engineering-infra",
+  "dest_dir": "_archive/engineering-infra",
+  "status": "archived",
+  "orig_name": "recent-sessions-v29.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SAM-TODO.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "SAM-TODO.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/GATE-TEMPLATE.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "GATE-TEMPLATE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/2026-02-19-session.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-19-session.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TODAY-ALPHA-READY-TASKS.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "TODAY-ALPHA-READY-TASKS.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/DAVE-WORKFLOW-SPEC-V1.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "DAVE-WORKFLOW-SPEC-V1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/THE-COMPLETE-PICTURE-2026-02-16.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "THE-COMPLETE-PICTURE-2026-02-16.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/registered-letter-template-v1-v3.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "registered-letter-template-v1-v3.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/AGENTS-v3.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "AGENTS-v3.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v14.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v14.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SEO-LANDING-PAGE-FACTORY-v2.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "SEO-LANDING-PAGE-FACTORY-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v15.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v15.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/OPENCLAW-ADVANCED-USERS-RESEARCH.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "OPENCLAW-ADVANCED-USERS-RESEARCH.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/MATTHEW-BERMAN-DEEP-RESEARCH.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "MATTHEW-BERMAN-DEEP-RESEARCH.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v28.md",
+  "dept": "engineering-infra",
+  "dest_dir": "_archive/engineering-infra",
+  "status": "archived",
+  "orig_name": "recent-sessions-v28.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v11.md",
+  "dept": "methodology",
+  "dest_dir": "_archive/methodology",
+  "status": "archived",
+  "orig_name": "recent-sessions-v11.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/COMMITMENT-SYSTEM-REVIEW.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "COMMITMENT-SYSTEM-REVIEW.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/OPERATIONS-AUTOMATION-SUMMARY.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "OPERATIONS-AUTOMATION-SUMMARY.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/LANDING-PAGE-KEYWORD-MATRIX.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "LANDING-PAGE-KEYWORD-MATRIX.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-11-2052.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "sam-2026-02-11-2052.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/PRODUCT-SPEC-COVERED-AI-HGV-v2.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "PRODUCT-SPEC-COVERED-AI-HGV-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v6.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v6.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TASK-PROJECT-MANAGEMENT-RESEARCH.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "TASK-PROJECT-MANAGEMENT-RESEARCH.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/VOICE-SYSTEM-ACTIVATION.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "VOICE-SYSTEM-ACTIVATION.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/QUICK-START-GUIDE.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "QUICK-START-GUIDE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/THE-PLAN.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "THE-PLAN.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v4.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v4.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/PUBLISHING-TONE-GUIDE.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "PUBLISHING-TONE-GUIDE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/PUDDING-TECHNIQUE-EXTRACTION.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "PUDDING-TECHNIQUE-EXTRACTION.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/CLAWD-CAPABILITY-SPEC-NOT-BUILT.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "CLAWD-CAPABILITY-SPEC-NOT-BUILT.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-11-2052-v2.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "sam-2026-02-11-2052-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v11.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v11.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/COMPLETE-TRANSCRIPT-INVENTORY.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "COMPLETE-TRANSCRIPT-INVENTORY.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/clawd-reflection-template.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "clawd-reflection-template.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/MATTHEW-BERMAN-26-PROMPTS.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "MATTHEW-BERMAN-26-PROMPTS.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TODOIST-SETUP-v2.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "TODOIST-SETUP-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v9.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v9.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SAM-CAPABILITY-SPEC-NOT-BUILT.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "SAM-CAPABILITY-SPEC-NOT-BUILT.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v17.md",
+  "dept": "research",
+  "dest_dir": "_archive/research",
+  "status": "archived",
+  "orig_name": "recent-sessions-v17.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/TODOIST-SETUP.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "TODOIST-SETUP.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/staged-sprouting-sifakis.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "staged-sprouting-sifakis.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v6.md",
+  "dept": "math-logic",
+  "dest_dir": "_archive/math-logic",
+  "status": "archived",
+  "orig_name": "recent-sessions-v6.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/sam-reflection-template.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "sam-reflection-template.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/VAPI-VS-RETELL-DEEP-RESEARCH-2026.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "VAPI-VS-RETELL-DEEP-RESEARCH-2026.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/IDENTITY.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "IDENTITY.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/RETELL-AI-SETUP-GUIDE.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "RETELL-AI-SETUP-GUIDE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/COORDINATION-PLAN-TODAY.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "COORDINATION-PLAN-TODAY.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/abundant-growing-emerson-v2.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "abundant-growing-emerson-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/COMPLETE-TRANSCRIPT-INVENTORY-v2.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "COMPLETE-TRANSCRIPT-INVENTORY-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v3.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "_archive/agents-orchestration",
+  "status": "archived",
+  "orig_name": "SHARED-BOARD-v3.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-002-linkedin-play-doh-barbershop.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-draft-002-linkedin-play-doh-barbershop.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-001-linkedin-ai-what-is-it-v2.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-draft-001-linkedin-ai-what-is-it-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-002-linkedin-play-doh-barbershop-v2.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-draft-002-linkedin-play-doh-barbershop-v2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-001-linkedin-ai-what-is-it.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-draft-001-linkedin-ai-what-is-it.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-004-linkedin-silicone-friction.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-draft-004-linkedin-silicone-friction.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0038.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0038.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0025.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0025.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0019.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0019.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0048.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0048.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0016.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0016.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0022.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0022.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0020.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0020.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0001.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0001.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0029.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0029.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0015.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0015.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0036.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0036.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0027.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0027.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0002.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0002.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0023.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0023.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0014.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0014.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0011.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0011.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0024.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0024.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0049.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0049.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0004.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0004.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0033.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0033.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0028.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0028.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0047.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0047.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0043.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0043.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0041.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0041.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0042.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0042.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0007.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0007.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0034.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0034.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0468-0468.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0468-0468.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1997-1997.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1997-1997.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2011-2011.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2011-2011.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1513-1513.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1513-1513.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1565-1565.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1565-1565.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0445-0445.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0445-0445.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1530-1530.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1530-1530.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1885-1885.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1885-1885.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1522-1522.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1522-1522.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1787-1787.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1787-1787.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2022-2022.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2022-2022.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1834-1834.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1834-1834.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0599-0599.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0599-0599.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1870-1870.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1870-1870.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1788-1788.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1788-1788.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1826-1826.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1826-1826.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0756-0756.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0756-0756.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1835-1835.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1835-1835.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1786-1786.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1786-1786.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1681-1681.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1681-1681.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1858-1858.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1858-1858.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1995-1995.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1995-1995.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1506-1506.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1506-1506.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1719-1719.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1719-1719.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0038-0038.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0038-0038.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2012-2012.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2012-2012.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0066-0066.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0066-0066.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2118-2118.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2118-2118.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1686-1686.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1686-1686.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2028-2028.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2028-2028.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1903-1903.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1903-1903.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1527-1527.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1527-1527.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0167-0167.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0167-0167.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2131-2131.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2131-2131.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1833-1833.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1833-1833.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1794-1794.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1794-1794.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1807-1807.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1807-1807.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0679-0679.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0679-0679.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1933-1933.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1933-1933.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1989-1989.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1989-1989.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2005-2005.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2005-2005.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1507-1507.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1507-1507.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0245-0245.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0245-0245.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1830-1830.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1830-1830.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0766-0766.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0766-0766.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0459-0459.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0459-0459.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0400-0400.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0400-0400.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1526-1526.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1526-1526.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1849-1849.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1849-1849.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2135-2135.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2135-2135.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1843-1843.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1843-1843.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1087-1087.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1087-1087.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1653-1653.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1653-1653.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0607-0607.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0607-0607.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0248-0248.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0248-0248.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1825-1825.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1825-1825.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2138-2138.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2138-2138.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2017-2017.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2017-2017.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0757-0757.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0757-0757.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1573-1573.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1573-1573.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1516-1516.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1516-1516.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1993-1993.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1993-1993.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1976-1976.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1976-1976.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1994-1994.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1994-1994.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1694-1694.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1694-1694.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1651-1651.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1651-1651.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1717-1717.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1717-1717.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1848-1848.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1848-1848.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0583-0583.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-0583-0583.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1999-1999.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1999-1999.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1638-1638.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1638-1638.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2004-2004.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2004-2004.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2130-2130.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-2130-2130.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1536-1536.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1536-1536.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1705-1705.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "monologue-unknown-1705-1705.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/INDEX.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "INDEX.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/AGENTS.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "AGENTS.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/content-calendar-2026-02.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "content-calendar-2026-02.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/MANIFEST.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "MANIFEST.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/GATE-TEMPLATE.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "GATE-TEMPLATE.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/clawd-2026-02-12-0220.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "clawd-2026-02-12-0220.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/THE-PLAN.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "THE-PLAN.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/clawd-2026-02-11-2052.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "clawd-2026-02-11-2052.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/CLAWD-TODO.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "CLAWD-TODO.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/content-draft-004-linkedin-silicone-friction.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "content-draft-004-linkedin-silicone-friction.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/SESSION-SUMMARY-2026-02-11.md",
+  "dept": "methodology",
+  "dest_dir": "02-methodology",
+  "status": "current",
+  "orig_name": "SESSION-SUMMARY-2026-02-11.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/projects/roadmaps/social-media-automation-roadmap.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "social-media-automation-roadmap.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-voice-ai-platform-comparison-2026.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-voice-ai-platform-comparison-2026.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-delegated-giggling-trinket.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-delegated-giggling-trinket.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-humming-moseying-acorn.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-humming-moseying-acorn.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-openclaw-skills-security-research-report.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "2026-02-24-openclaw-skills-security-research-report.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-binary-humming-tide.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-binary-humming-tide.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-majestic-cuddling-yeti.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-majestic-cuddling-yeti.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-vivid-herding-meteor.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-vivid-herding-meteor.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-hazy-conjuring-prism-6a1dcd.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-hazy-conjuring-prism-6a1dcd.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-session-2026-02-16-landing-pages-live.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-session-2026-02-16-landing-pages-live.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-session-summary-2026-02-11.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-session-summary-2026-02-11.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-scalable-jumping-nest.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "2026-02-24-scalable-jumping-nest.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-covered-ai-voice-platform.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "2026-02-24-covered-ai-voice-platform.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-nested-stirring-hanrahan.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "2026-02-24-nested-stirring-hanrahan.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-mutable-knitting-hopcroft.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "2026-02-24-mutable-knitting-hopcroft.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-curious-humming-pnueli.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-curious-humming-pnueli.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-piped-purring-cloud.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-piped-purring-cloud.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-imperative-watching-wozniak.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "2026-02-24-imperative-watching-wozniak.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-replicated-exploring-planet.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-replicated-exploring-planet.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-idempotent-beaming-biscuit.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-idempotent-beaming-biscuit.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-deep-research-openclaw-success-stories.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-24-deep-research-openclaw-success-stories.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-vapi-vs-retell-deep-research-2026.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-vapi-vs-retell-deep-research-2026.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-linear-wibbling-dawn.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-linear-wibbling-dawn.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-human-collaboration-patterns-research.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-human-collaboration-patterns-research.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-dreamy-napping-stardust.md",
+  "dept": "methodology",
+  "dest_dir": "02-methodology",
+  "status": "current",
+  "orig_name": "2026-02-24-dreamy-napping-stardust.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-dave-workflow-spec-v1.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "2026-02-24-dave-workflow-spec-v1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/amplified-taxonomy-and-nomenclature-standard_2026-06-24T0906Z_perplexity.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "amplified-taxonomy-and-nomenclature-standard_2026-06-24T0906Z_perplexity.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-logical-stirring-turtle.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-24-logical-stirring-turtle.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-zapier-seo-strategy-hyperlocal.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-zapier-seo-strategy-hyperlocal.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-eager-plotting-petal.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-eager-plotting-petal.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-dreamy-dazzling-octopus.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-dreamy-dazzling-octopus.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-session-2026-02-22-research-complete.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-24-session-2026-02-22-research-complete.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-majestic-whistling-sedgewick.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-24-majestic-whistling-sedgewick.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-openclaw-advanced-users-research.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-24-openclaw-advanced-users-research.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-quiet-puzzling-lightning.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-quiet-puzzling-lightning.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-jiggly-singing-scott.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-jiggly-singing-scott.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-content-draft-001-linkedin-first-post.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "2026-02-24-content-draft-001-linkedin-first-post.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-enumerated-napping-mango.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-enumerated-napping-mango.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-matthew-berman-deep-research.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-matthew-berman-deep-research.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-rippling-wobbling-elephant-1.md",
+  "dept": "content-marketing",
+  "dest_dir": "08-content-marketing",
+  "status": "current",
+  "orig_name": "2026-02-24-rippling-wobbling-elephant-1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-nested-stirring-hanrahan-agent-a4bdfd2.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-nested-stirring-hanrahan-agent-a4bdfd2.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-dynamic-popping-puddle.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-dynamic-popping-puddle.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/amplified-canonical-phrase-index_2026-06-24T0850Z_perplexity.md",
+  "dept": "doctrine",
+  "dest_dir": "01-doctrine",
+  "status": "current",
+  "orig_name": "amplified-canonical-phrase-index_2026-06-24T0850Z_perplexity.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-partitioned-hatching-tarjan.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-partitioned-hatching-tarjan.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-session-notes-2026-02-11.md",
+  "dept": "methodology",
+  "dest_dir": "02-methodology",
+  "status": "current",
+  "orig_name": "2026-02-24-session-notes-2026-02-11.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-valiant-churning-moon.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-24-valiant-churning-moon.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-streamed-humming-rain.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-streamed-humming-rain.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-cozy-sniffing-crayon.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "2026-02-24-cozy-sniffing-crayon.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-imperative-watching-wozniak-agent-a3117c4.md",
+  "dept": "engineering-infra",
+  "dest_dir": "05-engineering-infra",
+  "status": "current",
+  "orig_name": "2026-02-24-imperative-watching-wozniak-agent-a3117c4.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-task-project-management-research.md",
+  "dept": "agents-orchestration",
+  "dest_dir": "06-agents-orchestration",
+  "status": "current",
+  "orig_name": "2026-02-24-task-project-management-research.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/research/2026-02-24-kind-splashing-wand.md",
+  "dept": "research",
+  "dest_dir": "07-research",
+  "status": "current",
+  "orig_name": "2026-02-24-kind-splashing-wand.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/work-covered-ai/work-core-principle-v1.md",
+  "dept": "product",
+  "dest_dir": "04-product",
+  "status": "current",
+  "orig_name": "work-core-principle-v1.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-094105.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-094105.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122859.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-122859.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-235107.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-235107.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-100658.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-100658.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-234914.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-234914.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-001234.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-001234.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-094210.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-094210.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-113411.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-113411.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-153948.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-153948.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-220805.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-220805.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-084857.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-084857.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-094405.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-094405.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122407.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-122407.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-003356.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-003356.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-072328.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-072328.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-150726.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-150726.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-141204.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-141204.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-053711.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-053711.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-123033.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-123033.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-131416.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-131416.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-000411.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-000411.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-000809.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-000809.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-160917.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-160917.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-120128.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-120128.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-204732.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-204732.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121532.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-121532.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054715.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-054715.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-200733.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-200733.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-104231.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-104231.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-005644.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-005644.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-091046.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-091046.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-132005.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-132005.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-001839.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-001839.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173018.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-173018.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-153034.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-153034.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-205130.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-205130.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-074835.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-074835.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-144609.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-144609.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-141106.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-141106.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121045.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-121045.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-093802.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-093802.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122648.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-122648.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-094605.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-094605.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-194348.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-194348.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-120739.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-120739.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122811.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-122811.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-152553.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-152553.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-203338.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-203338.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-064349.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-064349.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054115.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-054115.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-154349.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-154349.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-063836.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-063836.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-141024.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-141024.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-101019.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-101019.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-233250.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-233250.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155225.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-155225.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-072608.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-072608.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-025859.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-025859.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-113053.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-113053.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161910.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-161910.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-222312.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-222312.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-233016.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-233016.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-115039.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-115039.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-114957.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-114957.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-193858.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-193858.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-102135.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-102135.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-013526.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-013526.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-102744.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-102744.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-072034.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-072034.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-030243.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-030243.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-121126.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-121126.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-201825.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-201825.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-004129.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-004129.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-152820.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-152820.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-121210.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-121210.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-101821.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-101821.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-174305.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-174305.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-082147.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-082147.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-120945.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-120945.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-063112.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-063112.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-082758.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-082758.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-000522.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-000522.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121138.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-121138.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-123103.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-123103.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-092209.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-092209.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-094720.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-094720.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-102256.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-102256.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-133527.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-133527.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-064723.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-064723.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-005523.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-005523.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-120908.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-120908.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-180215.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-180215.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-011638.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-011638.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-072500.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-072500.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054333.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-054333.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122735.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-122735.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-234108.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-234108.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161339.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-161339.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-163800.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-163800.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-083016.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-083016.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-055111.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-055111.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-113501.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-113501.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-001443.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-001443.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140130.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-140130.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260225-040533.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260225-040533.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-003027.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-003027.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-170621.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-170621.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122853.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-122853.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-232514.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-232514.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-064446.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-064446.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-071801.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-071801.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155647.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-155647.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-062137.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-062137.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-235017.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-235017.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-002342.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-002342.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-113506.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-113506.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-130105.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-130105.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-225432.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-225432.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-155956.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-155956.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173900.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-173900.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121704.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-121704.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-143617.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-143617.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-095319.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-095319.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-235431.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-235431.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-074338.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-074338.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-072416.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-072416.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-175215.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-175215.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-152329.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-152329.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-012459.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-012459.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-154826.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-154826.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140206.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-140206.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173118.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-173118.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-155847.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-155847.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-115338.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-115338.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-055853.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-055853.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-130358.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-130358.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-112510.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-112510.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173405.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-173405.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-012524.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-012524.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-234640.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-234640.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-225221.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-225221.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-082231.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-082231.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-061845.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-061845.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-081301.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-081301.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-132125.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-132125.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-091728.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-091728.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140907.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-140907.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-070355.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-070355.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-135726.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-135726.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-201429.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-201429.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-011219.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-011219.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-102231.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-102231.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140000.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-140000.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-123625.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-123625.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-125845.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-125845.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-135250.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-135250.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122922.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-122922.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-170453.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-170453.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-151651.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-151651.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-092257.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-092257.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-112959.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-112959.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-092834.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-092834.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-004326.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-004326.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-181637.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-181637.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-095040.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-095040.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-004549.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-004549.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-093347.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-093347.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-000342.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-000342.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-101848.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-101848.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-000114.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-000114.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-060927.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-060927.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122237.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-122237.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-120805.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-120805.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-060759.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-060759.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-131628.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-131628.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-091308.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-091308.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-062946.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-062946.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161111.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-161111.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161820.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-161820.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-131908.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-131908.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-092605.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-092605.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-143028.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-143028.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-125310.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-125310.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-085320.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-085320.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-123345.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-123345.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-114925.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-114925.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-085033.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-085033.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-151413.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-151413.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-092220.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-092220.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-180447.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-180447.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-005225.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-005225.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-024228.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-024228.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-234310.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-234310.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-063626.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-063626.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155855.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-155855.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-195845.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-195845.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-130941.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-130941.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-094339.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-094339.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-065413.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-065413.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-205958.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-205958.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-010111.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-010111.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-211019.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-211019.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-150237.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-150237.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-100541.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-100541.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-095613.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-095613.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-094956.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-094956.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122748.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-122748.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-115252.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-115252.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-020327.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-020327.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-194723.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-194723.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-102208.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-102208.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-211918.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-211918.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155419.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-155419.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-115153.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260221-115153.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-172735.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-172735.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260225-035228.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260225-035228.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-175704.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260224-175704.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260225-092119.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260225-092119.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-064234.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-064234.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054849.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260222-054849.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-211358.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260220-211358.md"
+ },
+ {
+  "src": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-083911.md",
+  "dept": "transcripts-voice",
+  "dest_dir": "09-transcripts-voice",
+  "status": "current",
+  "orig_name": "voice-20260223-083911.md"
+ }
+]

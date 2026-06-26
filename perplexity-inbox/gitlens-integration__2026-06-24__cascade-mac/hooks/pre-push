@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# pre-push hook — runs the test suite before any push leaves the machine
+# Tier: MEASURED (tests empirically verify the core)
+set -euo pipefail
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT"
+
+echo "pre-push: running test suite..."
+FAIL=0
+
+for test_file in core/test_deterministic_core.py tests/test_schema.py tests/test_rules.py; do
+    [[ -f "$test_file" ]] || continue
+    echo "  running $test_file ..."
+    if ! python3 "$test_file" 2>&1; then
+        FAIL=1
+    fi
+done
+
+if [[ $FAIL -ne 0 ]]; then
+    echo "" >&2
+    echo "❌ Test suite failed — push blocked. Fix tests first." >&2
+    exit 1
+fi
+echo "✓ All tests pass — push allowed"
+exit 0

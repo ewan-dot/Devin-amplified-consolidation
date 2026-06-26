@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+# pre-commit hook for agent-claude — secret scan + main guard + Vellum witness
+# Tier: STRUCTURED | No LLM in this path
+set -euo pipefail
+
+FAIL=0
+VELLUM_API="http://100.101.0.53:8400"
+PENDING_QUEUE="${HOME}/.pending-vellum-queue"
+
+# ── 0. Main-branch guard ─────────────────────────────────────────────────────
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "unknown")
+if [[ "$CURRENT_BRANCH" == "main" || "$CURRENT_BRANCH" == "master" ]]; then
+    echo "❌ Direct commit to ${CURRENT_BRANCH} is forbidden." >&2
+    echo "   Use a worktree branch: scripts/gk-worktree-start.sh <repo> <slug>" >&2
+    exit 1
+fi
+
+# ── 1. Secret scan ────────────────────────────────────────────────────────────
+STAGED=$(git diff --cached --name-only --diff-filter=ACMR 2>/dev/null) || true
+
+scan_file() {
+    local f="$1"
+    local content
+    content=$(git show ":$f" 2>/dev/null) || return 0
+
+    local patterns=(
+        'sk-[A-Za-z0-9]{20,}'
+        'gho_[A-Za-z0-9]{36}'
+        'ghp_[A-Za-z0-9]{36}'
+        'AKIA[A-Z0-9]{16}'
+        'lin_api_[A-Za-z0-9]+'
+        '-----BEGIN RSA PRIVATE KEY'
+        '-----BEGIN EC PRIVATE KEY'
+        '-----BEGIN OPENSSH PRIVATE KEY'
+        '-----BEGIN PRIVATE KEY'
+        'ANTHROPIC_API_KEY[[:space:]]*=[[:space:]]*sk-'
+        'DEEPSEEK_API_KEY[[:space:]]*=[[:space:]]*sk-'
+        'MOONSHOT_API_KEY[[:space:]]*=[[:space:]]*sk-'
+        'OPENAI_API_KEY[[:space:]]*=[[:space:]]*sk-'
+    )
+    for pat in "${patterns[@]}"; do
+        if echo "$content" | grep -qE "$pat" 2>/dev/null; then
+            echo "❌ SECRET DETECTED in $f (pattern: $pat)" >&2
+            FAIL=1
+        fi
+    done
+}
+
+for file in $STAGED; do
+    [[ -f "$file" ]] || continue
+    file --mime "$file" 2>/dev/null | grep -q "binary" && continue
+    scan_file "$file"
+done
+
+# ── 2. No .env files staged ───────────────────────────────────────────────────
+if echo "$STAGED" | grep -qE '(^|/)\.env($|\.)'; then
+    echo "❌ .env file staged — never commit secrets. Add to .gitignore." >&2
+    FAIL=1
+fi
+
+# ── 3. CLAUDE.md line-count guard (≤ 200 lines) ──────────────────────────────
+for file in $STAGED; do
+    if [[ "$file" == *CLAUDE.md ]]; then
+        lines=$(git show ":$file" 2>/dev/null | wc -l | tr -d ' ')
+        if [[ $lines -gt 200 ]]; then
+            echo "❌ $file is $lines lines (limit 200). Trim it." >&2
+            FAIL=1
+        fi
+    fi
+done
+
+# ── 4. BATON.md warning ──────────────────────────────────────────────────────
+CODE_CHANGED=$(echo "$STAGED" | grep -vE '(BATON\.md|\.md$|\.json$)' | wc -l | tr -d ' ')
+BATON_STAGED=$(echo "$STAGED" | grep -c 'BATON\.md' || true)
+if [[ $CODE_CHANGED -gt 0 && $BATON_STAGED -eq 0 ]]; then
+    echo "⚠ BATON.md not staged — update it before committing code." >&2
+fi
+
+if [[ $FAIL -ne 0 ]]; then
+    echo "" >&2
+    echo "pre-commit gate FAILED. Fix the issues above and re-stage." >&2
+    exit 1
+fi
+
+# ── 5. Vellum witness (non-blocking) ─────────────────────────────────────────
+vellum_witness() {
+    local agent_lane branch
+    agent_lane=$(git config cascade.agent-lane 2>/dev/null || echo "cascade-mac")
+    branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "unknown")
+
+    local payload
+    payload=$(python3 -c "
+import json
+print(json.dumps({
+  'author': '${agent_lane:-cascade-mac}',
+  'content': 'commit:staged branch=${branch} files=$(echo \"$STAGED\" | wc -l | tr -d \" \")',
+  'entry_type': 'agent_write',
+  'epistemic_tier': 'MEASURED',
+  'message_type': 'info',
+  'metadata': {'event': 'pre_commit', 'branch': '${branch}'}
+}))" 2>/dev/null) || return 0
+
+    local http_code
+    http_code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 3 \
+        -X POST "${VELLUM_API}/api/v1/agents/cascade-mac/send" \
+        -H "Content-Type: application/json" \
+        -d "${payload}" 2>/dev/null || echo "000")
+
+    if [[ "${http_code}" != "200" && "${http_code}" != "201" ]]; then
+        local ts
+        ts=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+        echo "${ts} ${payload}" >> "${PENDING_QUEUE}" 2>/dev/null || true
+    fi
+}
+vellum_witness 2>/dev/null || true
+
+# ── 6. GitLens hint ──────────────────────────────────────────────────────────
+# If VS Code is open, GitLens commit composer provides AI-assisted messages.
+# MCP: gitlens_commit_composer | VS Code: Source Control → ✨ button
+# (Non-blocking — just informational)
+
+echo "✓ pre-commit gate passed"
+exit 0

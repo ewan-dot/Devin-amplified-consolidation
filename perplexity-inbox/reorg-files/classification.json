@@ -1,0 +1,4894 @@
+{
+ "rows": [
+  {
+   "rel": "clean-build/01_truth/schemas/2026-03_validation-methodology_v2.md",
+   "dept": "methodology",
+   "score": 21,
+   "bytes": 73231,
+   "hash": "f5b8e387e68c3588",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r60.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1133,
+   "hash": "7af42b4d6c93f7db",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r32.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1258,
+   "hash": "402c7e90b952a453",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r39.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 995,
+   "hash": "f3544572499acb82",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r30.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 979,
+   "hash": "d74e84f0024c3b9e",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r29.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 953,
+   "hash": "6c69d51861970e12",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r90.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 952,
+   "hash": "9663e1108137a197",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r48.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1000,
+   "hash": "d7da1eef68924590",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r134.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 868,
+   "hash": "8e6e1039761e6c22",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r3.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 906,
+   "hash": "ceaafe0bdf27bca4",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r135.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 960,
+   "hash": "f9aaa8a4330bb7a3",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r48.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1260,
+   "hash": "d624ed018340cd32",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r94.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 819,
+   "hash": "c6f0d9fe18e6744a",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r39.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1375,
+   "hash": "dab31172eda29cd2",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r33.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1258,
+   "hash": "225b252c77d3d94c",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r89.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 952,
+   "hash": "16190bb374e1b851",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r18.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1209,
+   "hash": "3b46c279d9b2e501",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r63.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1104,
+   "hash": "9fac8374c775414f",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r101.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 875,
+   "hash": "b51e7dd0a132b149",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r23.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1064,
+   "hash": "283b7f4cec7842dc",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r94.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1079,
+   "hash": "1baf14d97eb99ebf",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r52.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 690,
+   "hash": "1c21de8562527a2d",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r24.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1064,
+   "hash": "ae84e8df44f3673b",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r31.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 979,
+   "hash": "2c6b6e85aa4f1d21",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r82.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 957,
+   "hash": "2491dc6d45f93c61",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r58.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1133,
+   "hash": "2fe86e8e06d2899e",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r42.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 977,
+   "hash": "ea5f81605ea5d7cc",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r37.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1298,
+   "hash": "9d4ed6673d770ce9",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r25.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 974,
+   "hash": "523de895f1b907ed",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r77.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1292,
+   "hash": "a849b80e1d3a4f02",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r49.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1260,
+   "hash": "8edd0453b4248290",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r63.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 937,
+   "hash": "8236c89e7b17c510",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r51.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1192,
+   "hash": "e68555c5deddb0c4",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r60.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 709,
+   "hash": "049e977f2f815f49",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r89.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1021,
+   "hash": "646d9c8156ce3e0c",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r75.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 999,
+   "hash": "47336f3770fd74e2",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r78.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1319,
+   "hash": "fb7953b52375c102",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r77.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 974,
+   "hash": "5a3086307a892d85",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r58.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1079,
+   "hash": "c421916ab64ecded",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r17.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1209,
+   "hash": "c40b20e2f30fd2e2",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r25.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1064,
+   "hash": "3a04315b3b8598a8",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r91.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1021,
+   "hash": "fd9df5614ade4d29",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r35.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 893,
+   "hash": "2b210383eeffb2d8",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r96.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 838,
+   "hash": "0a674889832ac3b1",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r34.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 992,
+   "hash": "6b39878f538723ef",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r44.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1000,
+   "hash": "bce68c7386dc80f6",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r93.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 810,
+   "hash": "ad0c93750cc1ffe4",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r51.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 692,
+   "hash": "e9515090747d83a4",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r54.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1177,
+   "hash": "4f75d6daa738c1fb",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r84.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 950,
+   "hash": "0206264db2d3ca97",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r81.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 999,
+   "hash": "98ee2ba11d0833df",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r40.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 995,
+   "hash": "6257ca3d00d30812",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r57.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1185,
+   "hash": "dabd2d49801f8a04",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r16.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1209,
+   "hash": "d0420c7b7942dd81",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r16.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 868,
+   "hash": "6db1956a78f5a70b",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r92.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 959,
+   "hash": "2e30bf2398332750",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r94.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 799,
+   "hash": "5c871104c0762cd5",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r11.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1067,
+   "hash": "b606567659fdf2ce",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r56.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1256,
+   "hash": "09b6fb32e8b91850",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r82.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1237,
+   "hash": "2a6d5a245df0c852",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r83.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 957,
+   "hash": "40cd6e017038c34a",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r75.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1288,
+   "hash": "80097db323467b60",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r45.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1000,
+   "hash": "607b7963c9ed1955",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r35.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 992,
+   "hash": "90a8d1b3d7c4e016",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r38.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 995,
+   "hash": "25042c12f9948256",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r32.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 992,
+   "hash": "13900dcd5865ffa2",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r84.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1016,
+   "hash": "d8a1956c302bf914",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r105.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 786,
+   "hash": "91685183d219397e",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r80.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1018,
+   "hash": "4fb5a69da6972522",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r46.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1000,
+   "hash": "baa9b71e79e43266",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r133.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 868,
+   "hash": "5e293232b4a1617f",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r137.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 939,
+   "hash": "63730dd1f790f736",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r31.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1258,
+   "hash": "749312dfa01a80e1",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r64.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1012,
+   "hash": "9133282363f3f39e",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r148.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 894,
+   "hash": "969d6a8c51ae2c0c",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r52.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1192,
+   "hash": "69af0b528f4edb0d",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-22-r97.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 816,
+   "hash": "51dcf525b9c894e4",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r65.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 789,
+   "hash": "fcf9096cbaa75ff3",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r53.md",
+   "dept": "ops-sessions",
+   "score": 53,
+   "bytes": 1177,
+   "hash": "1cb36b0932c51fc2",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-24-r85.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 975,
+   "hash": "45d889f3b723be45",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-23-r64.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 789,
+   "hash": "7420fb6d40e3a40a",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r59.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1133,
+   "hash": "50548da345d2cf3d",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-21-r47.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1000,
+   "hash": "812d5c3e128358fd",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r88.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1021,
+   "hash": "ecb754c016bde243",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-25-r17.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1045,
+   "hash": "34f1c15e9ce98419",
+   "empty": false
+  },
+  {
+   "rel": "clean-build/90_archive/vault-monitor-runs/vault-monitor-2026-03-20-r13.md",
+   "dept": "ops-sessions",
+   "score": 52,
+   "bytes": 1265,
+   "hash": "82d6054167422f60",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_staging/12-archive-raw/checklist-week-20260113-v1.md",
+   "dept": "engineering-infra",
+   "score": 7,
+   "bytes": 10412,
+   "hash": "16f3e5c82d36c4e5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_staging/03-sales-marketing/bdb-weekly-blog-system-v1.md",
+   "dept": "content-marketing",
+   "score": 40,
+   "bytes": 22274,
+   "hash": "1320be2e615aebf0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_staging/03-sales-marketing/bdb-website-recipe-v1.md",
+   "dept": "engineering-infra",
+   "score": 1,
+   "bytes": 38575,
+   "hash": "f6a07dde6ce56c30",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_staging/05-technology/audit-phase1-technical-discovery-v1.md",
+   "dept": "agents-orchestration",
+   "score": 61,
+   "bytes": 34246,
+   "hash": "52ceefdca8c7ad97",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/amplified-partners-overview-feb-2026.md",
+   "dept": "doctrine",
+   "score": 4,
+   "bytes": 15346,
+   "hash": "7358540824ef0eb3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/rubric/README.md",
+   "dept": "methodology",
+   "score": 7,
+   "bytes": 1280,
+   "hash": "50c605db2734906d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-23-1408.md",
+   "dept": "content-marketing",
+   "score": 8,
+   "bytes": 2233,
+   "hash": "bf48237f08958b28",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-23-0327.md",
+   "dept": "content-marketing",
+   "score": 8,
+   "bytes": 2233,
+   "hash": "baa136d67e91cb2d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-test-20260214-145805.md",
+   "dept": "unsorted",
+   "score": 0,
+   "bytes": 332,
+   "hash": "36e42399ca22d266",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-SUMMARY-2026-02-11-v2.md",
+   "dept": "methodology",
+   "score": 5,
+   "bytes": 18981,
+   "hash": "bb1be17eb5e0cb5a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-12-RAW-CONVERSATION.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 11582,
+   "hash": "450e1a85d5b05281",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-22-RESEARCH-COMPLETE.md",
+   "dept": "agents-orchestration",
+   "score": 36,
+   "bytes": 14475,
+   "hash": "cd7765eda26f5544",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-25-0600.md",
+   "dept": "content-marketing",
+   "score": 7,
+   "bytes": 2266,
+   "hash": "408a7757f7141d8a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-16-LANDING-PAGES-LIVE.md",
+   "dept": "engineering-infra",
+   "score": 5,
+   "bytes": 13045,
+   "hash": "c32103f406fec41c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-2026-02-21-1415.md",
+   "dept": "content-marketing",
+   "score": 8,
+   "bytes": 2233,
+   "hash": "29b8aa5ebd3fafc4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/SESSION-SUMMARY-2026-02-11.md",
+   "dept": "methodology",
+   "score": 5,
+   "bytes": 18948,
+   "hash": "e217724ab76a0c17",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/gates/AI-REVIEW-REQUEST.md",
+   "dept": "doctrine",
+   "score": 19,
+   "bytes": 6312,
+   "hash": "a24a9b293a7f9220",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/gates/API-TOKENS-TO-COLLECT.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 3811,
+   "hash": "354270683256ac35",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/gates/COMMITMENT-SYSTEM-REVIEW.md",
+   "dept": "doctrine",
+   "score": 20,
+   "bytes": 5255,
+   "hash": "3bf2d086a4f83db3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/gates/COMMITMENT-SYSTEM-README.md",
+   "dept": "doctrine",
+   "score": 30,
+   "bytes": 5134,
+   "hash": "0775cafaf31fcfac",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work/sessions/gates/content-draft-001-linkedin-ai-what-is-it.md",
+   "dept": "content-marketing",
+   "score": 3,
+   "bytes": 1327,
+   "hash": "78af87a5740abfc3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/PUBLISHING-SEQUENCE-v2.md",
+   "dept": "content-marketing",
+   "score": 24,
+   "bytes": 7009,
+   "hash": "8ad4e3df25a739f2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v10.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 38521,
+   "hash": "f679fc883c799f52",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v10.md",
+   "dept": "methodology",
+   "score": 5,
+   "bytes": 7906,
+   "hash": "f11d75afd5e62456",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v25.md",
+   "dept": "research",
+   "score": 14,
+   "bytes": 6819,
+   "hash": "3a070da4fb3f80f0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SOUL-v2.md",
+   "dept": "doctrine",
+   "score": 5,
+   "bytes": 3124,
+   "hash": "3bb0ec46493b81d0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPT-DISCOVERY-FINAL-v2.md",
+   "dept": "transcripts-voice",
+   "score": 95,
+   "bytes": 7119,
+   "hash": "6a8153097669e106",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-12-0220-v2.md",
+   "dept": "content-marketing",
+   "score": 17,
+   "bytes": 9206,
+   "hash": "c959235acf6a691f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/ZAPIER-SEO-STRATEGY-HYPERLOCAL.md",
+   "dept": "agents-orchestration",
+   "score": 3,
+   "bytes": 22726,
+   "hash": "40238c972c92f9b8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/DAVE-AGENT-CREATED.md",
+   "dept": "agents-orchestration",
+   "score": 18,
+   "bytes": 4212,
+   "hash": "2dddc7ed5004114b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/DEEP-RESEARCH-OPENCLAW-SUCCESS-STORIES.md",
+   "dept": "agents-orchestration",
+   "score": 34,
+   "bytes": 19665,
+   "hash": "1d5d932671f8f898",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/THE-PLAN-v2.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 10588,
+   "hash": "ad85467d40ff8781",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SEO-IMPLEMENTATION-GUIDE-v2.md",
+   "dept": "content-marketing",
+   "score": 9,
+   "bytes": 35517,
+   "hash": "e53f3daf071f3dfd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-12-0220.md",
+   "dept": "content-marketing",
+   "score": 17,
+   "bytes": 9188,
+   "hash": "1734ecedfbdb1143",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/AI-REVIEW-REQUEST-v3.md",
+   "dept": "doctrine",
+   "score": 20,
+   "bytes": 6498,
+   "hash": "63ffbb7934ef4e64",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SEO-LANDING-PAGE-FACTORY.md",
+   "dept": "product",
+   "score": 7,
+   "bytes": 27269,
+   "hash": "a996795f99a5c1cc",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/AGENTS.md",
+   "dept": "agents-orchestration",
+   "score": 16,
+   "bytes": 9339,
+   "hash": "59a5a54326475baa",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v15.md",
+   "dept": "methodology",
+   "score": 4,
+   "bytes": 8335,
+   "hash": "5bdc2ca02e4c59b4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/LANDING-PAGE-KEYWORD-MATRIX-v2.md",
+   "dept": "product",
+   "score": 12,
+   "bytes": 17883,
+   "hash": "ae343c71e30a6078",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/jaunty-kindling-shore-v2.md",
+   "dept": "content-marketing",
+   "score": 7,
+   "bytes": 4583,
+   "hash": "9026a23a1414a8ce",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v30.md",
+   "dept": "engineering-infra",
+   "score": 16,
+   "bytes": 6963,
+   "hash": "51a7e202ec452558",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v29.md",
+   "dept": "agents-orchestration",
+   "score": 18,
+   "bytes": 6497,
+   "hash": "d3b859b4dcf018ed",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/content-calendar-2026-02.md",
+   "dept": "content-marketing",
+   "score": 14,
+   "bytes": 5209,
+   "hash": "8dc27521261e5545",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/CLAWD-FULL-CAPABILITY-BUILD.md",
+   "dept": "content-marketing",
+   "score": 8,
+   "bytes": 2238,
+   "hash": "27ae2506e54931ed",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v22.md",
+   "dept": "research",
+   "score": 24,
+   "bytes": 7393,
+   "hash": "ebd66bc90a71c50c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/openclaw-skills-security-research-report.md",
+   "dept": "content-marketing",
+   "score": 17,
+   "bytes": 26668,
+   "hash": "4e7b71d6576b05ba",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v13.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 42084,
+   "hash": "6f062faff9945492",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/PUDDING-RESULTS-INITIAL.md",
+   "dept": "transcripts-voice",
+   "score": 22,
+   "bytes": 8749,
+   "hash": "6264dc7ea095698d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v8.md",
+   "dept": "engineering-infra",
+   "score": 2,
+   "bytes": 5324,
+   "hash": "653b9c4451b35be9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/AI-REVIEW-REQUEST-v2.md",
+   "dept": "doctrine",
+   "score": 20,
+   "bytes": 6485,
+   "hash": "13b88c35fa2e9f8a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TESTING-PERSONAS-DETAILED.md",
+   "dept": "product",
+   "score": 6,
+   "bytes": 40366,
+   "hash": "42bdee4b44cc9202",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/REVIEW-v2.md",
+   "dept": "doctrine",
+   "score": 19,
+   "bytes": 5422,
+   "hash": "09b5d12c3632bcec",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/cuddly-munching-popcorn.md",
+   "dept": "engineering-infra",
+   "score": 5,
+   "bytes": 4527,
+   "hash": "a7eb07c0ad894ed0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v23.md",
+   "dept": "research",
+   "score": 18,
+   "bytes": 7401,
+   "hash": "7a67a80bbbcbc3db",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/AI-REVIEW-REQUEST.md",
+   "dept": "doctrine",
+   "score": 19,
+   "bytes": 6462,
+   "hash": "d8655b447993168e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/PUBLISHING-SEQUENCE.md",
+   "dept": "content-marketing",
+   "score": 24,
+   "bytes": 7035,
+   "hash": "14600b0bde3565e2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/jaunty-kindling-shore-v3.md",
+   "dept": "content-marketing",
+   "score": 7,
+   "bytes": 4553,
+   "hash": "5ad8b8480ced25e8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/voice-ai-platform-comparison-2026.md",
+   "dept": "engineering-infra",
+   "score": 27,
+   "bytes": 32076,
+   "hash": "56bd5303d91f18d0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/logical-percolating-swan.md",
+   "dept": "agents-orchestration",
+   "score": 31,
+   "bytes": 3335,
+   "hash": "e4a4672964774656",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v5.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 30585,
+   "hash": "bf35d797e125637c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/COVERED-AI-VOICE-PLATFORM.md",
+   "dept": "product",
+   "score": 33,
+   "bytes": 11409,
+   "hash": "b34b101e072867dc",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v7.md",
+   "dept": "engineering-infra",
+   "score": 2,
+   "bytes": 4812,
+   "hash": "ee49f8bfa7565cb1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-22-0628.md",
+   "dept": "agents-orchestration",
+   "score": 30,
+   "bytes": 7478,
+   "hash": "a14b5270014f8e22",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/ROOM-INFRASTRUCTURE.md",
+   "dept": "product",
+   "score": 13,
+   "bytes": 7315,
+   "hash": "ee1335ee49a726bf",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/2026-02-19.md",
+   "dept": "agents-orchestration",
+   "score": 6,
+   "bytes": 1783,
+   "hash": "e53f2b2bf55df239",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/DEPLOY-BLOCKERS.md",
+   "dept": "engineering-infra",
+   "score": 10,
+   "bytes": 1262,
+   "hash": "d27af1808ad657b3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/HUMAN-COLLABORATION-PATTERNS-RESEARCH.md",
+   "dept": "research",
+   "score": 8,
+   "bytes": 20735,
+   "hash": "9f72ec72a48aee97",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v13.md",
+   "dept": "methodology",
+   "score": 5,
+   "bytes": 9349,
+   "hash": "c8e6b4ad96555097",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SEO-IMPLEMENTATION-GUIDE.md",
+   "dept": "content-marketing",
+   "score": 9,
+   "bytes": 35049,
+   "hash": "c0ae30cc6ee94c23",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/ZAPIER-SEO-STRATEGY-HYPERLOCAL-v2.md",
+   "dept": "agents-orchestration",
+   "score": 3,
+   "bytes": 23080,
+   "hash": "2fbca16bb4999d76",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPTION-SOURCES-FOUND.md",
+   "dept": "transcripts-voice",
+   "score": 104,
+   "bytes": 5242,
+   "hash": "2149dadcc381b9f9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/API-TOKENS-TO-COLLECT.md",
+   "dept": "agents-orchestration",
+   "score": 11,
+   "bytes": 3953,
+   "hash": "13849fb92fc4721b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/COORDINATION-PLAN-TODAY-v2.md",
+   "dept": "product",
+   "score": 10,
+   "bytes": 6679,
+   "hash": "8bd727f692a16c7e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/AGENTS-v2.md",
+   "dept": "agents-orchestration",
+   "score": 16,
+   "bytes": 9331,
+   "hash": "6969920e57e7f723",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/MANIFEST.md",
+   "dept": "doctrine",
+   "score": 12,
+   "bytes": 6597,
+   "hash": "d66bc5a9b817a4ff",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/jaunty-kindling-shore.md",
+   "dept": "content-marketing",
+   "score": 8,
+   "bytes": 4930,
+   "hash": "2d76abfe0c5417cb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPTION-SOURCES-FOUND-v2.md",
+   "dept": "transcripts-voice",
+   "score": 104,
+   "bytes": 5240,
+   "hash": "a481ff1729093985",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/PERSONA-TECH-STACKS.md",
+   "dept": "product",
+   "score": 14,
+   "bytes": 27393,
+   "hash": "7eeff1b56ec26c62",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v12.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 40209,
+   "hash": "ddd23e97f3a077db",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TRANSCRIPT-DISCOVERY-FINAL.md",
+   "dept": "transcripts-voice",
+   "score": 95,
+   "bytes": 7116,
+   "hash": "394c21c3a034ee3b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/REVIEW.md",
+   "dept": "doctrine",
+   "score": 19,
+   "bytes": 5409,
+   "hash": "ad48bae28ca7f161",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/content-calendar-2026-02-v2.md",
+   "dept": "content-marketing",
+   "score": 14,
+   "bytes": 5227,
+   "hash": "c062b37a28bba084",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v8.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 34715,
+   "hash": "3ce90c53c0b52043",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v29.md",
+   "dept": "engineering-infra",
+   "score": 14,
+   "bytes": 6742,
+   "hash": "0b30c90d4f144039",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SAM-TODO.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 2377,
+   "hash": "b07364138d0df87f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/GATE-TEMPLATE.md",
+   "dept": "agents-orchestration",
+   "score": 12,
+   "bytes": 2254,
+   "hash": "514bf4357c3ac101",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/2026-02-19-session.md",
+   "dept": "agents-orchestration",
+   "score": 14,
+   "bytes": 1540,
+   "hash": "dd21c8cb11f7bec8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TODAY-ALPHA-READY-TASKS.md",
+   "dept": "product",
+   "score": 12,
+   "bytes": 4647,
+   "hash": "af6720e0af7b7e32",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/DAVE-WORKFLOW-SPEC-V1.md",
+   "dept": "product",
+   "score": 26,
+   "bytes": 11321,
+   "hash": "5523edbfae14038f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/THE-COMPLETE-PICTURE-2026-02-16.md",
+   "dept": "product",
+   "score": 4,
+   "bytes": 9422,
+   "hash": "b3c9a6716a17939c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/registered-letter-template-v1-v3.md",
+   "dept": "product",
+   "score": 3,
+   "bytes": 7844,
+   "hash": "15a6402b5e7cff57",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/AGENTS-v3.md",
+   "dept": "agents-orchestration",
+   "score": 16,
+   "bytes": 8158,
+   "hash": "c412715792e1eacc",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v14.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 44224,
+   "hash": "910ed67634c34881",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SEO-LANDING-PAGE-FACTORY-v2.md",
+   "dept": "product",
+   "score": 9,
+   "bytes": 27663,
+   "hash": "60e752d0a84e8211",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v15.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 46500,
+   "hash": "44493b2d16e9ed80",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/OPENCLAW-ADVANCED-USERS-RESEARCH.md",
+   "dept": "agents-orchestration",
+   "score": 35,
+   "bytes": 14888,
+   "hash": "94aff884d7e821f8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/MATTHEW-BERMAN-DEEP-RESEARCH.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 15215,
+   "hash": "376a429b46153953",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v28.md",
+   "dept": "engineering-infra",
+   "score": 14,
+   "bytes": 6763,
+   "hash": "80372eeddd8a924f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v11.md",
+   "dept": "methodology",
+   "score": 5,
+   "bytes": 8930,
+   "hash": "2cea4d4697b91b85",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/COMMITMENT-SYSTEM-REVIEW.md",
+   "dept": "doctrine",
+   "score": 20,
+   "bytes": 5404,
+   "hash": "124e1a63dddfd737",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/OPERATIONS-AUTOMATION-SUMMARY.md",
+   "dept": "agents-orchestration",
+   "score": 11,
+   "bytes": 7110,
+   "hash": "d64ff2e8bb139809",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/LANDING-PAGE-KEYWORD-MATRIX.md",
+   "dept": "product",
+   "score": 13,
+   "bytes": 17623,
+   "hash": "04c5ff8635c2326b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-11-2052.md",
+   "dept": "agents-orchestration",
+   "score": 12,
+   "bytes": 4489,
+   "hash": "4ce16a8b9ac1d3c0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/PRODUCT-SPEC-COVERED-AI-HGV-v2.md",
+   "dept": "product",
+   "score": 31,
+   "bytes": 54279,
+   "hash": "b96a667c5b04d0f2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v6.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 32031,
+   "hash": "ad879ce25eb22060",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TASK-PROJECT-MANAGEMENT-RESEARCH.md",
+   "dept": "agents-orchestration",
+   "score": 26,
+   "bytes": 21354,
+   "hash": "bbfc4d5cdd02bd98",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/VOICE-SYSTEM-ACTIVATION.md",
+   "dept": "product",
+   "score": 5,
+   "bytes": 4528,
+   "hash": "10d4630a2d58a789",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/QUICK-START-GUIDE.md",
+   "dept": "agents-orchestration",
+   "score": 41,
+   "bytes": 4404,
+   "hash": "986253ab21cc3b7a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/THE-PLAN.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 10575,
+   "hash": "ac2e6b0a1d26c1d2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v4.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 27364,
+   "hash": "5fefc31e8afba31c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/PUBLISHING-TONE-GUIDE.md",
+   "dept": "content-marketing",
+   "score": 7,
+   "bytes": 11162,
+   "hash": "760aa47b79e2e4cb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/PUDDING-TECHNIQUE-EXTRACTION.md",
+   "dept": "agents-orchestration",
+   "score": 19,
+   "bytes": 38389,
+   "hash": "1f339f940a20a6fd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/CLAWD-CAPABILITY-SPEC-NOT-BUILT.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 3093,
+   "hash": "44d42e1d343343fc",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/sam-2026-02-11-2052-v2.md",
+   "dept": "agents-orchestration",
+   "score": 12,
+   "bytes": 4507,
+   "hash": "4c753e684efdbc09",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v11.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 39895,
+   "hash": "9c1450a6fdd47010",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/COMPLETE-TRANSCRIPT-INVENTORY.md",
+   "dept": "transcripts-voice",
+   "score": 94,
+   "bytes": 9387,
+   "hash": "ea36fdd346f736cc",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/clawd-reflection-template.md",
+   "dept": "agents-orchestration",
+   "score": 4,
+   "bytes": 1495,
+   "hash": "2048c0fd3322c874",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/MATTHEW-BERMAN-26-PROMPTS.md",
+   "dept": "content-marketing",
+   "score": 8,
+   "bytes": 18462,
+   "hash": "d79a0ec4359da31c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TODOIST-SETUP-v2.md",
+   "dept": "agents-orchestration",
+   "score": 25,
+   "bytes": 4787,
+   "hash": "544698e3989c0687",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v9.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 35856,
+   "hash": "9ac1e6a75b5919ef",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SAM-CAPABILITY-SPEC-NOT-BUILT.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 3083,
+   "hash": "d0d38924e5b4a9e0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v17.md",
+   "dept": "research",
+   "score": 12,
+   "bytes": 7937,
+   "hash": "aba8ff3b20107618",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/TODOIST-SETUP.md",
+   "dept": "agents-orchestration",
+   "score": 25,
+   "bytes": 4795,
+   "hash": "ee76a64475134349",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/staged-sprouting-sifakis.md",
+   "dept": "engineering-infra",
+   "score": 14,
+   "bytes": 5396,
+   "hash": "2ae5e27410f1fadb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/recent-sessions-v6.md",
+   "dept": "math-logic",
+   "score": 1,
+   "bytes": 4235,
+   "hash": "7e59c7cabdea09b9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/sam-reflection-template.md",
+   "dept": "agents-orchestration",
+   "score": 4,
+   "bytes": 1491,
+   "hash": "0eaa90568f04bc21",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/VAPI-VS-RETELL-DEEP-RESEARCH-2026.md",
+   "dept": "engineering-infra",
+   "score": 38,
+   "bytes": 38535,
+   "hash": "d0c1be941620c601",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/IDENTITY.md",
+   "dept": "agents-orchestration",
+   "score": 2,
+   "bytes": 334,
+   "hash": "4e66a84b642f1459",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/RETELL-AI-SETUP-GUIDE.md",
+   "dept": "product",
+   "score": 21,
+   "bytes": 18175,
+   "hash": "82f1710e5b669749",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/COORDINATION-PLAN-TODAY.md",
+   "dept": "product",
+   "score": 10,
+   "bytes": 6683,
+   "hash": "68f3e753fe7e5f6d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/abundant-growing-emerson-v2.md",
+   "dept": "agents-orchestration",
+   "score": 7,
+   "bytes": 2189,
+   "hash": "31409b41a2a91ef8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/COMPLETE-TRANSCRIPT-INVENTORY-v2.md",
+   "dept": "transcripts-voice",
+   "score": 94,
+   "bytes": 9379,
+   "hash": "101b750d0db3ea62",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/SHARED-BOARD-v3.md",
+   "dept": "agents-orchestration",
+   "score": 13,
+   "bytes": 22175,
+   "hash": "752dfbe8034aeb1a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-002-linkedin-play-doh-barbershop.md",
+   "dept": "content-marketing",
+   "score": 5,
+   "bytes": 1042,
+   "hash": "9422c2d8534a649f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-001-linkedin-ai-what-is-it-v2.md",
+   "dept": "content-marketing",
+   "score": 4,
+   "bytes": 1520,
+   "hash": "99781d01ff0a2b57",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-002-linkedin-play-doh-barbershop-v2.md",
+   "dept": "content-marketing",
+   "score": 5,
+   "bytes": 1060,
+   "hash": "5ff74ffdb2f8cadb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-001-linkedin-ai-what-is-it.md",
+   "dept": "content-marketing",
+   "score": 4,
+   "bytes": 1502,
+   "hash": "000f1d8af477fc9c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox/content/content-draft-004-linkedin-silicone-friction.md",
+   "dept": "content-marketing",
+   "score": 5,
+   "bytes": 1156,
+   "hash": "ef90fe886dc0d719",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0038.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 4084,
+   "hash": "9a62267c01fc7866",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0025.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 828,
+   "hash": "d879857d2df05609",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0019.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 898,
+   "hash": "663fca3873b9d99c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0048.md",
+   "dept": "transcripts-voice",
+   "score": 66,
+   "bytes": 1728,
+   "hash": "b33d7d2adeaea7ba",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0016.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 801,
+   "hash": "eab7a37765197ca8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0022.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 869,
+   "hash": "ea0e8c43deec8881",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0020.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 920,
+   "hash": "b83de0d3e0d1b675",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0001.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 789,
+   "hash": "ad06266a49605dbd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0029.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 781,
+   "hash": "61f6fecb1467cf69",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0015.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 833,
+   "hash": "138b4e8a0bcc6e20",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0036.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 595,
+   "hash": "ea3ef886eab393eb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0027.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 809,
+   "hash": "4397adf7d5596486",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0002.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 2289,
+   "hash": "c868aac6e3129876",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0023.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 805,
+   "hash": "bcf172ea14231922",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0014.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 1131,
+   "hash": "0650736e6eadbb01",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0011.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 1083,
+   "hash": "2793a48368313d18",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0024.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 778,
+   "hash": "f35ac70aababd2d7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0049.md",
+   "dept": "transcripts-voice",
+   "score": 62,
+   "bytes": 1421,
+   "hash": "e870e11ab3052e1a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0004.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 826,
+   "hash": "68eb5be8d4a63d61",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0033.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 774,
+   "hash": "762b07f2e28710b1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0028.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 1015,
+   "hash": "f5a2890042650182",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0047.md",
+   "dept": "transcripts-voice",
+   "score": 68,
+   "bytes": 1853,
+   "hash": "d48807bf2a3a06d4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0043.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 1330,
+   "hash": "45ebe0798fd7ad0a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0041.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 791,
+   "hash": "e6753574518f1efe",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0042.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 1552,
+   "hash": "433d43ce63acf111",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0007.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 741,
+   "hash": "4920c713f3cef117",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue/monologue-unknown-0034.md",
+   "dept": "transcripts-voice",
+   "score": 58,
+   "bytes": 770,
+   "hash": "379b9f6bff3bbe4c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0468-0468.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 854,
+   "hash": "2bb82e6bdbc68c83",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1997-1997.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 633,
+   "hash": "f8f59c30c54de8e9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2011-2011.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 598,
+   "hash": "2f062f59f63d1d47",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1513-1513.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 721,
+   "hash": "e5bee1e71d81353e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1565-1565.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2663,
+   "hash": "3ba87f607c114373",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0445-0445.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 3974,
+   "hash": "93635ea6755591f5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1530-1530.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 827,
+   "hash": "0b1972df564e3088",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1885-1885.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 706,
+   "hash": "ec4a0c400abcbde8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1522-1522.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 785,
+   "hash": "05c1f560d89524aa",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1787-1787.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 734,
+   "hash": "b939e914e68fafb0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2022-2022.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 793,
+   "hash": "d05d459388cb24ce",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1834-1834.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 766,
+   "hash": "601f88a15ca0ebc9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0599-0599.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2492,
+   "hash": "839c65e46f901cf9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1870-1870.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 720,
+   "hash": "b5f96f6f6271e8da",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1788-1788.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 769,
+   "hash": "caaf58e44273317f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1826-1826.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 801,
+   "hash": "2c141f59cc901c2c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0756-0756.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 696,
+   "hash": "4f7df2ca9139060b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1835-1835.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 806,
+   "hash": "9cc3104b9999f2ad",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1786-1786.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 756,
+   "hash": "843cd49d85729d60",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1681-1681.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 752,
+   "hash": "4f847325a41e92b0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1858-1858.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 685,
+   "hash": "f42f69cd7c78e2cd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1995-1995.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 633,
+   "hash": "f5a27d94844616f6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1506-1506.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 655,
+   "hash": "c28bf420d227535b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1719-1719.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 781,
+   "hash": "e1ac8a81fa0d8bea",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0038-0038.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 3393,
+   "hash": "15f9749b3dc129e3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2012-2012.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 587,
+   "hash": "2c8225d8c38f5a24",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0066-0066.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 3713,
+   "hash": "ce0317c40ccdf022",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2118-2118.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 810,
+   "hash": "a5441e50f9b25ae7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1686-1686.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 727,
+   "hash": "59ecfea1794493de",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2028-2028.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 780,
+   "hash": "8e33d6047ce78756",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1903-1903.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 726,
+   "hash": "d082e99aeb5c762e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1527-1527.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 826,
+   "hash": "c62dacb4e997c29a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0167-0167.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 4309,
+   "hash": "914875108c794c8a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2131-2131.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 595,
+   "hash": "7ac2b28b30a325f5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1833-1833.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 742,
+   "hash": "5e19a184260b3c02",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1794-1794.md",
+   "dept": "transcripts-voice",
+   "score": 61,
+   "bytes": 3529,
+   "hash": "93c5ccb95d6bf7f6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1807-1807.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 4173,
+   "hash": "bfb3ee1f5be26de5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0679-0679.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2858,
+   "hash": "c5419ad19243b565",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1933-1933.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 666,
+   "hash": "15eaad3da265b459",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1989-1989.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 614,
+   "hash": "c6b1c8f3cc76d8ec",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2005-2005.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 613,
+   "hash": "a06a5c02a0e978c2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1507-1507.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 708,
+   "hash": "32c876f5dcb65921",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0245-0245.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 4325,
+   "hash": "78e02a048ca5430f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1830-1830.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 776,
+   "hash": "0152aa4ab49b9106",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0766-0766.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2452,
+   "hash": "e3e93b34229bd1aa",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0459-0459.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 4004,
+   "hash": "e361a689b2a5b67a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0400-0400.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2665,
+   "hash": "1a77d74252dcbc9d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1526-1526.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 813,
+   "hash": "cd4793b2baf4df4d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1849-1849.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 743,
+   "hash": "958ef1114ac46a22",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2135-2135.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 823,
+   "hash": "a69ebd35f572c946",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1843-1843.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 711,
+   "hash": "04eeeb41f36a8384",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1087-1087.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2798,
+   "hash": "f74d941bad42b767",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1653-1653.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 664,
+   "hash": "2787eafcceebea7e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0607-0607.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2789,
+   "hash": "3f2e1880f55c238f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0248-0248.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 4328,
+   "hash": "69214f27f8cd517a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1825-1825.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 798,
+   "hash": "b32c58600000f0cb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2138-2138.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 859,
+   "hash": "18bf1bc0203b9d68",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2017-2017.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 555,
+   "hash": "dd6c0af87f837d13",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0757-0757.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 689,
+   "hash": "f8d20f8c55b88e17",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1573-1573.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 3343,
+   "hash": "7b72a8d28496e615",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1516-1516.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 730,
+   "hash": "f531e66fc4e4f2dd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1993-1993.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 579,
+   "hash": "375fa86f9fb7b685",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1976-1976.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 3268,
+   "hash": "bceecf0a795ee929",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1994-1994.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 594,
+   "hash": "5de1b4c303806c43",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1694-1694.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 699,
+   "hash": "672dbc87bb7c8916",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1651-1651.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 723,
+   "hash": "7b9e5569b9d2c519",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1717-1717.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 678,
+   "hash": "626854a326ed97f4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1848-1848.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 771,
+   "hash": "0a92ebfc88ed5cdc",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-0583-0583.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 2606,
+   "hash": "c82227f11c38d856",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1999-1999.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 592,
+   "hash": "85ae63b572e893c0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1638-1638.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 700,
+   "hash": "ee5ebba9f94af1f6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2004-2004.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 614,
+   "hash": "9e138ab248b98e42",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-2130-2130.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 627,
+   "hash": "0fabe3ea5825e536",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1536-1536.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 819,
+   "hash": "91c9d4fbc61643bd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/transcripts/monologue-full/monologue-unknown-1705-1705.md",
+   "dept": "transcripts-voice",
+   "score": 59,
+   "bytes": 788,
+   "hash": "c6ed315c5b9700b1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/INDEX.md",
+   "dept": "content-marketing",
+   "score": 15,
+   "bytes": 8847,
+   "hash": "1682a559bde2a806",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/AGENTS.md",
+   "dept": "agents-orchestration",
+   "score": 15,
+   "bytes": 8009,
+   "hash": "7c6e605e705e674e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/content-calendar-2026-02.md",
+   "dept": "content-marketing",
+   "score": 14,
+   "bytes": 5050,
+   "hash": "759815c2d87ad475",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/MANIFEST.md",
+   "dept": "doctrine",
+   "score": 13,
+   "bytes": 6444,
+   "hash": "81ca8f79b5f0fe73",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/GATE-TEMPLATE.md",
+   "dept": "agents-orchestration",
+   "score": 12,
+   "bytes": 2108,
+   "hash": "dd2e229ca0329b2e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/clawd-2026-02-12-0220.md",
+   "dept": "content-marketing",
+   "score": 17,
+   "bytes": 9034,
+   "hash": "ab03d9fc28735450",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/THE-PLAN.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 10417,
+   "hash": "8eb20ad30be8b8be",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/clawd-2026-02-11-2052.md",
+   "dept": "agents-orchestration",
+   "score": 11,
+   "bytes": 4331,
+   "hash": "735874e05843d992",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/CLAWD-TODO.md",
+   "dept": "agents-orchestration",
+   "score": 9,
+   "bytes": 2236,
+   "hash": "85181c9193c372f9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/content-draft-004-linkedin-silicone-friction.md",
+   "dept": "agents-orchestration",
+   "score": 4,
+   "bytes": 959,
+   "hash": "d24f0cf3b2787743",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/imported-business-docs/openclaw-workspace/SESSION-SUMMARY-2026-02-11.md",
+   "dept": "methodology",
+   "score": 5,
+   "bytes": 18793,
+   "hash": "ec5daab4c2b49b4d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/projects/roadmaps/social-media-automation-roadmap.md",
+   "dept": "content-marketing",
+   "score": 39,
+   "bytes": 32241,
+   "hash": "292bb302fef8d0c9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-voice-ai-platform-comparison-2026.md",
+   "dept": "engineering-infra",
+   "score": 27,
+   "bytes": 32127,
+   "hash": "7a127c1a695a6eea",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-delegated-giggling-trinket.md",
+   "dept": "engineering-infra",
+   "score": 22,
+   "bytes": 16399,
+   "hash": "2ab22bd5e0c8c971",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-humming-moseying-acorn.md",
+   "dept": "research",
+   "score": 7,
+   "bytes": 6521,
+   "hash": "7c269642afed8a04",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-openclaw-skills-security-research-report.md",
+   "dept": "content-marketing",
+   "score": 17,
+   "bytes": 26712,
+   "hash": "5877b648220f5a47",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-binary-humming-tide.md",
+   "dept": "research",
+   "score": 12,
+   "bytes": 13595,
+   "hash": "cb8139c1fe38a00a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-majestic-cuddling-yeti.md",
+   "dept": "engineering-infra",
+   "score": 12,
+   "bytes": 10295,
+   "hash": "74c25b341364aa03",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-vivid-herding-meteor.md",
+   "dept": "research",
+   "score": 8,
+   "bytes": 3254,
+   "hash": "8cd60f20c161f842",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-hazy-conjuring-prism-6a1dcd.md",
+   "dept": "research",
+   "score": 17,
+   "bytes": 7424,
+   "hash": "9cfdcd344b54027b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-session-2026-02-16-landing-pages-live.md",
+   "dept": "research",
+   "score": 9,
+   "bytes": 13094,
+   "hash": "8d525697f6decae0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-session-summary-2026-02-11.md",
+   "dept": "research",
+   "score": 10,
+   "bytes": 18997,
+   "hash": "2c48681e5db05e30",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-scalable-jumping-nest.md",
+   "dept": "content-marketing",
+   "score": 19,
+   "bytes": 22234,
+   "hash": "e9ea44a5c7b6405d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-covered-ai-voice-platform.md",
+   "dept": "product",
+   "score": 32,
+   "bytes": 11460,
+   "hash": "579461bb7d0cf640",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-nested-stirring-hanrahan.md",
+   "dept": "content-marketing",
+   "score": 11,
+   "bytes": 30715,
+   "hash": "4632d0d8caef1351",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-mutable-knitting-hopcroft.md",
+   "dept": "product",
+   "score": 15,
+   "bytes": 34202,
+   "hash": "6e65e751fcf0085f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-curious-humming-pnueli.md",
+   "dept": "research",
+   "score": 7,
+   "bytes": 6520,
+   "hash": "8c369371e2a5dd01",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-piped-purring-cloud.md",
+   "dept": "research",
+   "score": 18,
+   "bytes": 3867,
+   "hash": "36e63107e6e9eeee",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-imperative-watching-wozniak.md",
+   "dept": "product",
+   "score": 9,
+   "bytes": 12578,
+   "hash": "c5e255d3545af7ec",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-replicated-exploring-planet.md",
+   "dept": "research",
+   "score": 11,
+   "bytes": 9113,
+   "hash": "80a8d82a6d5aa7a5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-idempotent-beaming-biscuit.md",
+   "dept": "engineering-infra",
+   "score": 18,
+   "bytes": 26048,
+   "hash": "abafef830af87dfa",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-deep-research-openclaw-success-stories.md",
+   "dept": "agents-orchestration",
+   "score": 35,
+   "bytes": 19709,
+   "hash": "77124c823a76259d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-vapi-vs-retell-deep-research-2026.md",
+   "dept": "engineering-infra",
+   "score": 38,
+   "bytes": 38579,
+   "hash": "8bf111d1df969854",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-linear-wibbling-dawn.md",
+   "dept": "research",
+   "score": 10,
+   "bytes": 2473,
+   "hash": "8abc876819f2b847",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-human-collaboration-patterns-research.md",
+   "dept": "research",
+   "score": 16,
+   "bytes": 20779,
+   "hash": "fddcfe434e309c15",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-dreamy-napping-stardust.md",
+   "dept": "methodology",
+   "score": 9,
+   "bytes": 6299,
+   "hash": "2f80d86ed8370a0a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-dave-workflow-spec-v1.md",
+   "dept": "product",
+   "score": 29,
+   "bytes": 8084,
+   "hash": "549f1412d800ad88",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/amplified-taxonomy-and-nomenclature-standard_2026-06-24T0906Z_perplexity.md",
+   "dept": "agents-orchestration",
+   "score": 11,
+   "bytes": 11091,
+   "hash": "eab4a9ae2ea99fb9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-logical-stirring-turtle.md",
+   "dept": "agents-orchestration",
+   "score": 11,
+   "bytes": 2568,
+   "hash": "7a3e545232e61835",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-zapier-seo-strategy-hyperlocal.md",
+   "dept": "research",
+   "score": 7,
+   "bytes": 23124,
+   "hash": "351b36f1b18be899",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-eager-plotting-petal.md",
+   "dept": "engineering-infra",
+   "score": 20,
+   "bytes": 4757,
+   "hash": "bc14f79042b78ff8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-dreamy-dazzling-octopus.md",
+   "dept": "engineering-infra",
+   "score": 10,
+   "bytes": 9560,
+   "hash": "39a51491bf80a892",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-session-2026-02-22-research-complete.md",
+   "dept": "agents-orchestration",
+   "score": 37,
+   "bytes": 14519,
+   "hash": "2e1ea1cd516f8e93",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-majestic-whistling-sedgewick.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 2425,
+   "hash": "a8e780648f474553",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-openclaw-advanced-users-research.md",
+   "dept": "agents-orchestration",
+   "score": 36,
+   "bytes": 14932,
+   "hash": "363be594af5cbd1f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-quiet-puzzling-lightning.md",
+   "dept": "research",
+   "score": 8,
+   "bytes": 2817,
+   "hash": "eea121ca7a8a90f4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-jiggly-singing-scott.md",
+   "dept": "engineering-infra",
+   "score": 18,
+   "bytes": 3369,
+   "hash": "300fd31842a88f23",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-content-draft-001-linkedin-first-post.md",
+   "dept": "content-marketing",
+   "score": 8,
+   "bytes": 1785,
+   "hash": "2ebf40cbf319a906",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-enumerated-napping-mango.md",
+   "dept": "research",
+   "score": 11,
+   "bytes": 28404,
+   "hash": "c2b7f01dd78ff85f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-matthew-berman-deep-research.md",
+   "dept": "research",
+   "score": 15,
+   "bytes": 15259,
+   "hash": "e3029c1f43767d84",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-rippling-wobbling-elephant-1.md",
+   "dept": "content-marketing",
+   "score": 24,
+   "bytes": 10539,
+   "hash": "eb0b713147b19a6f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-nested-stirring-hanrahan-agent-a4bdfd2.md",
+   "dept": "research",
+   "score": 12,
+   "bytes": 40211,
+   "hash": "9ac4950306d5cb8b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-dynamic-popping-puddle.md",
+   "dept": "research",
+   "score": 13,
+   "bytes": 7476,
+   "hash": "529e59639f2e485f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/amplified-canonical-phrase-index_2026-06-24T0850Z_perplexity.md",
+   "dept": "doctrine",
+   "score": 18,
+   "bytes": 7956,
+   "hash": "93cecc49444ef1d6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-partitioned-hatching-tarjan.md",
+   "dept": "research",
+   "score": 7,
+   "bytes": 5009,
+   "hash": "92186262d1a26776",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-session-notes-2026-02-11.md",
+   "dept": "methodology",
+   "score": 7,
+   "bytes": 7005,
+   "hash": "8581f9e35f4d79b5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-valiant-churning-moon.md",
+   "dept": "agents-orchestration",
+   "score": 10,
+   "bytes": 2407,
+   "hash": "843ccd9ae9aecf5e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-streamed-humming-rain.md",
+   "dept": "research",
+   "score": 7,
+   "bytes": 4280,
+   "hash": "b82ca4e6336ecbac",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-cozy-sniffing-crayon.md",
+   "dept": "product",
+   "score": 15,
+   "bytes": 16063,
+   "hash": "9d6439b91ae3193a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-imperative-watching-wozniak-agent-a3117c4.md",
+   "dept": "engineering-infra",
+   "score": 7,
+   "bytes": 18859,
+   "hash": "d155a2b5a0b1bf2f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-task-project-management-research.md",
+   "dept": "agents-orchestration",
+   "score": 27,
+   "bytes": 21398,
+   "hash": "cc0419872e80df16",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/research/2026-02-24-kind-splashing-wand.md",
+   "dept": "research",
+   "score": 7,
+   "bytes": 6591,
+   "hash": "53cb08da3652ef13",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/work-covered-ai/work-core-principle-v1.md",
+   "dept": "product",
+   "score": 1,
+   "bytes": 1537,
+   "hash": "938b0520b754b9bd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-094105.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1039,
+   "hash": "6e272a1d37613bfa",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122859.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1065,
+   "hash": "e9e7e70e0773d450",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-235107.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "b5ed06def5a86024",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-100658.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2981,
+   "hash": "87bab40bbf7f18b0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-234914.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 324,
+   "hash": "e263254cf45a688a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-001234.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "493c59215b1d4349",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-094210.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1039,
+   "hash": "9d250b179de212f2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-113411.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 483,
+   "hash": "c6f34ce23731bbee",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-153948.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "5fde3a47d0d92be1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-220805.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18201,
+   "hash": "fa865bfccf0fb43a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-084857.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 13163,
+   "hash": "109ddf2a9d6b7da6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-094405.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1039,
+   "hash": "3ea5f81be8361a2c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122407.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "ddb6d9f8e1a04f08",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-003356.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "86428eaa1c4aad67",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-072328.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1356,
+   "hash": "b600206395a9a68c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-150726.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1322,
+   "hash": "7bdd96b6b719b6fd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-141204.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "8c712a7175951bab",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-053711.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18151,
+   "hash": "78f17fce5cbc5795",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-123033.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1065,
+   "hash": "b5c26831b73d7aa3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-131416.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1037,
+   "hash": "1fb695c994c8d62d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-000411.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "ea9e9098d4271331",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-000809.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2350,
+   "hash": "35e4b548dfdb1004",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-160917.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 554,
+   "hash": "4bb6c5cdd3c5d15f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-120128.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 797,
+   "hash": "a419b2caefab41c4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-204732.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "edffe23e0b7e3111",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121532.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "618982b53607c138",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054715.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18151,
+   "hash": "37a95e05db780c9d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-200733.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "77858d8083a6220c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-104231.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 338,
+   "hash": "0c1921e4424b6fa3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-005644.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 914,
+   "hash": "0e51ccc5246d4b17",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-091046.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "1c35ea1fc7b2eb25",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-132005.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 358,
+   "hash": "b304be8ad0538136",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-001839.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2347,
+   "hash": "842c75eada396917",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173018.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "84085e0841803d6b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-153034.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "5e810a734b0a3ee2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-205130.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "a5db60d315239893",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-074835.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 317,
+   "hash": "86b91e2114d7eaea",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-144609.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1322,
+   "hash": "a32bb457c82856f9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-141106.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "74ad38b4067b45ee",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121045.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "f80849707a259353",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-093802.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 286,
+   "hash": "12d9972b8c9ef501",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122648.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "076b12478ed44a94",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-094605.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "d9a73280e905d719",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-194348.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "63827d1b4357414d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-120739.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "7555437592991ff1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122811.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "4a14baa4b30ad8f7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-152553.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 503,
+   "hash": "554b47c826192c6e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-203338.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "c89eab411729bb8a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-064349.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1356,
+   "hash": "94b2ba5e06d34131",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054115.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18151,
+   "hash": "97cd6c0517435de2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-154349.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "8da36158f1e66f21",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-063836.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 317,
+   "hash": "88ea3077d9a9667e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-141024.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "901cf895395c3b71",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-101019.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2981,
+   "hash": "36e49d4f9aef2ca5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-233250.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 35472,
+   "hash": "eb3a627ab11327a7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155225.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "4f12bb069398e28b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-072608.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 27712,
+   "hash": "f8a4dbfb34743959",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-025859.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 15403,
+   "hash": "4d8ed700535e30d4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-113053.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 483,
+   "hash": "e7b46016639f79f8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161910.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 554,
+   "hash": "8c332105f2d4a81e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-222312.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18201,
+   "hash": "4d59af96e3a7b074",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-233016.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 35472,
+   "hash": "2f19a68305dccee9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-115039.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 797,
+   "hash": "09d9f51d9492766e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-114957.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 797,
+   "hash": "fad8042030c221a3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-193858.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "d15ca94033f5dffe",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-102135.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2981,
+   "hash": "53e2af37559eadcc",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-013526.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "627e63c8be5bb5e3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-102744.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1265,
+   "hash": "20e9a643d0b8f216",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-072034.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 359,
+   "hash": "56c12454d144bfa7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-030243.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 15403,
+   "hash": "89cb0cb96a879e73",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-121126.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 797,
+   "hash": "8d9528b2155216a6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-201825.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "5285127428aa7dc7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-004129.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "da23ece1062f57d0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-152820.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1778,
+   "hash": "55e8b928adb29609",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-121210.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "074b4babfc15fa67",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-101821.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2981,
+   "hash": "a2d38e82e649501c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-174305.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "4849772d5517bbd0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-082147.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1738,
+   "hash": "c93487d707a99812",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-120945.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "09e318c671dfa3eb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-063112.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 317,
+   "hash": "3b9cd5a0462b3b5b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-082758.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 472,
+   "hash": "9821238276f974f6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-000522.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "63ff9c884d442ec4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121138.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "e3bb378e87e4ec31",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-123103.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "c9f11a64223dd2e4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-092209.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2198,
+   "hash": "1a8de7fc30b1e4ce",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-094720.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "fac0f2cba38600bf",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-102256.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2981,
+   "hash": "390aaede7cff8bca",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-133527.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "d8e1e3c88fd4aa5f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-064723.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 359,
+   "hash": "d3efaeb8f16be9ab",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-005523.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "c22271020f5bd3b7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-120908.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 797,
+   "hash": "abf6c03a93bd0063",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-180215.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 837,
+   "hash": "ba19b762c09a6178",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-011638.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 432,
+   "hash": "a6f3b225660a2491",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-072500.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 359,
+   "hash": "c7d93ea5518330b3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054333.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18151,
+   "hash": "e2a464c3d547f5a2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122735.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1065,
+   "hash": "39c3c6952bdf61cd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-234108.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "99e93992d957a9ad",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161339.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 554,
+   "hash": "6944214a85642f8c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-163800.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 270,
+   "hash": "fb91c97440cef3d6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-083016.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 472,
+   "hash": "884b0853e8282586",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-055111.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18151,
+   "hash": "050704119697e9ab",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-113501.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "864fd42d40429382",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-001443.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2347,
+   "hash": "078efaa95a8acd89",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140130.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "581b6aa8888902d8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260225-040533.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 355,
+   "hash": "90f99ccb9ba3c0f8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-003027.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "1e278252ad7504cb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-170621.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "fd563fd1c1ca36fd",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122853.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "f8e9255747ce274c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-232514.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 35472,
+   "hash": "64b4e8cf5cbf8e59",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-064446.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 317,
+   "hash": "20643d60ff12c605",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-071801.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 317,
+   "hash": "9f63da1cd811be8c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155647.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "11a5317a0e15a69b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-062137.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 317,
+   "hash": "b027d4d584dbd9f8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-235017.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "231197b4ba0ae7a1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-002342.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "b1d0852f9c8680f8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-113506.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 797,
+   "hash": "66732af47e9fd66c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-130105.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 294,
+   "hash": "2f15660efc85254a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-225432.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 342,
+   "hash": "aacb07c53adb75f1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-155956.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 703,
+   "hash": "abd0eed67d1c743e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173900.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "5215dc49f3665a6a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-121704.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "6a9c7bd2b055cea7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-143617.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1824,
+   "hash": "bd685dc26ee5c8ec",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-095319.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1039,
+   "hash": "df66ba19b2f2abba",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-235431.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 448,
+   "hash": "b7ede9f1aef45be4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-074338.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 317,
+   "hash": "a1fcb2894fe9d22e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-072416.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 7101,
+   "hash": "e00e3457b68de27c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-175215.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 314,
+   "hash": "0dcbb4e6c367706b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-152329.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "484dba26ead87a5c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-012459.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 877,
+   "hash": "f0d1b43b8372a6b8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-154826.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "c17042c8caf6f9fe",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140206.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "b176c9f7f4276fd4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173118.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "0299156119e620b9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-155847.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 703,
+   "hash": "08a8a0ae8eeb50a1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-115338.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "338b13fdc48e9cb4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-055853.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 367,
+   "hash": "8eb8ee985d5925fb",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-130358.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 294,
+   "hash": "08c8702318933d85",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-112510.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 483,
+   "hash": "4850f86df2cce159",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-173405.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "7d2779243e566e60",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-012524.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 391,
+   "hash": "c10ded293aa68d3d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-234640.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "67d70992208f3dec",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-225221.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 267,
+   "hash": "f38decf88f1275b9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-082231.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 997,
+   "hash": "9d2fde31c6d9fd8e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-061845.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 409,
+   "hash": "b467628f98e02c7f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-081301.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1738,
+   "hash": "7d465f8da91a28d1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-132125.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 358,
+   "hash": "54104d37f46276be",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-091728.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "d37c0b2b1a26a307",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140907.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 31976,
+   "hash": "37101194c40c2e39",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-070355.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 359,
+   "hash": "2545120fc0866369",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-135726.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 798,
+   "hash": "6c9801d8df39d708",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-201429.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "56fd6de2dc5b8eb3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-011219.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "578505866de7731e",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-102231.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1265,
+   "hash": "698235f3088a12ee",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-140000.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 798,
+   "hash": "06d9fcba100f12e5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-123625.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "5a7f0cb9d453468c",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-125845.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 577,
+   "hash": "378575c5b0f28172",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-135250.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 798,
+   "hash": "c18785b9c3348193",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122922.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1065,
+   "hash": "a6f0497d77a2f796",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-170453.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "5628e9d83597b6e1",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-151651.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 523,
+   "hash": "119db265ed927b41",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-092257.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2198,
+   "hash": "8a9e57c19cc037c2",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-112959.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 483,
+   "hash": "098ee0579f10769b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-092834.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "31ca82d88e188906",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-004326.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "b9948ef2a0f8479b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-181637.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1007,
+   "hash": "12cb30623262bdd4",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-095040.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "b879e45b28e45d5f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-004549.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "28e84408a467b0b6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-093347.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 462,
+   "hash": "2ecad83e48699187",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-000342.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2350,
+   "hash": "88e887be8150d207",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-101848.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2981,
+   "hash": "e38ae83da1d01636",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-000114.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 843,
+   "hash": "87bdc539840887f8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-060927.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 409,
+   "hash": "e5d358069a7ed755",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-122237.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "636710a8395a054f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-120805.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 797,
+   "hash": "c68a582836304aa7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-060759.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 409,
+   "hash": "1eafecf11367b3a5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-131628.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 358,
+   "hash": "2229afceabbe93c8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-091308.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2198,
+   "hash": "8a42dfb47cca4b47",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-062946.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 359,
+   "hash": "11c9450629df5b43",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161111.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 554,
+   "hash": "b908085942954578",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-161820.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 554,
+   "hash": "83ff144d4afbd081",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-131908.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1037,
+   "hash": "3b0251c36d4c5b96",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-092605.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 2198,
+   "hash": "5e6fce548d00ae53",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-143028.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1824,
+   "hash": "95a833cbaff03502",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-125310.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 353,
+   "hash": "82ec31e0e70b6e00",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-085320.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1738,
+   "hash": "a186e61ed7f5cde5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-123345.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1065,
+   "hash": "2fd402422e309ee6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-114925.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "5e531f2ee080d292",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-085033.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "927182a8ed421f74",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-151413.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1322,
+   "hash": "079aafa26ed3614f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-092220.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 3520,
+   "hash": "c7706dcafa1f3c8a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-180447.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1007,
+   "hash": "5940496201af9829",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-005225.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "906de3046f949699",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-024228.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 15401,
+   "hash": "ea09399630df6d65",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-234310.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 324,
+   "hash": "510fbad96a1a1003",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-063626.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1356,
+   "hash": "c1fc345e81b8fa19",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155855.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "1219ea30b6c6e533",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-195845.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "7c0a37e735fd6766",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-130941.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 294,
+   "hash": "34754861ebcdd36d",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-094339.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 286,
+   "hash": "a8af567d98bd00b7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-065413.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 359,
+   "hash": "fd6bd9b933390129",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-205958.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "ad39cfe32fa325f5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-010111.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 41398,
+   "hash": "09bedfb4869c50d7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-211019.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "1cad8da006e397f5",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-150237.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1322,
+   "hash": "4756452c20ac1484",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-100541.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 286,
+   "hash": "9f7a0bd2a5642e14",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-095613.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 286,
+   "hash": "c24c23aa174f25e8",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-094956.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 286,
+   "hash": "63156c82f5bd6c23",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-122748.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1153,
+   "hash": "4415613ace7cdcb0",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-115252.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "44edc9b7fe118156",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-020327.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 555,
+   "hash": "e4513eff5c472017",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-194723.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "2914eddc0f90b0a6",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-102208.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1265,
+   "hash": "c29f10980825c824",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-211918.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "f9d53ebad32f60d3",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-155419.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1404,
+   "hash": "5821162ce879fe0b",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260221-115153.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 461,
+   "hash": "311c9c20a2a3ba7a",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-172735.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 542,
+   "hash": "628407bb8734a297",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260225-035228.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 355,
+   "hash": "999b651f8ef24df9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260224-175704.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 837,
+   "hash": "8ca28ff3b26b1eb9",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260225-092119.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1611,
+   "hash": "a5be787e3b64e124",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-064234.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1356,
+   "hash": "aea886c2fff4d3ce",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260222-054849.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 18151,
+   "hash": "e13c3e633ed3730f",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260220-211358.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1297,
+   "hash": "0269d1c6c5f8a7b7",
+   "empty": false
+  },
+  {
+   "rel": "Clone Github/corpus-raw/vault/_inbox-voice/voice-20260223-083911.md",
+   "dept": "transcripts-voice",
+   "score": 51,
+   "bytes": 1738,
+   "hash": "5bff5b96c6792044",
+   "empty": false
+  }
+ ],
+ "dups": {},
+ "empties": []
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- cascade-mac github-env-setup — sets GITHUB_TOKEN at user-environment level.
+       Reads token from gh CLI (macOS Keychain) so Dock-launched apps (VS Code,
+       GitLens) can authenticate to GitHub without 1Password or keychain prompt.
+       Installed by: scripts/github-env-setup.sh -->
+  <key>Label</key>
+  <string>com.cascade-mac.github-token</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-c</string>
+    <string>TOKEN=$(/opt/homebrew/bin/gh auth token 2>/dev/null) &amp;&amp; launchctl setenv GITHUB_TOKEN "$TOKEN" &amp;&amp; echo "$(date -u) GITHUB_TOKEN set" || echo "$(date -u) ERROR: gh auth token failed"</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardErrorPath</key>
+  <string>/tmp/cascade-mac-github-token.log</string>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/cascade-mac-github-token.log</string>
+</dict>
+</plist>

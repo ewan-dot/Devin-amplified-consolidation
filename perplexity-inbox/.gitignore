@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.env
+.env.*
+!.env.example
+
+# Generated sensor output (regenerate via monitor.py / unified_sensor)
+data/sensor_snapshot.json
