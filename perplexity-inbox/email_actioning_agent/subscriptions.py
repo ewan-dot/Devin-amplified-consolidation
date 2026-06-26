@@ -32,14 +32,22 @@ _JSONLD = re.compile(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', re
 
 # Category map for duplicate/overlapping-tool detection (the documented waste
 # heuristic: 2+ vendors in one category = candidate overlap). Extend freely.
+# Seeded + extended from the live whole-inbox sweep (2026-06-26). Vendors grouped
+# by category so 2+ distinct vendors in one category flag as candidate overlap.
 _CATEGORY = {
     "ai_coding_agent": ("cognition", "devin", "kilocode", "kilo", "cursor", "copilot",
-                        "codeium", "windsurf", "factory", "augment"),
-    "observability": ("sentry", "datadog", "grafana", "newrelic", "honeycomb"),
+                        "codeium", "windsurf", "factory", "augment", "dia browser", "dia pro"),
+    "llm_api": ("openai", "anthropic", "x.ai", "mistral", "groq", "cohere", "moonshot", "kimi"),
+    "research_search": ("tavily", "exa", "perplexity", "you.com"),
+    "observability": ("sentry", "datadog", "grafana", "newrelic", "honeycomb", "appsignal"),
     "hosting_infra": ("railway", "render", "vercel", "fly.io", "hetzner", "heroku"),
     "meeting_notes": ("circleback", "otter", "fireflies", "fathom", "granola"),
+    "team_docs": ("confluence", "atlassian", "notion", "coda"),
+    "scheduling": ("calendly", "savvycal", "cal.com"),
+    "password_manager": ("1password", "bitwarden", "dashlane", "lastpass"),
+    "productivity": ("todoist", "things", "ticktick"),
+    "transcription": ("youtube transcript", "youtube-transcript"),
     "email_client": ("superhuman", "shortwave"),
-    "llm_api": ("openai", "anthropic", "x.ai", "mistral", "groq", "cohere"),
 }
 
 
