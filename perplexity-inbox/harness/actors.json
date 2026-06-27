@@ -1,0 +1,16 @@
+{
+  "human_authors": ["ewan", "Ewan", "architect", "human"],
+  "agent_authors": [
+    "cursor",
+    "devin",
+    "cascade",
+    "cascade-mac",
+    "scribe",
+    "antigravity",
+    "claude",
+    "perplexity"
+  ],
+  "human_ceiling_without_promotion": "INTUITED",
+  "agent_ceiling_without_promotion": "INTUITED",
+  "agent_llm_consulted_default": true
+}

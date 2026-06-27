@@ -6,5 +6,19 @@ __pycache__/
 .env.*
 !.env.example
 
+# Token-efficiency standard excludes (mirror .cursorignore)
+node_modules/
+dist/
+build/
+.next/
+coverage/
+vendor/
+*.min.js
+*.map
+*.lock
+.venv/
+target/
+.claude/compact-backups/
+
 # Generated sensor output (regenerate via monitor.py / unified_sensor)
 data/sensor_snapshot.json

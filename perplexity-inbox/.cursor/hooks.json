@@ -1,4 +1,11 @@
 {
   "version": 1,
-  "hooks": {}
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": ".cursor/hooks/after-file-edit-shape-gate.py",
+        "matcher": "Write"
+      }
+    ]
+  }
 }
