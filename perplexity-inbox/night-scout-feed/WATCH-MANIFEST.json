@@ -1,0 +1,20 @@
+{
+  "feed_item": "claude-gmail-brief.md",
+  "scout_tags": [
+    "email-triage",
+    "mcp-code-execution",
+    "token-efficiency",
+    "multi-inbox",
+    "actioning-not-replying"
+  ],
+  "watchlist": [
+    "new public prior art on Claude/MCP email-actioning systems",
+    "new publications on token-efficient multi-inbox triage",
+    "anyone publishing the (code-execution + tiered-routing + private-ingestion) synthesis",
+    "re-ingest this brief as a brain artifact under scout_tags"
+  ],
+  "tier": "INTUITED",
+  "canonical_sink": "/opt/amplified-machine/apds/staging/",
+  "canonical_sink_status": "deferred \u2014 Beast-only, not reachable from M5 this session",
+  "m5_mirror": "/Users/ewansair/ingestion-to-research-pipe/.worktrees/feat-email-actioning-agent/perplexity-inbox/night-scout-feed"
+}
