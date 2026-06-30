@@ -9,6 +9,10 @@
       {
         "command": "./hooks/session-start.sh",
         "timeout": 10
+      },
+      {
+        "command": "python3 ./hooks/session-start-vellum-intent.py",
+        "timeout": 5
       }
     ],
     "sessionEnd": [

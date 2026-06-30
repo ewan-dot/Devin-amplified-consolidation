@@ -4,6 +4,8 @@
 set -uo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# shellcheck source=seat-env.sh
+source "$ROOT/scripts/seat-env.sh"
 cd "$ROOT"
 
 PERMS="skip"
