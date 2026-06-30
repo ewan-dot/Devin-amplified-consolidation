@@ -1,0 +1,1727 @@
+{
+  "topic": "checks and measures using deterministic methods in supporting agentic flows",
+  "rounds": 12,
+  "total_methods": 125,
+  "dry_rounds_at_stop": 0,
+  "log": [
+    {
+      "round": 1,
+      "anchors": 7,
+      "new_methods": 8,
+      "dry_rounds": 0
+    },
+    {
+      "round": 2,
+      "anchors": 7,
+      "new_methods": 22,
+      "dry_rounds": 0
+    },
+    {
+      "round": 3,
+      "anchors": 7,
+      "new_methods": 10,
+      "dry_rounds": 0
+    },
+    {
+      "round": 4,
+      "anchors": 7,
+      "new_methods": 13,
+      "dry_rounds": 0
+    },
+    {
+      "round": 5,
+      "anchors": 7,
+      "new_methods": 9,
+      "dry_rounds": 0
+    },
+    {
+      "round": 6,
+      "anchors": 7,
+      "new_methods": 11,
+      "dry_rounds": 0
+    },
+    {
+      "round": 7,
+      "anchors": 7,
+      "new_methods": 17,
+      "dry_rounds": 0
+    },
+    {
+      "round": 8,
+      "anchors": 7,
+      "new_methods": 10,
+      "dry_rounds": 0
+    },
+    {
+      "round": 9,
+      "anchors": 7,
+      "new_methods": 7,
+      "dry_rounds": 0
+    },
+    {
+      "round": 10,
+      "anchors": 7,
+      "new_methods": 5,
+      "dry_rounds": 0
+    },
+    {
+      "round": 11,
+      "anchors": 3,
+      "new_methods": 4,
+      "dry_rounds": 0
+    },
+    {
+      "round": 12,
+      "anchors": 6,
+      "new_methods": 9,
+      "dry_rounds": 0
+    }
+  ],
+  "methods": [
+    {
+      "title": "What are Agentic Workflows? Architecture, Use Cases, and How ...",
+      "url": "https://orkes.io/blog/what-are-agentic-workflows/",
+      "snippet": "1.4.2025 \u00b7 An agentic workflow is an AI-driven process where the sequence of tasks are dynamically executed with minimal human intervention to achieve a particular goal.",
+      "date": null,
+      "anchor_hits": 4,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows methodology step by step",
+        "checks and measures using deterministic methods in supporting agentic flows workflow how to implement",
+        "checks and measures using deterministic methods in supporting agentic flows case study results",
+        "\"checks and measures using deterministic methods in supporting agentic flows\" process template"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "Agentic Workflow: Tutorial & Examples - Patronus AI",
+      "url": "https://www.patronus.ai/ai-agent-development/agentic-workflow",
+      "snippet": "This article focuses on the practical aspects of implementing agentic workflows, covering types, techniques, and best practices, and providing an example that ...",
+      "date": null,
+      "anchor_hits": 4,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows methodology step by step",
+        "checks and measures using deterministic methods in supporting agentic flows workflow how to implement",
+        "checks and measures using deterministic methods in supporting agentic flows case study results",
+        "\"checks and measures using deterministic methods in supporting agentic flows\" process template"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "How to Build a Structured AI Coding Workflow with Deterministic and ...",
+      "url": "https://www.mindstudio.ai/blog/structured-ai-coding-workflow-deterministic-agentic-nodes",
+      "snippet": "12.3.2026 \u00b7 Learn how to combine deterministic validation steps with AI coding agents to build reliable, production-grade workflows that catch errors ...",
+      "date": null,
+      "anchor_hits": 3,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows methodology step by step",
+        "checks and measures using deterministic methods in supporting agentic flows workflow how to implement",
+        "checks and measures using deterministic methods in supporting agentic flows tool stack recipe"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "Determining Agentic and Traditional Workflow Automation",
+      "url": "https://architect.salesforce.com/docs/architect/decision-guides/guide/determining-agentic-vs-traditional-workflow-automation",
+      "snippet": "Use Traditional Automation with Flows and Apex for rule-based deterministic work, where the outcome can be entirely scoped and defined by a set of rules.",
+      "date": null,
+      "anchor_hits": 3,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows methodology step by step",
+        "checks and measures using deterministic methods in supporting agentic flows automation playbook",
+        "checks and measures using deterministic methods in supporting agentic flows operators practitioners how they do it"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "How do you manage complex, deterministic workflows in AI agents?",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1jz07bs/how_do_you_manage_complex_deterministic_workflows/",
+      "snippet": "14.4.2025 \u00b7 Managing complex workflows in AI agents can be challenging but rewarding. Using tools like state machines, workflow engines, and orchestration frameworks can ...",
+      "date": null,
+      "anchor_hits": 3,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows methodology step by step",
+        "checks and measures using deterministic methods in supporting agentic flows workflow how to implement",
+        "checks and measures using deterministic methods in supporting agentic flows tool stack recipe"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "Spring AI Recipe: Building a Graph-Based Agentic Workflow",
+      "url": "https://thetalkingapp.medium.com/spring-ai-recipe-building-a-graph-based-agentic-workflow-becfae64170a",
+      "snippet": "04.05.2026 \u00b7 For some circumstances deterministic workflows are better than autonomous planning. Sometimes you want: predictable execution; explicit ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows tool stack recipe"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Towards Design-Time Verification of Agentic AI Workflows - arXiv",
+      "url": "https://arxiv.org/html/2606.21565v1",
+      "snippet": "19.6.2026 \u00b7 Through three case studies and two sets of workflows, we showed that these rules can reliably identify violations even when workflow logic ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows case study results"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Agentic Workflows Explained: Conditional Logic, Loops & Branching",
+      "url": "https://www.mindstudio.ai/blog/agentic-workflows-explained-conditional-logic-branching",
+      "snippet": "10.2.2026 \u00b7 A deep dive into agentic workflow design\u2014covering conditional logic, branching, loops, and how they power intelligent automation.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "checks and measures using deterministic methods in supporting agentic flows operators practitioners how they do it"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Agentic AI Explained: Workflows vs Agents - Orkes",
+      "url": "https://orkes.io/blog/agentic-ai-explained-agents-vs-workflows/",
+      "snippet": "19.5.2025 \u00b7 An agentic workflow is a multi-step, dynamic process that orchestrates multiple API calls, AI tasks, agents, and even human-in-the-loop steps ...",
+      "date": null,
+      "anchor_hits": 3,
+      "anchors_matched": [
+        "Agentic Workflows methodology",
+        "Agentic Workflow methodology",
+        "Based Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "bybren-llc/safe-agentic-workflow",
+      "url": "https://github.com/bybren-llc/safe-agentic-workflow",
+      "snippet": "Shell / SAW \u2014 SAFe Agentic Workflow AI Agent Harness for Multi-Agent Team Workflows Built on SAFe methodology (Scaled Agile Framework), adapted for AI agent teams. Works for any team with repeatable processes: Software, Marketing, Research, Legal, Operations.",
+      "date": "2026-06-30T03:22:31+00:00",
+      "anchor_hits": 2,
+      "anchors_matched": [
+        "Agentic Workflows methodology",
+        "Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "relativitydev/relativity-test-helpers",
+      "url": "https://github.com/relativitydev/relativity-test-helpers",
+      "snippet": "C# / Open Source Community: Integration testing is a software testing methodology used to test individual software components or units of code to verify their interaction. These components are tested as a single group or organized in an iterative manner.That said, we have created Relativity Integration Test Helpers to assist you with writing good Integration Tests for your Relativity application. ",
+      "date": "2026-04-11T00:35:53+00:00",
+      "anchor_hits": 2,
+      "anchors_matched": [
+        "Agentic Workflows methodology",
+        "Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "Agentic Workflows - Cobus Greyling - Medium",
+      "url": "https://cobusgreyling.medium.com/agentic-workflows-6d2f5340c1b5",
+      "snippet": "12.11.2025 \u00b7 There are a number of affordances available to the Agentic Workflow, including tool use, orchestrating multiple agents, planning, guardrails and ...",
+      "date": null,
+      "anchor_hits": 2,
+      "anchors_matched": [
+        "Agentic Workflow methodology",
+        "Based Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "AI Workflow Automation: How AI Transforms Business Processes",
+      "url": "https://www.sotatek.com/blogs/ai-and-machine-learning/ai-workflow-automation/",
+      "snippet": "14.05.2026 \u00b7 Traditional workflow automation is rule-based. It works well for structured, predictable processes. However, it struggles with complexity, ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Traditional Workflow Automation Use Traditional Automation methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Agentic Workflow: AI Agent Design as a BPMN Process | BA Copilot",
+      "url": "https://ba-copilot.com/agentic-workflow",
+      "snippet": "21.5.2026 \u00b7 An agentic workflow is an AI system that plans steps, takes actions via tool calls, reflects on outcomes, and loops until a goal is reached. The ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Agentic Workflows methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to lock screen while tracing sketchs? - Samsung Members",
+      "url": "https://r2.community.samsung.com/t5/Tablets/How-to-lock-screen-while-tracing-sketchs/td-p/20502064",
+      "snippet": "Sep 4, 2025 \u00b7 For aari work I want to trace the Sketch I have saved in the pinterest. I have searched lock screen option in the settings \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Lock Screen to Trace Android (only Way) - YouTube",
+      "url": "https://www.youtube.com/watch?v=Pw2F56dno-Y",
+      "snippet": "Mar 20, 2026 \u00b7 Learn the essential steps to lock your Android screen for tracing purposes. This video guides you through setting up a \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Mastering Your Device: How to Lock the Touch Screen on Your Samsung \u2026",
+      "url": "https://nerdytechblog.com/how-to-lock-touch-screen-on-samsung-tablet/",
+      "snippet": "May 1, 2025 \u00b7 Samsung devices offer several methods to lock touch screens, each tailored for different needs. Below, we outline the \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "My LLM coding workflow going into 2026 - Addy Osmani",
+      "url": "https://addyosmani.com/blog/ai-coding-workflow/",
+      "snippet": "4.1.2026 \u00b7 In this article, I'll share how I plan, code, and collaborate with AI going into 2026, distilling tips and best practices from my experience and ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Coding Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Full Walkthrough: Workflow for AI Coding \u2014 Matt Pocock - YouTube",
+      "url": "https://www.youtube.com/watch?v=-QFHIoCo-Ko",
+      "snippet": "24.4.2026 \u00b7 Matt will be back on stage at the World's Fair next week! see https://ai.engineer/wf and use YOUTUBEPROMO for new tickets only.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Coding Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Structure Your Programming Work-flow | by Kevin Sheehan",
+      "url": "https://medium.com/swlh/how-to-structure-your-programming-work-flow-1a671c917b3f",
+      "snippet": "15.10.2020 \u00b7 The first step to take when you have a new project to work on is to plan & sketch out some design drafts along with your program architecture.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Coding Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Best git workflow for creating multiple features on same files on a shared project?",
+      "url": "https://stackoverflow.com/q/70655276",
+      "snippet": "[java, git, version-control, jira] Alan S. // is answered // score: -1",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Coding Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Learn Agentic AI in 2026 With These 7 Steps - YouTube",
+      "url": "https://www.youtube.com/watch?v=ghPb2T0ygSE&vl=de",
+      "snippet": "07.04.2026 \u00b7 Checkout the roadmap: https://www.krishnaik.in/ai-roadmaps Agentic ... Use Karpathy's Method Instead. Austin Marchese\u2022535K views \u00b7 1:04:19. Go ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Determining Agentic methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "NAalytics/Assemblies-of-putative-SARS-CoV2-spike-encoding-mRNA-sequences-for-vaccines-BNT-162b2-and-mRNA-1273",
+      "url": "https://github.com/NAalytics/Assemblies-of-putative-SARS-CoV2-spike-encoding-mRNA-sequences-for-vaccines-BNT-162b2-and-mRNA-1273",
+      "snippet": "RNA vaccines have become a key tool in moving forward through the challenges raised both in the current pandemic and in numerous other public health and medical challenges. With the rollout of vaccines for COVID-19, these synthetic mRNAs have become broadly distributed RNA species in numerous human populations. Despite their ubiquity, sequences are not always available for such RNAs. Standard meth",
+      "date": "2026-06-16T13:52:08+00:00",
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Determining Agentic methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "SudiptaSingh/Q-Learning-based-smart-cab",
+      "url": "https://github.com/SudiptaSingh/Q-Learning-based-smart-cab",
+      "snippet": "Jupyter Notebook / Problem Statement A smart city needs smart mobility, and to achieve this objective, the travel should be made convenient through sustainable transport solutions. Transportation system all over the world is facing unprecedented challenges in the current scenario of increased population, urbanization and motorization. Farewell to all difficulties as reinforcement learning along wi",
+      "date": "2026-04-06T15:16:11+00:00",
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Determining Agentic methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "WIDEFY/customer-experience",
+      "url": "https://github.com/WIDEFY/customer-experience",
+      "snippet": "A positive client experience is urgent to the achievement of your business in light of the fact that a blissful client is one who is probably going to turn into a reliable client who can assist you with helping income. The most impressive showcasing available is a client who will advance your business for you - one who's faithful to your organization, advances your business through informal advert",
+      "date": "2025-05-15T17:58:52+00:00",
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Determining Agentic methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": true,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "AI Workflow Automation vs Traditional Automation - CloudQix",
+      "url": "https://cloudqix.com/resources/blog/ai-workflow-automation-vs-traditional-automation/",
+      "snippet": "01.10.2025 \u00b7 traditional workflow automation focuses on stability and consistency. It excels at automating repetitive tasks that follow clear, predictable ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Traditional Workflow Automation Use Traditional Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Agentic Workflows vs Traditional Automation: What's the Real ...",
+      "url": "https://www.mindstudio.ai/blog/agentic-workflows-vs-traditional-automation",
+      "snippet": "09.03.2026 \u00b7 Traditional automation handles high-volume, structured, predictable parts of a workflow \u2014 moving data, triggering events, formatting outputs. ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Traditional Workflow Automation Use Traditional Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "AI Workflow Automation vs Traditional Automation | MEII AI",
+      "url": "https://www.meii.ai/insights/ai-workflow-automation-vs-traditional-automation/",
+      "snippet": "18.05.2026 \u00b7 Traditional workflow automation simply uses software to execute a set of defined, rule-based tasks without human input.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Traditional Workflow Automation Use Traditional Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Top AI Agentic Workflow Patterns - ByteByteGo Newsletter",
+      "url": "https://blog.bytebytego.com/p/top-ai-agentic-workflow-patterns",
+      "snippet": "15.12.2025 \u00b7 In this article, we will look at the most popular agentic workflow patterns and how they work.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Based Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Build AI Agentic Workflows - Read AI",
+      "url": "https://www.read.ai/articles/how-to-build-ai-agentic-workflows",
+      "snippet": "AI agentic workflows let autonomous agents reason, plan, and execute complex tasks across systems. Here's how they work and when to use them.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Based Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "7 powerful workflow examples for your everyday tasks - Wrike",
+      "url": "https://www.wrike.com/workflow-guide/workflow-examples/",
+      "snippet": "May 27, 2026 \u00b7 Explore seven real-world workflow examples, use cases, and step-by-step guidance on how to build them to help your \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflow Automation methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "AGENTIC WORKFLOWS: Build & Sell AI Automations (2026) - YouTube",
+      "url": "https://www.youtube.com/watch?v=MxyRjL7NG18",
+      "snippet": "21.12.2025 \u00b7 ... Framework) 02:10:03 Building first agentic workflow using DOE 02:18:26 Building a CRM manager for ClickUp 02:28:02 Claude Skills 02:32:04 ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Agentic Workflow methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "AI Agent \u6838\u5fc3\u6982\u5ff5\uff1aAgent Loop\u3001Plan-and-Execute\u3001A2A\u3001Agentic \u2026",
+      "url": "https://javaguide.cn/ai/agent/agent-basis.html",
+      "snippet": "Jun 7, 2026 \u00b7 \u6df1\u5165\u89e3\u6790 AI Agent \u6838\u5fc3\u6982\u5ff5\uff0c\u68b3\u7406\u4ece\u88ab\u52a8\u54cd\u5e94\u5230\u5e38\u9a7b\u81ea\u6cbb\u7684\u6f14\u8fdb\u5386\u7a0b\uff0c\u5bf9\u6bd4 Agent\u3001\u4f20\u7edf\u7f16\u7a0b\u3001Workflow \u7684\u533a\u522b\u548c\u9002\u7528\u573a\u666f\u3002\u91cd\u70b9\u56f4\u7ed5 AI Agent \u7684\u6f14\u8fdb\u3001\u4ec0\u4e48\u662f AI Agent\uff1f\u3001Tools \u6ce8\u518c\u4e0e \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Agent Harness methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "3. Building your own public sector OSS community",
+      "url": "https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/3-building-your-own-public-sector-oss-community",
+      "snippet": "If you have decided to create a new open source community, this section will explore the key issues that you may encounter and how to overcome them.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Open Source Community methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to correctly work with mailing lists?",
+      "url": "https://stackoverflow.com/q/4723513",
+      "snippet": "[mailing-list] grigoryvp // is answered // score: 3",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Open Source Community methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Integration Testing: How to Get it Right - TestRail",
+      "url": "https://www.testrail.com/blog/integration-testing/",
+      "snippet": "24.04.2025 \u00b7 Integration testing verifies that different modules or components work together as expected, ensuring seamless interaction between them.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Relativity Integration Test Helpers methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Creating a workflow | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/workflows/creating-a-workflow",
+      "snippet": "Creating a workflow Start from a template Build with AI Start from scratch Workflows All templates Home Templates Save",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflow Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow Automation in 2025: Complete Guide - Xurrent",
+      "url": "https://www.xurrent.com/blog/workflow-automation-ai-business-efficiency-guide",
+      "snippet": "Bewertung 9,3/10(87) 21.05.2025 \u00b7 TL;DR: Workflow automation transforms manual tasks into digital processes that adapt to conditions and optimize efficiency. Workflow automation ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflow Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Workflow",
+      "snippet": "Processes: A process is a more general notion than workflow and can apply to, for example, physical or biological processes, \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflow Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Linking test automation code with written test cases without cucumber/gherkin",
+      "url": "https://stackoverflow.com/q/67078434",
+      "snippet": "[java, selenium, testing, agile, erp] ZakaRia Janah // is answered // score: 0",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflow Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How To Automate Processes In Wrike [2026 Guide] - YouTube",
+      "url": "https://www.youtube.com/watch?v=edkwuRxdAM0",
+      "snippet": "20.2.2026 \u00b7 process automation, automate Wrike, Wrike tips, Wrike tutorial, project management, workflow automation, task automation, Wrike features ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Wrike May methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "What Are Claude Code Skills and How Do They Work? - MindStudio",
+      "url": "https://www.mindstudio.ai/blog/what-are-claude-code-skills",
+      "snippet": "16.4.2026 \u00b7 A skill, at its simplest, is a reusable process document. It's a markdown file that tells Claude exactly how to handle a specific type of task \u2014 ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Claude Skills methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Write a Research Methodology in 4 Steps | Scribbr - YouTube",
+      "url": "https://www.youtube.com/watch?v=yplWZs3dqNQ",
+      "snippet": "12.6.2020 \u00b7 Learn how to write a strong methodology chapter that allows readers to evaluate the reliability and validity of the research.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Support Creating methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Claude Skills: Complete Guide for Developers | Thomas Wiegold Blog",
+      "url": "https://thomas-wiegold.com/blog/claude-skills-guide-developers/",
+      "snippet": "20.10.2025 \u00b7 Learn what Claude Skills are, how to create custom AI agents in 15 minutes, and why developers call this bigger than MCP.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Claude Skills methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Open a new Support request - Microsoft Engage Center",
+      "url": "https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/support/create-new-support-case",
+      "snippet": "24.4.2026 \u00b7 Learn how to open a new Support request in the Microsoft Engage Center experience.Select the correct experience \u00b7 Allowlist websites",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Support Creating methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Create a workflow in Microsoft Teams",
+      "url": "https://support.microsoft.com/fi-fi/teams/platform/create-a-workflow-in-microsoft-teams",
+      "snippet": "Learn about creating a workflow to improve and minimize tedious tasks and business processes in Teams.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Support Creating methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Understanding the Microsoft Customer Engagement Methodology",
+      "url": "https://www.cloudchampion.fi/c/understanding-the-microsoft-customer-engagement-methodology/",
+      "snippet": "23.10.2025 \u00b7 In this session, we'll walk you through the key stages of MCEM, explain how it aligns with customer needs, and show you how to apply it to drive ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Support Creating methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Difference between a methodology, a method and a workflow?",
+      "url": "https://english.stackexchange.com/questions/429201/difference-between-a-methodology-a-method-and-a-workflow",
+      "snippet": "2.2.2018 \u00b7 A methodology is an examination or analysis of a method, or a set of methods - typically to explicitly discuss common principles or constraints.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflows All methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Agile Workflow Guide: Management Process & Methodology - Testomat.io",
+      "url": "https://testomat.io/blog/the-ultimate-guide-to-agile-workflow-methodology/",
+      "snippet": "Agile workflow is a phased method of project implementation, which implies solving specific tasks by team members during a sprint. Modern project teams are ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflows All methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "(PDF) A New Methodology for Process Modeling of Workflows",
+      "url": "https://www.researchgate.net/publication/267229960_A_New_Methodology_for_Process_Modeling_of_Workflows",
+      "snippet": "10.3.2026 \u00b7 PDF | Workflow-based systems are typically said to lead to better use of staff and better management and productivity.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflows All methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow Management Software to Automate Work \u2022 Asana",
+      "url": "https://asana.com/uses/workflow-management",
+      "snippet": "Define and manage your business\u2019s workflows with Asana. Learn how our workflow management software helps you customize workflows, manage tasks, and keep your team on track.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflows All methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow Methodologies as a Developer | by Jack Ling - Medium",
+      "url": "https://medium.com/@j.lingyx/workflow-methodologies-as-a-developer-29be522ebaa0",
+      "snippet": "17.12.2018 \u00b7 Here are some of the types of workflow methods I have come across while researching this topic. Note that there will be some small differences in models.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflows All methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow automation vs.process automation: What are the key ...",
+      "url": "https://www.oneadvanced.com/resources/workflow-automation-vs.process-automation-what-are-the-key-differences/",
+      "snippet": "12.9.2024 \u00b7 Workflow automation focuses on automating the sequence and execution of tasks or activities within a specific workflow or department whereas ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Workflow Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow automation that replaces manual tasks - Wrike",
+      "url": "https://www.wrike.com/features/workflow-automation/",
+      "snippet": "Bewertung 4,5(13.000) With Wrike, you can automate reminders, custom fields, work structures, and status transitions to streamline your business process. Try Wrike for free ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "How To Automate Processes In Wrike methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Power Automate: Business Process Workflow Automation | Microsoft \u2026",
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate/?msockid=187b9f08430f6799356d88804228660e",
+      "snippet": "Automate workflows and business processes across apps, systems, and websites with Microsoft Power Automate using AI, digital, \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "How To Automate Processes In Wrike methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow orchestration: Connect systems, processes, and people",
+      "url": "https://www.wrike.com/workflow-guide/faq/workflow-orchestration/",
+      "snippet": "03.06.2026 \u00b7 Great workflow orchestration starts with process mapping, choosing the right tool, and rolling out the system with clear ownership and training.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "How To Automate Processes In Wrike methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Microsoft Power Automate",
+      "url": "http://make.powerautomate.com/desktop/",
+      "snippet": "Microsoft Power Automate simplifies workflow automation and task management for enhanced productivity.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "How To Automate Processes In Wrike methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Wrike Workflows - Archived - YouTube",
+      "url": "https://www.youtube.com/watch?v=PaaBJ7p6jVE",
+      "snippet": "11.04.2024 \u00b7 Learn how to implement Wrike workflows in this video tutorial. Provide real-time visibility into work progress and maintain process ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "How To Automate Processes In Wrike methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Use Claude Code Skills Like the 1% (it's easy actually) - YouTube",
+      "url": "https://www.youtube.com/watch?v=6-D3fg3JUL4",
+      "snippet": "4.3.2026 \u00b7 of using Claude Code Skills the same way as everyone else? Most people overcomplicate it by installing hundreds of skills, but the top 1 ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "What Are Claude Code Skills methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Requesting an opinion about an extreme optimization pipeline for a YOLOv8 model",
+      "url": "https://stackoverflow.com/q/79925681",
+      "snippet": "[machine-learning, optimization, computer-vision, yolo, yolov8] Bendouba Abdessalem // score: 0",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Research Methodology methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "3 Crucial Steps to Writing a Research Methodology [The Easy Guide]",
+      "url": "https://www.youtube.com/watch?v=cEiZNZwNyV4",
+      "snippet": "24.4.2024 \u00b7 Understanding the intricacies of a research methodology can significantly enhance the quality and credibility of your academic work.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Complete Guide methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Write Research Methodology: A Step-by-Step Guide for Academics",
+      "url": "https://scipubplus.com/hub/blog/how-to-write-research-methodology-a-step-by-step-guide-for-academics/",
+      "snippet": "Throughout this guide, we've explored the critical components that establish methodological rigor in academic research. Above all, your methodology serves ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Complete Guide methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Microsoft Power Automate \u2013 Process Automation Platform",
+      "url": "https://www.microsoft.com/en/power-platform/products/power-automate",
+      "snippet": "Use Power Automate tools to automate processes across nearly unlimited systems, desktop apps, and websites using AI, digital, and robotic process ...",
+      "date": null,
+      "anchor_hits": 2,
+      "anchors_matched": [
+        "Power Automate methodology",
+        "Microsoft Power Automate Microsoft Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "Microsoft Power Automate for Beginners: Start Automating Today!",
+      "url": "https://www.youtube.com/watch?v=f1lTMzWygTA",
+      "snippet": "22.01.2024 \u00b7 Welcome to our beginner's guide on how to use Microsoft Power Automate! In this tutorial, you'll learn the fundamentals of automating ...",
+      "date": null,
+      "anchor_hits": 2,
+      "anchors_matched": [
+        "Power Automate methodology",
+        "Microsoft Power Automate Microsoft Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "Understanding Approval Workflows + How to Use Them - Wrike",
+      "url": "https://www.wrike.com/workflow-guide/approval-workflow/",
+      "snippet": "2.4.2026 \u00b7 An approval workflow is a structured process where documents, tasks, or decisions must be reviewed and approved before progressing.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Wrike Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Wrike webinars | Creating and Using Custom Workflows",
+      "url": "https://www.wrike.com/webinars/creating-and-using-custom-workflows/",
+      "snippet": "Streamlining your work processes is an invaluable step towards your team's success. Learn how to create customized workflows to suit your team's needs!",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "With Wrike methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Business process automation: A complete guide for 2024 - Acronis",
+      "url": "https://www.acronis.com/en/blog/posts/business-process-automation/",
+      "snippet": "27.09.2024 \u00b7 Workflow automation focuses on automating the sequence of tasks involved in completing a specific business process or project. Workflow ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Business Process Workflow Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Business Process Management vs. Workflow Automation - Yeeflow",
+      "url": "https://www.yeeflow.com/blog/business-process-management-vs--workflow-automation-the-differences-and-which-is-right-for-you",
+      "snippet": "14.01.2025 \u00b7 Workflow Automation involves the use of digital tools to perform routine business processes automatically. From scheduling meetings to ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Business Process Workflow Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Official Microsoft Power Automate documentation",
+      "url": "https://learn.microsoft.com/en-us/power-automate/",
+      "snippet": "Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Power Automate Microsoft Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Workflow management: Best practices, benefits, and examples - Wrike",
+      "url": "https://www.wrike.com/workflow-guide/workflow-management/",
+      "snippet": "10.6.2026 \u00b7 Wrike gives teams a centralized platform to build, track, and automate their workflows. This includes custom request forms, automatic ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Wrike Workflows methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "The best workflow management software - Wrike",
+      "url": "https://www.wrike.com/use-cases/workflow-management-software/",
+      "snippet": "Arvio 4,5(13 000) Wrike's powerful workflow management software connects strategy, planning, execution, and results on one flexible platform.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Wrike Workflows methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Wrike Workflows - YouTube",
+      "url": "https://www.youtube.com/watch?v=-2lbRPAr9hk",
+      "snippet": "29.7.2025 \u00b7 Learn how to implement Wrike workflows in this video tutorial. Provide real-time visibility into work progress and maintain process ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Wrike Workflows methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "ComposioHQ/awesome-claude-skills - GitHub",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "snippet": "Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks. Each skill is a folder containing a SKILL.md ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Use Claude Code Skills Like methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Robotic Process Automation with Microsoft Power ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=NxJ2Zch7M2o",
+      "snippet": "21.01.2020 \u00b7 Automatically process complex tasks such as invoicing with Microsoft Power Automate. You'll see how to automate your invoice approval ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Process Automation Platform Use Power Automate methodology"
+      ],
+      "method_score": 3,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Start process automation - increase efficiency in a targeted manner",
+      "url": "https://www.defacto.de/en/blog/guide-to-process-automation",
+      "snippet": "How to get started with process automation! Find out how you can optimize processes, reduce costs and sustainably increase your productivity.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Start Automating Today methodology"
+      ],
+      "method_score": 3,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Process automation 101: stop doing by hand what software can do for you",
+      "url": "https://ninox.com/en/resources/blog/process-automation",
+      "snippet": "19.05.2026 \u00b7 Step 1: Identify what's worth automating. Start with a benefit analysis. A process is a strong candidate for automation if it's repetitive ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Start Automating Today methodology"
+      ],
+      "method_score": 3,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Business Process Workflow Automation | Microsoft Power Platform",
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate",
+      "snippet": "Automate workflows and business processes across apps, systems, and websites with Microsoft Power Automate using AI, digital, and robotic process ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Power Automate methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Process automation with Power Automate - Arineo",
+      "url": "https://arineo.com/en/blog-en/power-automate-how-to-automate-workflows/",
+      "snippet": "31.07.2025 \u00b7 Benefits of workflow automation with Power Automate \u00b7 Increased efficiency \u00b7 Error reduction \u00b7 Time savings \u00b7 Scalability.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Process Automation Platform Use Power Automate methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Make.com Automation Tutorial for Beginners - YouTube",
+      "url": "https://www.youtube.com/watch?v=JSA2oezQWOU",
+      "snippet": "28.05.2024 \u00b7 ... start with powerful features ... We'll show you how to automate this entire process using Make, saving valuable time and ensuring accuracy.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Start Automating Today methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "What are Approval Workflows? | DealHub AI",
+      "url": "https://dealhub.io/glossary/approval-workflow/",
+      "snippet": "An approval workflow routes a document to one or more people for approval or rejection. Learn how approval workflows increase efficiency and productivity.Elements of an Approval... \u00b7 How to Design an Effective...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Understanding Approval Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Approval Workflows Explained: Process, Steps & Benefits - Kissflow",
+      "url": "https://kissflow.com/workflow/approval-workflow-what-and-why-needed-them-yesterday/",
+      "snippet": "Bewertung 4,3(591) An approval workflow is a logical sequence of tasks, including human approvals, to process data. In an approval workflow, the process halts until a specific ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Understanding Approval Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Microsoft Power Automate - YouTube",
+      "url": "https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA",
+      "snippet": "The official Microsoft Power Automate YouTube channel. See how you can do more with less on a comprehensive automation platform with advanced RPA, DPA, AI, and ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Process automation with Power Automate - Arineo",
+      "url": "https://arineo.com/da/blog-da/power-automate-how-to-automate-workflows/",
+      "snippet": "5.8.2025 \u00b7 Power Automate ensures consistent data management across various systems. For example, SharePoint lists can be synchronized with Excel files, or ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "[PDF] Automation using Microsoft Power Platform is transformin",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/5134991.pdf?abstractid=5134991&mirid=1&type=2",
+      "snippet": "09.04.2025 \u00b7 These apps can automate specific processes within a company, such as inventory tracking, customer relationship management, or even HR operations ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Process Automation Platform Use Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Process improvement with Microsoft's Power Platform - KPMG International",
+      "url": "https://kpmg.com/ch/en/insights/technology/microsoft-power-platform.html",
+      "snippet": "This article highlights why process improvement is necessary and where simple automation solutions with the Microsoft Power Platform can create a significant ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Process Automation Platform Use Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Business Process Automation with Microsoft Power Platform - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/business-process-automation-microsoft-power-platform-automate-nikhil-kquuc",
+      "snippet": "15.04.2026 \u00b7 Power Automate enables users to create flows that automate tasks across hundreds of applications such as Microsoft 365, Dynamics 365, SharePoint ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Process Automation Platform Use Power Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "The 3 automation and workflow best practices you need - Method CRM",
+      "url": "https://www.method.me/blog/automation-and-workflow/",
+      "snippet": "Learn how automating your workflows can help your business save time, improve the quality of data, and get time back into your workday.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Start Automating Today methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Optimize Your Approval Process | The Workstream - Atlassian",
+      "url": "https://www.atlassian.com/work-management/project-management/approval-process-workflow",
+      "snippet": "An approval process workflow is a systematic sequence of steps designed to facilitate reviewing, validating, and authorizing various business activities or ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Understanding Approval Workflows methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "(PDF) Qualitative research methods: When to use them and how to judge ...",
+      "url": "https://www.researchgate.net/publication/290432694_Qualitative_research_methods_When_to_use_them_and_how_to_judge_them",
+      "snippet": "A qualitative approach was selected for this study due to its utility in understanding social meanings and conditions that are unquantifiable, ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Use Them methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "3 steps to streamline workflows and optimize processes - Inside Atlassian",
+      "url": "https://www.atlassian.com/blog/jira-core/team-efficiency",
+      "snippet": "14.01.2025 \u00b7 1. Simplify workflows to increase team productivity. Streamlining processes and workflows is a gradual approach that can be achieved by breaking it down into ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Using Custom Workflows Streamlining methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Automate a business process using Power Automate - Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/paths/automate-process-power-automate/",
+      "snippet": "This learning path introduces you to Power Automate, teaches you how to build workflows, and how to administer flows.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Power Platform Automate methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Process Automation in 7 Practical Steps for Maximum Efficiency",
+      "url": "https://www.boc-group.com/en/blog/bpm/7-steps-to-successful-process-automation/",
+      "snippet": "This guide explains when process automation is the right choice, which processes benefit most, and how to implement automation in a structured way.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Automation Tutorial methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Automate Approval Workflows: Business Process ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=Bl_f0nsTzXI&vl=de",
+      "snippet": "02.01.2025 \u00b7 Want to make your approval processes easier and faster? In this video, I'll show you how to automate your approval workflows so that ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Approval Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to create an approval process workflow - Tallyfy",
+      "url": "https://tallyfy.com/approval-process-workflow/",
+      "snippet": "14.03.2026 \u00b7 An approval process workflow is a structured, repeatable system that routes decisions through the right people without relying on email threads ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Approval Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "The approval workflow process: Strategies, steps, and tools",
+      "url": "https://www.teamwork.com/blog/approval-workflows/",
+      "snippet": "12.01.2023 \u00b7 An approval workflow refers to a specific series of steps or actions needed to complete tasks or process data within an organization.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Approval Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/",
+      "snippet": "The world's largest catalog of robots, drones, and self-driving cars, with thousands of photos, videos, tech specs, news, and information on how to get into robotics. Brought to you by IEEE Spectrum.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Robotic Process Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Robotic Process Automation | RPA - Roboyo",
+      "url": "https://roboyo.global/technologies/robotic-process-automation/",
+      "snippet": "Robotic Process Automation (RPA) automates rule-based, repetitive tasks using software bots, mimicking human interactions with digital systems. Intelligent ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Robotic Process Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Official Microsoft Power Platform documentation",
+      "url": "https://learn.microsoft.com/en-us/power-platform/",
+      "snippet": "Learn how to quickly and easily build AI-driven agents with Copilot Studio, custom apps using Power Apps, automate workflows to improve business productivity ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Microsoft Power Platform Automate methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Two JIRA Boards for One Project with One Seamless Workflow",
+      "url": "https://stackoverflow.com/q/31278355",
+      "snippet": "[jira, jira-agile] mariocatch // is answered // score: 3",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Approval Workflows methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Microsoft Workflow Foundation - Global Cancellation",
+      "url": "https://stackoverflow.com/q/25657337",
+      "snippet": "[wcf, workflow, workflow-foundation-4, bpmn, cancellation] Disgruntled Badger // score: 0",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Approval Workflows methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to test JavaScript minification output",
+      "url": "https://stackoverflow.com/q/14841304",
+      "snippet": "[javascript, unit-testing] WiredPrairie // is answered // score: 16",
+      "date": null,
+      "anchor_hits": 2,
+      "anchors_matched": [
+        "Process Automation methodology",
+        "Business Process methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "STRUCTURED"
+    },
+    {
+      "title": "Business Process Automation: Strategy & Benefits Guide",
+      "url": "https://www.boc-group.com/en/blog/bpm/process-automation-your-path-to-operational-efficiency/",
+      "snippet": "Learn what business process automation is, why it matters, which processes to automate, and how to choose the right automation approach.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Process Automation methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Power Automate: Business Process Workflow Automation | Microsoft \u2026",
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate/?msockid=25a632dc8c356a2c381925548d126bf8",
+      "snippet": "Automate workflows and business processes across apps, systems, and websites with Microsoft Power Automate using AI, digital, \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Automate Approval Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Create and test an approval workflow with Power Automate",
+      "url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+      "snippet": "30.06.2025 \u00b7 Learn how to automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for work or school, Zendesk, ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Automate Approval Workflows methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Project Methodology Steps: A Practical Guide for Teams - Lark",
+      "url": "https://www.larksuite.com/library/project-management/project-management-methodologies/project-methodology-steps",
+      "snippet": "26.3.2026 \u00b7 Learn the project methodology steps teams use to choose a method, plan work, manage execution, control change, and close projects with ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Practical Steps methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to use Sheets to track a large number of people's progress through large checklists",
+      "url": "https://stackoverflow.com/q/76835236",
+      "snippet": "[database, google-sheets] Luke D // score: 0",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Practical Steps methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "\u201cYour\u201d vs. \u201cYou\u2019re\u201d: How To Choose The Right Word",
+      "url": "https://www.dictionary.com/articles/your-vs-youre",
+      "snippet": "Aug 15, 2022 \u00b7 Among the most common mistakes when writing\u2014especially when writing something quickly like an email or text\u2014is using you\u2019re and your incorrectly. In this article, we\u2019ll help you \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Your Guide methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to loop through array within object using ng-repeat",
+      "url": "https://stackoverflow.com/q/52761581",
+      "snippet": "[javascript, angularjs, html, object] Shane Rodgers // is answered // score: 1",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Business Process Automation methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to extrapolate a raster using in R",
+      "url": "https://stackoverflow.com/q/53653330",
+      "snippet": "[r, r-raster, pde] Derek Corcoran // is answered // score: 13",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Project Methodology Steps methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to use pseudoclasses with BEM?",
+      "url": "https://stackoverflow.com/q/68301080",
+      "snippet": "[html, css, pseudo-element, pseudo-class, bem] klm123 // is answered // score: 2",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Practical Guide methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "\u201cChoose\u201d vs. \u201cChose\u201d: Learn How To Pick The Right One Every Time",
+      "url": "https://www.dictionary.com/articles/choose-vs-chose",
+      "snippet": "Jul 13, 2021 \u00b7 Is it choose or chose? Choose means \u201cto pick from several options,\u201d and it is the present tense form of the verb (the present tense form chooses is used after certain third person subjects, \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "How To Choose The Right Word Aug methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to find the right word : r/writing - Reddit",
+      "url": "https://www.reddit.com/r/writing/comments/o6rp9u/how_to_find_the_right_word/",
+      "snippet": "24.06.2021 \u00b7 I make use of a thesaurus a lot. If there's a word that I want to use that's not quite right, a thesaurus will give me options.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "How To Choose The Right Word Aug methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Find Crypto Arbitrage Trading Opportunities ?",
+      "url": "https://margex.com/en/blog/how-to-find-crypto-arbitrage-trading-opportunities/",
+      "snippet": "Sep 3, 2025 \u00b7 Learn how to find crypto arbitrage opportunities in 2026 \u2014 best scanners, DEX tools, step-by-step execution guide. \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Shane Rodgers methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Implement Stablecoin Flash Loans with dYdX V4: Arbitrage ...",
+      "url": "https://markaicode.com/how-to-implement-stablecoin-flash-loans-with-dydx-v4-arbitrage-opportunities/",
+      "snippet": "Jul 26, 2025 \u00b7 Learn how to implement stablecoin flash loans with dydx v4: arbitrage opportunities with practical examples and step \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Shane Rodgers methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Value Moves to Judgment: Choosing What Matters | J.D. Klipper posted ...",
+      "url": "https://www.linkedin.com/posts/j-d-klipper-6b40672b_ive-written-some-version-of-this-line-a-activity-7475525654403420161-xXlZ",
+      "snippet": "vor 6 Tagen \u00b7 This is what happens when you create the perfect AI workflow that balances the three forces: probabilistic, deterministic, and human judgement.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Learn How To Pick The Right One Every Time Jul methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Learn with MIT | MIT Learn",
+      "url": "https://learn.mit.edu/",
+      "snippet": "2 days ago \u00b7 The Certificate Program in Machine Learning and AI is a great experience. You get a lot of powerful insights during exchanges with the professors and other students\u2014and you learn how to \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Learn How To Pick The Right One Every Time Jul methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Create a Certification Program? (A 2026 Guide) - Certifier",
+      "url": "https://certifier.io/blog/how-to-make-a-certification-program",
+      "snippet": "15.6.2026 \u00b7 Step 1: Identify the needs and course scope \u00b7 Step 2: Choose the certification course format \u00b7 Step 3: Set up the logistics \u00b7 Step 4: Pick the best ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "The Certificate Program methodology"
+      ],
+      "method_score": 2,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to Find Crypto Arbitrage Opportunities - Bitcoin Foundation",
+      "url": "https://bitcoinfoundation.org/news/altcoins/how-to-find-crypto-arbitrage-opportunities-a-step-by-step-trading-guide/",
+      "snippet": "17.4.2026 \u00b7 Learn how to find crypto arbitrage opportunities, use scanners, reduce risks, and apply strategies for consistent profits in crypto markets.3.\ud83d\udee0\ufe0fHow to Find Crypto... \u00b7 5.\ud83d\udee0\ufe0fStep-by-Step Guide to...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Find Crypto Arbitrage Trading Opportunities methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": true,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to do arbitrage? : r/CryptoMarkets - Reddit",
+      "url": "https://www.reddit.com/r/CryptoMarkets/comments/1fi82cr/how_to_do_arbitrage/",
+      "snippet": "16.9.2024 \u00b7 One way to build an arbitration bot is just in the liquidity pairs, a token itself contains all abilities to do arbitrage.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Find Crypto Arbitrage Trading Opportunities methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Flash Loan Attacks: How They Work & How to Prevent Them - Hacken.io",
+      "url": "https://hacken.io/discover/flash-loan-attacks/",
+      "snippet": "10.05.2026 \u00b7 A flash loan attack is a DeFi exploit where an attacker uses uncollateralized, same-transaction borrowing to amplify a protocol weakness.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Implement Stablecoin Flash Loans methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to correctly zip the whole python standard library?",
+      "url": "https://stackoverflow.com/q/62373811",
+      "snippet": "[python, zip] shakfu // is answered // score: 3",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Value Moves methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Choosing or Chosing: Which Spelling Is Correct and How to Use It",
+      "url": "https://grammartribe.com/choosing-or-chosing/",
+      "snippet": "Mar 26, 2026 \u00b7 In this article, we will clearly explain the correct form of choosing or chosing, its origin, grammar rules, differences in English variants, and real-world usage. By the end, you will never \u2026",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Choosing What Matters methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Dear Andy: How to Choose Objectives that Truly Matter - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/dear-andy-how-choose-objectives-truly-matter-whatmatters-com-xpibf",
+      "snippet": "28.1.2025 \u00b7 Everyone understands why the Objective is important \u2014 but they don't understand why it's more important than all the other things we need to do.",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Choosing What Matters methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "How to make a asynchronous app with Node, Express",
+      "url": "https://stackoverflow.com/q/19728259",
+      "snippet": "[node.js, asynchronous, socket.io] WagnerMatosUK // score: 0",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Choosing What Matters methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    },
+    {
+      "title": "Measure What Matters - OKR Institute",
+      "url": "https://okrinstitute.org/measure-what-matters/",
+      "snippet": "This guide covers everything organizations and professionals need to know about the Measure What Matters OKR framework: its origins, its core principles, how to ...",
+      "date": null,
+      "anchor_hits": 1,
+      "anchors_matched": [
+        "Choosing What Matters methodology"
+      ],
+      "method_score": 1,
+      "has_outcome": false,
+      "tier": "INTUITED"
+    }
+  ]
+}
