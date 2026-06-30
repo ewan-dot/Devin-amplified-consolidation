@@ -20,6 +20,7 @@ Mac is read-only from 2026-06-17 — no git push from Mac. All pushes via Devin 
 ## Rules
 Ewan's 11 rules: ~/.cursor/rules/ewan-core-rules.mdc
 7 operational rules: ~/clean-build/docs/amplified-agent-operational-rules.md
+Spine Size Law: `AGENTS.md` must be kept at a perfect, readable size and MUST never exceed 500 lines. If the file approaches 500 lines, migrate verbose details, environment context, and logs to `ESTATE-NOTES.md` (or portable spine reference directories) to compress the file.
 
 ## Key locations
 - Codebase SSOT: ~/clean-build/ (GitHub: Amplified-Partners/fleet-clean-build)
