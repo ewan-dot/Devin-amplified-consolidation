@@ -57,6 +57,7 @@ valid_until: "2026-12-31"
 | `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/harness/` | Mac Mini | Gating and policy validation harnesses. | `shape_gate.py` (YAML tier validator), OPA policies in `/opa/amplified/`. |
 | `/Users/ewansair/ingestion-to-research-pipe/clean-build/02_build/` | Mac Mini | Gated python research pipeline codebase (589 .py files). | Stage 1 validator (`intake/validator.py`), Stage 2 Search (`router.py`), Stage 5 staging emitter. |
 | `/Users/ewansair/control-centre/` | Mac Mini | Deterministic core orchestration codebase. | Rule engines (`rules/engine.py`), preflight validators, metric collectors. |
+| `/Users/ewansair/.gemini/config/skills/amplified-mathematical-validator/` | Mac Mini | Global Customizations | Global customization skill for Taguchi bounds, Cosine Dispersion, Semantic Entropy, and Conformal Predictions. |
 
 ---
 
@@ -75,3 +76,4 @@ valid_until: "2026-12-31"
 1.  **Split-Database Guard:** Any script targeting `business_brain` or `compound_design` MUST assert that `database_name == 'amplified_brain'` and that the node count exceeds `10000`. It must explicitly reject writes if connected to `/cove` or `/postgres`.
 2.  **Secret Scrubbing Guard:** No secrets, raw passwords, or private SSH keys may cross the `pre-ingest-tier-gate` boundaries or be committed to repository logs. Verified by `/harness/shape_gate.py`.
 3.  **Epistemic Floor Cap:** Any seat that invoked an LLM during text generation must cap its frontmatter output at `epistemic_tier: INTUITED`. Promotion to `STRUCTURED` or higher requires formal validation via the `promotion_record_id` gate.
+4.  **Write Gate Safety Guard:** All writes to the semantic graph database via Vellum are gated. They must pass three strict bounds: `semantic_entropy < 0.4` (consensus check), `conformal_set_size <= 2` (confidence check), and `sandbox_verified == True` (isolated transactional rollback execution proof). Violating items are aborted with `HTTP 400` and emit `brain_write_blocked` warnings.
