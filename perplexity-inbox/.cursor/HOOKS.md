@@ -17,8 +17,9 @@ Marker: `~/.amplified/logs/vellum-session.json`
 
 1. `session-start-preamble.sh` — git context  
 2. `session-start-read-baton.py` — latest baton (`batons/active/`, max 5)  
-3. `session-start-antigravity-baton.py` — latest Antigravity baton (`portable-spine/agents/antigravity/BATON.md`)  
-4. `session-start.sh` — sensor → **VERDICT=** (paste into plan)  
-5. `session-start-vellum-intent.py` — **PLAN before work**
+3. `session-start-routing-hint.py` — Cursor routing slice + Vellum routing hint (`config/fleet-routing-v1.json`)  
+4. `session-start-antigravity-baton.py` — latest Antigravity baton (`portable-spine/agents/antigravity/BATON.md`)  
+5. `session-start.sh` — sensor → **VERDICT=** (paste into plan)  
+6. `session-start-vellum-intent.py` — **PLAN before work** (include `metadata.routing` sidecar before spawn)
 
 SSOT scripts: `perplexity-inbox/.cursor/hooks/`

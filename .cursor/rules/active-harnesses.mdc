@@ -236,6 +236,24 @@ to first-principles reasoning primitives, and groups them into clusters.
 
 ---
 
+## `perplexity-inbox/harness/routing_manifest.py`
+Fleet routing manifest — per-IDE slices from SSOT JSON.
+
+Read at session-start; Cursor seat loads ides.cursor only (IDE sovereignty).
+
+### Functions
+- `def inbox_root()`
+- `def manifest_path()`
+- `def load_manifest()`
+- `def ide_slice(seat)`
+- `def routing_sidecar_schema()`
+- `def session_hint_text(seat)`
+  Compact context for sessionStart injection.
+- `def vellum_routing_from_marker()`
+  Optional routing hint persisted alongside vellum session marker.
+
+---
+
 ## `perplexity-inbox/harness/search_autocorrect.py`
 Linguistic Search Autocorrect Filter (The spelling and entity alignment layer).
 
@@ -399,5 +417,8 @@ Vellum session marker — plan before work, actual on close.
 - `def plan_posted_recently()`
 - `def actual_posted_for_current_plan()`
 - `def plan_entry_id()`
+- `def save_routing_sidecar(sidecar)`
+  Persist light WHO routing decision alongside plan marker (Vellum mirror).
+- `def routing_sidecar()`
 
 ---

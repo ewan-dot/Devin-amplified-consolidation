@@ -16,6 +16,8 @@ Complements `lean-output.mdc` (chat brevity). **Output length is the #1 conversa
 
 ## Subagent offload
 
+See `right-model-routing.mdc` — default **solo**; witness WHO on Vellum before spawn; **never** `model: inherit` on subagents.
+
 Delegate to Task/subagents when the main thread would load heavy context:
 
 - Exploring unknown code (>2 files you have not read this session)

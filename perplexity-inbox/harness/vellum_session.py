@@ -62,3 +62,15 @@ def actual_posted_for_current_plan() -> bool:
 
 def plan_entry_id() -> str:
     return str(load().get("plan_entry_id") or "")
+
+
+def save_routing_sidecar(sidecar: dict[str, Any]) -> None:
+    """Persist light WHO routing decision alongside plan marker (Vellum mirror)."""
+    data = load()
+    data["routing_sidecar"] = sidecar
+    save(data)
+
+
+def routing_sidecar() -> dict[str, Any] | None:
+    hint = load().get("routing_sidecar")
+    return dict(hint) if isinstance(hint, dict) and hint else None

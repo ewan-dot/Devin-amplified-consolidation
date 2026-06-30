@@ -1,0 +1,66 @@
+---
+description: Right horse for right course — model tiers, solo default, Vellum WHO witness, IDE sovereignty
+alwaysApply: true
+---
+
+# Right model routing (Amplified fleet)
+
+SSOT manifest: `perplexity-inbox/config/fleet-routing-v1.json`  
+Operating brief: `perplexity-inbox/OPERATING-RULE__right-model-routing__v01__2026-06-30__cursor.md`
+
+Complements `token-efficiency.mdc` (context cost) and `constitutional-gate.mdc` (Privacy, Security, Sovereignty rods).
+
+## Philosophy
+
+- **Correct size + tight remit** — not the biggest model
+- **Default solo** — parent does the work unless remit is clearly independent
+- **Frontier ceiling ≤1 per job** — one planning/judgment tier invocation; execution is mechanical
+- **Workers** — Composer / generation / extraction by remit; no routing authority
+- **WHO ≠ WHAT (light v1)** — WHO (solo vs team vs seat) is witnessed; WHAT stays in the task body. Not full PRM bureaucracy.
+
+## Cursor parent — solo vs delegate
+
+Before spawning Task/subagent or an API-led team:
+
+1. **Self-assess:** "I can do this in-thread" vs "independent remit justifies delegate"
+2. **Default:** solo — delegate only when remit is independent AND parent would load heavy context (>2 unread files, >100 log lines, external URL corpus)
+3. **Log to Vellum** — routing sidecar on plan task **before** spawn (see manifest `vellum_routing_sidecar.fields`)
+4. **Rich when needed** — API-led team is allowed; simple default otherwise
+
+## Subagents — no inherit
+
+- **Never** `model: inherit` on subagents — explicit tier always
+- Parent chooses worker tier; subagent does not re-decide routing
+- Cursor parent **accountable** for every subagent spawn under the Cursor session
+
+## IDE sovereignty / end-to-end ownership
+
+- Shared config holds **per-IDE slices** — Cursor reads `ides.cursor` only
+- **Sub-Cursor is still Cursor** — not subcontracted, not externalized
+- Non-Cursor routes (Beast API, Vellum, other seats) OK **within estate boundaries** — Cursor owns the thread prompt→finish for Cursor-originated work
+- **Cross-seat handoff** = explicit baton + Vellum consent — never silent offload
+- No laundering work outside the IDE's audit trail (constitutional rods: Privacy, Security, Sovereignty)
+
+## Sync (bidirectional)
+
+| Asset | Repo SSOT | Runtime mirror |
+|-------|-----------|----------------|
+| This rule | `.cursor/rules/right-model-routing.mdc` | `~/.cursor/rules/right-model-routing.mdc` |
+| Manifest | `perplexity-inbox/config/fleet-routing-v1.json` | read at session-start via `routing_manifest.py` |
+| Hooks | `perplexity-inbox/.cursor/hooks/` | `~/.cursor/hooks/` |
+
+Repo → home on boot; home → repo same session when encoding gaps (`self-compound.mdc`).
+
+## Hook touchpoints
+
+- **sessionStart** — `session-start-routing-hint.py` injects Cursor slice + any Vellum routing hint from marker
+- **sessionStart** — `session-start-vellum-intent.py` nudge includes routing sidecar fields on PLAN
+- **beforeSubmitPrompt** — constitutional + prompt lint (existing)
+- **subagentStop** — parent must reconcile subagent output; Cursor thread stays owner
+- **stop** — ACTUAL references plan + routing decisions taken
+
+## GAP (honest v1)
+
+- Estate token-router proxy enforcement not wired — this rule is the Cursor-seat nudge layer
+- Automated block on spawn without Vellum sidecar — nudge only until `client_live`
+- Claude/Antigravity slices stubbed in manifest; each seat encodes its slice when active

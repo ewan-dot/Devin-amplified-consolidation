@@ -12,6 +12,10 @@ WITNESS = os.path.expanduser("~/.amplified/logs/harness-hooks.jsonl")
 MSG = (
     "[vellum-plan] STOP — post PLAN to Vellum before any work (author=cursor, INTUITED). "
     "Fields: goal, 3–5 steps, owners, VERDICT= from sensor after this message. "
+    "Routing sidecar (WHO — before any Task/subagent spawn): metadata.routing = "
+    "{routing_mode, parent_model_tier, worker_tiers, solo_or_delegate_reason, "
+    "witnessed_before_spawn, cursor_thread_owner}. Default routing_mode=solo. "
+    "See perplexity-inbox/config/fleet-routing-v1.json + right-model-routing.mdc. "
     "Then: python3 ~/.cursor/hooks/mark-vellum-plan-posted.py <entry_id>. "
     "On seat close: append ACTUAL to same thread (plan entry_id + done/blocked/delta)."
 )

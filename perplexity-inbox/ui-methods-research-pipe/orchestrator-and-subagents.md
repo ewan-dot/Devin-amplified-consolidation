@@ -66,7 +66,7 @@ outcome_routing:
 ---
 name: ui-methods-orchestrator
 description: "Dispatches one bounded-domain sub-agent per human-side-UI method, in parallel, to recover each method's logic and methodology from primary sources. Use to run the full UI-methods research pass. Does no research itself — it scopes, dispatches, collects, and reconciles."
-model: inherit
+model: opus
 tools: subagent, Read, Write, Glob
 ---
 

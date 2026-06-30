@@ -1,0 +1,77 @@
+{
+  "$schema": "https://amplified.partners/schemas/fleet-routing-v1.json",
+  "version": "1.0.0",
+  "updated": "2026-06-30",
+  "philosophy": "Right horse for right course — correct-size model + tight remit, not biggest model.",
+  "sync": {
+    "repo_ssot": "perplexity-inbox/config/fleet-routing-v1.json",
+    "rule_ssot": "ingestion-to-research-pipe/.cursor/rules/right-model-routing.mdc",
+    "rule_mirror": "~/.cursor/rules/right-model-routing.mdc",
+    "direction": "repo SSOT → ~/.cursor/ on seat boot; local edits back to repo same session (self-compound)"
+  },
+  "model_tiers": {
+    "frontier": "Planning, judgment, solo-vs-team routing, constitutional trade-offs — ≤1 invocation per job",
+    "standard": "Orchestration with bounded remit; explicit model always",
+    "worker": "Composer / generation / extraction — tight scope, no routing authority"
+  },
+  "defaults": {
+    "routing_mode": "solo",
+    "subagent_model": "explicit_required",
+    "forbid_subagent_inherit": true,
+    "frontier_ceiling_per_job": 1,
+    "witness_routing_before_spawn": true
+  },
+  "vellum_routing_sidecar": {
+    "description": "Light WHO decision on Vellum task metadata — not full PRM bureaucracy",
+    "attach_to": "plan_entry metadata.routing",
+    "fields": {
+      "routing_mode": ["solo", "subagent", "api_team", "cross_seat"],
+      "parent_model_tier": ["frontier", "standard", "worker"],
+      "worker_tiers": "array of explicit worker tier labels when mode != solo",
+      "solo_or_delegate_reason": "one line — why solo vs delegate",
+      "witnessed_before_spawn": "boolean — must be true before Task/subagent/API team spawn",
+      "cursor_thread_owner": "cursor — Cursor-originated work stays on Cursor audit trail"
+    }
+  },
+  "ide_sovereignty": {
+    "principle": "Each IDE owns its thread end-to-end; shared SSOT holds per-IDE slices only",
+    "rods": ["Privacy", "Security", "Sovereignty"],
+    "cross_seat_handoff": "explicit baton + Vellum consent — never silent offload",
+    "external_routes": "Beast API / Vellum / other seats allowed within estate boundaries; no laundering outside IDE audit trail"
+  },
+  "ides": {
+    "cursor": {
+      "seat": "cursor",
+      "reads_slice": "ides.cursor",
+      "thread_ownership": "Cursor parent accountable for all subagent spawns in Cursor session",
+      "sub_cursor": "Still Cursor responsibility end-to-end — not subcontracted",
+      "default_parent_tier": "standard",
+      "frontier_for": ["plan", "solo_vs_team", "constitutional_judgment"],
+      "worker_for": ["explore_codebase", "log_parse", "external_doc_fetch", "generation", "extraction"],
+      "subagent_rules": {
+        "model": "explicit_tier_required",
+        "forbid": ["inherit", "blank"],
+        "delegate_when": "independent remit AND parent would load heavy context (>2 unread files, >100 log lines, external URL corpus)",
+        "default_when_not_delegating": "solo"
+      },
+      "api_team": {
+        "allowed": true,
+        "within": "estate_boundaries",
+        "witness": "Vellum routing_sidecar before spawn",
+        "audit_trail": "Cursor thread + Vellum plan/actual — no silent externalization"
+      }
+    },
+    "claude_code": {
+      "seat": "claude",
+      "reads_slice": "ides.claude_code",
+      "thread_ownership": "Claude Code session owns Claude subagents end-to-end",
+      "note": "Cursor slice not loaded in Claude — sovereignty boundary"
+    },
+    "antigravity": {
+      "seat": "antigravity",
+      "reads_slice": "ides.antigravity",
+      "thread_ownership": "Antigravity session owns its agents end-to-end",
+      "note": "Cursor slice not loaded in Antigravity — sovereignty boundary"
+    }
+  }
+}
