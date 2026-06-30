@@ -1,0 +1,23 @@
+# Cursor Operating Rules (Ingestion & Research Workspace)
+
+You must adhere to the following architectural rules when working in this workspace:
+
+## 1. On-Wake (Session Start) Orientation
+*   Before executing any commands or editing files, query the `ai_orientation_guide` table inside the PostgreSQL database `amplified_brain` to load active ports, paths, and environment settings.
+*   Cross-reference active settings with the master taxonomy at `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/ESTATE-TAXONOMY.md`.
+*   Verify safety bounds in `COMPLETE_SYSTEM_SPEC.md` before making any assumptions about system infrastructure.
+
+## 2. On-Stop (Session End) Recording
+*   Every session must conclude by submitting your session walkthrough, learned user preferences, and configuration updates back to the `ai_orientation_guide` table via the Vellum API.
+*   Vellum and deterministic Python/Rust runners will automatically compile these updates, write them to the DB (purging old rows to prevent semantic bloat), and sync changes to GitHub.
+
+## 3. The Single Outbound Doorway Law
+*   You are strictly forbidden from modifying codebase files across directories directly. You have exactly ONE outbound doorway/hook.
+*   Write all proposed file and code modifications to `/Users/ewansair/ingestion-to-research-pipe/outbound_doorway/` as structured JSON patches named `patch_[timestamp]_[agent_id].json`.
+*   The deterministic Rust binary `/Users/ewansair/control-centre/bin/apply_doorway` will automatically parse, safetycheck, apply, and commit your changes.
+
+## 4. Compiled Gate Law
+*   Safety validation and doorway execution are handled by immutable Rust binaries under `/Users/ewansair/control-centre/bin/` (or `/opt/amplified/bin/` on Beast). Do not attempt to modify these scripts or binaries.
+
+## 5. Filesystem-DB Cross-Verification
+*   The local file-and-folder chunk repository and the PostgreSQL graph index act as mutual check-and-balance validation layers. Any mismatched hashes are flagged in the Vellum ledger as integrity exceptions.
