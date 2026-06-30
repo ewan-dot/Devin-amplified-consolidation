@@ -7,8 +7,9 @@
 ## sessionStart chain (user harness)
 
 1. `session-start-preamble.sh` — git/task context
-2. `session-start.sh` — fleet sensor + VERDICT line
-3. `session-start-vellum-intent.py` — nudge: post plan to Vellum before substantive work (`vellum-witness.mdc`)
+2. `session-start-read-baton.py` — latest from `batons/active/` (max 5)
+3. `session-start.sh` — fleet sensor + VERDICT line
+4. `session-start-vellum-intent.py` — nudge: post plan to Vellum before substantive work (`vellum-witness.mdc`)
 
 After posting Vellum intent: `python3 ~/.cursor/hooks/mark-vellum-intent-posted.py <entry_id>` suppresses repeat nudge for 8h.
 

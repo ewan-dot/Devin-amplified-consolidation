@@ -7,6 +7,10 @@
         "timeout": 5
       },
       {
+        "command": "python3 ./hooks/session-start-read-baton.py",
+        "timeout": 5
+      },
+      {
         "command": "./hooks/session-start.sh",
         "timeout": 10
       },
