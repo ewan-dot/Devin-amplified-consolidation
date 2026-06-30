@@ -1,0 +1,47 @@
+---
+description: "Rules and schemas for querying and executing migrations on the DuckDB Sandbox Intelligence Lake."
+globs: "perplexity-inbox/**/*"
+---
+# Dual Database Sandbox: Operational Data Lake & Reasoning Primitives
+
+When interacting with files in the ingestion-to-research pipe or querying/modifying the local sandbox database, adhere strictly to the following DuckDB schemas and cognitive rubrics.
+
+## 1. Relational Database Schemas (DuckDB)
+
+The database file is located at `perplexity-inbox/data/intelligence_lake.db`. It implements a dual-structure:
+
+### Section A: Operational Data Lake (Context)
+*   **`documents`**: Tracks raw file provenance and hash-chained version history.
+    *   Columns: `id VARCHAR`, `title VARCHAR`, `source_path VARCHAR`, `hash VARCHAR`, `version INTEGER`, `parent_hash VARCHAR`, `created_at TIMESTAMP`, `status VARCHAR`
+*   **`chunks`**: Token-optimized text segments (limit: 300 lines / 250-550 words).
+    *   Columns: `id VARCHAR`, `document_id VARCHAR`, `chunk_index INTEGER`, `content TEXT`, `tokens_count INTEGER`, `schema_code VARCHAR`, `epistemic_tier VARCHAR`
+*   **`clusters`**: Dimension-based groups mapped via Jaccard similarity.
+    *   Columns: `id INTEGER`, `name VARCHAR`, `representative_dimensions TEXT`
+*   **`chunk_clusters`**: Maps chunks to their clusters.
+    *   Columns: `chunk_id VARCHAR`, `cluster_id INTEGER`, `similarity_score DOUBLE`
+
+### Section B: First-Principles Reasoning Primitives (Logic)
+*   **`reasoning_primitives`**: Immutable mathematical, logical, and psychological reasoning building blocks.
+    *   Columns: `id VARCHAR PRIMARY KEY`, `name VARCHAR`, `category VARCHAR`, `description TEXT`, `governing_formula TEXT`, `rubrics TEXT`
+*   **`chunk_reasoning_links`**: Maps raw contextual chunks to logical reasoning primitives.
+    *   Columns: `chunk_id VARCHAR`, `primitive_id VARCHAR`, `confidence_score DOUBLE`
+
+## 2. Invariant Reasoning Primitives (Logic Seed)
+
+Always reference these primitive IDs when linking data context to logic models:
+*   `PRIM_PMI` (Pointwise Mutual Information): $PMI(x;y) = \log_2(P(x,y)/(P(x)P(y)))$.
+*   `PRIM_JACCARD` (Jaccard Set/Slot): $J_{\text{slot}} = \text{matching slots} / 4$; $J_{\text{set}} = |A \cap B| / |A \cup B|$.
+*   `PRIM_PUDDING` (Swanson ABC scoring): $S = (DomainDist \times PatternAlign) + GapComp + TensionBonus$.
+*   `PRIM_TAGUCHI` (Quality Loss): $L(\tau) = k_d \tau^2$ (variance cost).
+*   `PRIM_MARKOV` (State Transitions): $P = [Q\ R;\ 0\ I]$, absorption matrices for process death spirals.
+*   `PRIM_ALTMAN` (Bankruptcy Distress): $Z = 6.56X_1 + 3.26X_2 + 6.72X_3 + 1.05X_4$.
+*   `PRIM_REVERSE_PUDDING` (Compounding Risks): Duality $\Delta_- = -\Delta_+$ and interaction terms $\eta_{ij} > 0$.
+*   `PRIM_CAUSAL` (Causal Chaining): Root cause analysis and dependency flow mapping.
+*   `PRIM_FRICTION` (Friction Mapping): Locating complexity, delays, and operational drag.
+*   `PRIM_TRUST` (Trust Alignment): Measuring credibility, benevolence, and capability parameters.
+*   `PRIM_DECAY` (Temporal Decay): Exponential relevance decay $R(t) = e^{-\lambda t}$.
+
+## 3. Querying & Development Constraints
+*   **No Raw SQL without Session Context**: When opening a Python DuckDB connection, verify path exists and close connection in `finally` blocks.
+*   **Dynamic Lenses Verification**: Ensure that any chunk inserted has its YAML frontmatter validated against its `schema_code` using `glasses_loader.py` first.
+*   **Version Lineage**: Increment version only if body hash changes. Record the old hash as `parent_hash`.

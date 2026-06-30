@@ -126,6 +126,28 @@ def run_checks() -> bool:
         print("  [FAIL] Plan file implementation_plan.md was not found.")
         all_passed = False
 
+    # 5. DuckDB Sandbox Intelligence Lake check
+    db_path = ROOT_DIR / "perplexity-inbox" / "data" / "intelligence_lake.db"
+    if db_path.exists():
+        print(f"Verifying DuckDB Database: {db_path.name}")
+        try:
+            import duckdb
+            with duckdb.connect(str(db_path)) as conn:
+                tables = [r[0] for r in conn.execute("SHOW TABLES;").fetchall()]
+                print(f"  Active Sandbox Tables: {tables}")
+                expected_tables = ["documents", "chunks", "reasoning_primitives", "chunk_reasoning_links", "clusters", "chunk_clusters"]
+                for t in expected_tables:
+                    if t not in tables:
+                        print(f"  [FAIL] Missing required DuckDB table: '{t}'")
+                        all_passed = False
+                    else:
+                        print(f"    ✓ Table '{t}' exists")
+        except Exception as e:
+            print(f"  [FAIL] Failed to verify DuckDB: {e}")
+            all_passed = False
+    else:
+        print("  [INFO] DuckDB Sandbox database not found yet (will be initialized on pipeline run).")
+
     print("-----------------------------------------------------------------")
     print(f"OVERALL VERDICT: {'PASSED' if all_passed else 'FAILED'}")
     print("-----------------------------------------------------------------")
