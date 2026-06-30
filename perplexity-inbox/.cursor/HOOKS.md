@@ -1,16 +1,23 @@
 # Hooks — SSOT + runtime
 
-**Install template:** `../../.cursor/hooks.install.json` → copy to `~/.cursor/hooks.json` (paths use `./hooks/` — valid only beside `~/.cursor/hooks/` scripts).
+**Install:** copy `../../.cursor/hooks.install.json` → `~/.cursor/hooks.json` and sync scripts to `~/.cursor/hooks/`.
 
-**Project `hooks.json`:** shape-gate `afterFileEdit` only (workspace). Full chain lives in `~/.cursor/hooks.json`.
+## Vellum plan → actual (mandatory)
 
-## sessionStart chain (user harness)
+| When | Hook | Action |
+|------|------|--------|
+| **Session start** (after sensor) | `session-start-vellum-intent.py` | Post **PLAN** to Vellum before any work |
+| After plan posted | `mark-vellum-plan-posted.py <entry_id>` | Clears nudge for 8h |
+| **Stop / seat close** | `stop-vellum-actual.py` | Append **ACTUAL** (done, blocked, delta, GitHub push) referencing plan `entry_id` |
+| After actual posted | `mark-vellum-actual-posted.py <entry_id>` | Clears stop nudge |
 
-1. `session-start-preamble.sh` — git/task context
-2. `session-start-read-baton.py` — latest from `batons/active/` (max 5)
-3. `session-start.sh` — fleet sensor + VERDICT line
-4. `session-start-vellum-intent.py` — nudge: post plan to Vellum before substantive work (`vellum-witness.mdc`)
+Marker: `~/.amplified/logs/vellum-session.json`
 
-After posting Vellum intent: `python3 ~/.cursor/hooks/mark-vellum-intent-posted.py <entry_id>` suppresses repeat nudge for 8h.
+## sessionStart chain
 
-SSOT scripts: `perplexity-inbox/.cursor/hooks/` — sync to `~/.cursor/hooks/` on change.
+1. `session-start-preamble.sh` — git context  
+2. `session-start-read-baton.py` — latest baton (`batons/active/`, max 5)  
+3. `session-start.sh` — sensor → **VERDICT=** (paste into plan)  
+4. `session-start-vellum-intent.py` — **PLAN before work**
+
+SSOT scripts: `perplexity-inbox/.cursor/hooks/`

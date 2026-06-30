@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""sessionStart — require Vellum intent post before substantive seat work.
-
-Witnesses to ~/.amplified/logs/harness-hooks.jsonl.
-Outputs additional_context for the agent (not a hard block — pre_client).
-"""
+"""sessionStart — PLAN to Vellum before any substantive work."""
 from __future__ import annotations
 
 import json
@@ -12,13 +8,12 @@ import sys
 import time
 
 WITNESS = os.path.expanduser("~/.amplified/logs/harness-hooks.jsonl")
-MARKER = os.path.expanduser("~/.amplified/logs/vellum-intent-posted.json")
-SESSION_HOURS = 8
 
 MSG = (
-    "[vellum-intent] Before substantive work: post plan to Vellum (author=cursor, tier=INTUITED). "
-    "Include: artefact IDs, registry rows (docs/OWNERSHIP-REGISTRY.md), 3–5 step plan, owners. "
-    "Paste VERDICT= line from session-start. See vellum-witness.mdc."
+    "[vellum-plan] STOP — post PLAN to Vellum before any work (author=cursor, INTUITED). "
+    "Fields: goal, 3–5 steps, owners, VERDICT= from sensor after this message. "
+    "Then: python3 ~/.cursor/hooks/mark-vellum-plan-posted.py <entry_id>. "
+    "On seat close: append ACTUAL to same thread (plan entry_id + done/blocked/delta)."
 )
 
 
@@ -27,25 +22,11 @@ def witness(ok: bool, note: str) -> None:
         os.makedirs(os.path.dirname(WITNESS), exist_ok=True)
         with open(WITNESS, "a", encoding="utf-8") as f:
             f.write(
-                json.dumps(
-                    {"ts": time.time(), "hook": "session-start-vellum-intent", "ok": ok, "note": note}
-                )
+                json.dumps({"ts": time.time(), "hook": "session-start-vellum-plan", "ok": ok, "note": note})
                 + "\n"
             )
     except OSError:
         pass
-
-
-def recent_intent_posted() -> bool:
-    try:
-        if not os.path.isfile(MARKER):
-            return False
-        with open(MARKER, encoding="utf-8") as f:
-            data = json.load(f)
-        ts = float(data.get("ts", 0))
-        return (time.time() - ts) < SESSION_HOURS * 3600
-    except (OSError, json.JSONDecodeError, TypeError, ValueError):
-        return False
 
 
 def main() -> None:
@@ -54,13 +35,22 @@ def main() -> None:
     except json.JSONDecodeError:
         pass
 
-    if recent_intent_posted():
+    root = os.environ.get("AMPLIFIED_INBOX", os.path.expanduser("~/ingestion-to-research-pipe/perplexity-inbox"))
+    sys.path.insert(0, root)
+    try:
+        from harness.vellum_session import plan_posted_recently  # noqa: E402
+    except ImportError:
+        print(json.dumps({"additional_context": MSG}))
+        witness(True, "nudge (no vellum_session)")
+        return
+
+    if plan_posted_recently():
         print("{}")
-        witness(True, "intent posted recently")
+        witness(True, "plan posted recently")
         return
 
     print(json.dumps({"additional_context": MSG}))
-    witness(True, "nudge intent post")
+    witness(True, "nudge plan post")
 
 
 if __name__ == "__main__":
