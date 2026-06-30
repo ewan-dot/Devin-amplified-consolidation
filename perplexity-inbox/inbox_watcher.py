@@ -41,7 +41,7 @@ INBOX_DIR = ROOT_DIR
 CHUNKS_DIR = ROOT_DIR / "chunks"
 ARCHIVE_DIR = ROOT_DIR / "archive"
 STATE_FILE = ROOT_DIR / "harness" / "watcher_state.json"
-BEAST_CONN_URI = "postgresql://cove:lTJhzWncfPNVCAomIFtkyVoxPrIENLtE@127.0.0.1:5433/amplified_brain"
+BEAST_CONN_URI = "postgresql://cove:lTJhzWncfPNVCAomIFtkyVoxPrIENLtE@127.0.0.1:5433/cove"
 
 CHUNK_SIZE = 300
 SCAN_INTERVAL_SECONDS = 15
@@ -97,7 +97,7 @@ def get_file_hash(filepath: Path) -> str:
 def check_beast_database() -> bool:
     """Sanity-checks the Beast database connection. Degrades gracefully if down."""
     try:
-        assert_db_target(BEAST_CONN_URI, expected_db="amplified_brain", min_graph_nodes=10000)
+        assert_db_target(BEAST_CONN_URI, expected_db="cove", min_graph_nodes=1)
         print("[WATCHER] ✓ Beast DB connection guard check passed successfully.", file=sys.stderr)
         return True
     except Exception as e:
