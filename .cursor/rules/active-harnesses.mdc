@@ -66,6 +66,47 @@ SSOT paths under AMPLIFIED_INBOX / amplified-pipeline data/.
 
 ---
 
+## `perplexity-inbox/harness/calibrate_spine.py`
+Mathematical Spine Parameter Calibration Script.
+
+Validates and calibrates the coefficients of the three primary active formulas
+(Taguchi Quality Loss F12, Temporal Relevance Decay F15, and Pudding Candidate Score F11)
+against research datasets to verify their real-world operation.
+
+### Functions
+- `def parse_date_string(date_str)`
+  Parses standard dot-separated dates from research logs or returns fallback.
+- `def run_temporal_decay_calibration(methods, lambda_val)`
+  Calibrates temporal decay R(t) = e^(-lambda * t).
+  
+  Evaluates half-life and identifies how many chunks fall below the 35% re-run threshold.
+- `def run_taguchi_loss_calibration(methods)`
+  Calibrates Taguchi Loss L(tau) = k_d * tau^2.
+  
+  Computes loss given deviations from optimal relevance score.
+  Optimal score target is 2.0 (relevance hit).
+- `def run_pudding_threshold_calibration(methods)`
+  Evaluates mock LBD connections under the 13/18/30 thresholds.
+- `def main()`
+
+---
+
+## `perplexity-inbox/harness/code_syntax_gate.py`
+Code Syntax Gatekeeper & Autocorrect Filter.
+
+Parses python files via AST to verify syntax correctness before execution or commit.
+If simple syntax errors are found (e.g., missing colons at the end of block statements),
+it automatically repairs the code, saves the correction, and exits with 0.
+For complex errors, it fails loud and exits with 1.
+
+### Functions
+- `def try_autocorrect_syntax(content, error)`
+  Attempts to auto-correct common python syntax errors (like missing colons).
+- `def check_and_repair_file(file_path)`
+  Checks python file syntax. Repairs if possible, otherwise returns fail message.
+
+---
+
 ## `perplexity-inbox/harness/db_harness.py`
 Database target harness connection guards (Rod 1 & No Silent Failures).
 
@@ -121,6 +162,25 @@ Returns exit code 0 on success, or exit code 1 if checks fail.
 
 ---
 
+## `perplexity-inbox/harness/glasses_loader.py`
+Glasses Loader (Dynamic Metadata Lens Switcher).
+
+Parses markdown frontmatter, determines the schema_code ("glasses"),
+validates field constraints (strictly 17-20 fields), and returns
+contextual instructions for AI model attention guidance.
+
+### Functions
+- `def load_registry()`
+  Loads the lenses registry from JSON.
+- `def extract_yaml_frontmatter(content)`
+  Extracts frontmatter dictionary and remaining body content from markdown.
+- `def validate_metadata(fm, registry)`
+  Validates frontmatter dictionary against the registry schema constraints.
+- `def load_lens_glasses(content)`
+  Loads glasses details and validation status for a given file content.
+
+---
+
 ## `perplexity-inbox/harness/hooks/antigravity-post-write-shape-gate.py`
 Antigravity post-write adapter — shape gate (stdin or --path).
 
@@ -153,6 +213,46 @@ CLI — run shape gate on a file (Antigravity verification loop + manual bee).
 
 ---
 
+## `perplexity-inbox/harness/lake_pipeline.py`
+APQS Sandbox Intelligence Lake Pipeline.
+
+Manages a local DuckDB-based sandbox database representing the data lake
+relationship. Slices documents, tracks version lineage, maps chunks
+to first-principles reasoning primitives, and groups them into clusters.
+
+### Functions
+- `def get_db_connection()`
+  Connects to the DuckDB intelligence lake database, creating parent dirs if needed.
+- `def init_database()`
+  Initializes the DuckDB schemas and populates the seed reasoning primitives.
+- `def chunk_text(text, chunk_size)`
+  Splits a document text into line-based segments.
+- `def match_reasoning_primitives(content, semantic_dimensions)`
+  Determines which reasoning primitives apply to a chunk based on keywords and dimensions.
+- `def cluster_chunk(conn, chunk_id, semantic_dimensions)`
+  Clusters a chunk by looking for existing clusters sharing dimensions via Jaccard similarity.
+- `def ingest_document(file_path)`
+  Processes a document file, chunking, labeling, clustering, and versioning it.
+
+---
+
+## `perplexity-inbox/harness/search_autocorrect.py`
+Linguistic Search Autocorrect Filter (The spelling and entity alignment layer).
+
+Intercepts raw, potentially misspelled search queries from humans or AI agents
+and aligns them to the closest canonical targets (taxonomy targets, experts, and vocabulary)
+before executing the query.
+
+### Functions
+- `def calculate_levenshtein(s1, s2)`
+  Calculates Levenshtein distance between two strings.
+- `def correct_word(word)`
+  Corrects a single word using aliases and Levenshtein similarity.
+- `def correct_query(query)`
+  Scans and autocorrects a full search query string.
+
+---
+
 ## `perplexity-inbox/harness/shape_gate.py`
 Shape gate — deterministic tier + attribution check at boundaries (Rod 1).
 
@@ -174,6 +274,26 @@ SSOT: perplexity-inbox/harness/
 - `def check_content(content, path, seat)`
 - `def check_file(path, seat)`
 - `def emit_verdict(denies, path, fm, seat)`
+
+---
+
+## `perplexity-inbox/harness/swanson_pudding_curator.py`
+Swanson LBD / Pudding Technique Curation Engine.
+
+Scans the chunks directory, extracts metadata matching PUDDING_V1,
+performs cross-domain semantic matching on B-term dimensions,
+calculates Jaccard, Simple Recipe, and Pudding Candidate Scores,
+and writes out structured hypothesis recipes.
+
+### Functions
+- `def walk_chunks_for_pudding()`
+  Recursively scans CHUNKS_DIR for all markdown/text files with PUDDING_V1 metadata.
+- `def calculate_scores(a, c)`
+  Calculates all math-spine scoring formulas for the A-B-C pair.
+- `def make_pudding_recipe(a, c, score_res)`
+  Drafts the generated 1+1=3 hypothesis recipe with 20 frontmatter fields.
+- `def run_curator()`
+  Runs the Swanson LBD Curator, executing matches and generating files.
 
 ---
 
@@ -230,6 +350,41 @@ and asserts successful database writes.
 - `def apply_schema(conn)`
 - `def run_ingestion_cycle(conn)`
 - `def main()`
+
+---
+
+## `perplexity-inbox/harness/test_glasses_and_pudding.py`
+Test harness for glasses_loader, shape_gate integration, and swanson_pudding_curator.
+
+Validates that schemas are gated correctly under the 17-20 fields limit,
+checks value constraints, and tests the LBD curation scoring logic.
+
+### `class TestGlassesAndPudding`
+#### Methods:
+- `def setUp(self)`
+- `def test_valid_pudding_schema(self)`
+- `def test_invalid_field_count(self)`
+- `def test_missing_required_field(self)`
+- `def test_invalid_enum_value(self)`
+- `def test_swanson_scoring_maths(self)`
+
+
+---
+
+## `perplexity-inbox/harness/test_lake_pipeline.py`
+Test harness for lake_pipeline.py.
+
+Asserts schema initialization, document ingestion, chunking,
+labeling against primitives, Jaccard clustering, and version lineage.
+
+### `class TestLakePipeline`
+#### Methods:
+- `def setUp(self)`
+- `def tearDown(self)`
+- `def test_database_initialization(self)`
+- `def test_document_ingestion_and_versioning(self)`
+- `def test_clustering_similarity(self)`
+
 
 ---
 
