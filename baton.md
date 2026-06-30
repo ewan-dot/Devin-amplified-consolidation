@@ -13,6 +13,8 @@ load_bearing:
   - "Integrated safety gates (semantic entropy, conformal prediction set size, and database sandbox execution status) into `vellum/brain/gate.py` on branch `task/deterministic-sandwich-amendments` in `github_porch/vellum` (pushed)."
   - "Verified Vellum tests passing successfully: 814 tests passed, 0 failures."
   - "Created and registered the global Customization Skill `amplified-mathematical-validator` containing the formalisms for Taguchi Loss, Cosine Dispersion, Semantic Entropy, and Conformal Prediction."
+  - "Added Spine Size Law and refined Reference Synchronization Hook inside `AGENTS.md` (read-only for executing agents, auto-compiled by Vellum Python/Rust plumbing from ledger entries)."
+  - "Added Taxonomy Read-Only Guard (Rule 5) inside `ESTATE-TAXONOMY.md` to forbid direct edits by agents."
 
 open_items:
   - item: "Governance worker registration"
@@ -33,7 +35,7 @@ infrastructure:
   vellum: "Port 8400 (Beast) / local path: /Users/ewansair/ingestion-to-research-pipe/github_porch/vellum"
   database: "postgresql://cove:lTJhzWncfPNVCAomIFtkyVoxPrIENLtE@127.0.0.1:5433/cove"
 
-session_summary: "Wrote the AI Deterministic Sandwich and 10 gap closures amendments to both system specifications and Vellum contact surface specs. Implemented semantic entropy, conformal size, and sandbox verification rules inside Vellum's brain write gate (gate.py), adding full unit test coverage. Verified and pushed all changes on both repositories. Created the global mathematical validator customization skill."
+session_summary: "Wrote the AI Deterministic Sandwich and 10 gap closures amendments to system specs and Vellum specs. Implemented semantic entropy, conformal size, and sandbox verification rules inside Vellum's brain write gate. Created the global mathematical validator customization skill. Refined system rules to make ESTATE-TAXONOMY.md read-only for agents, with updates automatically compiled from Vellum ledger entries."
 
 novel_this_session: []
 warnings: []
