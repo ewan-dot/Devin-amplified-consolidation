@@ -42,7 +42,7 @@ New durable facts → added here via hook only. Never append duplicates.
 Verbose detail → ESTATE-NOTES.md (append, never delete).
 
 ## Reference Synchronization Hook (Session Close)
-Every session MUST conclude by checking and updating the canonical estate maps (`ESTATE-TAXONOMY.md` and related file reference locations). All new files, container ports, databases, and paths ('what, where, how') must be registered in the reference folder before handing over.
+Every session MUST conclude by submitting all new paths, container ports, databases, and files ('what, where, how') to Vellum and GitHub. The canonical reference map (`ESTATE-TAXONOMY.md`) is strictly read-only for executing agents. It is compiled and updated automatically and deterministically by the Python/Rust Vellum plumbing from Vellum ledger entries. Do not edit `ESTATE-TAXONOMY.md` directly.
 
 ## Overflow
 Repo/container/port facts, session history, verbose preferences → ~/ESTATE-NOTES.md
