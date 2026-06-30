@@ -62,3 +62,26 @@ Read chunk + partner together for full context.
 5. Write Codd→AI atom mapping (1 page)
 
 Phoneme normalizer remains P1/P2 — do not lead Pass 2.
+
+---
+
+## Thread registry (multi-seat harvest — 2026-06-30 extension)
+
+Search window: **2026-06-27 through 2026-06-30**. Cursor harvest by `cursor` seat. See `SYNTHESIS-PREP__multi-seat-chunk-index__2026-06-30__cursor.md` for methodology + other-seat instructions.
+
+| Thread ID | Date | Seat | Topic | Chunk files |
+|-----------|------|------|-------|-------------|
+| `0e0bd954-c665-4fd6-bcf5-f1ec4f0aa45a` | 2026-06-30 | cursor | Atom/lake/lens primary thesis | `chunk-A` … `chunk-H` |
+| `01a2ab34-234c-46c7-ae1e-8adc60e3e9f9` | 2026-06-30 | cursor | Routing config + meta-layer + lake pathway | `chunk-01a2ab34-1` … `-3` |
+| `11410e93-33cc-4346-98fd-27a19a2214a0` | 2026-06-30 | cursor | Research pipe + Brain harness + baton→lake | `chunk-11410e93-1` … `-3` |
+| `cf0da9b0-16c3-4c4a-8ce2-cd1ad5df0a91` | 2026-06-27 | cursor | Shape gate YAML/OPA + honesty arbiter | `chunk-cf0da9b0-1`, `-2` |
+| inbox-artefact (AgentFS) | 2026-06-28 | antigravity | Dual-YAML 19-field filesystem schema | `chunk-antigravity-agentfs-1` |
+| cross-thread prior art | 2026-06-30 | cursor | SearXNG + OpenAlex pass 2 | `chunk-I` + `partner-I` |
+
+**Search negatives (window):** `da984840`, `123408bf` — no DB keyword hits. `f3ce66c7` Brain Ingestion (2026-06-26) — outside window. `~/amplified-pipeline/` — no matches.
+
+## Chunk map (I — prior art pass 2)
+
+| Chunk | File | Topic | Partner |
+|-------|------|-------|---------|
+| **I** | `chunk-I__prior-art-pass2-multi-thread.md` | Label+chronology, AI-native lake, polyglot lens prior art | `partner-I__source-context.md` |
