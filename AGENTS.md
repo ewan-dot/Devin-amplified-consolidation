@@ -26,6 +26,7 @@ AI Orientation Database Law: The semantic graph index `[amplified_brain]` houses
 Deterministic-First Law: If an operation can be performed deterministically via Python/Rust, it MUST be. Generative AI APIs are strictly reserved for fuzzy/probabilistic reasoning.
 Filesystem-DB Cross-Verification Law: The local file-and-folder chunk repository and the PostgreSQL graph index act as mutual check-and-balance validation layers. Any mismatched hashes are flagged in the Vellum ledger as integrity exceptions.
 Compiled Gate Law: To prevent executing agents from modifying validation scripts in-flight to bypass checks, all core safety gates and doorway runners must be compiled in Rust and executed as binaries from the central, read-only `/Users/ewansair/control-centre/bin/` folder (or `/opt/amplified/bin/` on Beast).
+Config Mutation Guard Law: Executing agents are strictly prohibited from modifying any system configuration, rules, or hook files (including `.cursorrules`, `.clauderules`, `hooks.json`, `AGENTS.md`, or `ESTATE-TAXONOMY.md`). Any attempt to submit patches targeting these files is blocked and rejected by the deterministic doorway applicator.
 
 ## Key locations
 - Codebase SSOT: ~/clean-build/ (GitHub: Amplified-Partners/fleet-clean-build)

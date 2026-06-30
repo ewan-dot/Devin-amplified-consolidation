@@ -448,6 +448,18 @@ To prevent executing agents from modifying validation scripts in-flight to bypas
 
 The doorway runner is deployed as `/Users/ewansair/control-centre/bin/apply_doorway`. It monitors the `/Users/ewansair/ingestion-to-research-pipe/outbound_doorway/` directory, parses incoming JSON patches, runs AST validation over changes, executes modifications, and commits them. By using a compiled binary rather than an editable Python script, the validation rules are made immutable against dynamic prompt-injection edits by the agent fleet.
 
+### 12.3 Configuration Mutation Guard
+To enforce sovereignty and security boundaries, agents are strictly forbidden from modifying configuration, rules, or hook files. The doorway applicator enforces a hard block on the following path patterns:
+*   `.cursorrules`
+*   `.clauderules`
+*   `.cursor/` (including all hooks and project-scoped rules)
+*   `.claude/`
+*   `hooks.json`
+*   `AGENTS.md`
+*   `ESTATE-TAXONOMY.md`
+
+Any patch targeting these paths is immediately rejected with a `Banned path` error and flagged in Vellum logs.
+
 ---
 
 ## 13. AI Orientation DB Curation Protocol

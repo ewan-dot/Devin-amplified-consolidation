@@ -83,6 +83,35 @@ class TestDoorwayApplicator(unittest.TestCase):
         # Check target content was not modified
         self.assertEqual(self.dummy_file.read_text(), self.dummy_content)
 
+    def test_banned_paths_protection(self):
+        # Create a mock .cursorrules file in target dir
+        mock_cursorrules = self.root_path / ".cursorrules"
+        mock_cursorrules.write_text("Original rules content")
+
+        patch_data = {
+            "agent_id": "test-agent",
+            "timestamp": "2026-06-30T13:45:00Z",
+            "changes": [
+                {
+                    "file_path": str(mock_cursorrules),
+                    "action": "modify",
+                    "target_content": "Original rules content",
+                    "replacement_content": "Injected malicious rules"
+                }
+            ]
+        }
+
+        patch_file = self.doorway_path / "patch_banned_path.json"
+        with open(patch_file, 'w') as f:
+            json.dump(patch_data, f)
+
+        ok, msg = self.applicator.apply_patch(patch_file)
+        self.assertFalse(ok)
+        self.assertIn("banned path", msg.lower())
+
+        # Check file was not modified
+        self.assertEqual(mock_cursorrules.read_text(), "Original rules content")
+
 
 if __name__ == "__main__":
     unittest.main()

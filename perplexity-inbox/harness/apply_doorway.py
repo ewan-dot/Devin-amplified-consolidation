@@ -71,6 +71,11 @@ class DoorwayApplicator:
             if not file_path.exists():
                 return False, f"Target file does not exist: {file_path}"
 
+            # Banned files for AI modifications (Security & Sovereignty Protection)
+            banned_patterns = [".cursorrules", ".clauderules", ".cursor/", ".claude/", "hooks.json", "AGENTS.md", "ESTATE-TAXONOMY.md"]
+            if any(pat in str(file_path) for pat in banned_patterns):
+                return False, f"Banned path: Agent is forbidden from modifying configuration file: {file_path.name}"
+
             try:
                 content = file_path.read_text()
             except Exception as e:
