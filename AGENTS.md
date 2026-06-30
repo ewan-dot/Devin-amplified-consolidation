@@ -25,6 +25,7 @@ Single Outbound Doorway Law: Executing agents are restricted to exactly ONE outb
 AI Orientation Database Law: The semantic graph index `[amplified_brain]` houses the canonical AI Orientation Guide (table `ai_orientation_guide`). This database is strictly curated: when a document is versioned, the previous version is immediately purged from the active database to prevent semantic bloat.
 Deterministic-First Law: If an operation can be performed deterministically via Python/Rust, it MUST be. Generative AI APIs are strictly reserved for fuzzy/probabilistic reasoning.
 Filesystem-DB Cross-Verification Law: The local file-and-folder chunk repository and the PostgreSQL graph index act as mutual check-and-balance validation layers. Any mismatched hashes are flagged in the Vellum ledger as integrity exceptions.
+Compiled Gate Law: To prevent executing agents from modifying validation scripts in-flight to bypass checks, all core safety gates and doorway runners must be compiled in Rust and executed as binaries from the central, read-only `/Users/ewansair/control-centre/bin/` folder (or `/opt/amplified/bin/` on Beast).
 
 ## Key locations
 - Codebase SSOT: ~/clean-build/ (GitHub: Amplified-Partners/fleet-clean-build)

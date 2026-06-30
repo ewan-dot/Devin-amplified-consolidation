@@ -443,8 +443,10 @@ To simplify system updates and prevent random file mutations across the codebase
 }
 ```
 
-### 12.2 Deterministic Execution Bun
-A non-probabilistic Python/Rust runner (`harness/apply_doorway.py`) monitors this directory, parses patches, performs syntax validation/linting, applies modifications, and handles staging and commit operations.
+### 12.2 Deterministic Execution Bun (Rust Compilation Guard)
+To prevent executing agents from modifying validation scripts in-flight to bypass checks, all core safety gates and doorway patch runners must be compiled in Rust and run as binaries from the central, read-only `/Users/ewansair/control-centre/bin/` folder (or `/opt/amplified/bin/` on Beast). 
+
+The doorway runner is deployed as `/Users/ewansair/control-centre/bin/apply_doorway`. It monitors the `/Users/ewansair/ingestion-to-research-pipe/outbound_doorway/` directory, parses incoming JSON patches, runs AST validation over changes, executes modifications, and commits them. By using a compiled binary rather than an editable Python script, the validation rules are made immutable against dynamic prompt-injection edits by the agent fleet.
 
 ---
 
