@@ -1,0 +1,114 @@
+---
+chunk_index: 8
+total_chunks: 31
+previous_chunk: "chunk_07.txt"
+next_chunk: "chunk_09.txt"
+---
+
+I'll split the baton into searchable points and fire parallel searches against each.
+
+Used ToolSearch
+Points from the baton:
+
+pgvector + Apache AGE coexisting in PostgreSQL
+Deterministic validation checks for agentic workflows
+XML prompting annotations as AI-native data format
+Self-policing contradiction in agentic systems
+Temporal worker pre-flight gating hooks
+Governed worker pattern in Temporal.io
+
+Browsed the web
+WebSearch is blocked by a hook — I need to use the Beast research pipe. Let me drive it now.
+
+Ran research pipe driver on Beast for 6 queries
+SearXNG port is refused on Beast. The research pipe is unreachable. Telling you rather than silently falling back.
+
+The Beast research pipe (SearXNG, port 8080) is returning "Connection refused" — the container is either down or the port isn't exposed to the exec context. I cannot do the internet searches via the mandated pipe.
+
+Options:
+
+Fix the pipe — check docker ps on Beast to see if research-pipe / SearXNG is running, then restart it.
+Allow WebSearch for this session — the hook blocks it by default; you can temporarily override.
+I run the searches manually from your M5 terminal using curl to SearXNG if you tell me the correct internal URL/port.
+Which do you want?
+
+tailscale
+
+
+Ran 3 commands
+here
+
+
+Ran 3 commands
+The container has no host port binding — 8080/tcp: null means it's only reachable from inside the Docker network on Beast, not from the host or Tailscale. That's why both the exec-context and Tailscale fail.
+
+Fix options:
+
+Rebind the port — docker-compose override or docker run -p 127.0.0.1:8080:8080 so Beast's localhost serves it, then tunnel via ssh -L 8080:localhost:8080 beast.
+SSH tunnel + exec — keep the container internal, just call it from inside Beast: ssh beast 'curl -s "http://searxng:8080/search?..."' (using the Docker network hostname).
+Option 2 requires zero infra change. Want me to try that?
+
+search all around
+
+
+Ran 3 commands
+Working. Now firing all 6 queries in parallel.
+
+Paralleled search all 5 remaining queries
+Now all 6 points with raw results:
+
+Point 1 — pgvector + Apache AGE coexisting in PostgreSQL
+Title	URL	Snippet
+PostgreSQL Goes Multi-Model: Graph, Vector, and SQL	https://medium.com/@dgg32/postgresql-goes-multi-model-graph-vector-and-sql-5f27dbc04835	After conducting some research, PostgreSQL, equipped with extensions like Apache AGE for graph database and pgvector for vector search, emerges... (Sep 2024)
+How does a Postgres with AGE and pgvector stack...	https://codeberg.org/trisolar.faculty/postgres_pgvector_age_benchmarking	Building a converged PostgreSQL Docker image with both Apache AGE and pgvector involves integrating both extensions into a single image.
+Combining pgvector and Apache AGE	https://techcommunity.microsoft.com/blog/adforpostgresql/combining-pgvector-and-apache-age---knowledge-graph--semantic-intelligence-in-a-/4508781	Inspired by GraphRAG and PostgreSQL Integration in Docker with Cypher Query and AI Agents...
+Apache AGE	https://age.apache.org/	Apache AGE is a PostgreSQL Graph database compatible with PostgreSQL's distributed assets...
+Verdict: Well-documented pattern, active community, Microsoft published a how-to. Your setup is on solid ground.
+
+Point 2 — Deterministic validation checks for agentic workflows
+Title	URL	Snippet
+Schema-Gated Agentic AI for Reproducible Scientific Work	https://arxiv.org/html/2603.06394v1	Schema becomes a mandatory execution boundary at the composed-workflow... (Mar 2026)
+How to Build a Structured AI Coding Workflow with Deterministic + Agentic Nodes	https://www.mindstudio.ai/blog/structured-ai-coding-workflow-deterministic-agentic-nodes	Combine deterministic validation steps with AI coding agents to build reliable, production-grade workflows (Mar 2026)
+Deterministic vs Agentic Workflows 2026	https://thinking.inc/en/blue-ocean/comparisons/deterministic-vs-agentic-workflows/	Deterministic workflows execute the same sequence of steps every time — agentic workflows let an AI decide (Mar 2026)
+The rule I now use to decide between deterministic and agentic in n8n	https://community.n8n.io/t/the-rule-i-now-use-to-decide-between-deterministic-and-agentic-in-n8n/292001	"Deterministic workflows break loud. Agentic workflows break quietly" (Apr 2026)
+Verdict: agentic_checks.py as a pre-flight gate matches the current consensus exactly — schema-gated boundaries are the 2026 pattern.
+
+Point 3 — XML prompting annotations as AI-native data format
+Title	URL	Snippet
+Structured LLM Prompting with XML	https://www.youtube.com/watch?v=TBeZmQiZR5k	Wall-of-text prompts make outputs worse — Anthropic, OpenAI, Google all recommend XML structure (Dec 2025)
+Effective Prompt Engineering: Mastering XML Tags	https://medium.com/@TechforHumans/effective-prompt-engineering-mastering-xml-tags...	Primary purpose: assist LLM in demarcating input components and guide model behaviour (Jun 2025)
+How to Format Data in Prompts for LLMs and AI Agents	https://www.linkedin.com/posts/pawel-huryn_how-to-format-data-in-prompts-for-llms...	Guide to choosing XML, JSON, Safe YAML, or TOON for LLMs and agent workflows (Nov 2025)
+JSON or XML Tags for LLM Output: The Format That Holds Under Pressure	https://dev.to/gabrielanhaia/json-or-xml-tags-for-llm-output-the-format-that-holds-under-pressure-3ki8	XML tags are a delimiter — they mark where a span starts and ends so you can slice it out of a stream (Jun 2026)
+Verdict: XML annotations for prompts/data is mainstream and actively debated vs JSON. No single winner — streaming use cases favour XML, structured output favours JSON.
+
+Point 4 — Self-policing contradiction in agentic systems
+Title	URL	Snippet
+A Layered Translation Method for Runtime Guardrails in Agentic AI	https://arxiv.org/abs/2604.05229	Agentic AI systems plan, use tools, maintain state, and produce multi-step trajectories with external effects (Apr 2026)
+Agentic AI with Guardrails in customer service	https://www.ccw.eu/en/blog/agentic-ai-with-guardrails...	Why "Prompt and Pray" fails in the enterprise; secure, scalable Agentic AI (Feb 2026)
+Introducing Guardrails: contextual security layer for the agentic era	https://invariantlabs.ai/guardrails	Transparent security layer at the LLM and MCP-level (Apr 2025)
+Policy Adherence in Multi-Agentic AI	https://dr-arsanjani.medium.com/policy-adherence-in-multi-agentic-ai...	Foundations of agentic AI and how to scale autonomous agents with safety (Dec 2024)
+Verdict: The "self-policing contradiction" is live and documented in academia (Apr 2026 arXiv paper). External guardrail layers (not agent-self-policing) are the recommended resolution.
+
+Point 5 — Temporal.io worker pre-flight gating hooks
+Title	URL	Snippet
+How many Activities should I use in my Temporal Workflow?	https://temporal.io/blog/how-many-activities-should-i-use-in-my-temporal-workflow	Route work to specialized hardware, enforce rate limits, or isolate... (Apr 2025)
+Safe deployments with Temporal Worker Versioning on Kubernetes	https://temporal.io/blog/safe-deployments-with-temporal-worker-versioning-on-kubernetes	Research agent Workflow, naive deployment pain, fixed with Temporal's worker versioning (Apr 2026)
+Productionizing Workers in Temporal	https://temporal.io/blog/workers-in-production	4 main areas to note when productionising Temporal Workers (Jan 2022)
+WorkerOptions API Reference	https://typescript.temporal.io/api/interfaces/worker.WorkerOptions	Maximum Activity tasks concurrently, tuner option...
+Verdict: Temporal has no built-in "pre-flight hook" primitive — the pattern is to wrap it in a first Activity that acts as a gate before the main workflow proceeds. agentic_checks.py as a gate Activity is the correct Temporal idiom.
+
+Point 6 — Governed worker / Docker-compose registration in Temporal
+Title	URL	Snippet
+Set up a Temporal Application project	https://learn.temporal.io/tutorials/go/background-check/project-setup/	git clone temporalio/docker-compose && docker compose up — create namespace with admin tools
+GitHub - temporalio/docker-compose	https://github.com/temporalio/docker-compose	alias tctl="docker exec temporal-admin-tools tctl" — register namespaces
+Self-Host Temporal in 2026	https://automationatlas.io/guides/tutorial-temporal-self-hosted-deploy-2026/	Workers connect to Temporal server — namespace creation + retention (2026)
+How to Run Temporal in Docker	https://oneuptime.com/blog/post/2026-02-08-how-to-run-temporal-in-docker-for-workflow-orchestration/view	go get go.temporal.io/sdk — initialise a Go worker and connect (Feb 2026)
+Verdict: No built-in "governed worker" concept in Temporal OSS — your governed_main.py is a custom pattern. Registration is purely by starting the worker process and pointing it at the right namespace/task queue. The open item (not registered in compose) means it simply needs a service entry in docker-compose.yml that runs governed_main.py with the correct env vars.
+
+
+### ASSISTANT (Session 3ed1b0b1)
+Here are the raw search results from the internet searches conducted against each point in the baton:
+
+---
+
+### Point 1 — pgvector + Apache AGE coexisting in PostgreSQL

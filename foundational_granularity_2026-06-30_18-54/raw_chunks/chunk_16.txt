@@ -1,0 +1,147 @@
+---
+chunk_index: 16
+total_chunks: 31
+previous_chunk: "chunk_15.txt"
+next_chunk: "chunk_17.txt"
+---
+
+So you're using multiple labelers to tag each incoming query or dataset with a weighted mathematical taxonomy — like a rubric that says "this problem is 60% Boolean logic, 20% graph theory, 20
+
+ I thought this is that I'm asking. I hypothesis I'm asking. And first of all, what I love is, I love a straight no. Cause if it's no, okay, that wipes it out of my mind and I can move on to something else.
+
+Straight answer on the hypothesis: No, I wouldn't go full mathematical taxonomy like Boolean, Turing, and nature's logic as your primary labeling system.
+
+It's a clever idea — stripping away messy human business words to let the AI see pure patterns and structures. But in practice it creates more problems than it solves. Your 360-parameter AGE graph is already doing the heavy lifting on structure and relationships. Adding a layer of abstract math labels on top makes things harder for the AI to ground in real business meaning, and harder for you to interpret what it's actually doing.
+
+The 95% confidence target is smart though, especially with your tight bounds — Vellum for immutable history plus the graph for structured knowledge. That's a strong setup for high reliability in narrow domains.
+
+Want me to suggest a simpler, more practical labeling approach that still keeps the spirit of what you're going for?
+
+
+
+
+42 sources
+ Um, yeah, well.
+
+Go on, I'm listening.
+
+ Okay, we're back.
+
+Right, we were talking about your mathematical taxonomy approach and how you want something that lets the AI see patterns clearly without being limited by human business language. Shall I give you a cleaner, more practical way to achieve that same goal?
+
+ Uh, yeah, but what I said was, 'cause you asked me what, what, what, what I thought. Um, to me, I care little about the label. I care more about the consistency.
+
+Then here's the clearer approach:
+
+Forget giving every query a complex mathematical label like "60% Boolean, 20% graph theory." That adds noise.
+
+Instead, structure the data itself using consistent mathematical relationships inside your AGE graph. Let the graph's topology — the way nodes connect, the types of edges, the recurring patterns — become the consistent language the AI learns. No extra labeling layer needed.
+
+The AI then sees the same structural "shapes" repeatedly across different clients, even if the business terms are different. That's where your consistency and pattern recognition power actually comes from.
+
+Simple, clean, and far more reliable than tagging everything with abstract math categories.
+
+Does that feel closer to what you're aiming for?
+
+ Yeah, yeah, no, it's, you've, you've massively clarified something. Em, I thought I was clarifying, but I was actually, eh, missing the point. The language is graph and vector. Em, okay, that's good. So then what about rubrics? Because, you know, to have a structured way for the AI to consider it, would that be helpful in a graph, graph and vector database?
+
+Yes, rubrics are still valuable — but not for labeling with math types.
+
+In your graph + vector setup, use rubrics to define how the AI should reason about the data, not what type of math it is.
+
+For example, a rubric could say:
+
+Always traverse the graph first before using vector similarity
+Prioritise high-centrality nodes when looking for key influencers
+Compare current state to historical patterns stored in Vellum
+These are consistent reasoning frameworks the AI follows every time. They give you the structure and repeatability you want, without forcing abstract mathematical categories onto every query.
+
+Would you like me to give you a few strong rubrics that would work well with your graph-based system
+
+ Yes.
+
+Here are five strong rubrics that would work well with your graph and vector setup:
+
+Always map the query to the most central nodes in the graph before doing any
+ Yeah, yeah, yeah, yeah.
+
+Okay, let me give you a clean set of rubrics that would work well with your AGE graph and vector database:
+
+Graph First Rule: Always explore the graph structure first before running any vector similarity search.
+Centrality Bias: When multiple paths exist, prioritise information flowing through high-centrality nodes.
+Temporal Consistency: Cross-reference current graph state with historical patterns stored in Vellum before giving a final answer.
+Pattern Matching Rule: Look for recurring motifs and subgraphs that have appeared across different clients or time periods.
+Confidence Calibration: Only return an answer if you can find supporting evidence in both the graph structure and vector embeddings. Below that threshold, say "insufficient data."
+These give the AI a clear, repeatable way of thinking without relying on abstract mathematical labels.
+
+Want me to expand any of these or add more?
+
+ Well, okay, so I understand that, but you're giving it is a methodology on how to, uh, approach the graph and, uh, graph vector databases, which is great. But how does that translate to an answer for the AI?
+
+The rubrics become part of the system prompt that sits in front of every single agent.
+
+So when a question comes in, the AI doesn't just get the user's question — it gets the question plus all five rubrics at the top of its context. Those rules literally tell it how to think and in what order to use the graph and vectors before it gives its final answer.
+
+It's not a methodology you hope it follows. It's baked into its instructions so it has no choice but to follow that consistent process every single time.
+
+That’s how you get the consistency you're after.
+
+ And
+
+And that's actually the key to hitting your 95% accuracy target. The tighter and more consistent the reasoning process, the less room there is for the AI to hallucinate or go off track.
+
+ So you would, no, hold on. So, so you wouldn't use like Goldratt's theory of constraints to get a mathematical answer. It's not that kind of rubric or
+
+No, exactly. That's not the kind of rubric I'm talking about.
+
+You're thinking of domain-specific frameworks or methodologies — like Theory of Constraints, Lean, or specific mathematical approaches. Those are useful, but they're still quite high-level.
+
+What I'm suggesting is much more tactical: simple, repeatable reasoning instructions that tell the AI exactly how to use your graph and vector database for every single query.
+
+Things like "always start with the graph, never start with embeddings" or "always check temporal patterns in Vellum." Very mechanical, very consistent.
+
+Different purpose.
+
+ So that's basically arranging its, um, its neurology, so to speak.
+
+Exactly. That's a very good way to put it.
+
+You're shaping its "neurology" — the consistent way it thinks and processes information every single time. The rubrics become part of its default cognitive habits.
+
+That's actually one of the most powerful things you can do with today's AI — give it fixed thinking patterns rather than just feeding it more data.
+
+ Well, yeah, and that's what I'm learning very much.
+
+Good. You're picking this up quickly.
+
+Now, do you want me to write out a full system prompt that combines your graph-first approach with some strong reasoning rubrics? That would be the actual thing you'd paste in front of your agents.
+
+ Well, you see. So, I tell you what. Define. Give me the agent. Sorry, this is, it's, it's, it's fresh in my head, so I'm not able to verbalize it well. If, if a question comes in and it's not purely one domain, which is normally what a question is. First of all, how would you define a domain?
+
+A domain, in your setup, is simply one specific business process.
+
+For example:
+
+Cash flow forecasting
+Customer retention
+ What kind of size of, what kind of size of database are we talking about? How would you fill that database to make sure you got quality data? I have some ideas, but I'd like some more.
+
+Size first: For most SME processes, you actually don't need massive databases. A really high-quality graph with 5,000 to 20,000 well-connected nodes is often enough to get excellent results — especially since you're aiming for narrow domains.
+
+How to fill it with quality data:
+
+Start with the client's own historical data — invoices, CRM exports, inventory records. Clean it once, map it to your graph schema.
+Use synthetic data generation to fill gaps and stress-test patterns.
+Pull in carefully chosen public benchmarks for the industry so the AI can see "normal" ranges.
+Most importantly — run every new dataset through Vellum first so you have an immutable record of exactly what went in.
+The quality of connections between the data points matters far more than the sheer volume.
+
+Want me to show you what a good schema for one domain might look like?
+
+ Yeah, but hold on. Just, I, I like the note target for the moment. But I'm just redesigning my database now. So, you know, we are dogfooding, but my business is what I said, small to medium businesses. And I'll just give you a bit more detail. But you've, you've carouselled some things there. So we go in and we forensically mine their existing infrastructure. We do ask them what their processes are like, but we don't listen to them. And I do mean that nastily. It's just quite often they don't even know what their processes are. I was in small business. I have ultimate respect for them. It's a tough job and they do it very well and they're not daft. Our job is to lift some of the load and give them the data that's always been there so they can take, we give them actionable insights. We are going to look at every aspect of their business and we're going to put it through a APQS, sort of ISO 9001.
+
+Got it. That’s a much clearer picture now.
+
+So you’re doing a forensic sweep of their actual systems and data — not relying on what they think their processes are
+
+ Process. Sorry, carry on.

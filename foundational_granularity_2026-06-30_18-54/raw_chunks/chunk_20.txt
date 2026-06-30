@@ -1,0 +1,161 @@
+---
+chunk_index: 20
+total_chunks: 31
+previous_chunk: "chunk_19.txt"
+next_chunk: "chunk_21.txt"
+---
+
+1. **APQS Database Schema**: The DuckDB schema (`intelligence_lake.db`) now natively maps the **four-tier APQS process hierarchy** by adding an `apqs_registry` table (from Tier 1 Groups down to Tier 4 Atomic Bricks).
+2. **Atomic Ingestion Mapping**: Instead of labeling chunks with generic domains, `lake_pipeline.py` now maps raw chunks to specific **Tier 4 atomic bricks** (reusable reasoning blocks like "Match Payment to Invoice" or "Denoise Data").
+3. **Structured Clustering & Lineage**: The Python pipeline now computes Jaccard slot similarities over semantic dimensions to group chunks into clusters, and links updated document hashes to parent hashes to track version lineage.
+4. **Integration Checks**: The schema is verified by extending `gatekeeper.py`, and we document these schemas in `.cursor/rules/intelligence-lake.mdc` to guide the IDE agent dynamically.
+
+
+### USER (Session 6ff55ae9)
+It's just reminded me because I can't keep everything in my head. But the APQS database scheme, I'm hoping that's the American Manufacturing Association process engineering type methodology. Answer that first, please.
+
+
+### ASSISTANT (Session 6ff55ae9)
+Yes! You are thinking of the **APQC (American Productivity & Quality Center)** and their **Process Classification Framework (PCF)**. It is the industry gold standard for process engineering, mapping, and benchmarking. 
+
+Here is how it connects:
+* **The Taxonomy**: APQC PCF organizes a business into hierarchical tiers (typically Tier 1 Groups down to Tier 4+ Atomic activities) and includes over 1,000 standard process elements.
+* **Your Adaptation**: Your **APQS** (Amplified Partners Quality System) takes this exact APQC methodology and applies it to decompose an SME into the granular "atomic bricks" that our Python pipeline chunker and Apache AGE graph can consume. 
+
+So yes, the schema we've designed is built directly around this APQC-style process engineering methodology. 
+
+Shall we proceed with executing the implementation plan to build it?
+
+
+### USER (Session 6ff55ae9)
+No, because it's not quite right. And this is drift on my part, so the process isn't a process in an SMB type sense, although we're probably going to do a dual database. The process that I'm really after, as well, is so if you decomposed the solution of any problem or the solving of any problem, there's only so many chunks you can break it down to. And if you've got those building blocks, it's like taking things back to first principles when you're trying to do a physics exam. You can't remember the formula. So if you can remember first principles, you can work out the formula. But with a specific lens of business, what we can do is link those atomic chunks of reasoning, mathematical, logical, psychological together into basic building blocks of business problems. Can you understand where I'm going with this?
+
+
+### ASSISTANT (Session 6ff55ae9)
+I completely understand. You are mapping **reasoning, mathematical, logical, and psychological first principles** (the timeless primitives of problem-solving) rather than just traditional business processes. This allows the system to derive solutions from first principles when faced with a business problem.
+
+I have updated the plan to a **Dual Database Sandbox** model:
+1. **The Operational Data Lake (Context)**: for raw chunks, document lineage, versions, and clusters.
+2. **The First-Principles Reasoning Primitives (Logic)**: mapping mathematical, logical, and psychological building blocks (e.g. Theory of Constraints bottlenecks, Markov state transitions, psychological friction points, and trust metrics).
+
+Please review the updated [implementation plan](file:///Users/ewansair/.gemini/antigravity/brain/6ff55ae9-48dc-4d0c-a6ff-ef549fe0bb9c/implementation_plan.md) and click **Proceed** or provide feedback to begin execution.
+
+
+### USER (Session 6ff55ae9)
+And what that will allow us to do is, as an aside, we're going to include Rubrics Mathematics. So it'll be a paint by numbers of how to solve problems the amplified way, which by the new technology and intelligence that AI is allows you to bring in things that normally would have been too much of a pain in the arse to use as something to be the foundation for your business decision.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will list the contents of the working memory directory `/Users/ewansair/portable-spine/agents/antigravity/` to initialize our session context as required by the Spine rule.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will read the `BATON.md` file from the working memory directory `/Users/ewansair/portable-spine/agents/antigravity/` to absorb the exact state, lessons learned, open issues, and context from the previous session.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will view `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/ESTATE-TAXONOMY.md` to understand the domain terms, database environments, and system definitions as required by the Terminology & Intent Verification Rule.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will list the contents of the main codebase directory `/Users/ewansair/ingestion-to-research-pipe/` to orient myself with the workspace layout and locate core system documents.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will view `/Users/ewansair/ingestion-to-research-pipe/COMPLETE_SYSTEM_SPEC.md` to check target specifications and system architecture constraints.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will view `/Users/ewansair/ingestion-to-research-pipe/AGENTS.md` to check global/project agent rules and requirements.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search the codebase for the original "maths-spine-for-ewan-and-devin" or references to the 25 formulae/Rubrics Mathematics to locate the primary source of these formulas.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will list the contents of the `/Users/ewansair/portable-spine/` directory as it is referenced as the location of the system's rules and working memory.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will list the contents of the `/Users/ewansair/portable-spine/agents/` directory to see if there are other agent subdirectories or files.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will list the contents of the `/Users/ewansair/portable-spine/agents/claude` and `/Users/ewansair/portable-spine/agents/cursor` directories.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search for "maths-spine-for-ewan" or "PMI" in `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/` using `grep_search`.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will list the current permissions granted to Antigravity to make sure we run authorized operations.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will run a find command in the workspace directory to locate the math spine markdown file containing the 25 formulae.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will wait for the background `find` command to complete to see where the maths spine file is located.
+
+
+### USER (Session 6ff55ae9)
+So which then allows us to group mathematics from every era into the fields, which may be like Venn diagrams and have some crossover, which may come back to the five major patterns of math. Boolean can't remember the other four. And the wild card was Turing or computational. Well, you group mathematical formulas in there. Okay, and we run them against real situations. So we're taking the hypothetical and running it against real. So we come up with the ingredients that you could put together to make your business decision.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will check the status of the find command task-965 to see if it has finished locating the maths spine file.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search the repository for mentions of "Reverse-Pudding" to find files containing these formulas.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search for "Reverse-Pudding" inside the `perplexity-inbox` directory, which is smaller and holds research briefs.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will view `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/CONCLUSIONS__ai-native-harness-thread__2026-06-26/CONCLUSIONS__ai-native-harness-thread__v01__2026-06-26__cascade-mac.md` to see what findings are summarized in it.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will check the status of the find command task-965 again to see if it has finished or printed any paths in its log.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search for references to "maths-spine" in the Research subdirectory to see if we can find the exact path of the file.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search for the specific lines containing "maths-spine" in the `overallpicture1-28-06-26 .txt` research file to find the referenced location.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will view the content around the maths spine source reference in the research file to retrieve the complete formulas.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will view lines 4200 to 4300 of the same file to read the rest of the math formulas and their descriptions.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search the web for "five major patterns of math" or "patterns of mathematics" to see if there is a standard reference or specific conceptual framework Ewan is referring to.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search the `perplexity-inbox` directory for "patterns of math" or "five major" to see if there is prior discussion or documentation on this.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search for "Boolean" in the `perplexity-inbox` directory to see if there are files referencing it.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search for "Turing" in the `perplexity-inbox` directory to find any computational or Turing references.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I will search for "Boolean" with line content in `research-deterministic-foundation.md` to see how it is described in the codebase.

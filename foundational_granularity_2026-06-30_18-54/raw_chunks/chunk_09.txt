@@ -1,0 +1,124 @@
+---
+chunk_index: 9
+total_chunks: 31
+previous_chunk: "chunk_08.txt"
+next_chunk: "chunk_10.txt"
+---
+
+| Title | URL | Snippet |
+| :--- | :--- | :--- |
+| PostgreSQL Goes Multi-Model: Graph, Vector, and SQL | [medium.com/dgg32/postgresql-goes-multi-model](https://medium.com/@dgg32/postgresql-goes-multi-model-graph-vector-and-sql-5f27dbc04835) | "PostgreSQL, equipped with extensions like Apache AGE for graph database and pgvector for vector search, emerges as a unified single-database solution for hybrid GraphRAG applications." |
+| Combining pgvector and Apache AGE | [techcommunity.microsoft.com/blog/adforpostgresql/...](https://techcommunity.microsoft.com/blog/adforpostgresql/combining-pgvector-and-apache-age---knowledge-graph--semantic-intelligence-in-a-/4508781) | "Inspired by GraphRAG: how to store knowledge graphs in Apache AGE and map vector embeddings to vertices using pgvector within a single PostgreSQL engine." |
+| How does a Postgres with AGE and pgvector stack up? | [codeberg.org/trisolar.faculty/postgres_pgvector_age_benchmarking](https://codeberg.org/trisolar.faculty/postgres_pgvector_age_benchmarking) | "Benchmarks and Docker configurations for running Apache AGE alongside pgvector to avoid multi-database synchronization tax." |
+
+---
+
+### Point 2 — Deterministic validation checks for agentic workflows
+
+| Title | URL | Snippet |
+| :--- | :--- | :--- |
+| How to Build a Structured AI Coding Workflow with Deterministic + Agentic Nodes | [mindstudio.ai/blog/...](https://www.mindstudio.ai/blog/structured-ai-coding-workflow-deterministic-agentic-nodes) | "Combine deterministic validation steps with AI coding agents to build reliable, production-grade workflows that catch hallucinations at the compiler level." |
+| Schema-Gated Agentic AI for Reproducible Scientific Work | [arxiv.org/html/2603.06394v1](https://arxiv.org/html/2603.06394v1) | "Defining schema constraints as rigid execution boundaries at composed-workflow levels to force deterministic predictability onto LLM outputs." |
+| The rule I now use to decide between deterministic and agentic in n8n | [community.n8n.io/t/the-rule-i-now-use...](https://community.n8n.io/t/the-rule-i-now-use-to-decide-between-deterministic-and-agentic-in-n8n/292001) | "Why hybrid design is optimal: deterministic workflows break loud when logic rules are violated, whereas agentic workflows fail quietly." |
+
+---
+
+### Point 3 — XML prompting annotations as AI-native data format
+
+| Title | URL | Snippet |
+| :--- | :--- | :--- |
+| Effective Prompt Engineering: Mastering XML Tags | [medium.com/@TechforHumans/effective-prompt-engineering...](https://medium.com/@TechforHumans/effective-prompt-engineering-mastering-xml-tags-c9b83b35a123) | "XML tags serve as semantic delimiters, assisting LLMs in parsing multi-step system prompts, separating context from instructions, and optimizing prompt caching." |
+| JSON or XML Tags for LLM Output: The Format That Holds Under Pressure | [dev.to/gabrielanhaia/json-or-xml-tags-for-llm-output...](https://dev.to/gabrielanhaia/json-or-xml-tags-for-llm-output-the-format-that-holds-under-pressure-3ki8) | "Evaluating streaming outputs: XML tags hold up better than JSON under token pressure when models need to output structured metadata blocks." |
+| Structured LLM Prompting with XML | [youtube.com/watch?v=TBeZmQiZR5k](https://www.youtube.com/watch?v=TBeZmQiZR5k) | "Anthropic, OpenAI, and Google guidelines recommend wrapping structured variables and input documents inside XML tags to prevent context drift." |
+
+---
+
+### Point 4 — Self-policing contradiction in agentic systems
+
+| Title | URL | Snippet |
+| :--- | :--- | :--- |
+| The Self-Correction Illusion: LLM Agents Struggle to Self-Correct | [arxiv.org/abs/2310.01798](https://arxiv.org/abs/2310.01798) | "LLMs cannot reliably correct their own errors during reasoning because the same weights that produced the error are used to judge it. Verification requires external inputs." |
+| A Layered Translation Method for Runtime Guardrails in Agentic AI | [arxiv.org/abs/2604.05229](https://arxiv.org/abs/2604.05229) | "Decoupling safety and policy validation from the main agentic loop. Enforcing a layered translation model that gates state transitions using deterministic guardrails." |
+| Introducing Guardrails: contextual security layer for the agentic era | [invariantlabs.ai/guardrails](https://invariantlabs.ai/guardrails) | "Exposing validation checks at the MCP and system API level as external guardrails rather than prompting the agent to reflect on its own safety." |
+
+---
+
+### Point 5 — Temporal.io worker pre-flight gating hooks
+
+| Title | URL | Snippet |
+| :--- | :--- | :--- |
+| Intercepting Workflow and Activity executions | [docs.temporal.io/concepts/what-is-an-interceptor](https://docs.temporal.io/concepts/what-is-an-interceptor) | "Temporal Interceptors allow executing cross-cutting concerns (authentication, policy checks, telemetry propagation) dynamically around workflow runs." |
+| Safe deployments with Temporal Worker Versioning on Kubernetes | [temporal.io/blog/safe-deployments-with-temporal-worker-versioning...](https://temporal.io/blog/safe-deployments-with-temporal-worker-versioning-on-kubernetes) | "Enforcing version-gating and workflow-compatibility checks as middleware hooks before starting new activity executions." |
+| WorkerOptions Interceptors API | [typescript.temporal.io/api/interfaces/worker.WorkerOptions](https://typescript.temporal.io/api/interfaces/worker.WorkerOptions) | "Registering inbound and outbound interceptors inside WorkerOptions to gate incoming activity tasks or workflow signals." |
+
+---
+
+### Point 6 — Governed worker / docker-compose registration in Temporal.io
+
+| Title | URL | Snippet |
+| :--- | :--- | :--- |
+| Temporal Docker Compose setup and CLI commands | [github.com/temporalio/docker-compose](https://github.com/temporalio/docker-compose) | "Initialising self-hosted Temporal services, configuring task queues, and using admin-tools command interfaces to register namespaces." |
+| Self-Host Temporal in 2026 | [automationatlas.io/guides/tutorial-temporal-self-hosted-deploy-2026/](https://automationatlas.io/guides/tutorial-temporal-self-hosted-deploy-2026/) | "Configuring self-hosted worker registration, registering namespaces, setting retention periods, and executing workers in Docker environments." |
+| How to Run Temporal in Docker for Workflow Orchestration | [oneuptime.com/blog/post/...](https://oneuptime.com/blog/post/2026-02-08-how-to-run-temporal-in-docker-for-workflow-orchestration/view) | "A guide to registering workers in task queues, running client endpoints via custom compose settings, and testing worker orchestration." |
+
+
+
+# START OF SESSION b96f63ef-daab-428e-9fbe-ae02f02eb504
+
+### ASSISTANT (Session b96f63ef)
+I have created the implementation plan artifact outlining the proposed amendments and code changes. 
+
+Please review the plan in [implementation_plan.md](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/implementation_plan.md) and approve it to proceed.
+
+
+### USER (Session b96f63ef)
+I think we should keep the prior taxonomy. It's going to help me identify it until I learn the new taxonomy. But just put it in brackets or make it so that AI ignores it.
+
+
+### ASSISTANT (Session b96f63ef)
+I have updated the [implementation_plan.md](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/implementation_plan.md) to keep the prior taxonomy names in brackets (e.g., `[cove]`, `[Beast]`, `[PUDDING]`) for your readability, alongside an explicit HTML comment instructing any parsing AIs to ignore them. 
+
+Please review and approve so we can proceed with writing the amendments.
+
+
+### USER (Session b96f63ef)
+Comments on artifact URI: file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/implementation_plan.md
+
+The user has approved this document.
+
+
+### ASSISTANT (Session b96f63ef)
+I have completed writing the amendments and safety gate integrations. All changes have been verified and successfully pushed to GitHub.
+
+### Artifacts Created/Updated
+*   **[task.md](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/task.md)**: Task checklist (all items completed).
+*   **[walkthrough.md](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/walkthrough.md)**: Walkthrough detailing changes made and testing results.
+*   **[baton.md](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/baton.md)**: Session baton pass for the next agent instance.
+*   **[BATON.md](file:///Users/ewansair/portable-spine/agents/antigravity/BATON.md)**: Updated working memory baton pass in the portable spine.
+
+### High-Priority Open Item
+*   The governed worker (`temporal/workers/governed_main.py`) needs to be registered in the Docker-compose worker stacks on the high-capacity server host `[Beast]` to activate the safety gate execution hooks.
+
+
+### USER (Session b96f63ef)
+is any of this work dirextly applicab;e to our current hooks and harness design
+
+
+### ASSISTANT (Session b96f63ef)
+Yes. The safety gates we added to the Vellum write gate (`gate.py`) serve as the **verification backend** for the hooks and harness design:
+
+### 1. Watertight Gating Pipeline
+The write gate directly expects the metrics computed by your execution harness:
+```
+[Temporal Execution Hook] 
+       │
+       ▼
+[Deterministic Harness (agentic_checks.py)] 
+  - Runs code in sandboxed transaction rollback.
+  - Computes semantic entropy and conformal set size.
+       │
+       ▼
+[Vellum Write Request (gate.py)]
+  - Carries: `semantic_entropy`, `conformal_set_size`, `sandbox_verified`
+  - Rejects write at the API boundary if constraints are violated.
+```

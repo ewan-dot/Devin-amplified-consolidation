@@ -1,0 +1,186 @@
+---
+chunk_index: 11
+total_chunks: 31
+previous_chunk: "chunk_10.txt"
+next_chunk: "chunk_12.txt"
+---
+
+
+### USER (Session b96f63ef)
+And I think rather than getting overly complex with hooks and harnesses in an effort to keep the minimum, okay, if it can be done deterministically, it's done deterministically. So AI has one hook, you put all your work there, Python and Rust then takes that work and divvies it up the way we want to divvy it up. Done with what we want done with. I may be getting overly complex and it may not be necessary, but we're getting very close to me feeling like we can start setting the database up. One of the first things that should go into the database is an agent only section, an orientation guide to how we're doing things, what's going on, and it's there in the database. But that database is curated strictly, and as one document is versioned, the previous version is removed to stop bloat. 
+
+What's starting to form in my head now is I'll finish what I was just going to say. I was going to say these truisms, which I'm just saying should be seen as truisms because they're just good housekeeping. It's the way we want to do things. So once something's said, there should be a cascade off there so that it is applied everywhere. These are effectively, to my mind, anyway, in a different scale, different dimension, but exactly the same format. The Python and Rust wrappers, pieces of bread that sit around the AI filling, but this is allowing us to bring IDEs, which are by nature a little bit more random, not in a bad rate, getting tightened up at the same time as us. Clearly defining API ais, which would be it, I would guess, could now be utilized with a little bit more certainty at stages in the research pipe, only if necessary, if it can be done by Python and Rust, it should be done by Python and Rust.
+
+
+### ASSISTANT (Session b96f63ef)
+I am invoking the `amplified-session-open` skill to align our workspace state, load Ewan's principal profile, check Vellum, and review open task scopes.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read the baton artifact to understand the exact status of the task, the branch structure, and the changes in progress.
+
+
+### ASSISTANT (Session b96f63ef)
+I will check the task artifact to see our planned TODO items and track our current progress.
+
+
+### ASSISTANT (Session b96f63ef)
+I will check the `amplified-soul` skill to get the complete architectural context of the Amplified Partners environment.
+
+
+### ASSISTANT (Session b96f63ef)
+I will list the contents of the `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox` directory to locate the taxonomy file and other relevant documents.
+
+
+### ASSISTANT (Session b96f63ef)
+I will view the `ESTATE-TAXONOMY.md` file to see how system boundaries and databases are defined, so we can incorporate Ewan's new structural rules correctly.
+
+
+### ASSISTANT (Session b96f63ef)
+I will list the contents of the global customizations root `/Users/ewansair/.gemini/config` to locate `AGENTS.md` and check for any workspace-level `.agents` directory.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read the contents of `AGENTS.md` to see the current rules and formatting.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read `term_gate.py` to see the logic for our ambiguity-checking gate.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to check the current git status and branches in the ingestion repository.
+
+
+### ASSISTANT (Session b96f63ef)
+I will search for `COMPLETE_SYSTEM_SPEC.md` in the workspace using grep_search to find its absolute path.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to find the exact location of `COMPLETE_SYSTEM_SPEC.md`.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to count the lines in `COMPLETE_SYSTEM_SPEC.md` and check its structure.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read the contents of `COMPLETE_SYSTEM_SPEC.md` to see what changes were already committed, specifically regarding the Deterministic Sandwich.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to see git status and log for the system specification file to see the recent commits.
+
+
+### ASSISTANT (Session b96f63ef)
+I will check the git branches inside the `/Users/ewansair/ingestion-to-research-pipe` repository.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to check the git status and branches in the `.worktrees/antigravity-deterministic-checks` worktree directory.
+
+
+### ASSISTANT (Session b96f63ef)
+I will count lines of `COMPLETE_SYSTEM_SPEC.md` in the `.worktrees/antigravity-deterministic-checks` worktree to see if it has the added amendments.
+
+
+### ASSISTANT (Session b96f63ef)
+I will view the end of `COMPLETE_SYSTEM_SPEC.md` inside the worktree to examine the previously appended Section 11 detailing the AI Deterministic Sandwich and the 10 gap closures.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to view the diff of `AGENTS.md` inside the `.worktrees/antigravity-deterministic-checks` worktree.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read `AGENTS.md` inside the worktree to understand its full structure and context.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to find any occurrences of the word "orientation" in the python scripts of the ingestion codebase.
+
+
+### ASSISTANT (Session b96f63ef)
+I will check the status of the background grep task.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read the contents of `agentic_checks.py` in the harness directory to see how database connectivity and checks are implemented.
+
+
+### ASSISTANT (Session b96f63ef)
+I will list the contents of the `perplexity-inbox` folder inside the `.worktrees/antigravity-deterministic-checks` directory to find instruction files or scripts.
+
+
+### ASSISTANT (Session b96f63ef)
+I will view the `INSTRUCTIONS__governed-worker-registration__v01__2026-06-30__antigravity.md` instruction file to see the registration steps.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to find any database schema or setup scripts in the project directory.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read `ESTATE-TAXONOMY.md` inside the worktree to understand how it differs from the main workspace version.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read our current `implementation_plan.md` to see the base we are building on.
+
+
+### ASSISTANT (Session b96f63ef)
+I will view the `walkthrough.md` to see what changes were made in the previous session and what tests were run.
+
+
+### ASSISTANT (Session b96f63ef)
+I will list the contents of the `/Users/ewansair/ingestion-to-research-pipe/github_porch/vellum/` directory to understand Vellum's current codebase structure.
+
+
+### ASSISTANT (Session b96f63ef)
+I will list the contents of the `vellum` subdirectory inside the Vellum repository to inspect its modules.
+
+
+### ASSISTANT (Session b96f63ef)
+I will list the contents of `vellum/brain` directory to see the database-related and write gate components.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read the contents of `vellum/brain/gate.py` to see the structure of the write gate and the current validation rules.
+
+
+### ASSISTANT (Session b96f63ef)
+I will create the new implementation plan covering Ewan's architectural rules: the Single Outbound Doorway, the AI Orientation Database Curation, and the Deterministic-First Law. This document will serve as our blueprint.
+
+
+### ASSISTANT (Session b96f63ef)
+I have created the implementation plan describing the design and verification strategy for:
+
+1. **The Single Outbound Doorway**: All AI code modifications must be dropped into a single logical mailbox directory (`outbound_doorway/`) as structured JSON patches, which Python/Rust then parses, validates, and applies deterministically.
+2. **The AI Orientation Database**: A strictly curated, unique-constraint table (`ai_orientation_guide`) in `[amplified_brain]` that purges old versions on update to prevent semantic bloat.
+3. **The Deterministic-First Law**: Codified rules ensuring LLMs are used only for fuzzy reasoning, while all filesystem updates, database curation, and spec syncing are executed by deterministic Python and Rust wrappers.
+
+Please review the plan in [implementation_plan.md](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/implementation_plan.md) and click **Proceed** or let me know if you would like any modifications.
+
+
+### ASSISTANT (Session b96f63ef)
+I've noted that the background search task finished without finding any existing references to an orientation database module, which confirms that the proposed schema and version-controlled curation logic will be a net new addition to our code and DB structures.
+
+I am awaiting your approval on the [implementation plan](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/implementation_plan.md) to start the implementation.
+
+
+### USER (Session b96f63ef)
+So I just want to tighten up databases. I see the amplified database is a combination of a file and folder structure, and a graph and vector database. And I'm going to give AI its own one. I think maybe not anyway.
+
+All of that is structured wholly and completely to suit AI. AI takes advantage of spotlight for ease of search, for speed of search, for token effectiveness. Us and the way it was described me the other day was like the two big databases act as a way of cross-verifying each other. They're not redundant. They cross-verify and they add hopefully valid and useful data to AI to help it do what it's got to do.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run a command to search for "spotlight" in the project files to see if there is any existing code or reference to Spotlight.
+
+
+### ASSISTANT (Session b96f63ef)
+I will check the status of the background task searching for "spotlight".
+
+
+### ASSISTANT (Session b96f63ef)
+I will query the status of task-757.

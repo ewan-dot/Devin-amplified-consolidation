@@ -1,0 +1,227 @@
+---
+chunk_index: 19
+total_chunks: 31
+previous_chunk: "chunk_18.txt"
+next_chunk: "chunk_20.txt"
+---
+
+How many atoms (atomic processes) are there in a typical SME?
+There is no universal number like “exactly 1000”. That would vary massively by business type, size, and complexity.
+A realistic range for a typical small-to-medium business (5–50 employees) is 150–400 well-defined atomic processes once you go deep enough.
+Some very detailed ISO 9001 implementations for complex SMEs can reach 500–800+ when you include every variant and exception.
+1000 is on the high side — possible if you’re being extremely granular (e.g. including every tiny variation across multiple departments or locations), but it’s not a standard benchmark.
+The goal isn’t to hit a magic number. The goal is to get to the level where each atom is:
+
+Small enough for high-confidence AI handling (your 95% target)
+Data-rich and denoisable (Python/Rust layer)
+Modelable in your AGE graph + Vellum
+Reusable as a “brick”
+Recommendation for you right now
+Since you’re rebuilding the database:
+
+Use APQS to map the top 8–12 Level 1/2 processes first (this is quick).
+Then drill down to identify the true atomic bricks (Level 4).
+Target ~80–150 atomic bricks in the first version of your graph. That’s enough to cover the majority of SME operations and gives you immediate value.
+We already started this yesterday with examples like Payment Matching, Expense Categorisation, etc.
+
+Would you like me to:
+
+Give you a full APQS-style decomposition template for a typical SME?
+Or continue expanding the atomic bricks list with full graph schemas + rubrics for the first 5–6?
+Just say which way you want to go and we’ll keep building it step by step.
+
+
+
+
+20 sources
+the trmplate please with with an understanding of what makes them a tier 1, a tier 2, or a tier 3 process
+
+
+Thought for 2s
+Yes — here's your clear APQS-style Decomposition Template for a typical SME.
+
+Tier Definitions (Important)
+Tier 1 (Major Process Groups / Level 1)
+High-level categories that cover the entire business. These are broad and cross-functional. Usually 6–10 in total.
+What makes it Tier 1: It affects multiple departments and is strategic in nature.
+Tier 2 (Core Processes / Level 2)
+Specific end-to-end processes within a Tier 1 group. These are what people usually think of as “a process”.
+What makes it Tier 2: It has a clear start → end, produces a measurable output, and can be owned by one team or person.
+Tier 3 (Sub-processes / Level 3)
+Breakdown of a Tier 2 process into logical chunks.
+What makes it Tier 3: Still meaningful but smaller — usually 3–8 per Tier 2 process.
+Tier 4+ (Atomic Bricks / Level 4+)
+The smallest repeatable, measurable, automatable units. These are your AI-native building blocks.
+What makes it Atomic: It can be done consistently with high confidence (your 95% target), has clear inputs/outputs, and can be fully modelled in your graph + Vellum.
+APQS Decomposition Template for a Typical SME
+Tier 1: Finance & Money
+Cash Flow Management (Tier 1)
+Tier 2: Payment Matching
+Tier 2: Invoice Generation & Dispatch
+Tier 2: Expense Approval & Payment
+Tier 2: Cash Flow Forecasting
+Tier 2: Credit Control & Debt Recovery
+Tier 1: Sales & Marketing
+Customer Acquisition
+Customer Retention & Loyalty
+Order Processing
+Tier 1: Operations & Delivery
+Inventory & Stock Management
+Production / Service Delivery
+Quality Control & Assurance
+Tier 1: Customer Service
+Customer Support & Complaints
+Tier 1: People & Administration
+HR & Payroll
+Compliance & Governance
+(You can add more Tier 1 groups later — e.g. Purchasing, IT/Systems, etc.)
+
+Example — Fully Broken Down
+Tier 1: Finance & Money
+Tier 2: Cash Flow Management
+Tier 3: Payment Matching
+Tier 4 (Atomic Bricks):
+
+Receive bank transaction
+Extract reference/amount/date
+Search for matching open invoice(s)
+Apply partial/full payment
+Update invoice status
+Record any remainder as over/under payment
+Flag exceptions (no match, amount mismatch, etc.)
+Write immutable record to Vellum
+Tier 3: Cash Flow Forecasting
+Tier 4 (Atomic Bricks):
+
+Pull aged debtors
+Apply historical payment patterns (Markov)
+Pull committed expenses
+Calculate projected balance by day/week
+Identify shortfall risk windows
+etc.
+Would you like me to:
+
+Expand this template fully — give you Tier 2 + Tier 3 for all major Tier 1 groups (so you have ~80–120 atomic bricks identified)?
+Go deep on one Tier 1 right now (e.g. full Finance breakdown with graph schemas)?
+Create the master APQS Process Register template (a spreadsheet-style structure you can use for your database rebuild)?
+Just tell me which one you want next and we’ll keep building.
+
+3 anjd the detailed methodology because once we understand it, I'd like the first use to be on creating our own database.
+
+
+Thought for 2s
+Perfect. Let's do exactly that.
+
+Detailed APQS Methodology for Database Building
+Goal: Use APQS to systematically decompose any business (starting with your own Amplified Partners) into atomic processes, then use those atoms as the foundation for your Postgres + AGE graph + Vellum system.
+
+Step-by-Step Methodology
+Start at Tier 1 – Define the major functional groups for the business.
+Decompose to Tier 2 – Break each Tier 1 into end-to-end processes.
+Decompose to Tier 3 – Break Tier 2 into logical sub-processes.
+Go to Atomic Level (Tier 4) – Break down until you reach small, repeatable, measurable units (your AI bricks).
+For each Atomic Brick, define:
+Name & Description
+Inputs / Outputs
+Data sources (where the forensic mining will pull from)
+Graph structure (nodes, edges, properties)
+Rubrics / Reasoning rules
+Friction / Cost weights
+Mathematical tools (Markov, centrality, etc.)
+Vellum logging points
+Build the database schema from the bottom up (atoms first).
+Dogfood it on Amplified Partners itself before client use.
+This creates a Process Register that becomes the blueprint for your entire graph database.
+
+Master APQS Process Register Template
+You can copy this directly into a spreadsheet (Google Sheets / Excel) or turn it into a Markdown table. I recommend starting in a spreadsheet for easy sorting/filtering.
+
+Columns (Master Template)
+Tier	Tier1_Group	Tier2_Process	Tier3_SubProcess	Atomic_Brick	Description	Inputs	Outputs	Data_Sources	Graph_Nodes	Graph_Edges	Key_Properties	Friction_Cost_Weight	Rubrics	Math_Tools	Vellum_Trigger	Status
+First Use: Amplified Partners (Your Own Business)
+Here is the starting template populated for your company (Amplified Partners). This gives you a strong foundation to build on.
+
+Tier 1: Finance & Money
+Tier 2: Cash Flow Management
+
+Tier	Tier1_Group	Tier2_Process	Tier3_SubProcess	Atomic_Brick	Description	Inputs	Outputs	Data_Sources	... (other columns)
+4	Finance & Money	Cash Flow Management	Payment Matching	Receive Bank Transaction	Ingest raw bank feed	Bank API / CSV / Email	Raw transaction record	Bank feeds, Plaid/Stripe etc.	BankTransaction
+4	Finance & Money	Cash Flow Management	Payment Matching	Match Payment to Invoice	Find matching open invoice	Transaction + Open Invoices	Matched payment record	Invoices, Payments	Invoice, Payment
+4	Finance & Money	Cash Flow Management	Payment Matching	Flag Unmatched Transaction	Handle exceptions	Unmatched transaction	Flagged record + notification	-	Exception
+Tier 1: AI Systems & Development (critical for you)
+Tier 2: Knowledge Base Maintenance
+
+Atomic Brick: Ingest & Version Document
+Atomic Brick: Clean & Denoise Data (Python/Rust layer)
+Atomic Brick: Map to Graph Schema
+Atomic Brick: Run Quality Checks (APQS validation)
+Tier 1: Client Onboarding & Forensic Mining
+Tier 2: Data Discovery
+
+Atomic Brick: Identify Data Sources
+Atomic Brick: Extract Raw Data
+Atomic Brick: Initial Cleaning & Deduplication
+Atomic Brick: Versioning & Vellum Commit
+Would you like me to:
+
+A) Expand this template with 40–50 atomic bricks across all major Tier 1 groups for Amplified Partners?
+B) Give you the full spreadsheet-ready version with the first complete Tier 1 fully fleshed out?
+C) Move straight into the graph schema design for the highest-priority atomic bricks (e.g. Payment Matching + Document Ingestion)?
+
+Just reply with A, B, or C (or tell me exactly what you want next) and we’ll keep building your database foundation step by step.
+
+all three please
+
+
+Thought for 2s
+Got it. All three coming right up.
+
+I’ll deliver them in order so it’s easy to follow.
+
+A. Expanded Atomic Bricks (≈45 atoms)
+Here’s a solid starter set of ~45 atomic bricks across the main Tier 1 groups for Amplified Partners (and transferable to client SMEs).
+
+Tier 1: Finance & Money (10 atoms)
+
+Receive Bank Transaction
+Match Payment to Invoice
+Apply Partial Payment
+Flag Unmatched Transaction
+Generate Invoice
+Send Invoice (email/portal)
+Record Expense
+Route Expense for Approval
+Pay Approved Expense
+Short-term Cash Flow Projection
+Tier 1: Client Onboarding & Forensic Mining (8 atoms)
+
+Identify Data Sources
+Extract Raw Data (API/file)
+Initial Deduplication
+Version & Commit to Vellum
+Clean & Denoise (Python/Rust)
+Map to Graph Schema
+Run APQS Quality Checks
+Flag Data Gaps
+Tier 1: AI Systems & Knowledge Base (9 atoms)
+
+Ingest Document
+Extract Structured Data
+Emb
+<truncated 323335 bytes>
+
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.
+
+
+### ASSISTANT (Session 6ff55ae9)
+I have updated the implementation plan to build the **Sandbox Intelligence Lake** based on your **APQS (Amplified Partners Quality System)** process-level hierarchy.
+
+Please review the updated [implementation plan](file:///Users/ewansair/.gemini/antigravity/brain/6ff55ae9-48dc-4d0c-a6ff-ef549fe0bb9c/implementation_plan.md) and click **Proceed** or provide feedback to begin execution.
+
+
+### USER (Session 6ff55ae9)
+tell me what thesde additions have changed
+
+
+### ASSISTANT (Session 6ff55ae9)
+The latest additions from the APQS transcript have changed our plan by making the database structure process-centric rather than domain-centric:

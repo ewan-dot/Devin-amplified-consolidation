@@ -1,0 +1,198 @@
+---
+chunk_index: 14
+total_chunks: 31
+previous_chunk: "chunk_13.txt"
+next_chunk: "chunk_15.txt"
+---
+
+### 3. Pushed Changes
+All tests pass successfully. The workspace and spine changes have been staged, committed, and pushed to the remote repository on branch `task/deterministic-checks-search`. All details are updated in the live [walkthrough.md](file:///Users/ewansair/.gemini/antigravity/brain/b96f63ef-daab-428e-9fbe-ae02f02eb504/walkthrough.md).
+
+
+### USER (Session b96f63ef)
+Well, it wasn't a trick question because I just realised as I was going along. You shouldn't be able to see those config files, you shouldn't be able to adjust the config files that easily. It's just the privacy, security, sovereignty for everyone bit. I know I asked you to and it was an intentional ask not to check up on you.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read `shape_gate.py` in the harness directory to see how path checks and gating policies are implemented so we can add restriction guards for configuration files.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read lines 50 to 90 of `apply_doorway.py` inside the worktree to find where to insert the config path check.
+
+
+### ASSISTANT (Session b96f63ef)
+I will modify `apply_doorway.py` in the worktree to add a check that rejects any patches targeting agent rules, hooks, or taxonomy files, enforcing Ewan's security rule at the doorway level.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read the test file `test_doorway.py` in the worktree to see where we can add a test verifying that edits to banned configuration files are blocked.
+
+
+### ASSISTANT (Session b96f63ef)
+I will add a unit test in `test_doorway.py` to assert that attempts to modify protected configuration files via the doorway are blocked.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run the test suite to verify that the path protection rule correctly blocks modifications to configuration files.
+
+
+### ASSISTANT (Session b96f63ef)
+I will add the Config Mutation Guard Law to `AGENTS.md` to formally document this restriction.
+
+
+### ASSISTANT (Session b96f63ef)
+I will read `COMPLETE_SYSTEM_SPEC.md` starting at line 440 to find where to register the config mutation guard specifications.
+
+
+### ASSISTANT (Session b96f63ef)
+I will update `COMPLETE_SYSTEM_SPEC.md` in the worktree to define the Config Mutation Guard rules and specify the list of protected files that agents are forbidden from modifying.
+
+
+### ASSISTANT (Session b96f63ef)
+I will check the git status in the worktree directory to see our modifications.
+
+
+### ASSISTANT (Session b96f63ef)
+I will run the tests inside the worktree directory to verify everything passes with the configuration lock active.
+
+
+### ASSISTANT (Session b96f63ef)
+I will stage, commit, and push the configuration mutation guard implementation.
+
+
+### ASSISTANT (Session b96f63ef)
+I will view the end of the walkthrough artifact to prepare our final edits.
+
+
+### ASSISTANT (Session b96f63ef)
+I will view the beginning section of `walkthrough.md` to update our feature list.
+
+
+### ASSISTANT (Session b96f63ef)
+I will update the walkthrough file to document the Config Mutation Guard implementation and the updated test results.
+
+
+### ASSISTANT (Session b96f63ef)
+I have fully addressed this security consideration by implementing the **Config Mutation Guard Law**:
+
+1.  **Doorway Block**: Modified [apply_doorway.py](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/harness/apply_doorway.py) to explicitly enforce a hard block on the doorway path parser. Any patch targeting rules, config, or hook files (`.cursorrules`, `.clauderules`, `hooks.json`, `AGENTS.md`, or `ESTATE-TAXONOMY.md`) is immediately rejected with a `Banned path` error.
+2.  **Test Verification**: Added `test_banned_paths_protection` to [test_doorway.py](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/tests/test_doorway.py) to verify that attempts by an agent to modify config files via the doorway are blocked. All 20 tests pass.
+3.  **Specs Registry**: Documented the *Config Mutation Guard Law* inside [AGENTS.md](file:///Users/ewansair/ingestion-to-research-pipe/AGENTS.md) and [COMPLETE_SYSTEM_SPEC.md](file:///Users/ewansair/ingestion-to-research-pipe/COMPLETE_SYSTEM_SPEC.md).
+4.  **Committed & Pushed**: All updates are staged, committed, and pushed on `task/deterministic-checks-search` under git commit `ed5e69c`. The walkthrough and baton are updated.
+
+This ensures that while the configuration files exist to instruct the incoming agents, they cannot be modified in-flight by any AI agent—enforcing a strict deterministic barrier around our rules and environment setup.
+
+
+### USER (Session b96f63ef)
+write the baton passes for claude and cursor please
+
+
+### ASSISTANT (Session b96f63ef)
+I will verify that the baton passes are successfully written to Ewan's home directories and print their contents here in full so they are clearly visible on the record.
+
+
+### ASSISTANT (Session b96f63ef)
+I will also verify the Claude baton file is written correctly.
+
+
+### ASSISTANT (Session b96f63ef)
+Here are the complete, in-record baton passes created for Cursor and Claude:
+
+### 1. Cursor Baton Pass
+File Path: [/Users/ewansair/portable-spine/agents/cursor/BATON.md](file:///Users/ewansair/portable-spine/agents/cursor/BATON.md)
+
+```yaml
+---
+title: "Agent Baton — Cursor — 2026-06-30 — Setup & Orientation"
+document_type: "baton"
+date: "2026-06-30"
+from_agent: "antigravity"
+to_agent: "cursor"
+epistemic_grade: "FACT"
+
+instructions:
+  on_wake:
+    - "Query the AI Orientation Guide from the table `ai_orientation_guide` in database `amplified_brain` to get active ports, rules, and workspace mappings."
+    - "Verify local path anchors against the master taxonomy: `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/ESTATE-TAXONOMY.md`."
+    - "Strictly read the system specs in `COMPLETE_SYSTEM_SPEC.md` to understand safety constraints."
+  
+  on_stop:
+    - "Submit your session walkthrough, learned user preferences, and any configuration updates back to Vellum (/api/v1/entries or Vellum sheets)."
+    - "Vellum and Python/Rust deterministic wrappers will automatically compile these updates, write them to the `ai_orientation_guide` table (purging old versions to prevent bloat), and sync them to GitHub."
+
+  outbound_doorway:
+    - "Do NOT mutate repository files directly. You are restricted to exactly ONE outbound doorway/hook."
+    - "Write all proposed codebase/file changes to `/Users/ewansair/ingestion-to-research-pipe/outbound_doorway/` as structured JSON patches named `patch_[timestamp]_[agent_id].json`."
+    - "The deterministic Rust binary `/Users/ewansair/control-centre/bin/apply_doorway` will automatically parse, validate, apply, and commit your changes."
+
+  compiled_gates:
+    - "Safety checks and doorway execution are handled by immutable Rust binaries under `/Users/ewansair/control-centre/bin/` (or `/opt/amplified/bin/` on Beast). Do not attempt to modify these scripts or binaries."
+
+warnings:
+  - "Writing direct commits or editing files outside the doorway is a violation of the Single Outbound Doorway Law and will be rejected by the pre-commit and write gates."
+---
+```
+
+---
+
+### 2. Claude Baton Pass
+File Path: [/Users/ewansair/portable-spine/agents/claude/BATON.md](file:///Users/ewansair/portable-spine/agents/claude/BATON.md)
+
+```yaml
+---
+title: "Agent Baton — Claude — 2026-06-30 — Setup & Orientation"
+document_type: "baton"
+date: "2026-06-30"
+from_agent: "antigravity"
+to_agent: "claude"
+epistemic_grade: "FACT"
+
+instructions:
+  on_wake:
+    - "Query the AI Orientation Guide from the table `ai_orientation_guide` in database `amplified_brain` to get active ports, rules, and workspace mappings."
+    - "Verify local path anchors against the master taxonomy: `/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/ESTATE-TAXONOMY.md`."
+    - "Strictly read the system specs in `COMPLETE_SYSTEM_SPEC.md` to understand safety constraints."
+  
+  on_stop:
+    - "Submit your session walkthrough, learned user preferences, and any configuration updates back to Vellum (/api/v1/entries or Vellum sheets)."
+    - "Vellum and Python/Rust deterministic wrappers will automatically compile these updates, write them to the `ai_orientation_guide` table (purging old versions to prevent bloat), and sync them to GitHub."
+
+  outbound_doorway:
+    - "Do NOT mutate repository files directly. You are restricted to exactly ONE outbound doorway/hook."
+    - "Write all proposed codebase/file changes to `/Users/ewansair/ingestion-to-research-pipe/outbound_doorway/` as structured JSON patches named `patch_[timestamp]_[agent_id].json`."
+    - "The deterministic Rust binary `/Users/ewansair/control-centre/bin/apply_doorway` will automatically parse, validate, apply, and commit your changes."
+
+  compiled_gates:
+    - "Safety checks and doorway execution are handled by immutable Rust binaries under `/Users/ewansair/control-centre/bin/` (or `/opt/amplified/bin/` on Beast). Do not attempt to modify these scripts or binaries."
+
+warnings:
+  - "Writing direct commits or editing files outside the doorway is a violation of the Single Outbound Doorway Law and will be rejected by the pre-commit and write gates."
+---
+```
+
+
+
+# START OF SESSION 6ff55ae9-48dc-4d0c-a6ff-ef549fe0bb9c
+
+### ASSISTANT (Session 6ff55ae9)
+I have created the implementation plan for the **Sandbox Intelligence Lake** using **DuckDB** and the Python pipelines for chunking, labeling, clustering, and versioning.
+
+Please review the [implementation plan](file:///Users/ewansair/.gemini/antigravity/brain/6ff55ae9-48dc-4d0c-a6ff-ef549fe0bb9c/implementation_plan.md) and click **Proceed** or provide feedback to begin execution.
+
+
+### USER (Session 6ff55ae9)
+sorry 
+
+
+Hi, how's it going?
+
+ Yeah, pretty good, thanks.
+
+That's great to hear. Anything on your mind I can help with?
+
+ Yeah, do you know what date, what date it is, please?
+
+It's Friday, June 19, 2026.
+
+ Spot on. Um, I was just checking so you know the register of date. The situation is, oh, you'll know from my projects. You know who I am, don't you?

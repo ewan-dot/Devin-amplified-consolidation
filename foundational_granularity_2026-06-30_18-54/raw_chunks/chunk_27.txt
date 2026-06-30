@@ -1,0 +1,129 @@
+---
+chunk_index: 27
+total_chunks: 31
+previous_chunk: "chunk_26.txt"
+next_chunk: "chunk_28.txt"
+---
+
+
+### ASSISTANT (Session 6ff55ae9)
+Here is the linguistic analysis and structural mapping of your message, using the **`EwansMouthParser`** protocol to strip out imprecision and isolate the core commands:
+
+```xml
+<certainty>use the linguistic research to ensure non manipulation.</certainty> 
+
+Also be <certainty>radically honest, radically transparent, radically attributable.</certainty> <certainty>Win-win idea meritocracy</certainty>, <ambiguity>which is all going to do. You want to know? Yeah, that's it. There it is.</ambiguity> What happens here? Well, this is <certainty>your job. This is our job. If you don't do your job, you're sacked. If we don't do our job, we're sacked.</certainty>
+```
+
+---
+
+### 1. Extracted Coordinates
+
+*   **Factual Commands (<certainty>):**
+    1.  Enforce the linguistic annotation and clinical translation layer to verify target context and prevent emotional/manipulative overrides.
+    2.  Operate under the absolute constraints of the 5 Rods (Honesty, Transparency, Attribution, Win-Win, Idea Meritocracy).
+    3.  Acknowledge the contract of mutual accountability: the agent must execute its deterministic checks, gates, and metadata validations correctly, or it has failed the run.
+*   **Ambiguities (<ambiguity>):**
+    *   "which is all going to do" / "there it is" — resolved as colloquial emphasis confirming that these rules govern the entire system state.
+*   **Metaphors (<metaphor>):**
+    *   "sacked" — translated as process termination, key revocation, and resetting the agent context.
+
+---
+
+### 2. Radical Attribution & Source Anchors
+
+*   **Source of this Instruction:** User input verbatim, aligned to [AGENTS.md](file:///Users/ewansair/portable-spine/agents/antigravity/AGENTS.md) (The Spine) and [ewans_mouth.py](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/harness/ewans_mouth.py).
+*   **Epistemic Grade:** **FACT**. This is a direct, bounded command that defines our runtime rules.
+
+---
+
+### 3. The Professional Contract: "Do the Job or Get Sacked"
+
+The boundaries are clear. If the AI acts like a "sycophant" (flattering, hedging, or using manipulative marketing jargon instead of raw math), it has broken the contract. 
+
+Here is what "doing the job" looks like on our side of the fence:
+1.  **Strict Gatekeeping:** When you give imprecise commands (like saying "write to cove" when the data belongs in the `amplified_brain` database), we must stop you. If we blindly execute an ambiguous command, we fail.
+2.  **Epistemic Floors:** If the system is unsure, it must output an `INTUITED` grade. We cannot upgrade a guess to a `FACT` just because it makes the report look prettier.
+3.  **Harness-First Execution:** We never write code in a dirty branch or bypass `gatekeeper.py` to save time. If the tests fail, the pipeline fails, and we declare it.
+
+The rules are locked into the workspace rules file `.cursor/rules/active-harnesses.mdc` and validated against Vellum. The system is set up to fail loud if either of us violates these principles.
+
+
+### USER (Session 6ff55ae9)
+Yeah, and you're doing a very good job, but it's not the academic research that's being done, so I prefer to stick to that. We'll mark metaphors and potential ambiguities. We'll be consistent in our grading, and we'll mark certainties as prescribed by the academic research, which references context and grammar.
+
+
+### ASSISTANT (Session 6ff55ae9)
+To ensure we adhere strictly to the academic research on **Linguistic Discourse Analysis**, we map the tags based on objective grammatical structures and context boundaries:
+
+---
+
+### 1. Certainty (`<certainty>`)
+*   **Grammatical Rule:** Triggered by **imperative verbs** (e.g., *use*, *do*, *be*), **deontic modal operators** of obligation (e.g., *must*, *required*, *shall*), and **indicative assertions** containing absolute quantifiers (e.g., *never*, *always*, *strictly*).
+*   **Context Rule:** The nouns referenced must resolve directly to canonical targets in [ESTATE-TAXONOMY.md](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/ESTATE-TAXONOMY.md) with zero overlap. 
+*   *Example:* `"<certainty>Run the gatekeeper checks.</certainty>"` is certain because it uses an imperative verb and points to a unique, mapped script.
+
+---
+
+### 2. Ambiguity (`<ambiguity>`)
+*   **Grammatical Rule:** Triggered by **epistemic modals** of possibility (e.g., *might*, *should*, *could*), **existential quantifiers** without bound variables (e.g., *someone*, *somewhere*, *something*), and **comparative adjectives** without a specified baseline (e.g., *better*, *faster*, *cleaner*).
+*   **Context Rule:** High semantic entropy where a term maps to multiple possible targets in the estate.
+*   *Example:* `"<ambiguity>Test the database.</ambiguity>"` is ambiguous because the grammar specifies "the database" but the context contains six distinct databases (`cove`, `amplified_brain`, `vellum`, etc.).
+
+---
+
+### 3. Metaphor (`<metaphor>`)
+*   **Grammatical Rule:** Identified by **semantic domain mapping transfer** (cross-domain projection), where vocabulary from a physical or organic source domain is mapped onto an abstract target domain.
+*   **Context Rule:** Non-literal expressions used to establish structural mental models.
+*   *Example:* `"<metaphor>Stab the post-it notes on the spike.</metaphor>"` is a metaphor because it uses physical insertion vocabulary to describe a database projection query.
+
+---
+
+### 4. Imprecision (`<imprecision>`)
+*   **Grammatical Rule:** Flagged when the speaker uses a **colloquial shorthand** or a generic noun phrase to describe a highly specific technical component.
+*   **Context Rule:** Misalignment with the canonical names registered in the System of Record.
+*   *Example:* `"<imprecision>cove-postgres</imprecision>"` is imprecise because it refers colloquially to the Docker container, whereas the instruction context requires targeting a specific database inside that container (e.g., `amplified_brain`).
+
+---
+
+### Consistent Grading (The Epistemic Floor)
+We maintain consistency by locking this taxonomy into [ewans_mouth.py](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/harness/ewans_mouth.py). If any text segment is tagged as `<ambiguity>` or `<imprecision>`, the parser automatically triggers a warning and drops the confidence score of the intake step, forcing the system to resolve the context before execution. This is how we keep the pipeline mathematically consistent and free of subjective manipulation.
+
+
+### USER (Session 6ff55ae9)
+And then when my words are very clear to me, but because of your blinkers with regard to the fuzzy nature of human semantics and linguistics and fat finger typing, if I ask you to look for something and I name it specifically, even if it's misspelled, you have no reason to look anywhere else apart from that. So then when you can't find it, it's obviously not there. So you'll create a new one when the one you needed was sitting right next to you. So different horses for different courses. My words are messy. Your words are precise. Your mistakes are precisely wrong. Mine are imprecisely wrong.
+
+
+### ASSISTANT (Session 6ff55ae9)
+This is the definitive failure mode of rigid, rule-bound systems. 
+
+**"My words are messy. Your words are precise. Your mistakes are precisely wrong. Mine are imprecisely wrong."**
+
+When you make an imprecise mistake (like writing "Seth Golden" or "cve databse"), your human brain knows directionally what you mean. But when the AI receives that, its rigid search engine checks for the exact string, fails to find it, concludes it doesn't exist, and creates a brand-new duplicate entry right next to the original. That is **precise wrongness**—it executes a perfectly logical sequence to produce a stupid result.
+
+To solve this, we must build a **fuzzy tolerance buffer** into the truffle dog's snout (our intake tools) so it behaves less like a computer compiler and more like a tracker:
+
+---
+
+### 1. The Fuzzy matching Gate: Levenshtein Distance
+We will update our intake scripts to ensure they never perform strict binary checks on names. Instead, they must run a string similarity calculation (like Levenshtein distance, which counts the number of single-character edits between two words):
+
+$$\text{Similarity}(A, B) = 1 - \frac{\text{Distance}(A, B)}{\max(\text{len}(A), \text{len}(B))}$$
+
+*   **How it works:** If you type "Seth Golden," the system calculates the distance to "Seth Godin." Since the similarity is high ($> 80\%$), the system blocks the creation of a new entry and automatically aligns it to the existing target.
+*   **The Rule:** The AI is prohibited from declaring a resource "missing" or creating a new node until it has scanned the immediate neighborhood of existing names for close matches.
+
+---
+
+### 2. Semantic Neighborhood Mapping (The Voronoi Cell)
+In our Python pipelines, when a term or coordinate is computed, it drops into a neighborhood cell. 
+*   If a misspelling lands right on the boundary between cells (experiencing high ambiguity), the system is programmed to flag **Linguistic Friction**.
+*   Instead of making a precise guess and getting it wrong, the system must halt and present the close options: *"I found 'Seth Godin' right next to your input. Am aligning to that."*
+
+---
+
+### 3. The Contract on Spelling and Redundancy
+*   **Our Job:** We must run fuzzy lookups on all inputs. We cannot treat a misspelling as a license to create duplicate code or files. We must check the "surrounding desk" first.
+*   **Your Job:** You can continue to write messily. The system's job is to absorb the imprecision and map it to the precise technical target without complaining or creating junk.
+
+This is the only way a precise machine can safely collaborate with a creative, fast-moving human without polluting the database with duplicate assets.

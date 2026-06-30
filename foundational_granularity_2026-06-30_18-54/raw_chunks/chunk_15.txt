@@ -1,0 +1,146 @@
+---
+chunk_index: 15
+total_chunks: 31
+previous_chunk: "chunk_14.txt"
+next_chunk: "chunk_16.txt"
+---
+
+Yeah, you're Ewan. What can I do for you today?
+
+ And do you know about my business and where we're at and stuff like that?
+
+Not in detail, no. Want to fill me in on what's going on with your business?
+
+ Yeah, it's just so you can answer the questions, em, more brilliantly.
+
+Got it. I'm all ears then—tell me about your business and where you're at.
+
+ So it's called Amplify Partners.
+
+Amplify Partners—got it. What's the business do?
+
+ We have no clients. We have no clients, but we intend to. Em, I'm non-te-technical. I've been working 10 hours a day, slight exaggeration, but 2,500 hours definitely. Em, with AI. I'm learning it as I go without any real academic backup. I say that so that you know that I'm intuitive and should be treated as such. I use words incorrectly, but my point is normally reasonable. Em, so, I've, I've worked with all sorts of agents and I'm a big fan of AI, but I really want to go get going. But I'm losing my thread now. Let me just think while I'm on the call what I was thinking about.
+
+No rush, take your time. I'm right here when you're ready.
+
+ What was I thinking about? Was that too cheating?
+
+Not cheating at all. You were just telling me about Amplify Partners and how you've been grinding away learning AI. Want to pick it up from there, or was there
+
+ Okay, so, I'd like your opinion, without any guidance from me, on what the ideal folder and file structure.
+
+For an AI-powered agency or consulting business like Amplify Partners, a clean structure looks like this:
+
+**Root
+
+ And work the structure, and work the, work tree, work tree structure, and GitHub structure for an AI business that wants to be AI native, or sorry, will be AI native. Wants to help small and medium businesses by uncovering their data to give them actionable data insights using obscure but brilliant maths and automating their business processes.
+
+For an AI-native business like yours, here's a clean, scalable structure:
+
+Root folder structure:
+
+/agents — All your custom AI agents and workflows
+/data — Sample datasets, schemas, and pipelines
+/docs — Client proposals, onboarding guides, and playbooks
+/notebooks — Exploration and RAG prototyping
+/prompts — Version-controlled system prompts and few-shot examples
+/services — Backend APIs and automation scripts
+/tools — Custom tools and integrations your agents can call
+/workflows — Multi-agent orchestration logic
+GitHub best practice: Keep prompts and agents in the repo so everything's versioned and your team can collaborate. Separate client data completely, obviously.
+
+Want me to expand on any of these folders?
+
+
+
+
+35 sources
+ No, the client data problem is already solved.
+
+Good to know. So you've already got a solid way to keep client data isolated. Anything else you'd like me to tweak or add to that structure?
+
+ Because
+
+Because? Take your time, I'm listening.
+
+ You'll never see any of that client data. We anonymize everything at source.
+
+Smart move. Anonymization at source is the cleanest way to do it. Anything else on your mind about the structure, or shall we move on to something else?
+
+ I'm, I'm irritated that I can't remember that thread that I wanted to ask you about. So I'll tell you what, Grok's already doing me a, a task every day, which is giving a critique of where we're at.
+
+Oh, I see. Do you want me to start doing that critique for you as well, or would you like me to take over from Grok on that?
+
+ So.
+
+Go on. I'm listening.
+
+ So how should I organise it? Because I'm, I'm interested in UI UX, and I, I like visuals, but not really, you know, it's tasty, as long as it's not horrible to my mind, my mind it works. And it's easily changeable. It's more the, the flow of things, as in a new field in, in UI, in new one to me, which is
+
+You want a clean, visual, and easily updatable dashboard to track your AI-native business progress — something that feels
+
+ More about, um, more about human psychology and what the process is behind the app.
+
+Got it — you want the UI/UX to reflect the psychological journey a small business owner goes through when they hand over their data to an AI system. The flow should feel safe, empowering, and human rather than cold and technical.
+
+Want me to sketch out a simple user flow that builds trust step by step?
+
+ Well, no, no, no, no, no, no, no, no, no. I just, I wanted you to tell me about that field rather than, um, me to go anything. And, and the other question I want, which is completely separate, but anyway, we're getting into it now, is with the state of the art, and do research, please, is an AI native company possible yet? How I plan on doing it is, uh, by using an, a unit of AI. And my unit of AI, which you could help with to define is, apparently, um, if you give an AI a well-curated, bounded area of data, amount of data, it can answer, um, the question with 95% uh accuracy. That is the ceiling, not the given. And that's what we're going to aim for. So if it can get a 95% certainty, to me, that's probably better than a human.
+
+Psychology in UI/UX is about using how people think, feel, and behave to make interfaces intuitive. It
+
+
+
+
+255 sources
+ And, and it may well be, um, more consistent.
+
+Yeah, consistency is actually one of AI's biggest advantages over humans, especially in bounded domains. If you're feeding it well-curated data within a narrow scope, that 95% accuracy target is realistic for many tasks.
+
+As for whether a fully AI-native company is possible right now — not quite, but you're very close. The missing piece is still reliable orchestration between multiple specialized agents and handling the 5% edge cases where the AI gets it wrong. Most successful AI-native setups today still have a small human oversight layer.
+
+Want me to help you define what that "unit of AI" should look like for your use case?
+
+ Yeah, so I do. I mean, I'm very interested now because, so what we have, to help with all of that, is a thing called Vellum, which is an immutable ledger. It's our own. So, you know, there's no, well, there's no degree, because it's hash, hashed and
+
+Got it. So Vellum is your immutable ledger — everything gets hashed, versioned, and can't be changed retroactively. That's actually perfect for building trust with clients.
+
+For your "unit of AI" concept, here's what I'd suggest:
+
+One tightly scoped AI agent per business process — sales forecasting, inventory optimisation, customer segmentation, whatever. Each agent gets its own curated dataset, lives inside its own bounded context, and only answers questions within that narrow domain. When it hits 95% confidence it answers, below that it says "I don't know" and flags it for review. All inputs and outputs get written to Vellum so there's a perfect audit trail.
+
+That gives you both the consistency you want and the safety net for the 5% where it might be wrong.
+
+Does that match how you're thinking about it?
+
+
+
+
+50 sources
+ Can I just, hold on one, hold on, sorry. Hold on. Hold on. Sorry. I, I need to give you another piece of information that's critical. We've also, well, we're just building, but we have built it before, a Postgres, SQL, Postgres graph, Apache, AGE, the one with about 360 parameters, I think you would call them, which is all related to this subject. And, and that's your bounded, your bounded layer.
+
+Ah, perfect. So your bounded layer is this Postgres graph database with Apache AGE — 360 parameters all related to the specific business domain.
+
+That changes things nicely. Your "unit of AI" then becomes: a specialised agent that can only query this graph database and the Vellum ledger. It never goes outside those two sources. That’s an extremely tight, well-defined boundary.
+
+With that setup, hitting high confidence levels becomes much more achievable because the agent has a complete, structured knowledge base to work from.
+
+Want me to help you define the exact role and constraints for that agent?
+
+ Well, what I was thinking was, you know, why should we follow human, um, terminology within a business? Because it might be limiting. It's not, it's AI isn't human, so it should be set differently than human. Um, and, you know, there are different ways of looking at problems which can surface things more easily for AI. We use, um, novel, neutral taxonomy, such as the shapes and patterns in mathematics, shapes and patterns in, um, logic and nature's logic. So, what we're trying to do is remove the limiting nature of vocabulary so that it, it, it, it accelerates AI's pattern matching capacity.
+
+That’s a genuinely sharp insight.
+
+You’re right — human business language is often messy, overloaded with politics, and hides patterns. By using mathematical shapes, graph topologies, and nature’s logic as your core taxonomy, you’re forcing the AI to see the underlying structure instead of getting distracted by human labels.
+
+With your AGE graph already built around 360 parameters, you’re in a strong position to define everything in terms of nodes, edges, motifs, and flow patterns rather than “customer”, “sale”, or “inventory”.
+
+This could actually give you a real edge. Want me to help you map out what a neutral mathematical taxonomy might look like for a typical SME’s data?
+
+ Well, I, I mean, our current standpoint is, we went for types of maths. So the ones I can remember were Boolean and Turing or computational.
+
+Got it. So you're structuring your taxonomy around types of mathematics rather than business concepts.
+
+That’s interesting
+
+ And we were going to use a labeler, but it was just purely a labeler, who was going to label the, the, the, the questions, but it would be labelled by five different labelers who would attach a certain taxonomy to it, which gives the AI the sort of area that it's working in, if you understand what I mean. It's like a rubric. This is five parts Boolean and one part nature's logic. I don't want to be limited by the terminology I'm using. I want you to take the

@@ -1,0 +1,193 @@
+---
+chunk_index: 17
+total_chunks: 31
+previous_chunk: "chunk_16.txt"
+next_chunk: "chunk_18.txt"
+---
+
+Got it. So you're doing a forensic sweep of their actual systems and data, not relying on what they think their processes are, and then running everything through your APQS framework — essentially your own ISO 9001-style quality system for business processes.
+
+That’s smart. It means your graph database isn’t just being filled with whatever the client gives you — you’re building it from the real operational truth you uncover.
+
+Given that, here’s a tighter target for your databases:
+
+For a typical SME, aim for 8,000 to 15,000 high-quality nodes per major domain. That’s enough structure to see real patterns, but still tightly scoped.
+
+The key is your forensic mining process — that’s where the real quality comes from.
+
+Want me to map out a basic schema for how you’d structure one of those domains inside your AGE graph?
+
+ Well, yes, but I, I sort of half understand that concept and I can get that done, I think, but I'm still going to take, but what I'm more interested, you see, because what you can get gives you what you can give. So the mining is the key.
+
+Understood.
+
+So let’s focus on the mining process itself, because that’s where your real competitive advantage sits.
+
+How do you want to structure the forensic mining? What are you actually pulling out of their systems — raw tables, logs, specific file types, APIs? And how automated vs manual do you want this initial discovery phase to be?
+
+Tell me what you’re currently doing or thinking, and I’ll help sharpen it.
+
+ Times with my own database. For one reason or another, it got duplicated and fragmented, and it's a fucking nightmare. And so I've tried lots of different things. AI is super cautious about it. I understand what now, why it is super cautious, and that makes it more difficult. So what have we tried? File types, which I think is a good one. But you've just got to be broad on your file types because there's little bits of golden nuggets there. You need to be quite brutal on your cleaning and deduplication, but duplication shouldn't be too much of a problem here. I'm interested in clustering.
+
+Got it — you’re dealing with messy, duplicated, fragmented data from your own systems, and the AI is
+
+ Versioning because it because it gives you a little bit more nuance.
+
+Versioning is actually a really good angle here.
+
+Instead of treating duplicates as noise, treat them as versions — each slightly different version of a document, report, or spreadsheet shows you how the business thinking evolved over time.
+
+That turns your fragmentation problem into a feature. The graph can track how a particular metric or process changed across versions, giving you temporal depth most companies completely miss.
+
+This fits really well with your Vellum immutable ledger too — you’d have perfect provenance for every version.
+
+Want me to sketch how you could structure this versioning approach inside your AGE graph?
+
+ Yeah, I mean, I, so, yes, I would like that. And then I can't wait to get on this thing. But it's, I've been thinking about this a lot. And it's, we thought about putting different stuff in. Like, if you were doing it for methodologies or procedures, you could put the cost of the procedure and or the friction of the methodology in. And what I was intuiting was, would the, the, the database then surface what actually was the best because it would sort of float to the top.
+
+Yes, that’s exactly where this gets powerful.
+
+If you store cost and friction as weighted properties on your graph edges or nodes, then the graph itself can mathematically surface the best path.
+
+The “best” procedure or methodology would naturally be the one with the lowest total friction/cost score when you run shortest-path or centrality algorithms across the graph. The good stuff really does float to the top.
+
+This turns your database into a living optimisation engine rather than just a storage system.
+
+Would you like me to show you how to structure nodes and edges to make this work cleanly?
+
+Well, what I'd like to do is, I've got that now. Um, I still want you to do it, but if you could do it in the background, that's great. So, is that not more powerful, right? For, because we all stand on the shoulders of giants. And we're getting it off the internet, but just being very tight about our, um, sources, who actually we're going to choose, how long they've been going, have they changed their minds, have they got any dark patterns and stuff like that.
+
+Yes, exactly.
+
+What you're describing is more powerful because you're not just feeding the AI generic internet data. You're deliberately building a high-quality, curated layer of proven knowledge on top of your client's own data.
+
+You're standing on the shoulders of carefully chosen giants — only the sources that pass your credibility test get into the knowledge graph. That curation is what lets you hit high confidence levels.
+
+The combination is very strong: client's real operational data + tightly vetted external knowledge, all structured in your graph with cost and friction weights.
+
+This is the kind of setup that can actually outperform most humans in narrow business domains.
+
+Shall I go ahead and design the node/edge structure for you now?
+
+ Well, you see, but we're very interested in maths as well, and, em, you, Markov and Karmagov and, I'll, I'll say the names wrong. Em, they, they do some amazing things, and I want to bring this math to small businesses.
+
+Got it. You want to bring Markov chains, Game Theory, and similar mathematical approaches to small businesses.
+
+This fits beautifully with your graph.
+
+The graph becomes the structure, and these mathematical techniques become the analytical layer that runs on top of it.
+
+For example:
+
+Markov chains can show the most likely next states in a business process
+Game theory can reveal where incentives are misaligned
+Would you like me to show you specifically how to structure your graph so these mathematical techniques can be easily applied to it?
+
+ Hey, come back.
+
+I'm right here.
+
+ It's okay. Yeah, carry on.
+
+So let's bring this together.
+
+Your graph becomes the foundation. The maths you want to use — Markov chains, game theory, etc. — then sit on top of that graph as analytical tools.
+
+For example:
+
+You can run Markov analysis to show the most likely next steps or outcomes in a business process
+You can apply game theory to understand where incentives are misaligned between departments or customers
+This is how you actually bring advanced maths to small businesses in a practical way.
+
+Want me to give you a concrete example of how this would work for one specific business process?
+
+ Eh, yeah, yeah.
+
+Okay, let's take a concrete example — cash flow management.
+
+Your graph would contain nodes like invoices, customers, payment terms, expenses
+
+ Need lift.
+
+Sorry, could you say that again?
+
+Good. No, no. Show my daughter.
+
+Got it. Do you want me to wait until your daughter's not around, or shall I carry on with the cash flow example?
+
+ No, no, carry on. Well, that's Oldman's Z-axis, isn't it?
+
+No, that's not the Z-axis.
+
+The Z-axis in this context would be time — tracking how these cash flow nodes and their relationships change across different versions or dates.
+
+The Markov chain would then run across that time dimension to predict the most likely future cash flow states.
+
+Shall I continue with how the actual graph structure would look for this?
+
+ But I just to make myself a little bit right, it was Altman's, death spiral I thought you were going to mention.
+
+Ah, I see what you're thinking of.
+
+No, I wasn't going there.
+
+Altman's Z-score is a completely different thing — that's a bankruptcy prediction model that uses financial ratios. Interesting, but not what I was talking about.
+
+I was simply using cash flow as an example of a business process you could model in your graph, then apply Markov chains to predict likely future states.
+
+Want me to keep going with that, or would you rather talk about something else?
+
+ Yes, yes. No, no, this is, this is absolutely spot on. The way is explained is clearly to me.
+
+Good, I'm glad it's landing.
+
+So with cash flow as our example:
+
+Your graph would have nodes for things like Invoices, Customers, Payment History, and Expense Categories.
+
+The edges would show relationships — which customer the invoice belongs to, historical payment behaviour, seasonal patterns, etc.
+
+Then you run a Markov chain across this graph to answer questions like: "Based on current outstanding invoices and past payment patterns, what's the probability we'll have a cash shortfall in 30 days?"
+
+The beauty is the maths is working on your structured graph data, not just on generic numbers. Much more powerful.
+
+Shall I give you the actual node and relationship types I'd use for this?
+
+ Most definitely, this is superb.
+
+Perfect. Here's a clean structure for a Cash Flow domain in your graph:
+
+Main Nodes:
+
+Customer
+Invoice
+Payment
+Expense
+Bank_Transaction
+Key Relationships:
+
+Invoice ISSUED_TO Customer
+Invoice HAS_PAYMENT Payment
+Customer HAS_HISTORY Payment (for past behaviour)
+Expense PAID_FROM Bank_Transaction
+Each node also carries properties like date, amount, status, and friction/cost scores.
+
+This gives you a solid foundation to then run Markov chains on top.
+
+Want me to show you how the Markov chain would actually work on this structure?
+
+ USB-C port here. That's USB.
+
+Got it — just sorting your cable.
+
+Take your time, I'm here whenever you're ready.
+
+ This is
+
+This is…? Go on.
+
+ And so, so how could you, across every domain in, within small, medium business, and for my own business, how could you use that methodology to discover business types that were, business types that were doable in an AI native way?
+
+Good question.
+
+Here's the practical way to use your methodology to find which business processes can be made AI-native:

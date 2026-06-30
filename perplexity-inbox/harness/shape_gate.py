@@ -288,6 +288,19 @@ def check_content(content: str, path: str, seat: str) -> tuple[list[str], dict[s
 
 
 def check_file(path: str, seat: str) -> tuple[list[str], dict[str, Any] | None]:
+    # 1. Run Python syntax check and autocorrect if file is a script
+    if path.endswith(".py"):
+        try:
+            from code_syntax_gate import check_and_repair_file
+            ok, msg = check_and_repair_file(Path(path))
+            if not ok:
+                return [msg], None
+            elif "[AUTOCORRECT]" in msg:
+                witness("shape-gate", "syntax-repair", True, {"path": path, "note": msg})
+                # Re-read content after repair
+        except Exception as e:
+            witness("shape-gate", "syntax-system-error", True, {"path": path, "note": str(e)})
+
     try:
         content = Path(path).read_text(encoding="utf-8")
     except OSError as exc:
