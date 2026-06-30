@@ -43,6 +43,29 @@ Implements objective, rule-based verification checks as actionable pathways
 
 ---
 
+## `perplexity-inbox/harness/baton_lifecycle.py`
+Baton folder lifecycle — active (max 5) → unified archive → datalake bronze.
+
+SSOT paths under AMPLIFIED_INBOX / amplified-pipeline data/.
+
+### Functions
+- `def inbox_root()`
+- `def pipeline_data()`
+- `def paths()`
+- `def slugify(text)`
+- `def witness(event, ok, note)`
+- `def list_active(active_dir)`
+- `def archive_file(src, archive_dir, datalake_dir)`
+- `def rotate(active_dir, archive_dir, datalake_dir)`
+- `def write_baton()`
+- `def read_latest(max_chars)`
+- `def cmd_write(args)`
+- `def cmd_read(_)`
+- `def cmd_rotate(_)`
+- `def main()`
+
+---
+
 ## `perplexity-inbox/harness/db_harness.py`
 Database target harness connection guards (Rod 1 & No Silent Failures).
 
@@ -207,5 +230,19 @@ and asserts successful database writes.
 - `def apply_schema(conn)`
 - `def run_ingestion_cycle(conn)`
 - `def main()`
+
+---
+
+## `perplexity-inbox/harness/vellum_session.py`
+Vellum session marker — plan before work, actual on close.
+
+### Functions
+- `def load()`
+- `def save(data)`
+- `def mark_plan(entry_id, seat)`
+- `def mark_actual(entry_id)`
+- `def plan_posted_recently()`
+- `def actual_posted_for_current_plan()`
+- `def plan_entry_id()`
 
 ---

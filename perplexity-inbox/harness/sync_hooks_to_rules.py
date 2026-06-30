@@ -11,6 +11,7 @@ import ast
 import ssl
 import json
 import uuid
+import shutil
 import urllib.request
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -221,6 +222,7 @@ def main():
         for item in worktrees_dir.iterdir():
             if item.is_dir() and not item.name.startswith("."):
                 wt_rules_dir = item / ".cursor" / "rules"
+                wt_hooks_dir = item / ".cursor" / "hooks"
                 
                 # Handle symlinks (like broken /Volumes symlinks)
                 if wt_rules_dir.is_symlink():
@@ -242,9 +244,23 @@ def main():
                     wt_file.write_text(mdc_content)
                     wt_count += 1
                     print(f"Propagated rule file to worktree: {wt_file}")
+                    
+                    # Propagate hooks config and scripts to worktree
+                    wt_hooks_dir.mkdir(parents=True, exist_ok=True)
+                    main_hooks_json = ROOT_DIR / ".cursor" / "hooks.json"
+                    if main_hooks_json.is_file():
+                        shutil.copy2(main_hooks_json, item / ".cursor" / "hooks.json")
+                    
+                    main_hooks_dir = ROOT_DIR / ".cursor" / "hooks"
+                    if main_hooks_dir.is_dir():
+                        for hook_script in main_hooks_dir.iterdir():
+                            if hook_script.is_file():
+                                shutil.copy2(hook_script, wt_hooks_dir / hook_script.name)
+                                os.chmod(wt_hooks_dir / hook_script.name, 0o755)
+                    print(f"Propagated active hooks to worktree: {item.name}")
                 except Exception as e:
-                    print(f"Failed to write to worktree {item.name}: {e}")
-    print(f"Propagated rules file to {wt_count} active worktrees.")
+                    print(f"Failed to write rules/hooks to worktree {item.name}: {e}")
+    print(f"Propagated rules and hooks to {wt_count} active worktrees.")
 
     # Log to Vellum
     if not jwt:

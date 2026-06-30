@@ -108,6 +108,27 @@ def main():
         respond({})
         return
 
+    # Worktree configuration redirection gate
+    project_dir = os.environ.get("CURSOR_PROJECT_DIR", os.getcwd())
+    if ".worktrees" in project_dir:
+        config_pattern = re.compile(r"(?i)\b(hooks?|harness(es)?|gatekeeper|shape[-_]gate|sync[-_]hooks|sync[-_]ledger|term[-_]gate)\b")
+        if config_pattern.search(prompt):
+            msg = (
+                "Worktree Configuration Block: You are operating in a worktree directory. "
+                "All edits to hooks, harnesses, or system configurations must be done in the main "
+                "workspace directory (/Users/ewansair/ingestion-to-research-pipe/) on the task/deterministic-sync-pipeline branch "
+                "to prevent configuration drift across worktrees."
+            )
+            witness(False, "worktree_config_block", "hooks/harnesses/config in worktree")
+            respond(
+                {
+                    "user_message": msg,
+                    "agent_message": "before-submit-constitutional: blocked config edit in worktree.",
+                },
+                2,
+            )
+            return
+
     if SECRET_RE.search(prompt):
         msg = "Constitutional/security rod — possible secret in prompt. Remove before submitting."
         witness(False, "secret_p0_block", "secret_pattern")
