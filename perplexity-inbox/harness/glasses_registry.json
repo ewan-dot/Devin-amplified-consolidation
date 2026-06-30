@@ -1,0 +1,135 @@
+{
+  "lenses": {
+    "PUDDING_V1": {
+      "name": "Don Swanson LBD / The Pudding Technique Lens",
+      "description": "Used for business knowledge, expert frameworks, semantic dimension matching, and cross-domain A-B-C hypothesis generation.",
+      "required_fields": [
+        "schema_code",
+        "id",
+        "title",
+        "document_type",
+        "expert",
+        "domain",
+        "semantic_dimensions",
+        "actionable",
+        "status",
+        "pudding_score",
+        "created_at",
+        "last_validated",
+        "lbd_attribution",
+        "epistemic_tier",
+        "provenance_sources",
+        "author",
+        "bridge_candidates",
+        "resolved_connections",
+        "risk_flags",
+        "canonical_summary"
+      ],
+      "field_constraints": {
+        "schema_code": ["PUDDING_V1"],
+        "document_type": ["principle", "framework", "sop", "technique", "case_study", "hypothesis", "recipe"],
+        "expert": ["DALIO", "GERBER", "GODIN", "KENNEDY", "LUND", "ZIGLAR", "CIALDINI", "HORMOZI", "BRAMLEY", "CLAUDE", "none"],
+        "domain": ["customer_acquisition", "customer_retention", "pricing", "systems", "people", "sales", "service_delivery", "finance", "mindset", "communication", "measurement", "trust", "none"],
+        "status": ["hypothesis", "tested_internal", "tested_client", "proven", "canonical"],
+        "epistemic_tier": ["INTUITED", "STRUCTURED", "MEASURED", "PROVEN"]
+      },
+      "ai_glasses_instructions": "You are viewing this data through the Swanson LBD (Pudding) Lens. Focus on isolating domain-agnostic semantic dimensions (B-terms) to connect disjoint concepts A and C. Verify cross-domain validity. Run the Pudding scoring function."
+    },
+    "INFRA_V1": {
+      "name": "Infrastructure & Architecture Mapping Lens",
+      "description": "Used for hardware nodes, databases, APFS/APIs mappings, and security boundaries.",
+      "required_fields": [
+        "schema_code",
+        "id",
+        "title",
+        "document_type",
+        "host",
+        "ports",
+        "containers",
+        "db_dependencies",
+        "system_of_record",
+        "security_level",
+        "integrity_check",
+        "epistemic_tier",
+        "author",
+        "created_at",
+        "last_validated",
+        "valid_until",
+        "dependencies",
+        "downstream_consumers",
+        "critical_config_flag"
+      ],
+      "field_constraints": {
+        "schema_code": ["INFRA_V1"],
+        "document_type": ["infrastructure_map", "port_mapping", "directory_layout", "config_spec", "hardware_spec"],
+        "host": ["Beast", "Mac Mini", "external", "none"],
+        "security_level": ["public", "internal", "confidential", "secret"],
+        "epistemic_tier": ["FACT", "STRUCTURED"]
+      },
+      "ai_glasses_instructions": "You are viewing this data through the Infrastructure Lens. Enforce strict database targets (e.g. amplified_brain vs cove). Ensure port numbers and boundary constraints are matched. Flag any secret/credential leaks."
+    },
+    "TELEMETRY_V1": {
+      "name": "Telemetry, Execution & Performance Logging Lens",
+      "description": "Used for Temporal workflow tracking, subagent execution steps, run duration, token usage, and database targets.",
+      "required_fields": [
+        "schema_code",
+        "task_id",
+        "temporal_workflow_id",
+        "run_status",
+        "caller_agent",
+        "called_agent",
+        "execution_duration_ms",
+        "token_usage",
+        "cost_usd",
+        "errors_encountered",
+        "cove_postgres_db",
+        "target_environment",
+        "epistemic_tier",
+        "created_at",
+        "completed_at",
+        "laundering_witness_id",
+        "signature",
+        "canonical_summary"
+      ],
+      "field_constraints": {
+        "schema_code": ["TELEMETRY_V1"],
+        "run_status": ["running", "success", "failed"],
+        "cove_postgres_db": ["amplified_brain", "cove", "vellum", "amplified_crm", "langfuse", "amplified_main"],
+        "target_environment": ["Beast", "Mac Mini"],
+        "epistemic_tier": ["MEASURED", "PROVEN"]
+      },
+      "ai_glasses_instructions": "You are viewing this data through the Telemetry Lens. Audit computational latency, token-efficiency ratios, and execution costs. Check for causal sequence tracking anomalies."
+    },
+    "MATH_V1": {
+      "name": "Mathematical Spine & Calibration Lens",
+      "description": "Used for storing canonical equations, proof state representations, validation parameters, and mathematical calibration targets.",
+      "required_fields": [
+        "schema_code",
+        "id",
+        "title",
+        "formula_group",
+        "formula_code",
+        "latex_expression",
+        "variables",
+        "mathematical_provenance",
+        "epistemic_tier",
+        "validation_status",
+        "measured_metric",
+        "calibration_todo",
+        "attribution",
+        "created_at",
+        "last_validated",
+        "valid_until",
+        "downstream_consumers",
+        "canonical_summary"
+      ],
+      "field_constraints": {
+        "schema_code": ["MATH_V1"],
+        "formula_group": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8"],
+        "epistemic_tier": ["INTUITED", "STRUCTURED", "MEASURED", "PROVEN"],
+        "validation_status": ["proposed", "uncalibrated", "calibrated", "proven"]
+      },
+      "ai_glasses_instructions": "You are viewing this data through the Mathematical Spine Lens. Enforce strict mathematical derivation paths. Check equation bounds, Jaccard anomalies, and calibration targets."
+    }
+  }
+}

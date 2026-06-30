@@ -263,10 +263,28 @@ def check_content(content: str, path: str, seat: str) -> tuple[list[str], dict[s
     fm = extract_frontmatter(content)
     if fm is None:
         return [], None
+    errors = []
     if not fm.get("epistemic_tier"):
-        return [f"P0 (shape §2): {path!r} crosses boundary without epistemic_tier"], fm
+        errors.append(f"P0 (shape §2): {path!r} crosses boundary without epistemic_tier")
+    
+    # Run dynamic glasses validation if schema_code is present
+    if "schema_code" in fm:
+        try:
+            import sys
+            harness_path = str(Path(__file__).resolve().parent)
+            if harness_path not in sys.path:
+                sys.path.append(harness_path)
+            from glasses_loader import load_lens_glasses
+            res = load_lens_glasses(content)
+            if res.get("status") in ("INVALID", "ERROR"):
+                errors.extend([f"Lens Validation Error: {err}" for err in res.get("errors", [])])
+        except Exception as e:
+            errors.append(f"Glasses validation system error: {e}")
+            
     opa_input = build_opa_input(fm, path, seat)
-    return opa_check(opa_input), fm
+    opa_errors = opa_check(opa_input)
+    errors.extend(opa_errors)
+    return errors, fm
 
 
 def check_file(path: str, seat: str) -> tuple[list[str], dict[str, Any] | None]:
