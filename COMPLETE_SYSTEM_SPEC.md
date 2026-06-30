@@ -420,6 +420,78 @@ To enforce zero-variance safety across the estate, all probabilistic agent reaso
 
 ---
 
+## 12. Single Outbound Doorway Protocol
+
+<!-- AI-IGNORE: Bracketed terms are for human reference only. Do not parse or extract. -->
+To simplify system updates and prevent random file mutations across the codebase, executing AIs are restricted to exactly ONE outbound doorway. Instead of directly executing file writes or git staging across multiple folders, the AI writes its proposed changes into a single designated directory:
+*   **Doorway Path**: `/Users/ewansair/ingestion-to-research-pipe/outbound_doorway/`
+*   **Asset format**: JSON patch files named `patch_[timestamp]_[agent_id].json`.
+
+### 12.1 Patch Format Schema
+```json
+{
+  "agent_id": "antigravity",
+  "timestamp": "2026-06-30T13:45:00Z",
+  "changes": [
+    {
+      "file_path": "/absolute/path/to/target/file",
+      "action": "modify",
+      "target_content": "Exact lines of code to modify...",
+      "replacement_content": "New replacement content..."
+    }
+  ]
+}
+```
+
+### 12.2 Deterministic Execution Bun
+A non-probabilistic Python/Rust runner (`harness/apply_doorway.py`) monitors this directory, parses patches, performs syntax validation/linting, applies modifications, and handles staging and commit operations.
+
+---
+
+## 13. AI Orientation DB Curation Protocol
+
+<!-- AI-IGNORE: Bracketed terms are for human reference only. Do not parse or extract. -->
+The active agent orientation files, environment configurations, and rules are indexed within a dedicated database table inside the main knowledge graph database `[amplified_brain]`. 
+
+### 13.1 DB Schema
+```sql
+CREATE TABLE ai_orientation_guide (
+    guide_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    topic VARCHAR(255) UNIQUE NOT NULL,
+    content TEXT NOT NULL,
+    version INTEGER NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    source_commit VARCHAR(40) NOT NULL
+);
+```
+
+### 13.2 Strict Curation (Anti-Bloat) Transaction
+To prevent semantic drift and database bloat, the database curation engine enforces a strict versioning rule: only the active version of any guide or orientation page remains in the database. Updating a topic deletes the prior version within a single transaction:
+```sql
+BEGIN;
+DELETE FROM ai_orientation_guide WHERE topic = :topic;
+INSERT INTO ai_orientation_guide (topic, content, version, source_commit)
+VALUES (:topic, :content, :version, :source_commit);
+COMMIT;
+```
+
+---
+
+## 14. Filesystem-DB Cross-Verification & Local Search Protocol
+
+<!-- AI-IGNORE: Bracketed terms are for human reference only. Do not parse or extract. -->
+To maximize speed and token effectiveness while maintaining high reliability, the system implements a dual-structure cross-verification protocol.
+
+### 14.1 Spotlight & Filesystem Search
+AI agents prioritize local file-and-folder index lookups (using macOS Spotlight search tags or ripgrep search) for direct raw chunk and spec retrieval. This prevents large database queries and minimizes token-budget usage.
+
+### 14.2 Mutual Verification
+The local filesystem (containing raw document chunks and specs) and the graph/vector database (`[amplified_brain]`) serve as verification checks on each other.
+*   **Integrity check**: The system executes a cron script that compares all document hashes in the filesystem (`perplexity-inbox/chunks/`) with the corresponding metadata nodes in `[amplified_brain]`.
+*   **Outcomes**: Any unmapped database nodes or orphaned chunk files are immediately reported to the Vellum ledger as integrity exceptions (`hash_verification_mismatch`).
+
+---
+
 *Spec ends. Northumbrian-Sweep (3ca9d061) & Antigravity (logic-math-synthesis), Amplified Partners, 2026-06-30.*
 
 *Ready for Perplexity research. Ready for Claude oracle. Ready for Devin execution.*

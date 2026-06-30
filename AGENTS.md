@@ -21,6 +21,10 @@ Mac is read-only from 2026-06-17 — no git push from Mac. All pushes via Devin 
 Ewan's 11 rules: ~/.cursor/rules/ewan-core-rules.mdc
 7 operational rules: ~/clean-build/docs/amplified-agent-operational-rules.md
 Spine Size Law: `AGENTS.md` must be kept at a perfect, readable size and MUST never exceed 500 lines. If the file approaches 500 lines, migrate verbose details, environment context, and logs to `ESTATE-NOTES.md` (or portable spine reference directories) to compress the file.
+Single Outbound Doorway Law: Executing agents are restricted to exactly ONE outbound doorway/hook (`outbound_doorway/`). The agent deposits all proposed modifications in that single hook, and the deterministic Python/Rust plumbing validates, divvies up, and applies the changes.
+AI Orientation Database Law: The semantic graph index `[amplified_brain]` houses the canonical AI Orientation Guide (table `ai_orientation_guide`). This database is strictly curated: when a document is versioned, the previous version is immediately purged from the active database to prevent semantic bloat.
+Deterministic-First Law: If an operation can be performed deterministically via Python/Rust, it MUST be. Generative AI APIs are strictly reserved for fuzzy/probabilistic reasoning.
+Filesystem-DB Cross-Verification Law: The local file-and-folder chunk repository and the PostgreSQL graph index act as mutual check-and-balance validation layers. Any mismatched hashes are flagged in the Vellum ledger as integrity exceptions.
 
 ## Key locations
 - Codebase SSOT: ~/clean-build/ (GitHub: Amplified-Partners/fleet-clean-build)

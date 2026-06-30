@@ -30,7 +30,7 @@ valid_until: "2026-12-31"
 
 | Database Name | Apache AGE Graph? | pgvector? | What It Is For (Role) | What Answers It Holds (Data & Tables) |
 | :--- | :--- | :--- | :--- | :--- |
-| `amplified_brain` | **ACTIVE** | **ACTIVE** | Canonical, single source of truth for the Sovereign Business Brain. | • Graph `business_brain` (89,385 nodes): Entity relations, client models, extracted rules.<br>• Graph `compound_design` (53,959 nodes): Architecture codebases, structural nodes.<br>• Tables `research_findings`, `design_patterns`, `pipeline_runs`. |
+| `amplified_brain` | **ACTIVE** | **ACTIVE** | Canonical, single source of truth for the Sovereign Business Brain. | • Graph `business_brain` (89,385 nodes): Entity relations, client models, extracted rules.<br>• Graph `compound_design` (53,959 nodes): Architecture codebases, structural nodes.<br>• Tables `research_findings`, `design_patterns`, `pipeline_runs`. <br>• Table `ai_orientation_guide`: Strict single-version curated guides. |
 | `cove` | **INACTIVE** (Clean target) | **INACTIVE** | APDS orchestration metadata, build plans, Temporal tasks, and executor status logs. | • Tables `agent_runs`, `build_plans` (24 rows), `tasks` (218 rows).<br>• Table `system_prompts` (685 rows): Base prompts for agent fleet.<br>• Table `kaizen_applied_changes` (661 rows): Self-healing improvements. |
 | `vellum` | **INACTIVE** | **INACTIVE** | Hash-chained integrity ledger for fleet operations and state persistence. | • Table `vellum_entries` (2,578 rows): Signed audit blocks.<br>• Table `vellum_batons` (13 rows): Task baton transfers.<br>• Table `vellum_sheets` (126 rows): Configuration mappings. |
 | `amplified_crm` | **INACTIVE** | **INACTIVE** | Client Relationship Management metrics and contact history. | • Tables `contacts`, `companies`, `deals`, `call_transcripts` (Empty today, ready for intake). |
@@ -58,6 +58,7 @@ valid_until: "2026-12-31"
 | `/Users/ewansair/ingestion-to-research-pipe/clean-build/02_build/` | Mac Mini | Gated python research pipeline codebase (589 .py files). | Stage 1 validator (`intake/validator.py`), Stage 2 Search (`router.py`), Stage 5 staging emitter. |
 | `/Users/ewansair/control-centre/` | Mac Mini | Deterministic core orchestration codebase. | Rule engines (`rules/engine.py`), preflight validators, metric collectors. |
 | `/Users/ewansair/.gemini/config/skills/amplified-mathematical-validator/` | Mac Mini | Global Customizations | Global customization skill for Taguchi bounds, Cosine Dispersion, Semantic Entropy, and Conformal Predictions. |
+| `/Users/ewansair/ingestion-to-research-pipe/outbound_doorway/` | Mac Mini | Single Outbound Doorway | Destination directory for AI proposed patches (`patch_[timestamp]_[agent_id].json`) applied deterministically by the Python runner. |
 
 ---
 
