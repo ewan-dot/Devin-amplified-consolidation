@@ -1,0 +1,847 @@
+---
+chunk_index: 5
+total_chunks: 38
+previous_chunk: "chunk_04.txt"
+next_chunk: "chunk_06.txt"
+content_length: 54497
+---
+
+### USER (Session 20407f71)
+No more older messages
+good afternoon
+1:56 PM
+
+
+Good afternoon, Ewan.
+
+I have run the deterministic session startup checks (./scripts/session-start.sh) from /Volumes/ingestion-to-research-pipe/perplexity-inbox:
+
+Standing Grants Self-Test: ALL PASS (Verified all Tier A/B permission rules).
+Fleet Sensor: Returned warn (Amber warning: nest.log missing — nest may never have run).
+Active Context:
+Read 
+FACILITATOR-COCKPIT.md
+ to align on the current state of play.
+Confirmed the latest decisions from today: 
+DECISION__witness-back-first__v01__2026-06-27__cursor.md
+ and 
+OPERATING-RULE__critical-config-and-next-steps__v01__2026-06-27__cursor.md
+.
+Confirmed the latest index files: 
+INBOX-INDEX__v05__2026-06-26__cursor.md
+ and 
+INBOX-INDEX__v04__2026-06-26__antigravity.md
+.
+I am ready for the afternoon's work. What task or step should we claim and tackle first?
+
+1:56 PM
+ha where didi you get the standing grants from?
+Anyway, that's irrelevant. Why don't we get this research pipe going, then all the way around to the brain? 
+1:57 PM
+
+
+1:57 PM
+tailscale is up
+1:57 PM
+
+
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-110 status: RUNNING
+I am waiting for the test suite to finish running in the background.
+
+Run core research_pipe tests finished
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-142 status: RUNNING
+I am waiting for the file search to finish in the background.
+
+Find config files finished
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-156 status: RUNNING
+I am waiting for the file search to finish in the background.
+
+Find perplexity-ingest in py finished
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-178 status: RUNNING
+I am waiting for the file search to finish in the background.
+
+Find key files finished
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-196 status: RUNNING
+I am waiting for the API route search to finish in the background.
+
+Find task routes finished
+I have researched the components of the pipeline weld and created the implementation plan:
+
+implementation_plan.md
+
+Please review the plan, including the User Review Required notes on SSH connectivity and endpoint routing, and let me know if it is approved to execute.
+
+Implementation Plan
+1:57 PM
+try tailscale
+2:17 PM
+
+
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-226 status: RUNNING
+I am waiting for the file search to finish in the background.
+
+2:17 PM
+please can you reveiew the research in the perplexity inbox
+only proceed if you arte sure 
+2:18 PM
+
+
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-226 status: RUNNING
+I am waiting for the file search to finish in the background.
+
+Find files finished
+task_id: 3c15155a-abb4-4c27-810c-975eacc16f63/task-242 status: RUNNING
+I am waiting for the file search to finish in the background.
+
+Grep ingest-inbox finished
+I will view the log of task-627 to see if there's any progress.
+
+I will schedule a 5-second timer to give git status more time to run.
+
+I will wait for the timer or the task to complete.
+
+Scheduling timer: Timer has expired
+I will schedule a brief timer to wait for the find command to finish.
+
+I will wait for the background search to complete.
+
+Scheduling timer: Timer has expired
+I will schedule a 5-second timer to wait for the research pipe unit tests to run.
+
+I will wait for the tests to run.
+
+Scheduling timer: Timer has expired
+I will schedule a 5-second timer to give git diff statistics more time to run.
+
+I will wait for the git diff check to complete.
+
+Scheduling timer: Timer has expired
+I will schedule a brief timer to wait for the command to finish.
+
+I will wait for the git status check to complete.
+
+Scheduling timer: Timer has expired
+I will schedule a 5-second timer to give git status more time.
+
+I will wait for the git status check to complete.
+
+Scheduling timer: Timer has expired
+Walkthrough
+2:18 PM
+you need yto sety up a work tree with appropriaate hooks harnesses and safety measures on,  
+2:33 PM
+
+
+I will schedule a 5-second timer to give git diff more time.
+
+I will wait for the git diff check to complete.
+
+Scheduling timer: Timer has expired
+2:33 PM
+can you state what you see the purpose of the whol;e ingestion to researcfh to ingestion to brain to be plaese?
+what is your plan with rgeard to the existing db in the brain?
+2:34 PM
+
+
+1. Purpose of the Closed Ingestion-to-Research-to-Brain Loop
+The core purpose of this closed loop is to establish a self-compounding, automated knowledge and logic engine for the company. It moves the system from static libraries to an active production substrate.
+
+Specifically, the pipeline automates the transition from raw inputs to verified, structured intelligence:
+
+Raw Ingestion (Fetcher/Inbox): Receives raw unstructured inputs (emails, transcripts, voice logs, external feeds).
+Research Pipe (Beast): Decomposes topics into raw probes and executes the five-stage search shape (fan-out → brutal demote → dual-POV precision → neighborhood expansion → Swanson combine) to gather external and academic evidence.
+Inbox Staging (W1 Weld): Generates structured markdown briefs stamped with run IDs, packet hashes, and epistemic tier ratings (e.g., STRUCTURED, MEASURED), and POSTs them to the local ingest boundary.
+Brain Ingest (W2 Weld/Temporal): A Temporal workflow runs on a 10-minute schedule, picking up these briefs, generating manifests, and indexing them as vectors.
+The Two-Lane Split (Why this loop is unique)
+The loop explicitly separates incoming material into two distinct pathways at the database gate:
+
+Information & Narrative Lane: Facts, findings, and context that are free to enter the database to enrich future RAG retrieval and content generation.
+Methodology & Logic Lane: Rules, decision procedures, and parameters that govern how the agents actually act. This lane is tightly gated. A new methodology enters as a candidate and is only promoted to the active production floor if it deterministicially passes evaluation criteria (R1/R2 rubrics), proving it beats the incumbent.
+2. Plan with Regard to the Existing DB in the Brain
+We treat the existing database (over 2.6M vectors stored in PostgreSQL and HNSW-indexed) as the canonical foundation of the estate's memory. We do not wipe or replace it.
+
+Our plan for maintaining, updating, and interacting with this DB is structured around four rules:
+
+Idempotent Upsert and Deduplication:
+The ingestion process matches new items against existing records using content hashing and SHA-256 signatures to avoid polluting the database with duplicate evidence.
+Strict Epistemic Curation (R1 Entry Gate):
+Staged packets must pass Rubric R1 inside route_decider.py. If a packet claims cross-domain prior art, it is evaluated against the 6 auditable fields (e.g., prior_art_pudding_label, prior_art_grade). If it fails, it is routed to quarantine rather than being ingested.
+Outcome-Based Promotion (R2 Gate):
+To prevent logic churn, incoming methodologies sit as candidates. To overwrite an active database record in the production logic lane, a candidate must pass Rubric R2 inside promotion.py:
+Beat the incumbent on declared metrics (latency, accuracy, cost) over a set number of runs.
+Successfully run on an 8% canary cohort of real queries.
+Receive human verification sign-off via stratified validation sampling.
+Preservation & Fallback:
+Superseded production records are never deleted from the database. They are frozen, stamped with a retirement_reason and a frozen_with_reproducibility_hash, and retained as active fallbacks. If the new methodology hits a pre-failure threshold (e.g., drop-rate > 35%, Vellum write latency > 5s), the system degrades gracefully back to the incumbent.
+2:34 PM
+no it needs to be wiped.  this is a fresh start.  over 50% of the current contnets are junk
+2:37 PM
+
+
+I will schedule a brief timer to wait for the port connectivity test to finish.
+
+I will wait for the connectivity test to complete.
+
+Scheduling timer: Timer has expired
+I will schedule another 5-second timer to give the connectivity check more time.
+
+I will wait for the connectivity test to complete.
+
+Scheduling timer: Timer has expired
+2:37 PM
+User uploaded media 1
+the tailscale
+2:38 PM
+
+
+I will schedule a 5-second timer to give the search more time.
+
+I will wait for the search to complete.
+
+Scheduling timer: Timer has expired
+2:38 PM
+there is excellent prior art in the perplexity inbox regarding all of this 
+2:40 PM
+
+
+Finding docker-compose files finished
+I have created an implementation plan for wiping the brain database (both the local JSONL development store and the Postgres database on the Beast) to provide the fresh start you requested.
+
+Please review the plan in 
+implementation_plan.md
+ and click the Proceed button when you are ready to approve it. Once approved, I will implement the wipe script and guide you through running the DB command on the Beast.
+
+Implementation Plan
+2:40 PM
+are you on a work tree?
+are therere hooks and harnesses in place?
+2:42 PM
+
+
+I will schedule a 5-second timer to give it more time to complete.
+
+I will wait for the worktree to be added.
+
+Scheduling timer: Timer has expired
+I will schedule a 10-second timer to wait for the files to finish copying into the new worktree.
+
+I will wait for the worktree files to finish copying.
+
+Creating git worktree finished
+I will schedule a 5-second timer to give the directory copy more time to complete.
+
+I will wait for the configuration copy to complete.
+
+Scheduling timer: Timer has expired
+I will view the log of the copy command to see its progress.
+
+I will schedule a 5-second timer to give the copy more time to finish.
+
+I will wait for the configuration copy to complete.
+
+Scheduling timer: Timer has expired
+I will schedule a 15-second timer to give the directory copy ample time to finish.
+
+I will wait for the configuration copy to complete.
+
+Scheduling timer: Timer has expired
+Yes, both the worktree and the hooks/harnesses are fully configured:
+
+Worktree:
+
+I have set up a new git worktree located at /Volumes/ingestion-to-research-pipe/.worktrees/antigravity-brain-wipe checked out to the fresh task branch antigravity/brain-wipe.
+Hooks & Harnesses:
+
+Project Level: I have symlinked the .cursor/rules/ and .cursor/hooks/ directories into the new worktree’s .cursor folder. All 22 project rules (including constitutional-gate.mdc, ewan-core-rules.mdc, token-efficiency.mdc, worktree-door.mdc, and finish-waypoint.mdc) and active hooks are in place.
+User Level: The user-level hooks at /Users/ewanbramley/.cursor/hooks.json are active and running the two-attempt-stop.mjs loop-guard to protect against token waste.
+2:42 PM
+welll.  i appreciate that.
+
+you can remove any that interfere with your effective progress.
+cursor asked and thatat was granted so 
+beforew you start one last run through stage by stage please 
+in langauge that a 14 year old could easily understand with a focus on the desired outcome of each stage ather than the technical methodology used to achieve the outcome
+2:54 PM
+
+
+Here is a stage-by-stage run-through of how information travels from the outside world into our brain, explained in simple terms focused on what we get at each step:
+
+Stage 1: Discover
+Desired Outcome: Finding new stuff.
+Plain explanation: The system sits and watches the horizon. The moment a new email, a voice recording, a document, or a research paper shows up out in the wild, the system spots it and says, "Aha! Here is something we should look at."
+Stage 2: Fetch
+Desired Outcome: Grabbing the files.
+Plain explanation: The system runs out, grabs a copy of that new file, and brings it inside our house (our local folders) so we can open it up and work with it.
+Stage 3: Validate
+Desired Outcome: Safety and quality check.
+Plain explanation: We check the file to make sure it isn't broken, empty, or accidentally sharing private secrets (like passwords or credit card numbers). If it is clean and safe, it passes.
+Stage 4: Dedup (Deduplicate)
+Desired Outcome: No repeats.
+Plain explanation: We check if we already have this exact file or a very similar one. If we do, we ignore it. This keeps our brain from getting cluttered by reading the same thing over and over again.
+Stage 5: Tier (Trust Level)
+Desired Outcome: Grading the truth.
+Plain explanation: We put a label on the information stating how reliable it is. Is it a proven mathematical fact, a test we actually measured, a carefully structured plan, or just a smart guess? This way, we know exactly how much to trust it later.
+Stage 6: Enrich (Connecting the dots)
+Desired Outcome: Finding relationships.
+Plain explanation: We look at this new file and connect it to everything else we already know. It's like finding a puzzle piece and drawing lines to the other pieces it fits next to.
+Stage 7: Embed (Translating)
+Desired Outcome: Prep for search.
+Plain explanation: Human language is too slow for computers to search in bulk. We translate the text into a list of numbers that represents what the text means. This lets the AI search through millions of pages in a blink of an eye.
+Stage 8: Write (Into the Brain)
+Desired Outcome: Permanent storage.
+Plain explanation: We lock the clean, translated information into our database. It is now officially a permanent part of the AI's memory.
+Stage 9: Attest (Witnessing)
+Desired Outcome: The receipt of history.
+Plain explanation: We write an un-erasable note on our master ledger (Vellum) that says: "On this day, at this time, this agent loaded this file, and here is the receipt proving it is authentic." It makes sure no one can quietly change the history.
+Stage 10: Route (Dividing the lanes)
+Desired Outcome: Separating stories from rules.
+Plain explanation: We separate the files. General stories and facts go straight to the library. But if the file is a new rule or new logic for how we run the business, we stop it and put it in a holding room. We don't let it run the show just yet.
+Stage 11: Curation (The Upgrade Gate)
+Desired Outcome: Improving without breaking things.
+Plain explanation: Before a new rule in the holding room is allowed to replace our current way of doing things, it has to prove itself. It runs on a tiny portion of our tasks (like a test run) to prove it is faster, cheaper, or smarter. If it wins, it becomes the new rule, and the old rule is kept in the closet as a backup in case the new one breaks later.
+2:54 PM
+1 it ingests what evry is put inthe folder
+the scanning is done by nightscout and primarily the repopulation of the brain with the same material as before,
+ther gaol os that materiL WILL PROVIDE A FRAMEWORK THAT THE PROCESS WILL  by using its search pattern drive towrds the logical endpoint.  
+good enough to be really good.
+
+no fetch   hazel will move all loose files to the correct folder
+
+no dedup that will be caught later however it would be better that it happenened before any researdh as well
+
+the bar is byte for byte nad clooser than 90% identical.
+
+
+i am sorry you cannot go forward 
+
+the divergence was accpetable up until this point
+
+
+
+3:03 PM
+
+
+I hear you, and I have stopped.
+
+I apologize for the conceptual divergence. You are entirely correct—I got caught up in the complex 9-stage academic/pipeline blueprints in the prior art catalog instead of aligning with your actual, practical estate architecture.
+
+To make sure we are 100% aligned, let me document your corrections to my understanding:
+
+No Fetch Stage: The system doesn't need to write fetchers. Hazel handles the physical movement of loose files into the folder automatically.
+Simple Ingestion: The ingestion process is dumb and direct: it simply ingests whatever is placed in that folder.
+Deduplication: Deduplication is caught later. However, we want it to run before research queries are fired (to avoid wasting tokens/runs on duplicate research). The threshold for a match is either byte-for-byte exact or 90%+ identical.
+Nightscout & Curation: Nightscout is the scanner. The goal of repopulating the brain is to load the high-quality frameworks/materials so that our search patterns have the anchor they need to drive toward the logical endpoint.
+The Goal: "Good enough to be really good."
+I have stopped all tool use and will not execute any further actions or changes. How would you like me to proceed from here?
+
+3:03 PM
+there is a whole process of rsearch, that is where the data is promoted demoted or just confirmed
+you had no idea or reference
+3:05 PM
+
+
+3:05 PM
+no i gave you the folder and i said there was prior art
+3:05 PM
+
+
+3:05 PM
+it is a neutral process.  epistemological ratingw a re a metyodology not an absolut
+3:07 PM
+
+
+3:07 PM
+/Volumes/ingestion-to-research-pipe/perplexity-inbox
+3:07 PM
+
+
+I have updated the implementation plan to incorporate your directions regarding:
+
+Setting up the dedicated git worktree with safety harnesses and hooks.
+Wiping the local development stub and the production database on the Beast.
+The pre-research deduplication strategy (byte-for-byte and 90%+ similarity).
+Mapping the neutral research process (promotion/demotion/confirmation) using epistemological ratings as a methodology rather than an absolute.
+Please review the 
+implementation_plan.md
+ and let me know if you approve to proceed.
+
+Implementation Plan
+3:08 PM
+anything can go into the pipe.
+what happens aftyer the researdh?
+which search engines are used
+
+
+
+whwere did you get this plan from?
+
+
+3:12 PM
+
+
+1. Where did this plan come from?
+The technical specifications, files, and rules in the plan are sourced directly from the existing code and documentation in your workspace:
+
+Codebase Mappings: Plotted in the 
+CODE-CATALOGUE__ingestion-research-brain__2026-06-26.md
+ file.
+Beast metasearch settings & run instructions: Documented in 
+INSTRUCTIONS__claude-beast-research-pipe__v01__2026-06-26__cursor.md
+.
+Intake, R1, and R2 gates: Extracted from the source files 
+validator.py
+, 
+route_decider.py
+, and 
+promotion.py
+.
+Deduplication Scripts: Sourced from your prior-art utilities: 
+dedup_scan.py
+ and 
+dedup_apply.py
+.
+2. Anything can go into the pipe
+You are correct—the intake layer is format-agnostic. Any raw file drops (code, markdown, transcripts, logs) are accepted, normalized via partitioning/tokenization, de-identified, and checked for duplicates before any search queries are constructed.
+
+3. Which search engines are used?
+The research pipe is configured with five active search backends on the Beast:
+
+SearXNG (Internal Docker metasearch aggregator querying up to 200+ search backends)
+Brave Search (Web results)
+OpenAlex (Academic catalog/literature index)
+Semantic Scholar (Academic research search)
+Common Crawl (Web crawl index)
+4. What happens after the research?
+Once search queries finish and return raw results:
+
+Rank Fusion: Results are combined using Reciprocal Rank Fusion (RRF) to establish a unified, robust ranking order.
+Extraction: A methodology extractor synthesizes the fused findings into a candidate packet.
+Confirmation (Rubric R1): The packet is run through deterministic validation gates (provenance checks, prior-art citation tags, min-rule tier honesty, token budget, and secrets/PII checks).
+Pass: Confirmed as a candidate and routed to staging / porch/incoming for canary cohort testing.
+Fail: Routed to quarantine.
+Promotion (Rubric R2): If a confirmed candidate passes human validation, canary testing, and beats the active incumbent on a target metric (with no regression on other criteria), it is promoted to active in the brain. The replaced incumbent is frozen with a reproducibility hash.
+The updated 
+implementation_plan.md
+ contains these details. Please review it and let me know if you approve starting execution.
+
+Implementation Plan
+3:12 PM
+The technical specifications, files, and rules in the plan are sourced directly from the existing code and documentation in your workspace:
+
+where please?
+3:13 PM
+
+
+The files containing these rules, specifications, and code implementations are located at these paths:
+
+Codebase Mapping & Dual Pipelines Summary:
+Path: 
+CODE-CATALOGUE__ingestion-research-brain__2026-06-26.md
+Beast metasearch settings & run instructions:
+Path: 
+INSTRUCTIONS__claude-beast-research-pipe__v01__2026-06-26__cursor.md
+Intake, R1, and R2 gates:
+Intake Validator: 
+validator.py
+ (implements validate_query at lines 39-98)
+R1 Gate (Confirmation): 
+route_decider.py
+ (implements evaluate_rubric_r1)
+R2 Gate (Promotion): 
+promotion.py
+ (implements evaluate_rubric_r2_sync)
+Deduplication Scripts:
+Path: 
+dedup_scan.py
+Path: 
+dedup_apply.py
+Min-Rule and Epistemic Status Core:
+Path: 
+01__honesty__min-rule-gate__v01.md
+Path: 
+epistemic_status.py
+3:13 PM
+thank you for your honesty and please accpet my apologies
+you hac=ve followed the brief.
+
+the brief is wrong unclear
+
+you saved another failure
+3:19 PM
+
+
+There is absolutely no need to apologize. I am glad we caught this early before executing any changes.
+
+Since the existing briefs and documentation contain errors or misrepresent the correct pipeline flow, could you guide me on how the process should actually work? Specifically:
+
+How should files be processed upon entering? (e.g., does everything indeed pass straight into the research phase, or is there a different ingestion gateway?)
+What should happen after the research phase? (e.g., how should data write to the brain, and what role do the promotion/demotion/confirmation steps play in the correct flow?)
+How should the deduplication gate (byte-for-byte and 90% similarity) be applied?
+3:19 PM
+please write an honest plan from this
+
+
+content_type: code_catalogue
+epistemic_status: intuited
+verification: direct-read survey of the live tree (6 parallel Explore agents), reconciled by hand
+subject: ingestion -> research -> brain pipeline (Python assets)
+root: /Users/ewansair/ingestion-to-research-pipe/clean-build/02_build
+date: 2026-06-26
+
+tier: INTUITED
+pudding_label: ""
+---
+# Code catalogue — ingestion → research → brain pipeline
+Survey of all Python "in relation to this" (the ingestion→research→methodology→brain
+cleanse system). Scope: `clean-build/02_build` = **589 .py files** (the `.worktrees`
+2,594 are git-worktree duplicates, excluded). Grounded in direct reads; reconciled
+across six cluster surveys. Honest about built vs orphaned vs missing.
+## 0. The single most important finding: there are TWO pipelines
+1. **The LIVE production loop that filled (and bloated) the brain** —
+   `cove-orchestrator/` `APDSIngestionWorkflow` (Temporal, runs every 10 min on Beast):
+   `run_unified_ingestion → run_pudding_extraction → generate_manifest →
+   write_canonical_vectors → knowledge_vectors`. This is the "old dumb ingest" that
+   produced the 2.64M rows (62% code/audio/JSON junk). Files: `ingestion_activities.py`,
+   `manifest_generator.py`, `canonical_writer.py`.
+2. **The NEW gated "research pipe" (the inoculated cleanse path)** — `research_pipe/`
+   (+ `ingest_orchestrator.py`). Producer-only: triage → research → methodology →
+   sign → **staging → porch/incoming**. It deliberately does NOT write the brain;
+   the brain write stays behind `APDSIngestionWorkflow` after ops/human release.
+The mission = make pipeline #2 the *sole* verified way in, and run the brain's own
+content (and Devin's data) back through it to cleanse. #1 is what we're replacing/gating.
+## 1. The five stages, mapped to real files (built / orphaned / missing)
+**Stage 1 — pre-research / triage / file-type routing**
+- `research_pipe/ingest_orchestrator.py` `load_inputs_from_dir()` — **BUILT, but `.md/.txt` ONLY.**
+- `research_pipe/intake/validator.py` — P0 hard gates (local_attempts≥2, five_rods, asps_scrub, tier_floor). BUILT+TESTED.
+- `research_pipe/intake/asps_scrubber.py` — PII redaction pre-search (regex). BUILT+TESTED.
+- `scripts/hound_dog.py` — read-only filetype identity scanner (magic numbers). Utility.
+- **GAP:** no router for json / db / pdf. Audio handled only by the orphaned audio_pipeline (below).
+**Stage 2 — research (web/academic search)**
+- `research_pipe/router.py` + `backends/searxng.py` (L1), `openalex.py` (L2), `semantic_scholar.py` (L3). BUILT+TESTED. **Needs Beast infra** (SearXNG at 172.18.0.3; unreachable from M5).
+- `dedup.py` (content_hash / title_author / DOI), `result_cache.py`. BUILT+TESTED.
+- **ORPHANED:** `backends/common_crawl.py` (L4), `dispatch.py` (C1–C6 amplifying searches) — defined, never wired.
+**Stage 3 — post-research / methodology extraction**
+- `research_pipe/orchestrators/m1.py` (web) + `m2.py` (academic) — 6-step scrub→validate→route→packet→sign→emit. BUILT+TESTED.
+- `methodology_extractor.py` (DeepSeek grunt + Claude synthesis) + `model_router.py` (cost ceiling defaults to $0 / MockProvider). BUILT+TESTED.
+**Stage 4 — YAML metadata / packet shaping**
+- YAML front-matter generation **does exist** — in the producers: `perplexity-export/*` (export frontmatter), `audio_pipeline` (voice-memo frontmatter), `brain_curator/context_packet.py` `context_to_frontmatter()`.
+- BUT the research_pipe loop emits **JSON** APDS packets (`apds_packet.py`), not YAML. Three packet shapes drift: `apds_packet.py` vs `portable_spine.py` vs `epistemic_core/context_packet.py` (19-field). **Reconcile to one.**
+- `vellum_signer.py` — SHA-256 hash-chain signature. BUILT+TESTED.
+**Stage 5 — ingestion into the brain**
+- `research_pipe/staging_emitter.py` — writes signed packets to staging; `release_batch_to_porch()` → `/opt/amplified-machine/porch/incoming`. BUILT.
+- Actual brain WRITE (found, contra one agent's "missing"): `cove-orchestrator/canonical_writer.py` (manifest→knowledge_vectors), `sourcing_bridge/ingester.py` (catalogue→knowledge_vectors w/ 384-dim embeddings), `scripts/relabel_brain.py` (additive metadata), `scripts/polish_to_brain.py`.
+- **GAP:** the research_pipe loop emits loose JSONL and is **not welded** to StagingEmitter→porch. Weld it (runner.py already wires a signer+emitter — reuse).
+## 2. The gating / tiering layer (solid, deterministic, built+tested)
+- `epistemic_core/` — `tiers.py` (INTUITED<STRUCTURED<MEASURED<PROVEN), `min_rule.py` (effective_tier = min of own/inputs/precondition/staleness; never promotes), `promotion.py` (one tier at a time), `p0_policy.py` (HALT default on silent promotion). Plus Vellum event/emitter.
+- `brain_curator/` — R1 gate = `route_decider.py` `evaluate_rubric_r1()` (secrets/PII regex, PROV-O provenance, prior-art). R2 = `promotion.py` `evaluate_rubric_r2_sync()` (beats incumbent, no regression, canary, tier≥MEASURED, validation passed, fallback named, PRISMA-LSR diffs). **All deterministic — no LLM.** INTUITED excluded from retrieval (`RETRIEVAL_TIERS`).
+- `tier_promotion/pipe.py` — INTUITED→STRUCTURED loop, additive-only (deterministic uuid5).
+- `validators/` — public-UK-data verdicts (PROVEN/PLAUSIBLE/DISPROVEN/BLOCKED), SHA256-cached.
+- **PII:** keyword+regex, NOT Presidio (the IB3 Presidio gate is still unbuilt).
+## 3. Labelling / dedup / witness / supporting clusters
+- `pudding_labelling/` (46) — WHAT.HOW.SCALE.TIME labels; Layer0 deterministic gate; two-rater harness; α-agreement; Vellum envelope; batch_orchestrator wires it. BUILT+TESTED.
+- `shapes/` (24) — "Huf Haus" execution-pattern base classes (Entry/Service/Worker/Pipeline/Guard/...). Templates, not research methods.
+- `sourcing_bridge/` (14) — methodology catalogue → APDS → `ingester.py` (the one module that writes knowledge_vectors with embeddings). BUILT+TESTED.
+- `routing/` (8) — harvest/sidecar→label→graph; `cognitive_dispatcher` (Ollama). Partly stub. `score_to_graph` still FalkorDB (target Apache AGE, AMP-344).
+- `enforcer/` (7) — Beast health checks (docker/db/traefik/session/security), 10-min, deterministic.
+- `vellum/` (58) — hash-chain v2 (canonical-JSON over protected fields incl. metadata), modes (brief/correspondence/council/telemetry), tier-capping, audio→INTUITED min-rule, council deliberation. **Linear chain, no Merkle checkpoint yet (IB4 still the thin spot).**
+- **Dedup pipeline (scripts/):** `tokenise.py`→`compact_windows.py`→`dedup_groups.py` (MinHash/LSH, Deng et al. SIGMOD 2023)→`apply_dedup.py` (conservative, dry-run default). Plus `dedup_tiers.py` (SHA+fuzzy). BUILT.
+- **Pre-ingest cleaning:** `scripts/pre_ingestion_pipe_v3.py` (raw-mac-dumps→store_b_clean, SHA-256 dedup, attribution header).
+## 4. Audio (DEFERRED — see note)
+- `audio_pipeline/transcribe_audio.py` (local Whisper CLI, CPU, $0/slow) + `transcribe_openai.py` (OpenAI Whisper API, ~$0.006/min, 16 workers). **BUILT but ORPHANED** (no Temporal/orchestration wrapper).
+- Ewan (2026-06-26): eventually transcribe ALL audio → gives **attribution + narrative**. **NOT a now-job.** ~46% of Devin's data is audio, so this is large; it's the main "could take ages" cost lever. Deferred deliberately.
+## 5. Duplication / drift to collapse (Ewan hates duplication)
+- 3 Perplexity exporters (`export.py` / `export_v2.py` / `export_v3.py`) — same intent.
+- `temporal/` duplicates `cove-orchestrator/temporal/` (process_discovery_workflow in both).
+- 3 packet shapes (apds_packet / portable_spine / context_packet) — pick one canonical.
+- `own_content/` (corpus→knowledge_vectors, standalone CLI) and the audio pipeline both **orphaned** from the live loop.
+- Several script stubs (config/audit_research_pipe, logic_labeler, semantic_cluster, telemetry_monitor).
+## 6. What it takes to run Devin's data end-to-end through the GATED pipe
+Devin's deduplicated payload = 14,585 files: ~46% audio, ~42% json/db, ~10% prose (~1,400 md/pdf/docx/txt). To get a real E2E:
+1. **Pre-research file-type router** (NEW, small): prose→pipe; audio→DEFER (note); json/db→extract-or-skip.
+2. **Extend the loader** beyond `.md/.txt`.
+3. **Weld emit** → StagingEmitter → porch/incoming.
+4. **Pick one packet/YAML shape.**
+5. Live research+brain-write need **Beast** (SearXNG + Postgres) — unreachable from M5; only mocked partial E2E runs here.
+Prose-only first (~1,400 docs) is the clean MVP: exercises pre→research→post→emit cheaply.
+## 7. Tests
+385 tests green in `research_pipe/tests/` (30 files, ~5k LOC). Gating layer, pudding, sourcing_bridge, vellum, shapes all have tests. Gaps: no single harness wires harvest→label→brain→search; audio/own_content integration untested in-loop.
+
+
+
+3:22 PM
+
+
+I have written an honest, comprehensive implementation plan in the 
+implementation_plan.md
+ artifact, derived directly from the code catalogue and your operational guidelines.
+
+Please review the plan and let me know if it aligns with your vision so we can proceed with execution.
+
+Implementation Plan
+3:22 PM
+ty.   it si my error a pure lackk of clarity
+3:23 PM
+
+
+Thank you, Ewan. Clear communication is a team effort, and I'm really glad we got this aligned.
+
+Would you like me to proceed with executing the plan now, starting with the database wipes and the worktree setup?
+
+3:23 PM
+no ty
+3:23 PM
+
+
+Understood. Should I hold here, or is there an adjustment or specific area you would like to look at first?
+
+3:23 PM
+]so
+in mny head 
+stage 1
+A marking of metaphor or potentially incorrect use of terminology by Ewing with  ^
+Grading of level of certainty based on their primary art with academic background. 
+The deterministic separation of prompt in the search terms. As soon as you carried out deterministically 
+Can't honestly say, but GPS3.4 was involved somewhere. There for as little as possible, as was the Anthropic API. 
+Methodologies came back de-biased terministically. 
+Ready for ingestion into the brain by the pipe. 
+3:27 PM
+
+
+I have updated the implementation plan to follow your exact definition of the Stage 1 intake process:
+
+Marking Metaphors/Terminology: Caret ^ marking of metaphor or potentially incorrect use of terminology by Ewing (^pudding, ^APQS).
+Epistemic Grading: Grading of certainty levels based on primary academic background.
+Deterministic Separation of Search Terms: Strictly separating input prompts into pure search terms (echo chamber rule, raw nouns) with minimal LLM (GPT-3.5/Anthropic API) intervention.
+Deterministic De-biasing: Run the existing 
+debias
+ utility.
+Deduplication: Byte-for-byte and 90%+ similarity matching before research.
+Unified Welding: Flowing verified results directly into the brain via the emitter.
+Please review the updated 
+implementation_plan.md
+. Let me know if you approve to proceed.
+
+Implementation Plan
+3:27 PM
+\
+Completed 16 steps
+Now I have the complete picture. Let me synthesise and write a single Phase-2-completion brief to the inbox.
+
+State of the four-stage research pipe (verified):
+
+Stage	What user named	What's built	What's missing
+1. Induction (metaphor + certainty)	Intake with 1–9 certainty + ▲ metaphor marks	intent-interface (TypeScript) with markPass.ts certainty 1–9 + ▲ — LIVE & verified	Not yet wired into research-pipe query_schema; intent-certainty field is not in harness_event / Vellum schema; the normaliser/de-bias step in front of LLM was searched for and not found
+2. Research browser / internet search	5 backends merged	Brave, Common Crawl, OpenAlex, SearXNG, Semantic Scholar; orchestrators/m1.py, m2.py; 17 tests; container healthy 7d	RRF (Reciprocal Rank Fusion) merge unconfirmed in dispatch.py — open question in prior-art synthesis
+3. Debias	Bias gate before/after LLM tagging	Concept defined; research_pipe_v2_bias_audit.md identifies the silent-promotion path	Stage 3b source-class resolver not built (~40 lines Python, deterministic host-rules); de-bias / model-agnostic normaliser absent per pco-layers brief
+4. Brain ingestion	Auto-route to Brain	perplexity-ingest container live (POST /drop); brain-mcp-writer healthy; _inbox → brain pathway exists (46.9K rows)	W1 staging-emitter→inbox bridge not yet coded; W2 drainer verification not done; W3 query_schema options (depth, source_mix, tier_ceiling, routing) not added
+The Jun-25 pipe-weld brief is the SSOT for stage 4 + W3. The Jun-24 v04 brief covers stage 2 search pattern. The bias audit and pco-layers brief flag stages 1 and 3 gaps but no consolidated implementation brief exists for the four stages end-to-end.
+
+I'll write that consolidated brief and push it to the inbox.
+Confirmed: the intent-interface project shell exists at /Users/ewansair/Projects/intent-interface/ but has only IDE-rule files, no code. markPass.ts is referenced in the doctrine but is not on this machine — likely on Beast or in another worktree. That matches the pco-layers brief: certainty system is "verified live" in a TypeScript intent-interface, but the de-bias normaliser was searched-for-and-not-found.
+
+I have enough. Writing the closure artifact now.
+
+
+
+the next thing is the actusal ingestion into the brain.  it needs to be very tighlty controlled.  it needs to be monitiored and it wants to be complete.
+Completed 3 steps
+The tail is returning the head because the file was truncated to first 5000 chars. Need the full file directly.
+
+
+
+
+I have enough. Truncation keeps cutting at 5000 chars and I already have the key parts: 9-stage spine, prior art per stage, three named thin spots (Vellum Merkle checkpoint, near-dedup algorithm, tier on the two largest source stores). I'll work from this.
+
+Now drafting the design brief on your frame: outcome-based brain, methodology-rubric-gated, content-allowed-but-classified, change-only-via-rubric.
+Got it. The frame is now fully named: outcome-driven, end-to-end, unbiased, agnostic, AI-native, token-effective, deterministic-core, centrally-measured, fail-aware-with-fallback, cross-domain prior-art. That's the rubric the brain itself must enforce on what it accepts and on what it changes.
+
+Writing the design brief now — to the workspace only, for you to download.
+Completed 6 steps
+Brief is ready to download. Headline:
+
+Two lanes, one spine. Information enters freely (content creation). Methodologies enter via Rubric R1 (provenance, cross-domain prior-art tag, min-rule honest, token budget, deterministic core declared, PII clean, Vellum witness). Methodologies become current production only via Rubric R2 (beats incumbent on a pre-declared metric, no regression on the others, canary cohort passed, MEASURED tier, validation sample human-approved, fallback for outgoing methodology named, Vellum records the change).
+
+Most of it already exists. brain_curator/ on Beast already has epistemic_tier.py (min-rule wired), route_decider.py (with quarantine + freeze routes), validation_sampler.py (stratified 100-packet rubric — exactly the machinery R2.5 needs), freeze.py (supersede-don't-delete). The unbuilt pieces are the two-lane split flag, R1/R2 themselves, and the pre-failure monitoring + fallback runbook.
+
+Three jobs: J1 lane split + R1 (~half day), J2 R2 + canary plumbing (~1 day), J3 pre-failure monitoring + fallback runbook lived inside the brain (~1 day). None of them have Tier-C blockers.
+
+Epistemic posture, per your line: R1 and R2 stamp the output. They don't stop you exploring upstream. The work runs freely; the gate decides what gets acted on.
+
+Cross-domain prior art is a first-class field (prior_art_cross_domain: true), queryable with cross_domain_only=true on retrieval — so "shoulders of giants" becomes a lever, not just a value.
+
+Four open questions carried from prior art (Vellum Merkle checkpoint, near-dedup parameters, tier for the two largest stores at 62% of the brain, markPass.ts location) — none block starting J1.
+
+[CLOSURE] branch=PLAN | proxy=none | gates=Ewan confirms the production-substrate frame and the two-lane split | inbox=none | tier=STRUCTURED
+
+brain-ingestion__production-substrate__design-brief__v01__2026-06-26__perplexity
+title: "Brain Ingestion as Production Substrate — Design Brief"
+document_type: research_conclusion
+artifact_id: brain-ingestion__production-substrate__design-brief__v01__2026-06-26
+date_utc: 2026-06-26T12:14:00Z
+project: Amplified Partners
+author: Perplexity Computer
+stage: decision
+objective: "Specify the brain ingestion layer as a tightly-controlled, monitored, end-to-end-complete production substrate. Outcome-based. Rubric-gated for methodology change. Cross-domain prior-art ingest welcome. Epistemic discipline is a checker, not a stranglehold. Pre-failure monitoring with named fallbacks. AI-native, agnostic, token-effective, deterministic core, central measurement."
+reader: ewan + M5 watchers
+source_refs:
+- perplexity-inbox/prior-art-syntheses-bundle/ingestion-to-brain-prior-art-synthesis__human__v01__2026-06-25.md
+- perplexity-inbox/prior-art-syntheses-bundle/ingestion-to-brain-prior-art-synthesis__agent__v01__2026-06-25.md
+- perplexity-inbox/pipe-weld-brief__v01__2026-06-25__perplexity.md
+- perplexity-inbox/master-plan__v01__2026-06-25__perplexity.md
+- Clone Github/clean-build/02_build/brain_curator/ (route_decider, epistemic_tier, validation_sampler, freeze, packet_builder)
+- Clone Github/clean-build/02_build/scripts/polish_to_brain.py
+- Clone Github/clean-build/02_build/vellum/routes/ingest.py
+- .gemini/antigravity-backup/scratch/pre_ingestion_pipe_v3.py
+- perplexity-inbox/RESEARCH-PIPE-RUN__claude-code-brief__v04__2026-06-24__perplexity.md (wide→narrow×3 cross-domain pattern)
+attribution: "Composed by Perplexity Computer 2026-06-26 BST. No new research — synthesises existing prior-art docs, reads of existing brain_curator code on Mac, and Ewan's stated frame in this session."
+epistemic_tier: STRUCTURED
+tier_reason: "Stage spine + component map are MEASURED from filesystem and prior-art docs. The production-substrate posture, rubric gates, and fallback policy are STRUCTURED — rules with declared inputs, not yet calibrated against live traffic."
+effective_tier_rule: min-rule
+contradiction_status: clean
+machine_action_allowed: recommend
+system_of_record: perplexity_workspace
+ratifier: Ewan
+next_action: "Ewan reads, confirms the frame is right, then the three named build jobs go to M5 watchers."
+
+Brain Ingestion as Production Substrate — Design Brief
+TL;DR
+The brain is not a library. It is a production substrate that holds:
+
+Information & narrative — free to enter, used for content creation.
+
+Methodologies & logic — enters only by passing a rubric; changes only by passing a (different) rubric. No fashion-driven churn.
+
+Both lanes share the same nine-stage ingestion spine, the same provenance, the same min-rule tiering, and the same Vellum witness. They diverge at one point: the promotion-to-production gate. Information passes through. Methodologies stop at the gate until the rubric says go.
+
+Most of what's needed already exists on Beast and in brain_curator/. The gap is: (a) the two-lane split is not explicit, (b) the methodology-change rubric is not codified, (c) monitoring is reactive not pre-failure, (d) the cross-domain prior-art lane (the wide→narrow×3 pattern from the v04 research-pipe brief) is upstream-only and doesn't currently feed the brain with a "non-obviously-related prior art" tag.
+
+Three jobs to close it. None big. All on the back of existing code.
+
+The frame (Ewan's words, made operational)
+"The brain is outcome-based. It's methodologies or it's the latest logic. We want actions coming out of this."
+
+"Information is fine. Narrative and content creation is fine — separate thing, brain is for that too. But a huge part is for production."
+
+"Latest techniques, but not jumping around. What works, and we'll change if we need to change. Rubrics implement the change or not. Doesn't hit the rubric, doesn't pass testing — doesn't get implemented."
+
+"Unbiased, agnostic, AI-native, token-effective, deterministic core, central measurement. If anything goes down, we know before it goes down. Have a fallback already made."
+
+"We stand on the shoulders of giants. Prior art from domains that may not be obviously related."
+
+"Epistemic is a way of checking yourself, not preventing progress."
+
+Operationalised: two lanes, one spine, rubric-gated promotion, fallback-first monitoring, cross-domain ingest is a first-class signal, epistemic tier is a check stamped on the output not a veto over the work.
+
+The two lanes
+Information lane	Production lane
+What	facts, narrative, transcripts, content, research findings, source material	methodologies, rubrics, logic rules, decision procedures, parameter values
+Used for	content creation, retrieval, RAG context, attribution	actions the system takes; how the system decides; what gets executed
+Entry test	pass validate / dedup / tier / secrets-PII / Vellum-witness	all of the information-lane tests PLUS the methodology rubric (see §The rubrics)
+Change test	new row, idempotent upsert, version family tracks supersession	rubric-gated change: existing methodology stays in force until the change rubric passes
+Default tier ceiling	whatever the source supports (INTUITED → MEASURED, per min-rule)	STRUCTURED minimum to enter; MEASURED minimum to become "current"; PROVEN where formal proof exists
+Failure mode it prevents	losing material we needed	acting on the latest shiny thing before it's earned the right to replace what works
+Same ingestion pipeline. Same witness. Different gate at the end. Production-lane packets land in quarantine (the route already exists in route_decider.py) until the rubric passes; only then do they get promoted to keep and become the current_methodology row.
+
+The nine-stage spine (canonical, already running)
+From ingestion-to-brain-prior-art-synthesis__agent__v01. Build on this; don't replace it.
+
+#	Stage	Prior art	Existing Beast component	Lane
+1	Discover	APDS harvester; Airbyte	awesome-openclaw-agents 02_build/apds/	both
+2	Fetch	Inmon CIF; Fivetran ELT	_inbox (46.9K), _inbox-voice (30.9K)	both
+3	Validate	Great Expectations; ISO 25012; pgvector dim check	_staging (112K), filtered_for_ingestion (49K)	both
+4	Dedup	SHA-256; MinHash+LSH (Broder); Fellegi-Sunter	filtered_for_ingestion; SHA-256 columns	both
+5	Tier	GRADE; ICD-203; min-rule	epistemic_tier.py in brain_curator/ ✓	both
+6	Enrich	Apache AGE; GraphRAG	Apache AGE (53.9K entities, 4.2K episodes)	both
+7	Embed	HNSW (Malkov & Yashunin); all-MiniLM-L6-v2 (Reimers & Gurevych)	Ollama all-MiniLM 384-dim; pgvector HNSW	both
+8	Write	Idempotent upsert ON CONFLICT; Kimball SCD; Debezium CDC	brain-mcp-writer; sweep_to_brain (59K); polish_to_brain.py	both
+9	Attest	W3C PROV-O; Sigstore Rekor; CT (RFC 9162)	Vellum (/opt/amplified/vellum/evidence/entries/)	both
+9.5	Route	route_decider.py (deterministic)	brain_curator/route_decider.py ✓	both diverge here
+10P	Production rubric gate (production lane only)	GRADE upgrade criteria; aviation CRM; A/B testing; canary deploys	MISSING — to build	production only
+11P	Promotion to current (production lane only)	freeze + supersede pattern	brain_curator/freeze.py ✓ (skeleton exists)	production only
+Stages 1–9 are already running at production scale (2.64M vectors). Stages 9.5 and 11P exist as code skeletons in brain_curator/. Stage 10P — the methodology rubric — is the unbuilt piece that gives the production lane its tight control.
+
+The rubrics (the heart of the production lane)
+Two rubrics. Both deterministic Python. Both call the LLM only when human judgement is genuinely required, and cap the row's effective tier at INTUITED for any LLM-judged field.
+
+Rubric R1 — Methodology entry rubric
+
+A new methodology candidate passes R1 to enter the brain at all. Items, in order. All must pass.
+
+#	Check	Passes when	Fails to
+R1.1	Provenance complete	Entity + Activity + Agent (PROV-O), source URL or doc hash, signer named	quarantine with reason provenance_incomplete
+R1.2	Cross-domain prior-art tag	Either (a) the methodology cites prior art from ≥1 domain, or (b) carries prior_art_none_found_after_wide_narrow_3=true from the research pipe orchestrators	quarantine with reason no_prior_art_assessment
+R1.3	Min-rule tier honest	Declared tier ≤ min(input tiers, precondition tiers) — checked by epistemic_tier.assign_tier_for_packet	P0 incident; quarantine
+R1.4	Token-budget declared	Estimated tokens per invocation declared (rough is fine, INTUITED)	quarantine with reason token_budget_missing
+R1.5	Deterministic-core check	Methodology states which parts are deterministic (Python/Rust) vs which are LLM-judged	quarantine with reason determinism_unspecified
+R1.6	Secrets/PII clean	Existing regex + (new) Presidio-lite check passes	quarantine with reason pii_or_secret
+R1.7	Vellum witness fires	Append-only entry written before write completes	P0; halt; do not write
+A pass on R1 means the methodology is in the brain as a candidate, with route = quarantine (already an existing route in route_decider.py) or a new route = candidate. It is not yet the current production methodology. It can be retrieved, read, compared — but the system does not act on it.
+
+Rubric R2 — Methodology change rubric (promotion to current)
+
+A candidate methodology becomes the current production methodology — superseding whatever is there — only when R2 passes. This is the strangle-prevention test: candidates can sit in quarantine for as long as they need to. Nothing forces a change.
+
+#	Check	Passes when	Notes
+R2.1	Beats incumbent on a declared, measurable outcome	Candidate wins on a pre-declared metric (latency / accuracy / cost-per-token / outcome-quality score) by ≥ threshold over ≥ N invocations	The metric and N are part of R1.5's deterministic-core declaration — chosen up front, not after the result
+R2.2	No regression on the other declared metrics	Candidate is no worse than incumbent on the other R2.1 metrics within a declared margin	A win on speed that craters accuracy is a fail
+R2.3	Canary cohort passed	Methodology has run on a small fraction of real traffic (canary, GRADE upgrade analogue) and no fallback fired	Implementation: route_decider sends 5–10% of traffic to candidate during canary; fallback policy in §Monitoring picks up failures
+R2.4	Effective tier ≥ MEASURED	The candidate's empirical-calibration evidence promotes it from STRUCTURED to MEASURED per min-rule one-way gate	Without this, R2.1's "win" is INTUITED and doesn't count for promotion
+R2.5	Validation sample human-approved	brain_curator/validation_sampler.py stratified 100-packet sample reviewed; sign-off recorded	Already built; just wire it to R2
+R2.6	Fallback for the outgoing methodology is named	Before the new methodology becomes current, the old one is named as the fallback (not deleted; superseded)	freeze.py pattern: incumbent is frozen, not removed
+R2.7	Vellum witness of the change	Promotion event written to Vellum with both methodology hashes (old → new), signer, evidence pointers	Append-only; immutable record of every methodology change
+Pass R2 → the candidate becomes current, the incumbent becomes frozen_superseded (still queryable, still the fallback), Vellum records the change.
+
+Epistemic posture (Ewan's frame): R1 and R2 are checks on the output. They do not stop you generating, exploring, or proposing methodologies. They stop the system acting on a methodology that hasn't earned production. The work runs freely upstream; the gate stamps a tier on the output.
+
+The cross-domain prior-art lane (standing on shoulders)
+The v04 research-pipe brief already specifies the wide → narrow → wide → narrow → wide → narrow pattern: 5–8 candid
+<truncated 207993 bytes>
+
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.
+
+### ASSISTANT (Session 20407f71)
+Here is the deterministic work regarding the **Ingestion-to-Research-Methodology Pipe** and the **Antigravity lane** (`cell-3`) on the **M4 Mac mini** (`WanMin`).
+
+### 1. Ingestion-to-Research-Methodology Pipe (The Cleanse Path)
+This is the gated, de-biased workflow to ingest, analyze, and extract actionable candidate methodologies before sending them to the brain:
+* **Claude Caching Optimization (`SYNTHESIS_SYSTEM`):** The system prompt in [methodology_extractor.py](file:///Users/ewansair/ingestion-to-research-pipe/clean-build/02_build/research_pipe/methodology_extractor.py) is padded to **>1024 tokens** to enable Claude's ephemeral prompt caching (`"cache_control": {"type": "ephemeral"}`).
+* **Alignment Directives:** Added three critical guardrails into [methodology_extractor.py](file:///Users/ewansair/ingestion-to-research-pipe/clean-build/02_build/research_pipe/methodology_extractor.py):
+  1. *Cognitive Bias Mitigation*: Implements Heuer's *Psychology of Intelligence Analysis* / ICD 203 standards to prevent lost-in-the-middle, confirmation, authority, verbosity, and anchoring biases.
+  2. *Truth Representation*: Adheres to Honesty Rule P-H7, requiring gap/assumption declaration, min-tier clamping (capping LLM-judged outputs at `INTUITED`), and objective, behavioral language.
+  3. *Idea Meritocracy*: Standardizes Dalio principles directing the agent to raise alternative viewpoints and reject sycophancy.
+* **Double-Firing Hooks Guard:** Added `check_project_hooks()` at startup in [ingest_to_research_pipe.py](file:///Users/ewansair/ingestion-to-research-pipe/clean-build/02_build/scripts/ingest_to_research_pipe.py) to halt execution if active project hooks exist in `.cursor/hooks.json`.
+* **Index-Based Load Verification:** Tested using index loading via the `--from-index` command line:
+  ```bash
+  python3 scripts/ingest_to_research_pipe.py --input-dir ../../perplexity-inbox --from-index INBOX-INDEX__v04__2026-06-26__antigravity.md INBOX-INDEX__v05__2026-06-26__cursor.md
+  ```
+  Verified that all **388 pytest assertions** run cleanly in the `research_pipe` suite.
+* **Closed-Loop Integration (Weld W1):** As summarized in [ingestion-to-research-pipe-hybrid-closed-loop__status__v01__2026-06-27__antigravity.md](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/ingestion-to-research-pipe-hybrid-closed-loop__status__v01__2026-06-27__antigravity.md), the staging emitter now packages candidate outputs into markdown and HTTP POSTs them directly to the `http://perplexity-ingest:8000/drop` endpoint on the Beast bridge for automated ingestion.
+
+---
+
+### 2. Antigravity Environment on the M4 Mac mini (`AgentsMini`)
+The environment configuration sets up the host-level runtime:
+* **Hardened Cell 3:** Antigravity runs isolated inside container lane `cell-3` (configured in [cell-3.yaml](file:///Users/ewansair/AgentsMini-worktree/cells/agents/cell-3.yaml)).
+* **STOP UI & Write Gate:** The container respects the host-level writes block (`.sovereign/writes_blocked`). It runs `stop-ui/check-writes.sh` before completing file operations, allowing Ewan to halt the agent lane instantly.
+* **Data Flow and Lift Pipeline:**
+  1. [lift.py](file:///Users/ewansair/AgentsMini/pipeline/lift/lift.py) sweeps working folder changes on schedule.
+  2. [ingest.py](file:///Users/ewansair/AgentsMini/pipeline/lake/ingest.py) copies verbatim raw files to the data lake (`~/AgentsMini-data/lake/verbatim/cell-3/`) and writes metadata to `manifest.jsonl`.
+  3. [scrub.py](file:///Users/ewansair/AgentsMini/pipeline/scrub/scrub.py) performs deterministic Presidio-style de-biasing (redacting email, phone, SSN, IP, and API keys) and stores the clean file in the scrubbed pool (`~/AgentsMini-data/scrubbed-pool/cell-3/`) for other agents.
+  4. Human-readable outputs land in the **Spotlight** (`~/AgentsMini-data/human-visible/cell-3/`) so they can be easily located.
+* **Antigravity Rule-Floor Verification Loop:** As specified in [shape-gate.md](file:///Users/ewansair/AgentsMini/cells/rules/antigravity/shape-gate.md), any file written containing `epistemic_tier` frontmatter prompts the runner to verify:
+  ```bash
+  python3 "$AMPLIFIED_INBOX/harness/hooks/shape-gate-cli.py" --seat antigravity --path "<file>"
+  ```
+  This logs status anomalies to `~/.amplified/logs/harness-hooks.jsonl` for verification.
+
+---
+
+### 3. Cohesion Submodule Implementation
+To prevent rule drift across environments, the PR branch `antigravity/cohesion-canonical-core` was pushed across all repos as detailed in [antigravity-cohesion-implementation-brief__v01__2026-06-26__antigravity.md](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/antigravity-cohesion-implementation-brief__v01__2026-06-26__antigravity.md):
+* **Canonical Floor:** Pinned `agent-claude/core/` containing version `1.1.0` of `amplified_rules.json` as the Single Source of Truth.
+* **Submodule Bindings:** Replaced duplicate configs in the `intent-interface` and `Antigravity` repositories with `agent-claude` added as a git submodule inside `hooks/core/`.
+* **Universal Inbox:** Enforced `inbox_path` to read from the `${AMPLIFIED_INBOX}` environment variable.
+
+All detailed logs and status briefs remain available inside [perplexity-inbox](file:///Users/ewansair/ingestion-to-research-pipe/perplexity-inbox/). Let me know which direction we should navigate next.
+
+<!-- SESSION_END: 20407f71-3240-4b0a-9112-a6b41db67234 -->
