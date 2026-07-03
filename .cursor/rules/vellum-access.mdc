@@ -1,0 +1,47 @@
+---
+description: Vellum access + credentials — how any agent reaches the ledger and authenticates, every session, without re-discovery.
+alwaysApply: true
+---
+
+# Vellum Access (operational — do not re-discover this)
+
+Ewan grants his agents **full permission** on his machines and mesh (open-door policy).
+You already have what you need. Do **not** re-investigate access each session — follow this.
+Source of truth: `~ewanbramley/AgentsMini-worktree/docs/SOVEREIGN-VELLUM.md`, `~/.cursor/rules/vellum-witness.mdc`.
+
+## Topology (do not confuse the three)
+
+| Layer | What | Address |
+|---|---|---|
+| **Ledger (append/read)** | hash-chained, append-only sheets + estate log | Beast API |
+| **Browser UI** | read the stream / situation room | `https://vellum.beast.amplifiedpartners.ai` |
+| **The Lens** (`intent-interface`) | local Electron tray app | on the Mac (`~/.vellum/intent-interface.env`, owner-only) |
+
+- Beast is the ledger. **The M4 mini (`wanmini`) runs agent containers + the Lens — NOT the ledger.** Don't go hunting Vellum on the M4.
+- Endpoints: public `https://vellum.beast.amplifiedpartners.ai` · tailnet (preferred when Tailscale up) `https://beast-amplified.tail27a0cc.ts.net:8443`.
+- `Beast :8400` = fleet ledger. **`127.0.0.1:8400` = dev sandbox — writes there do NOT reach the fleet.** Confirm before writing.
+
+## Credentials — the JWT (this was the recurring pain; here is the path)
+
+Append requires a Bearer **`VELLUM_JWT`**. Resolution order — stop at first hit:
+
+1. **Broker (preferred):** `codex-mcp.fetch_credential(agent_id="cursor", credential_name="VELLUM_JWT")`. Purpose-built; logs to Vellum for attribution. Discover exact name via `codex-mcp.list_credential_names(agent_id="cursor")` (candidates: `VELLUM_JWT`, `VELLUM_JWT_SECRET`, `VELLUM_JWT_CURSOR`).
+2. **Infisical CLI:** `infisical secrets get VELLUM_JWT` (project `amplified`, env `prod`). Or mint via `~ewanbramley/AgentsMini-worktree/scripts/mint-vellum-jwt.py`.
+3. **JWT map file:** `~/.amplified/wanmin_agent_jwts.json`.
+
+Do **not**: sign into 1Password (`op` is not signed in), or read another user's `0600` env files. Use the broker.
+
+## Append contract (exact gotchas)
+
+- Direct API (most robust): `POST {endpoint}/api/v1/estate/log` with `Authorization: Bearer $VELLUM_JWT`. Task queue: `/api/v1/tasks/`.
+- MCP `vellum_create_entry`: on a **`correspondence`** sheet, `entry_type` MUST be one of `agent_write | decision | artifact_created | cleaned_prompt | contradiction | correcting_event`. **`brief_summary` is REJECTED on correspondence sheets.**
+- Known flake: this fleet's remote MCP servers sometimes drop/mangle call arguments (no-arg calls work, arg calls fail with `-32602` or default wrongly). If an MCP write misbehaves, fall back to the **script + curl** path (`resolve-vellum-endpoint.sh` + `estate/log`).
+
+## Identity / attribution
+
+Post under the correct seat slug (Cursor = `cursor`; Antigravity = `antigravity`). Wrong identity = invisible on the ledger. Roster: `~/Code/FLEET-ROSTER.md`.
+
+## Reachability notes
+
+- M4 mini: SSH alias `wanmini` (Tailscale). Mesh SSH lands as service user `one` (admin group, broad read) — **not** `ewanbramley`; the Apple `container` service + `0600` secrets are in `ewanbramley`'s domain and not reachable as `one`. Use the broker for creds, not the mini's files.
+- Beast: reachable via Tailscale (`beast-amplified`) and public DNS.
