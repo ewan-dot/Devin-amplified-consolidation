@@ -1,5 +1,5 @@
 # Cursor config integrity manifest
-# generated: 2026-07-03T04:30:09.395098+01:00
+# generated: 2026-07-03T05:28:52.896581+01:00
 # host: macairm5.tail27a0cc.ts.net
 # files: 53
 # format: <sha256>  <path-relative-to-~/.cursor>
@@ -29,7 +29,7 @@ c9c32e8abd793131dac07450a1ce857a12316fc6ffe8c3040d28d9c45b7f0e35  hooks/session-
 77922cd052c6af0a7fd497e64358e0a9d5d6584182252f3a7676afb8c70f42c5  hooks/stop.sh
 e6dce5f9a73f9c8c5c92e3f3fb4aff5387e19c12977e311a1e316f6ae31bbb2b  hooks/subagent-stop.sh
 0baceb037487e6a5d2e1e99771b52f60ec8725866f6f26b8d5e109c02cee5e54  hooks/update-config-manifest.py
-fdeaa5f783c0edf1fa1c2b472f979def2a76375666ae3e74bf89f8262b9ec86a  hooks/verify-config-integrity.py
+4587395a245ef5ed94d78b47ac204a4524f835f238a0e13918ff94550592a538  hooks/verify-config-integrity.py
 487ffa99a30a88c8c9193932e102c4bb15978ff1f681eab755512d7787cca51c  rules/active-harnesses.mdc
 f6ab7c1a19a0b48830e45bd468cb16bf85192fac8036267775af989f50379423  rules/amplified-default-search-shape.mdc
 3c8e4dd967d677f772e120f872a0e8fd7c917bbfaa98960d877f72cce59a51f1  rules/anti-theatre.mdc
@@ -48,7 +48,7 @@ a1bfcec69f390aa4d29dbf89c22e6833349326c9b7078d70910589173cf5bb5e  rules/portable
 5b83913e89cca106231b4b5aed5148404cdb3e6377e41fe5db5ad6b557775ee6  rules/relay-stop.mdc
 87baafa7a3064ae6497f9d9505da0f73706268df8dc4e56d28ff6bcaa7485ab8  rules/research-attribution.mdc
 b8300e2c630cc2c55f094bfd394abc4282b2f3e17618214b75225028bdc739f1  rules/right-model-routing.mdc
-785a4d1132b778317ba40feaeec94325fb9f849446d7aad308f3cb2c5c6ee617  rules/self-compound.mdc
+f3666d05d9f1536bdd27158d6ca03ac78b4405f1586b5b85461e66eaae633fab  rules/self-compound.mdc
 35fa0ab6a7a293f963802dee843e87dad415a94f6f6be85a83009f37444bc52a  rules/session-discipline.mdc
 dbfc0346a991f85c1be7449310a77920426455abadef8cf4125980cc09e8c6b3  rules/stay-on-job.mdc
 87d1ec4cd6b82fd54dcc247d3405515db6a4cd5e6fc9dab03766cb9649bf245f  rules/token-efficiency.mdc

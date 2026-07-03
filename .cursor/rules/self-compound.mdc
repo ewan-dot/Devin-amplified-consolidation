@@ -18,6 +18,21 @@ When you close a **tiny gap** (hook miss, rule hole, repeated failure, research 
 
 **Forbidden:** "fixed in chat only", worktree-only with no SSOT copy, closing a gap without checking whether it was already encoded.
 
+## Constitutional rules are VERBATIM (never regenerate)
+
+uchg-locked / constitutional rules — `ewan-core-rules.mdc`, `constitutional-gate.mdc`, and **any** rule currently under the `uchg` lock — are **verbatim capital**. Self-compound must **NEVER** regenerate, summarize, paraphrase, rewrite, or "re-derive from memory" these files. Writing a *summary as canonical* is exactly how the constitution was born thin — do not repeat it.
+
+The **only** permitted change to a locked rule is **additive**, through the full cycle, preserving all existing wording:
+
+```
+~/.cursor/hooks/config-lock.sh unlock
+<edit — add, never rewrite or trim existing text>
+python3 ~/.cursor/hooks/update-config-manifest.py   # re-bless
+~/.cursor/hooks/config-lock.sh lock
+```
+
+If you cannot make a change additively without altering existing wording, **stop and ask the architect** — do not paraphrase to fit. The self-heal hook's fullness-guard will also refuse to restore a thinned canonical, but that is a backstop, not a licence to soften.
+
 ## Before research
 
 1. Search **inbox** (`perplexity-inbox/`, `RESEARCH-PIPE-RUN__*`) and **Vellum** for same-topic prior failures or runs.

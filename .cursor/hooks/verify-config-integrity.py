@@ -17,6 +17,16 @@ LOCK-AWARE (rules only):
   healed — they stay editable while the hooks/harness are under development. Drift
   there is report-only.
 
+FULLNESS-GUARD (anti stale-over-fresh restore):
+  Self-heal restores a drifted rule FROM the SSOT repo canonical (repo -> home).
+  That direction is a trap if the repo ever holds a THIN / softened / gutted copy:
+  it would silently overwrite a good locked home rule. So BEFORE restoring, the
+  repo canonical must pass a fullness/anchor check (see FULLNESS_* config block
+  below): a minimum byte floor for every rule, plus required anchor substrings for
+  named constitutional rules (e.g. ewan-core-rules.mdc). If the canonical FAILS,
+  we DO NOT restore — it is treated as a tamper/corruption signal: LOUD warning to
+  stdout, logged to drift.log, and the existing (locked) home file is left intact.
+
 Honest scope: single-user Mac. Any process running as the user can edit these
 files (including this script and the manifest) and can `chflags nouchg` any lock.
 This is TAMPER-EVIDENT + SELF-HEALING + a lock speed-bump, not tamper-PROOF.
@@ -43,6 +53,38 @@ SSOT_REPO = os.environ.get(
     "CURSOR_SSOT_REPO", os.path.join(HOME, "ingestion-to-research-pipe")
 )
 REPO_RULES = os.path.join(SSOT_REPO, ".cursor", "rules")
+
+# ── FULLNESS-GUARD CONFIG (extend me) ─────────────────────────────────────────
+# Gate applied to a repo canonical BEFORE it is allowed to overwrite a home rule
+# during self-heal. Purpose: never let a thin/softened/stale/tampered canonical
+# clobber a good locked home file (the repo->home restore is a stale-over-fresh
+# trap). Fail-SAFE: if the canonical does not pass, keep the home file as-is.
+#
+# To extend: bump the byte floor, or add "<rule-filename>": [<anchor>, ...] to
+# require that named rules contain ALL listed anchor substrings (case-insensitive).
+FULLNESS_MIN_BYTES = 400  # global floor. Smallest real rule is ~650B, so 400B
+                          # passes every legitimate rule while rejecting gutted
+                          # copies. Raise if you want a stricter floor.
+FULLNESS_ANCHORS = {
+    # ewan-core-rules.mdc is the constitution — a valid canonical MUST name the
+    # architect/expert-partner relationship and the sovereignty principle.
+    "ewan-core-rules.mdc": ["architect", "expert partner", "sovereignty"],
+}
+
+
+def canonical_passes_fullness(name, data):
+    """Return (ok, reason). Decide whether a repo canonical is 'full' enough to
+    be trusted as a restore source. A False result means: refuse to restore,
+    treat as tamper/corruption, keep the existing home file. Cheap + offline."""
+    if len(data) < FULLNESS_MIN_BYTES:
+        return False, f"too small: {len(data)}B < floor {FULLNESS_MIN_BYTES}B"
+    anchors = FULLNESS_ANCHORS.get(name)
+    if anchors:
+        text = data.decode("utf-8", errors="replace").lower()
+        missing = [a for a in anchors if a.lower() not in text]
+        if missing:
+            return False, f"missing anchors: {', '.join(missing)}"
+    return True, "ok"
 
 
 def _log(events):
@@ -122,30 +164,53 @@ def key_to_path(key):
 
 
 def heal_rule(key, want_restore, log_events):
-    """Unlock -> (restore canonical if needed) -> re-lock a rules/ file.
+    """(validate canonical) -> unlock -> restore -> re-lock a rules/ file.
 
     want_restore: True if content drifted/removed and should be restored from
     SSOT canonical. If False, we only re-apply the uchg lock.
-    Returns one of: "healed", "relocked", "unhealed".
+    Returns one of: "healed", "relocked", "rejected", "unhealed".
+
+    FULLNESS-GUARD: for a restore, the canonical is validated FIRST — before the
+    home file is unlocked or touched. If it fails the fullness/anchor check it is
+    a tamper/corruption signal: we do NOT restore, we leave the (locked) home
+    file intact, and return "rejected".
     """
     name = key[len("rules/"):]
     dest = key_to_path(key)
     canonical = os.path.join(REPO_RULES, name)
 
-    # Always unlock first so we can write / re-lock cleanly.
-    if os.path.exists(dest):
-        set_uchg(dest, False)
-
     if want_restore:
+        # Validate the canonical BEFORE touching the home file so a thin/stale
+        # canonical can never overwrite a good locked home rule.
         if not os.path.isfile(canonical):
             log_events.append(f"HEAL_FAILED\t{key}\tno canonical in repo")
-            # still try to re-lock whatever content exists
             if os.path.exists(dest):
-                set_uchg(dest, True)
+                set_uchg(dest, True)  # keep home locked; do not rewrite
             return "unhealed"
         try:
             with open(canonical, "rb") as src:
                 data = src.read()
+        except OSError as e:
+            log_events.append(f"HEAL_FAILED\t{key}\t{e}")
+            if os.path.exists(dest):
+                set_uchg(dest, True)
+            return "unhealed"
+
+        ok, reason = canonical_passes_fullness(name, data)
+        if not ok:
+            log_events.append(
+                f"HEAL_REJECTED\t{key}\tcanonical failed fullness ({reason})"
+                f"\thome left intact + locked"
+            )
+            # Leave the home file untouched; make sure it stays locked.
+            if os.path.exists(dest):
+                set_uchg(dest, True)
+            return "rejected"
+
+        # Canonical passed the fullness guard — safe to restore.
+        if os.path.exists(dest):
+            set_uchg(dest, False)
+        try:
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             with open(dest, "wb") as out:
                 out.write(data)
@@ -218,7 +283,7 @@ def main():
         log_events.append(f"UNLOCKED\t{key}")
 
     # Self-heal + lock-guard for rules/ only.
-    healed, relocked, unhealed = [], [], []
+    healed, relocked, rejected, unhealed = [], [], [], []
     rules_to_restore = {k for k in (changed + removed) if k.startswith("rules/")}
     rules_to_touch = sorted(rules_to_restore | set(unlocked_rules))
     for key in rules_to_touch:
@@ -227,6 +292,8 @@ def main():
             healed.append(key)
         elif result == "relocked":
             relocked.append(key)
+        elif result == "rejected":
+            rejected.append(key)
         else:
             unhealed.append(key)
 
@@ -240,6 +307,15 @@ def main():
         print("  RE-LOCKED (content OK, uchg re-applied):")
         for key in relocked:
             print(f"    LOCKED   : {key}")
+    if rejected:
+        print("!" * 68)
+        print("  FULLNESS-GUARD: repo canonical REJECTED — RESTORE REFUSED.")
+        print("  A thin/softened/stale canonical did NOT overwrite your rule.")
+        print("  The locked home file was LEFT INTACT. Investigate the repo copy")
+        print("  (possible tamper/corruption/softening) before re-blessing.")
+        for key in rejected:
+            print(f"    REFUSED  : {key}  (home kept; canonical failed fullness)")
+        print("!" * 68)
     if unhealed:
         print("-" * 68)
         print("  NOT auto-healed (no canonical, or lock op failed):")

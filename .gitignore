@@ -1,0 +1,20 @@
+# Repo hygiene — keep bulky / machine-local / extracted junk out of the SSOT repo.
+# Added 2026-07-03 to stop file-scatter (e.g. an in-repo Downloads/ M4 dump).
+
+# Large extraction / download dumps
+Downloads/
+
+# Python virtual envs (any depth)
+**/.venv/
+venv/
+
+# Editor / browser / tool extension dumps
+**/extensions/
+
+# Disk images and OS cruft
+*.dmg
+.DS_Store
+
+# Python caches
+__pycache__/
+*.pyc
