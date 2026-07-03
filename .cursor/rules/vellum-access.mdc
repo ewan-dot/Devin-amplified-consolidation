@@ -21,6 +21,30 @@ Source of truth: `~ewanbramley/AgentsMini-worktree/docs/SOVEREIGN-VELLUM.md`, `~
 - Endpoints: public `https://vellum.beast.amplifiedpartners.ai` · tailnet (preferred when Tailscale up) `https://beast-amplified.tail27a0cc.ts.net:8443`.
 - `Beast :8400` = fleet ledger. **`127.0.0.1:8400` = dev sandbox — writes there do NOT reach the fleet.** Confirm before writing.
 
+## Access path priority (prefer direct HTTP — MCP is the fallback)
+
+Reaching Beast services (ledger, brain/knowledge, credentials) has a fixed order. Do **not** re-litigate this each session:
+
+1. **Tailnet HTTP via `curl` (PRIMARY).** Direct over Tailscale — lean (`curl … | jq`) and the most robust, because there is no MCP layer to break. **Compose the existing helpers — do not rewrite endpoint/JWT logic.** All live under `/Users/ewansair/AgentsMini-worktree/`:
+
+   ```bash
+   # endpoint + JWT resolved by the existing scripts (token is never printed)
+   eval "$(/Users/ewansair/AgentsMini-worktree/scripts/resolve-vellum-jwt.sh)"
+   EP=https://beast-amplified.tail27a0cc.ts.net:8443           # tailnet (preferred)
+   curl -sS -X POST "$EP/api/v1/estate/log" \
+     -H "Authorization: Bearer $VELLUM_JWT" -H 'Content-Type: application/json' \
+     --data '{ ...entry... }' | jq .
+
+   # or the one-line wrapper (same helpers underneath; tailnet-first, public fallback):
+   /Users/ewansair/AgentsMini-worktree/scripts/vellum-curl.sh append '{ ...entry... }'
+   /Users/ewansair/AgentsMini-worktree/scripts/vellum-curl.sh read /api/v1/tasks/
+   ```
+   Reuse (never reinvent): `scripts/resolve-vellum-endpoint.sh`, `scripts/resolve-vellum-jwt.sh`, `scripts/source-vellum-env.sh`, `scripts/mint-vellum-jwt.py`, `scripts/vellum-curl.sh`, `pipeline/vellum/client.py`.
+
+2. **Public HTTPS (same API, off-tailnet).** `https://vellum.beast.amplifiedpartners.ai` + the same JWT — use when Tailscale is down. `vellum-curl.sh` falls back to this automatically.
+
+3. **MCP tools (FALLBACK only).** `codex-mcp` / `vellum` / `amplified-knowledge` via `mcp-remote`. Reach for these only when curl cannot. Why last: (a) MCP tool responses are **token-heavy** vs a lean `curl … | jq`; (b) the `mcp-remote → FastMCP SSE` layer was the **single point of failure** this session (`-32602` arg-mangling) — direct HTTP over the tailnet has no such layer to fail.
+
 ## Credentials — the JWT (this was the recurring pain; here is the path)
 
 Append requires a Bearer **`VELLUM_JWT`**. Resolution order — stop at first hit:

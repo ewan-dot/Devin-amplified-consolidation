@@ -1,5 +1,5 @@
 # Cursor config integrity manifest
-# generated: 2026-07-03T05:28:52.896581+01:00
+# generated: 2026-07-03T06:10:02.597996+01:00
 # host: macairm5.tail27a0cc.ts.net
 # files: 53
 # format: <sha256>  <path-relative-to-~/.cursor>
@@ -52,7 +52,7 @@ f3666d05d9f1536bdd27158d6ca03ac78b4405f1586b5b85461e66eaae633fab  rules/self-com
 35fa0ab6a7a293f963802dee843e87dad415a94f6f6be85a83009f37444bc52a  rules/session-discipline.mdc
 dbfc0346a991f85c1be7449310a77920426455abadef8cf4125980cc09e8c6b3  rules/stay-on-job.mdc
 87d1ec4cd6b82fd54dcc247d3405515db6a4cd5e6fc9dab03766cb9649bf245f  rules/token-efficiency.mdc
-dad6b77a2836e0df3d66afae3bea3cc008cd1f27ad8805b40c6e08d77c6040f4  rules/vellum-access.mdc
+3600a286b510e64cfd3c4f532399252ec99f6d9012e810dca48dafa0c285d0ba  rules/vellum-access.mdc
 3a4fa9f6a73590311c0c86b68c0c6138f484da240dee1aa43880e9e7538a220b  rules/vellum-witness.mdc
 3748f2c977362cfd483b9b0256fe4ac0a8813cbc130344946a3290c9e7d02a1f  rules/worktree-door.mdc
 84c4628ff17337e89ceb3da14d31be2de375bb302fb1b09efc91285b482d4a94  rules/yolo-ceilings.mdc
