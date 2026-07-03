@@ -1,13 +1,14 @@
 # Cursor config integrity manifest
-# generated: 2026-07-03T03:39:35.023524+01:00
+# generated: 2026-07-03T04:30:09.395098+01:00
 # host: macairm5.tail27a0cc.ts.net
-# files: 52
+# files: 53
 # format: <sha256>  <path-relative-to-~/.cursor>
 aba651b613a0eed5d83fd937ee4cc0086dd725b3a5296781d55880c9494302a7  hooks.json
 f2fd0aab302112b9375fb1678394874b4894ad857aaa8300e3c8bb6b070b83c4  hooks/before-read-file.sh
 aee3a5dd310722781302f73afde4c9359d41c306d89c02fc6bcdce4980f7de1f  hooks/before-shell-execution.sh
 41be78ebd24e79dc61ecc7413abc2733f05c9ef36f97c2593f3481962f68d8d4  hooks/before-submit-constitutional.py
 6832b73b1d22cf6de6bfd83d3b684d73f1d0089b261b92b4404487fd9bdc4911  hooks/before-submit-prompt.sh
+3f3c06f7f614759ae03bacc1a8ccd446fd3c796ceed57123ff89956a8ce36b5b  hooks/config-lock.sh
 6571345eb84ebd293b12316181d7f6412ed50fbb2969b0138af8fa7648ef07c4  hooks/mark-vellum-actual-posted.py
 9316e2be67d4e5c5eab37d7bdff436112668fbf33860adcb511e8c1501a2aa66  hooks/mark-vellum-intent-posted.py
 1cafc992e519479bc919cd9760e4b5f014e560bfbcfada4cbeaa165774b7581f  hooks/mark-vellum-plan-posted.py
@@ -28,14 +29,14 @@ c9c32e8abd793131dac07450a1ce857a12316fc6ffe8c3040d28d9c45b7f0e35  hooks/session-
 77922cd052c6af0a7fd497e64358e0a9d5d6584182252f3a7676afb8c70f42c5  hooks/stop.sh
 e6dce5f9a73f9c8c5c92e3f3fb4aff5387e19c12977e311a1e316f6ae31bbb2b  hooks/subagent-stop.sh
 0baceb037487e6a5d2e1e99771b52f60ec8725866f6f26b8d5e109c02cee5e54  hooks/update-config-manifest.py
-daf23ab509df43d511bb7f7d02fe3d20859c75f95018e29d6a410f174b4825b9  hooks/verify-config-integrity.py
+fdeaa5f783c0edf1fa1c2b472f979def2a76375666ae3e74bf89f8262b9ec86a  hooks/verify-config-integrity.py
 487ffa99a30a88c8c9193932e102c4bb15978ff1f681eab755512d7787cca51c  rules/active-harnesses.mdc
 f6ab7c1a19a0b48830e45bd468cb16bf85192fac8036267775af989f50379423  rules/amplified-default-search-shape.mdc
 3c8e4dd967d677f772e120f872a0e8fd7c917bbfaa98960d877f72cce59a51f1  rules/anti-theatre.mdc
 8de77ce06737db8fafee05eee58c80f1561f4c81b7b6ce8d0772ea879ef53bfe  rules/branch-absorb-before-abandon.mdc
 92d08b0bd8876d8f556964178fee5d68ea3e15aae476f2aee9cca815a2d56532  rules/comms-ping-until-answered.mdc
 848ad5209ecbc21e019669bd9bcced27694fd06535285d60f8ba277b4c326fae  rules/constitutional-gate.mdc
-edbcd4fbde059751771ca89e148964429068bb125872f94b0a0dae0cb454b660  rules/ewan-core-rules.mdc
+48ebc7a5edffbcee06ca5434c8ab138a4a48465c78c6c5b00840c28158609860  rules/ewan-core-rules.mdc
 7db26400bdf40398467fc5d0c73eec43fcfb8e239def3c486a0fb144f3894695  rules/external-ai-tiering.mdc
 694221e9563cbf55e38ccfbcba83b1bd17ecfbcea0092aad36d01e4f8d5d2679  rules/facilitator-interface.mdc
 6007ce514b645656620eafdd652ee95e19528d586c1f6a2a24ad2a42fa2bbb87  rules/finish-waypoint.mdc

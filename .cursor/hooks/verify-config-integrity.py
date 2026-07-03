@@ -1,21 +1,33 @@
 #!/usr/bin/env python3
-"""Cursor config integrity tripwire + self-heal (sessionStart hook).
+"""Cursor config integrity tripwire + self-heal + lock-guard (sessionStart hook).
 
 Compares live config (~/.cursor/rules/*.mdc, ~/.cursor/hooks/*, hooks.json)
 against the blessed manifest. On drift it prints a LOUD warning to stdout so
 the drift surfaces in the agent's sessionStart context, and it SELF-HEALS any
 drifted rule whose canonical copy exists in the SSOT repo.
 
-Honest scope: single-user Mac. Any process running as the user can edit these
-files (including this script and the manifest). This is TAMPER-EVIDENT +
-SELF-HEALING, not tamper-PROOF. See integrity/README.md for the optional
-OS-level lock (chflags), deliberately left OFF.
+LOCK-AWARE (rules only):
+  ~/.cursor/rules/*.mdc are EXPECTED to be macOS user-immutable (uchg) locked —
+  they are Ewan's constitution. On session start, a rule that is found NOT locked
+  (nouchg) OR whose hash drifted is treated as a tamper signal: the rule is
+  unlocked, restored from SSOT canonical if its content drifted, then RE-LOCKED
+  (uchg re-applied). All events go to drift.log.
 
-Fail-open: always exits 0, never blocks a session, never hangs.
+  hooks.json, ~/.cursor/hooks/*, and ~/.cursor/integrity/* are NOT locked and NOT
+  healed — they stay editable while the hooks/harness are under development. Drift
+  there is report-only.
+
+Honest scope: single-user Mac. Any process running as the user can edit these
+files (including this script and the manifest) and can `chflags nouchg` any lock.
+This is TAMPER-EVIDENT + SELF-HEALING + a lock speed-bump, not tamper-PROOF.
+See integrity/README.md.
+
+Fail-open: always exits 0, never blocks a session, never hangs. No network.
 """
 import datetime
 import hashlib
 import os
+import stat
 import sys
 
 HOME = os.path.expanduser("~")
@@ -54,6 +66,26 @@ def sha256_file(path):
     return h.hexdigest()
 
 
+def is_uchg(path):
+    """True if the user-immutable (uchg) flag is set."""
+    try:
+        return bool(os.stat(path).st_flags & stat.UF_IMMUTABLE)
+    except (OSError, AttributeError):
+        return False
+
+
+def set_uchg(path, on):
+    """Set/clear ONLY the uchg bit, preserving other flags. Returns True on success."""
+    try:
+        cur = os.stat(path).st_flags
+        new = (cur | stat.UF_IMMUTABLE) if on else (cur & ~stat.UF_IMMUTABLE)
+        if new != cur:
+            os.chflags(path, new)
+        return True
+    except (OSError, AttributeError):
+        return False
+
+
 def live_files():
     entries = {}
     if os.path.isfile(HOOKS_JSON):
@@ -89,6 +121,51 @@ def key_to_path(key):
     return os.path.join(CURSOR_DIR, key)
 
 
+def heal_rule(key, want_restore, log_events):
+    """Unlock -> (restore canonical if needed) -> re-lock a rules/ file.
+
+    want_restore: True if content drifted/removed and should be restored from
+    SSOT canonical. If False, we only re-apply the uchg lock.
+    Returns one of: "healed", "relocked", "unhealed".
+    """
+    name = key[len("rules/"):]
+    dest = key_to_path(key)
+    canonical = os.path.join(REPO_RULES, name)
+
+    # Always unlock first so we can write / re-lock cleanly.
+    if os.path.exists(dest):
+        set_uchg(dest, False)
+
+    if want_restore:
+        if not os.path.isfile(canonical):
+            log_events.append(f"HEAL_FAILED\t{key}\tno canonical in repo")
+            # still try to re-lock whatever content exists
+            if os.path.exists(dest):
+                set_uchg(dest, True)
+            return "unhealed"
+        try:
+            with open(canonical, "rb") as src:
+                data = src.read()
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            with open(dest, "wb") as out:
+                out.write(data)
+            set_uchg(dest, True)
+            log_events.append(f"HEALED\t{key}\tfrom {canonical}\tre-locked uchg")
+            return "healed"
+        except OSError as e:
+            log_events.append(f"HEAL_FAILED\t{key}\t{e}")
+            if os.path.exists(dest):
+                set_uchg(dest, True)
+            return "unhealed"
+
+    # content OK, just re-apply the lock
+    if set_uchg(dest, True):
+        log_events.append(f"RELOCKED\t{key}\tuchg re-applied")
+        return "relocked"
+    log_events.append(f"RELOCK_FAILED\t{key}")
+    return "unhealed"
+
+
 def main():
     if not os.path.isfile(MANIFEST_PATH):
         print("[config-integrity] no manifest yet — run "
@@ -114,7 +191,13 @@ def main():
         if key not in manifest:
             added.append(key)
 
-    if not (changed or added or removed):
+    # Lock drift: any live rules/*.mdc that is NOT uchg-locked.
+    unlocked_rules = [
+        k for k, p in live.items()
+        if k.startswith("rules/") and not is_uchg(p)
+    ]
+
+    if not (changed or added or removed or unlocked_rules):
         return 0
 
     log_events = []
@@ -122,51 +205,61 @@ def main():
     print("!! CURSOR CONFIG INTEGRITY DRIFT DETECTED !!")
     print("=" * 68)
     for key in sorted(changed):
-        print(f"  CHANGED : {key}")
+        print(f"  CHANGED  : {key}")
         log_events.append(f"CHANGED\t{key}")
     for key in sorted(removed):
-        print(f"  REMOVED : {key}")
+        print(f"  REMOVED  : {key}")
         log_events.append(f"REMOVED\t{key}")
     for key in sorted(added):
-        print(f"  ADDED   : {key}")
+        print(f"  ADDED    : {key}")
         log_events.append(f"ADDED\t{key}")
+    for key in sorted(unlocked_rules):
+        print(f"  UNLOCKED : {key}  (rule not uchg-locked — tamper signal)")
+        log_events.append(f"UNLOCKED\t{key}")
 
-    # Self-heal: restore drifted rules from SSOT repo canonical.
-    healed, unhealed = [], []
-    for key in sorted(changed + removed):
-        if not key.startswith("rules/"):
-            continue
-        name = key[len("rules/"):]
-        canonical = os.path.join(REPO_RULES, name)
-        if not os.path.isfile(canonical):
-            unhealed.append(key)
-            continue
-        try:
-            with open(canonical, "rb") as src:
-                data = src.read()
-            dest = key_to_path(key)
-            os.makedirs(os.path.dirname(dest), exist_ok=True)
-            with open(dest, "wb") as out:
-                out.write(data)
+    # Self-heal + lock-guard for rules/ only.
+    healed, relocked, unhealed = [], [], []
+    rules_to_restore = {k for k in (changed + removed) if k.startswith("rules/")}
+    rules_to_touch = sorted(rules_to_restore | set(unlocked_rules))
+    for key in rules_to_touch:
+        result = heal_rule(key, want_restore=(key in rules_to_restore), log_events=log_events)
+        if result == "healed":
             healed.append(key)
-            log_events.append(f"HEALED\t{key}\tfrom {canonical}")
-        except OSError as e:
+        elif result == "relocked":
+            relocked.append(key)
+        else:
             unhealed.append(key)
-            log_events.append(f"HEAL_FAILED\t{key}\t{e}")
 
     if healed:
         print("-" * 68)
-        print("  SELF-HEALED from SSOT repo (canonical content restored):")
+        print("  SELF-HEALED from SSOT repo + RE-LOCKED (uchg):")
         for key in healed:
             print(f"    RESTORED : {key}")
+    if relocked:
+        print("-" * 68)
+        print("  RE-LOCKED (content OK, uchg re-applied):")
+        for key in relocked:
+            print(f"    LOCKED   : {key}")
     if unhealed:
         print("-" * 68)
-        print("  NOT auto-healed (no canonical in repo, or hooks/hooks.json):")
+        print("  NOT auto-healed (no canonical, or lock op failed):")
         for key in unhealed:
             print(f"    REVIEW   : {key}")
+
+    # hooks.json / hooks/* / integrity are report-only (never healed or locked).
+    report_only = [k for k in (changed + added + removed) if not k.startswith("rules/")]
+    if report_only:
+        print("-" * 68)
+        print("  REPORT-ONLY (hooks/hooks.json — editable by design, not healed):")
+        for key in sorted(report_only):
+            print(f"    NOTE     : {key}")
+
     print("-" * 68)
-    print("  If these changes were intentional, re-bless with:")
+    print("  Legit rule edit cycle:")
+    print("    ~/.cursor/hooks/config-lock.sh unlock")
+    print("    <edit rule(s)>")
     print("    python3 ~/.cursor/hooks/update-config-manifest.py")
+    print("    ~/.cursor/hooks/config-lock.sh lock")
     print(f"  Drift log: {DRIFT_LOG}")
     print("=" * 68)
 

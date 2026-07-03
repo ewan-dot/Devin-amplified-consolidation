@@ -17,9 +17,13 @@ What this gives you instead, achievably and strongly:
   printed LOUDLY into the agent's startup context and logged.
 - **Self-HEALING** — any drifted **rule** whose canonical copy exists in the
   SSOT repo is automatically restored to canonical content.
+- **LOCK-GUARDED (rules only)** — `rules/*.mdc` are held under a macOS
+  user-immutable (`uchg`) lock. On session start, a rule found unlocked
+  (`nouchg`) **or** hash-drifted is treated as a tamper signal: it is
+  unlocked, restored from SSOT canonical if content drifted, then re-locked.
 
 It is **not tamper-PROOF**. A same-user attacker who also re-blesses the
-manifest (or removes the hook) can defeat it. See "Optional stronger lock".
+manifest, removes the hook, or clears the lock (`chflags nouchg`) can defeat it.
 
 ## Files
 
@@ -52,27 +56,42 @@ python3 ~/.cursor/hooks/update-config-manifest.py
 This writes the manifest to both the local and repo integrity dirs. Commit the
 repo copy so the blessed state is versioned.
 
-## Optional stronger lock (OS-level immutability) — LEFT OFF
+## OS-level immutability lock — ON for RULES, OFF for hooks/harness
 
-macOS user-immutable flag (`uchg`) makes a file un-writable/un-deletable even
-by you, until the flag is cleared. This is the strongest same-machine lock, but
-it **interferes with the `self-compound` auto-sync workflow** (agents can no
-longer update rules/hooks without first clearing the flag), so it is
-deliberately **NOT applied**. Ewan must decide.
+**Decision (Ewan, 2026-07-03):** the macOS user-immutable flag (`uchg`) is turned
+**ON for `~/.cursor/rules/*.mdc` only** — the constitution. It is **OFF** for
+`hooks.json`, `~/.cursor/hooks/*`, harness scripts, and `~/.cursor/integrity/*`,
+because the hooks/harness are still under active development and must stay
+freely editable.
 
-To turn it ON (example — locks all rules and hooks.json):
-
-```bash
-chflags uchg ~/.cursor/rules/*.mdc ~/.cursor/hooks.json
-# stronger, requires root, survives more: chflags schg (system immutable)
-```
-
-To turn it OFF again (required before any legit edit / re-bless):
+`uchg` makes a file un-writable/un-deletable — even by the owning user — until
+the flag is cleared with `nouchg`. Use the helper, not raw `chflags`:
 
 ```bash
-chflags nouchg ~/.cursor/rules/*.mdc ~/.cursor/hooks.json
+~/.cursor/hooks/config-lock.sh status   # show ls -lO flags (look for `uchg`)
+~/.cursor/hooks/config-lock.sh lock      # chflags uchg   every rules/*.mdc
+~/.cursor/hooks/config-lock.sh unlock    # chflags nouchg every rules/*.mdc
 ```
 
-Trade-off: `uchg` ON = real write-prevention on this machine, but every
-intentional edit and every self-compound sync must first `nouchg`, edit,
-re-bless, then `uchg` again. That friction is why it is off by default.
+### Correct edit cycle for a rule (do NOT edit a locked file directly)
+
+```bash
+~/.cursor/hooks/config-lock.sh unlock          # 1. clear the lock
+$EDITOR ~/.cursor/rules/<file>.mdc             # 2. edit the rule(s)
+python3 ~/.cursor/hooks/update-config-manifest.py   # 3. re-bless the manifest
+~/.cursor/hooks/config-lock.sh lock            # 4. re-lock
+```
+
+The sessionStart verify hook also **re-applies the lock automatically**: if a
+rule is left unlocked it will be re-locked (and restored from SSOT canonical if
+its content drifted). So if you unlock, edit, and re-bless but forget step 4,
+the next session locks it for you — provided the content matches canonical.
+
+### Honest limits
+
+- Same user can always `config-lock.sh unlock` (or `chflags nouchg`) — this is a
+  deliberate speed-bump against accidental/automated edits, **not** a vault.
+- `uchg` is **not root-proof** and **not tamper-PROOF**. `schg` (system
+  immutable) is stronger but needs root and is intentionally not used here.
+- Only `rules/*.mdc` are locked. hooks/harness/integrity stay editable — verify
+  reports drift there but never heals or locks them.
