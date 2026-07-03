@@ -1,0 +1,140 @@
+{
+  "$schema": "https://amplified.partners/schemas/doors-v1.json",
+  "version": "1.0.0",
+  "updated": "2026-07-03",
+  "status": "PHASE-0 SCAFFOLD — proposed, NOT wired to live hooks",
+  "philosophy": "Blinkers without ceilings. Choose a door; exactly that door's access opens and nothing else. Switch doors freely (exit + re-enter); never widen a door mid-work. Denial = wrong door for that action, not a curiosity gate. Default is never-stuck.",
+  "authored_by": "cursor",
+  "epistemic_tier": "INTUITED",
+  "tier_reason": "Encodes SSOT open-door-harness v01 §2 taxonomy + §7 ratified defaults. Path globs are a first-pass to be refined from Phase-2 nudge telemetry; not empirically calibrated.",
+  "sync": {
+    "repo_ssot": "perplexity-inbox/config/doors-v1.json",
+    "design_ssot": "perplexity-inbox/SSOT__open-door-harness__v01__2026-07-03__cursor.md",
+    "mirrors_pattern_of": "perplexity-inbox/config/fleet-routing-v1.json",
+    "direction": "repo SSOT is canonical; runtime reads this + the active-door marker"
+  },
+  "defaults": {
+    "default_door": "research_read",
+    "marker_path": "~/.amplified/active-door.json",
+    "compose_rule": "exit_and_reenter_only — doors NEVER union; two profiles in one job = two sequential doors (usually a baton between)",
+    "wall_hardness": "nudge_then_deny",
+    "first_hard_deny_doors": ["research_read", "config_harness"],
+    "never_stuck": "choosing nothing = research_read (read/think/search, no writes). Thinking is never blocked; only acting outside a chosen blast radius is."
+  },
+  "spend_tiers": {
+    "worker": "haiku-class — generation/extraction, tight scope",
+    "mid": "sonnet-class — bounded orchestration",
+    "plan-once": "opus-class — planning/judgment, <=1 invocation per job (routing class ceiling, NOT an effort ceiling)"
+  },
+  "git_write_levels": {
+    "none": "no git writes",
+    "commit-local": "git add/commit in the door's scope only; NO push",
+    "push": "UNIVERSAL RED on Mac — never allowed by any door (see universal_rules.git_push_on_mac)"
+  },
+  "net_mesh_levels": ["none", "web+searxng", "tailnet", "beast-ssh", "beast-read"],
+  "doors": [
+    {
+      "name": "research_read",
+      "status": "seed",
+      "is_default": true,
+      "purpose": "Read / think / search; no mutation.",
+      "fs_read": ["~/ingestion-to-research-pipe/**", "~/amplified-pipeline/**", "~/Code/**", "~/ESTATE-NOTES.md", "~/AGENTS.md", "~/clean-build/**"],
+      "fs_write": [],
+      "net_mesh": "web+searxng",
+      "mcp_tools": ["search", "web", "brain-read"],
+      "git_write": "none",
+      "spend_tier": "mid",
+      "maps_to_system_door": ["Brain(ro)", "Research pipe(ro)"],
+      "notes": "Never-stuck default. No write scope at all."
+    },
+    {
+      "name": "agentsmini_build",
+      "status": "seed",
+      "purpose": "Build/iterate agent code in one bounded project.",
+      "fs_read": ["<project_subtree>/**"],
+      "fs_write": ["<project_subtree>/**"],
+      "net_mesh": "none",
+      "mcp_tools": ["fs", "shell:build", "shell:test"],
+      "git_write": "commit-local",
+      "spend_tier": "mid",
+      "maps_to_system_door": ["Agent sandbox / project repo"],
+      "notes": "<project_subtree> is bound at door-enter time to a single project root; read and write are the SAME subtree."
+    },
+    {
+      "name": "central_handoff",
+      "status": "seed",
+      "purpose": "Write shared artefacts + baton/Vellum handoff (absorbs vellum_witness per SSOT C-2).",
+      "fs_read": ["~/ingestion-to-research-pipe/perplexity-inbox/**", "~/amplified-pipeline/**"],
+      "fs_write": ["~/ingestion-to-research-pipe/perplexity-inbox/**", "~/amplified-pipeline/**", "~/ingestion-to-research-pipe/perplexity-inbox/batons/**"],
+      "net_mesh": "tailnet",
+      "mcp_tools": ["vellum", "fs"],
+      "git_write": "commit-local",
+      "spend_tier": "worker",
+      "maps_to_system_door": ["Central data", "Vellum(append-only)"],
+      "notes": "Ledger writes always co-occur with handoff, so no separate vellum_witness door."
+    },
+    {
+      "name": "worktree_feature",
+      "status": "proposed",
+      "purpose": "Feature work in an isolated worktree (from worktree-door.mdc).",
+      "fs_read": ["<worktree_subtree>/**"],
+      "fs_write": ["<worktree_subtree>/**"],
+      "net_mesh": "none",
+      "mcp_tools": ["fs", "shell:test", "git-local"],
+      "git_write": "commit-local",
+      "spend_tier": "mid",
+      "maps_to_system_door": ["Task worktree"],
+      "notes": "<worktree_subtree> is bound at door-enter time to the active worktree path. This Phase-0 job itself ran under this door class."
+    },
+    {
+      "name": "pipe_run",
+      "status": "proposed",
+      "purpose": "Run the five-stage research pipe / capture.",
+      "fs_read": ["~/ingestion-to-research-pipe/**", "<corpus_dir>/**"],
+      "fs_write": ["<pipe_run_dir>/**", "<pipe_run_dir>/**/*.jsonl"],
+      "net_mesh": "beast-read",
+      "mcp_tools": ["search", "brain", "fs"],
+      "git_write": "commit-local",
+      "spend_tier": "mid",
+      "maps_to_system_door": ["Research pipe(run)"],
+      "notes": "net_mesh combines web+searxng+beast-read. SSOT D2 recommends deferring this door; encoded here as proposed for completeness of the 6-door set."
+    },
+    {
+      "name": "config_harness",
+      "status": "proposed",
+      "purpose": "Edit hooks/rules/harness — the sensitive door. Forces unlock->edit->re-bless->lock for rules.",
+      "fs_read": ["~/.cursor/**", "<repo>/.cursor/**"],
+      "fs_write": ["~/.cursor/hooks/**", "<repo>/.cursor/**"],
+      "net_mesh": "none",
+      "mcp_tools": ["fs", "shell:config-lock", "shell:manifest"],
+      "git_write": "commit-local",
+      "spend_tier": "plan-once",
+      "maps_to_system_door": ["Mac seat config (no Beast system)"],
+      "split_permission": {
+        "hooks_and_scripts": "agent-enterable — edit ~/.cursor/hooks/** and hooks.json freely (already unlocked)",
+        "rules_mdc": "architect_bless_required — rule .mdc changes need Ewan's second key (unlock->edit->update-config-manifest.py->lock); agents MUST NOT self-rewrite rules that bind them"
+      },
+      "notes": "Ground truth: config-lock.sh locks only rules/*.mdc (uchg); hooks.json + hooks/* are already editable."
+    }
+  ],
+  "universal_rules": {
+    "secrets_infisical": {
+      "rule": "NO DOOR EVER",
+      "detail": "No door opens /opt/amplified/secrets, Infisical, ~/.amplified/keys.env, or any credential material. Ulysses-locked (SSOT §2).",
+      "forbidden_path_fragments": [".env", "keys.env", "secrets", "credentials", "id_rsa", ".ssh", "infisical", "op://"]
+    },
+    "red_core_door_independent": {
+      "rule": "door-independent — no door ever opens the Red core",
+      "detail": "Destroy / Launder (yolo-ceilings Red core) are blocked regardless of active door.",
+      "examples": ["rm -rf /", "sudo rm -rf", "git push --force", "git reset --hard", "mkfs", "dd if=", "curl | sh"]
+    },
+    "git_push_on_mac": {
+      "rule": "UNIVERSAL RED on Mac regardless of door",
+      "detail": "Mac is read-only for git push (AGENTS.md 2026-06-17). Landing goes via Beast / Devin PR. No door grants push."
+    },
+    "constitutional_gate": {
+      "rule": "layered under every door, door-independent",
+      "detail": "constitutional-gate.mdc staged modes apply inside every door: pre_client (default) warns+logs and work completes; client_live hard-blocks until compliant. Doors bound WHERE you act; the seven rods bound WHAT you may do anywhere."
+    }
+  }
+}

@@ -1,6 +1,7 @@
 """
-amplified_harness.py — deterministic hooks & harness for the Amplified doctrine.
+amplified_permissions.py — deterministic permission classifier for the Amplified doctrine.
 
+Renamed from amplified_harness.py per SSOT C-4 (classifier != open-door runtime).
 Prose skills are canonical. This is their executable projection: pure, testable,
 no LLM in the decision path. Both Perplexity (proxy) and the M5 local AIs read the
 same amplified_rules.json so behaviour is identical across agents.
@@ -9,7 +10,7 @@ tier: STRUCTURED  (codified from INTUITED/STRUCTURED prose; not empirically cali
 generated_by: AI_PARTNER_PROXY  2026-06-24
 
 Usage:
-    from amplified_harness import classify, gate, closure_footer, ProxyLog
+    from amplified_permissions import classify, gate, closure_footer, ProxyLog
     d = classify("spend", amount_gbp=120)        # -> Decision(tier='C', ...)
     if d.allowed: ...                            # pre-act hook
     print(closure_footer(branch="ACTION", inbox="plan.md"))  # post-task hook
@@ -137,7 +138,7 @@ def inbox_path() -> str:
 
 
 # ---------------------------------------------------------------------------
-# Self-test (deterministic). Run: python amplified_harness.py
+# Self-test (deterministic). Run: python amplified_permissions.py
 # ---------------------------------------------------------------------------
 def _selftest() -> int:
     checks = [

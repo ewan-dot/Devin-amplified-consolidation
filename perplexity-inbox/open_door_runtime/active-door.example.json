@@ -1,0 +1,7 @@
+{
+  "door": "research_read",
+  "entered": "2026-07-03T00:00:00Z",
+  "task": "default — never-stuck read/think/search",
+  "seat": "cursor",
+  "_comment": "Reproducible template for the local write-lease marker. The LIVE marker lives at ~/.amplified/active-door.json (outside the repo, kept out of the integrity-locked tree per SSOT D5). 'door' MUST be one of the names in doors-v1.json; default is research_read. Switch doors by exit+re-enter (rewrite this file), never by union."
+}
