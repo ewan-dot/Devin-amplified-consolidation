@@ -1,4 +1,88 @@
 {
   "version": 1,
-  "hooks": {}
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "python3 ./hooks/verify-config-integrity.py",
+        "timeout": 5
+      },
+      {
+        "command": "./hooks/session-start-preamble.sh",
+        "timeout": 5
+      },
+      {
+        "command": "python3 ./hooks/session-start-read-baton.py",
+        "timeout": 5
+      },
+      {
+        "command": "python3 ./hooks/session-start-routing-hint.py",
+        "timeout": 5
+      },
+      {
+        "command": "python3 ./hooks/session-start-antigravity-baton.py",
+        "timeout": 5
+      },
+      {
+        "command": "./hooks/session-start.sh",
+        "timeout": 10
+      },
+      {
+        "command": "python3 ./hooks/session-start-vellum-intent.py",
+        "timeout": 5
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "./hooks/session-end.sh",
+        "timeout": 10
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "./hooks/before-submit-prompt.sh",
+        "timeout": 5
+      },
+      {
+        "command": "python3 ./hooks/before-submit-constitutional.py",
+        "timeout": 5
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "./hooks/before-shell-execution.sh",
+        "timeout": 5
+      }
+    ],
+    "beforeReadFile": [
+      {
+        "command": "./hooks/before-read-file.sh",
+        "timeout": 5
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "./hooks/post-tool-use.sh",
+        "timeout": 5,
+        "matcher": "Shell|Read|MCP"
+      }
+    ],
+    "stop": [
+      {
+        "command": "./hooks/stop.sh",
+        "timeout": 5
+      }
+    ],
+    "preCompact": [
+      {
+        "command": "./hooks/pre-compact.sh",
+        "timeout": 5
+      }
+    ],
+    "subagentStop": [
+      {
+        "command": "./hooks/subagent-stop.sh",
+        "timeout": 5
+      }
+    ]
+  }
 }
