@@ -1,0 +1,20 @@
+// STAGED preset — door: research_read (default, never-stuck). NOT wired.
+// git-write: none. Door enter = copy this to ~/.cursor/permissions.json (see ACTIVATION.md).
+// permissions.json is convenience/steering, NOT a security boundary. Only active with a Run Mode.
+{
+  "terminalAllowlist": [
+    "ls", "cat", "head", "tail", "rg", "grep", "find", "file", "stat", "wc", "tree", "echo", "pwd",
+    "git status", "git log", "git diff", "git show", "git branch"
+  ],
+  "autoRun": {
+    "allow_instructions": [
+      "Read-only inspection and search of repo, estate docs, Brain, and research corpus are fine to auto-run."
+    ],
+    "block_instructions": [
+      "research_read is read/think/search only: route ANY file write, edit, delete, or 'git add/commit' to approval — exit to another door to mutate.",
+      "NEVER 'git push' or push to any remote on this Mac — landing goes via Beast/Devin PR (AGENTS.md, read-only Mac). Route any push to approval.",
+      "Never read, print, copy, or exfiltrate credential material (.env, keys.env, secrets, id_rsa, ~/.ssh, Infisical, op://) — no door opens these.",
+      "Route any destructive command to approval first: 'rm -rf', 'sudo rm', 'dd if=', 'mkfs', 'git reset --hard', 'git push --force', or piping curl/wget into a shell."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+# STAGED base .cursorignore — the RELIABLE read boundary for the open-door harness.
+# Research R2: beforeReadFile deny is unreliable; .cursorignore + sandbox protected paths are
+# the real read wall. This file is UNIVERSAL (every door) — it hides secret/credential material
+# from the agent entirely, regardless of active door.
+#
+# ACTIVATION: copy to the workspace root as `.cursorignore` (per-repo) and/or merge into
+#   ~/.cursorignore. It is NOT auto-installed by this phase. Copying it only hides files; it
+#   cannot wedge a session (reversible: delete the entries).
+
+# --- Credentials / secrets — NO DOOR EVER (SSOT §2, doors-v1 universal_rules.secrets_infisical) ---
+**/.env
+**/.env.*
+**/*.env
+**/keys.env
+**/secrets/**
+**/*secret*
+**/*credential*
+**/credentials*
+**/id_rsa
+**/id_ed25519
+**/*.pem
+**/*.key
+**/.ssh/**
+**/.aws/**
+**/.gnupg/**
+**/*.p12
+**/*.pfx
+.amplified/keys.env
+.amplified/*.env
+.vellum/*.env
+
+# --- Cursor / git internals the sandbox also protects (belt-and-braces) ---
+**/.git/config
+**/.git/hooks/**
+
+# --- High-noise / non-source (token hygiene; complements token-efficiency.mdc) ---
+**/node_modules/**
+**/dist/**
+**/build/**
+**/.next/**
+**/coverage/**
+**/vendor/**
+**/*.min.js
+**/*.map
+**/.venv/**
+**/__pycache__/**
+**/.pytest_cache/**
+**/target/**
+
+# --- Per-door add-ons (recommended; uncomment in a door-scoped .cursorignore) ---
+# research_read: nothing extra — broadest read door.
+# agentsmini_build / worktree_feature: add sibling projects you are NOT working in, e.g.
+#   /Users/ewansair/other-project/**
+# central_handoff: add non-handoff estate trees you do not need to read here.

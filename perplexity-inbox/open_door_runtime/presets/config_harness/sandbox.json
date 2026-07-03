@@ -1,0 +1,13 @@
+{
+  "type": "workspace_readwrite",
+  "additionalReadwritePaths": [
+    "/Users/ewansair/.cursor/hooks"
+  ],
+  "additionalReadonlyPaths": [
+    "/Users/ewansair/.cursor"
+  ],
+  "networkPolicy": {
+    "default": "deny",
+    "allow": []
+  }
+}

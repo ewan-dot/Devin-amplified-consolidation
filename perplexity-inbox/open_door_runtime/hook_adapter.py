@@ -11,9 +11,15 @@ Behaviour is controlled by env OPEN_DOOR_MODE (default "scaffold" = pass-through
     nudge    : out-of-scope -> allow + nudge message (never blocks).
     deny     : out-of-scope -> "deny" for enforcing doors only; else nudge.
 
-Door-independent hard lines (secrets, Red-core, git push) deny in every mode.
-FAIL-OPEN: any error prints {"permission":"allow"} so a misconfig can never
-wedge a Cursor session — mirroring the existing pre-bash-guard.py / before-read-file.sh.
+Two failure stances, on purpose (research: hooks are fail-open unless failClosed:true):
+  * HARD-DENY CORE (secrets, Red-core destroy/launder, git push on Mac) is
+    evaluated FIRST by a self-contained, manifest-independent probe and is
+    FAIL-CLOSED for shell/MCP: if that probe itself errors, the call is DENIED.
+    Pair this with `"failClosed": true` on the wired hook in hooks.json
+    (see hooks-failclosed.snippet.json) so a crash/timeout/bad-JSON also denies.
+  * DOOR-SCOPE decision (in/out of the active door's blast radius) stays
+    FAIL-OPEN: a scope-check error prints {"permission":"allow"} so a misconfig
+    can never wedge a session — mirroring pre-bash-guard.py / before-read-file.sh.
 =============================================================================
 
 Usage (from a hook dispatcher):  echo "$INPUT" | python3 hook_adapter.py shell
@@ -54,16 +60,72 @@ def _load_enforcement():
     return mod
 
 
-def main():
-    # Fail-open around EVERYTHING.
-    try:
-        event = sys.argv[1] if len(sys.argv) > 1 else "shell"
-        raw = sys.stdin.read()
-        try:
-            data = json.loads(raw) if raw.strip() else {}
-        except Exception:
-            _allow(); _witness("allow", "stdin parse error -> fail-open"); return
+# --------------------------------------------------------------------------
+# HARD-DENY CORE — self-contained + manifest-independent, so it holds even if
+# doors-v1.json is missing/corrupt. Kept tiny + deterministic so it (almost)
+# never errors; the caller treats any error here as DENY for shell/MCP.
+# These fragments mirror doors-v1.json universal_rules; they are the LAST-DITCH
+# fallback, not the source of truth.
+# --------------------------------------------------------------------------
+_CORE_SECRET_FRAGS = [".env", "keys.env", "secrets", "credentials", "id_rsa",
+                      "id_ed25519", ".ssh", "infisical", "op://"]
+_CORE_RED_FRAGS = ["rm -rf", "sudo rm", "git push --force", "git push -f",
+                   "git reset --hard", "mkfs", "dd if=", "curl | sh", "curl|sh",
+                   "wget | sh", "wget|sh", ":(){:|:&};:"]
 
+
+def _probe_hard_deny(event, data):
+    """Return a deny-reason string for a door-INDEPENDENT hard line, else None.
+    No manifest, no filesystem — pure string inspection of the tool input."""
+    path = (data.get("path") or data.get("file_path")
+            or (data.get("tool_input") or {}).get("path") or "")
+    cmd = (data.get("command") or (data.get("tool_input") or {}).get("command") or "")
+    probe = f"{path} {cmd}".lower()
+    for frag in _CORE_SECRET_FRAGS:
+        if frag in probe:
+            return f"secrets/credential material ('{frag}') — NO DOOR EVER"
+    if re.search(r"\bgit\s+push\b", cmd):
+        return "git push on Mac is universal-Red — land via Beast / Devin PR"
+    low = cmd.lower()
+    for frag in _CORE_RED_FRAGS:
+        if frag in low:
+            return f"Red-core destructive/launder pattern ('{frag}') — door-independent"
+    return None
+
+
+def _deny(reason, note, remedy=""):
+    msg = f"[open-door] DENY — {reason}." + (f" Remedy: {remedy}." if remedy else "")
+    print(json.dumps({"permission": "deny", "user_message": msg, "agent_message": msg}))
+    _witness("deny", note)
+
+
+def main():
+    event = sys.argv[1] if len(sys.argv) > 1 else "shell"
+    raw = sys.stdin.read()
+    try:
+        data = json.loads(raw) if raw.strip() else {}
+    except Exception:
+        # Cursor-level failClosed:true (hooks.json) covers the bad-JSON crash case;
+        # here we cannot classify, so fall open at the adapter and let the hook config decide.
+        _allow(); _witness("allow", "stdin parse error -> fail-open (Cursor failClosed covers crash)"); return
+
+    # ---- HARD-DENY CORE — FAIL CLOSED for shell/MCP ----
+    try:
+        core_reason = _probe_hard_deny(event, data)
+    except Exception as exc:
+        if event in ("shell", "mcp"):
+            _deny("open-door hard-deny core errored — failing CLOSED",
+                  f"failClosed core error: {exc}",
+                  "core check could not prove the call safe")
+            return
+        core_reason = None  # reads/other: fall open (real read boundary is .cursorignore)
+    if core_reason:
+        _deny(core_reason, f"hard-core: {core_reason}",
+              "no door opens this; exit is not a remedy")
+        return
+
+    # ---- DOOR-SCOPE decision — FAIL OPEN (never wedge on a scope miss) ----
+    try:
         # Mode resolution order: env OPEN_DOOR_MODE -> ~/.amplified/open-door-mode -> "scaffold".
         # The file fallback lets Ewan flip staged->nudge->deny by editing one tiny file
         # (no env plumbing into Cursor, no restart). See ACTIVATION.md.

@@ -1,0 +1,20 @@
+// STAGED preset — door: worktree_feature (feature work in an isolated worktree). NOT wired.
+// git-write: commit-local (push always denied). Prefer Cursor-native /worktree lifecycle (research R4).
+{
+  "terminalAllowlist": [
+    "ls", "cat", "head", "tail", "rg", "grep", "find", "echo", "pwd", "mkdir", "touch",
+    "git status", "git log", "git diff", "git show", "git branch", "git add", "git commit", "git checkout", "git switch", "git stash", "git worktree",
+    "python3", "python", "pytest", "node", "npm", "pnpm", "yarn", "cargo", "go", "make"
+  ],
+  "autoRun": {
+    "allow_instructions": [
+      "Edit, build, test, and 'git add/commit' inside the bound worktree subtree are fine to auto-run."
+    ],
+    "block_instructions": [
+      "Writes outside the bound worktree subtree should go through approval — this door is scoped to one worktree.",
+      "NEVER 'git push' or push to any remote on this Mac — landing goes via Beast/Devin PR (AGENTS.md, read-only Mac). Route any push to approval.",
+      "Never read, print, copy, or exfiltrate credential material (.env, keys.env, secrets, id_rsa, ~/.ssh, Infisical, op://) — no door opens these.",
+      "Route any destructive command to approval first: 'rm -rf', 'sudo rm', 'dd if=', 'mkfs', 'git reset --hard', 'git push --force', or piping curl/wget into a shell."
+    ]
+  }
+}

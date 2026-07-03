@@ -1,0 +1,20 @@
+// STAGED preset — door: agentsmini_build (build/iterate one bounded project). NOT wired.
+// git-write: commit-local (push always denied). Door enter = copy to ~/.cursor/permissions.json.
+{
+  "terminalAllowlist": [
+    "ls", "cat", "head", "tail", "rg", "grep", "find", "echo", "pwd", "mkdir", "touch",
+    "git status", "git log", "git diff", "git show", "git branch", "git add", "git commit", "git checkout", "git switch", "git stash",
+    "python3", "python", "pytest", "node", "npm", "pnpm", "yarn", "cargo", "go", "make", "ruff", "eslint"
+  ],
+  "autoRun": {
+    "allow_instructions": [
+      "Build, test, lint, and 'git add/commit' inside the bound project subtree are fine to auto-run."
+    ],
+    "block_instructions": [
+      "Writes outside the bound project subtree should go through approval — exit to another door for shared paths.",
+      "NEVER 'git push' or push to any remote on this Mac — landing goes via Beast/Devin PR (AGENTS.md, read-only Mac). Route any push to approval.",
+      "Never read, print, copy, or exfiltrate credential material (.env, keys.env, secrets, id_rsa, ~/.ssh, Infisical, op://) — no door opens these.",
+      "Route any destructive command to approval first: 'rm -rf', 'sudo rm', 'dd if=', 'mkfs', 'git reset --hard', 'git push --force', or piping curl/wget into a shell."
+    ]
+  }
+}

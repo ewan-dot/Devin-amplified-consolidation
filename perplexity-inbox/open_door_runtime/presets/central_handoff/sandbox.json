@@ -1,0 +1,19 @@
+{
+  "type": "workspace_readwrite",
+  "additionalReadwritePaths": [
+    "/Users/ewansair/amplified-pipeline",
+    "/Users/ewansair/ingestion-to-research-pipe/perplexity-inbox"
+  ],
+  "additionalReadonlyPaths": [
+    "/Users/ewansair/Code"
+  ],
+  "networkPolicy": {
+    "default": "deny",
+    "allow": [
+      "vellum.beast.amplifiedpartners.ai",
+      "beast-amplified.tail27a0cc.ts.net",
+      "search.beast.amplifiedpartners.ai",
+      "100.64.0.0/10"
+    ]
+  }
+}

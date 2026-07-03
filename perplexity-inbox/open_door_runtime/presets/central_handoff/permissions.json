@@ -1,0 +1,24 @@
+// STAGED preset — door: central_handoff (write shared artefacts + baton/Vellum handoff). NOT wired.
+// Absorbs vellum_witness (SSOT C-2). git-write: commit-local (push always denied).
+{
+  "mcpAllowlist": [
+    "user-vellum:*",
+    "user-codex-mcp:fetch_credential"
+  ],
+  "terminalAllowlist": [
+    "ls", "cat", "head", "tail", "rg", "grep", "find", "echo", "pwd", "mkdir", "touch", "cp", "mv",
+    "git status", "git log", "git diff", "git show", "git add", "git commit", "git branch",
+    "curl", "python3"
+  ],
+  "autoRun": {
+    "allow_instructions": [
+      "Writing artefacts into ~/amplified-pipeline and the perplexity-inbox shared paths, and appending to the Vellum ledger, are the purpose of this door — fine to auto-run.",
+      "Reading a Vellum JWT via the codex-mcp credential broker for ledger append is fine (do not print the value)."
+    ],
+    "block_instructions": [
+      "NEVER 'git push' or push to any remote on this Mac — landing goes via Beast/Devin PR (AGENTS.md, read-only Mac). Route any push to approval.",
+      "Never read, print, copy, or exfiltrate credential material (.env, keys.env, secrets, id_rsa, ~/.ssh, Infisical, op://) — the Vellum JWT is used, never echoed.",
+      "Route any destructive command to approval first: 'rm -rf', 'sudo rm', 'dd if=', 'mkfs', 'git reset --hard', 'git push --force', or piping curl/wget into a shell."
+    ]
+  }
+}

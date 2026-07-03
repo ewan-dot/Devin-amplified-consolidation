@@ -1,0 +1,26 @@
+{
+  "_README": "STAGED hooks.json config fragment — NOT merged into live ~/.cursor/hooks.json. Shows the exact per-script config that MUST accompany wiring the open-door shell/MCP hooks. Research §4: hooks are FAIL-OPEN unless failClosed:true — any deny that matters (git push, secrets, Red core) evaporates on a script error without this. beforeReadFile is left WITHOUT failClosed on purpose (nudge-only; the real read boundary is .cursorignore, research R2).",
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": "./hooks/before-shell-execution.sh",
+        "failClosed": true,
+        "_note": "failClosed:true => if the wrapper crashes/times-out/emits bad JSON, the shell call is DENIED, not allowed. The wrapper's door-scope path stays fail-open internally (never wedge on a scope miss); only the hard-deny CORE (secrets/git-push/Red) benefits from failClosed."
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": "./hooks/before-mcp-execution.sh",
+        "failClosed": true,
+        "_note": "RECOMMENDED addition (not staged in Phase 1): mirror the shell adapter for MCP tool calls so credential-broker / ledger tools are gated fail-closed. Add when an MCP door-check wrapper is authored."
+      }
+    ],
+    "beforeReadFile": [
+      {
+        "command": "./hooks/before-read-file.sh",
+        "_note": "NO failClosed — nudge/telemetry only. beforeReadFile deny is unreliable (research §1); the read boundary is .cursorignore + sandbox protected paths, not this hook."
+      }
+    ]
+  }
+}

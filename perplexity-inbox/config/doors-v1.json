@@ -2,7 +2,7 @@
   "$schema": "https://amplified.partners/schemas/doors-v1.json",
   "version": "1.0.0",
   "updated": "2026-07-03",
-  "status": "PHASE-0 SCAFFOLD — proposed, NOT wired to live hooks",
+  "status": "PHASE-1 STAGED — doors re-architected as permissions.json+sandbox.json presets; still NOT wired to live hooks (see presets + ACTIVATION.md)",
   "philosophy": "Blinkers without ceilings. Choose a door; exactly that door's access opens and nothing else. Switch doors freely (exit + re-enter); never widen a door mid-work. Denial = wrong door for that action, not a curiosity gate. Default is never-stuck.",
   "authored_by": "cursor",
   "epistemic_tier": "INTUITED",
@@ -32,6 +32,31 @@
     "push": "UNIVERSAL RED on Mac — never allowed by any door (see universal_rules.git_push_on_mac)"
   },
   "net_mesh_levels": ["none", "web+searxng", "tailnet", "beast-ssh", "beast-read"],
+  "presets": {
+    "model": "Phase-1 re-architecture (RESEARCH cursor-heavyuser R3): a door is a PRESET of Cursor's own enforced surfaces, not a wall re-coded in shell. 'Door enter' = swap the door's permissions.json + sandbox.json into ~/.cursor/. The macOS Seatbelt sandbox does the walling (STRUCTURED); the shell hook shrinks to nudge/telemetry + a fail-closed hard-deny core (Red core + git push).",
+    "staged_dir": "perplexity-inbox/open_door_runtime/presets/<door>/",
+    "files_per_door": ["permissions.json", "sandbox.json"],
+    "base_read_boundary": "perplexity-inbox/open_door_runtime/presets/_base/cursorignore",
+    "failclosed_hook_config": "perplexity-inbox/open_door_runtime/hooks-failclosed.snippet.json",
+    "not_wired": "STAGED — nothing copied to ~/.cursor/ by Phase 1; see open_door_runtime/ACTIVATION.md.",
+    "placeholder_bindings": {
+      "__PROJECT_SUBTREE__": "marker.project_subtree",
+      "__WORKTREE_SUBTREE__": "marker.worktree_subtree",
+      "__PIPE_RUN_DIR__": "marker.pipe_run_dir",
+      "__CORPUS_DIR__": "marker.corpus_dir",
+      "_rule": "substitute at door-enter from the active-door marker; DROP unbound placeholders (never leave literal — invalid path)."
+    },
+    "net_mesh_to_sandbox": {
+      "none": {"default": "deny", "allow": []},
+      "web+searxng": {"default": "deny", "allow": ["search.beast.amplifiedpartners.ai"], "note": "open-web read rides the WebSearch/Fetch tool, not sandboxed shell egress"},
+      "tailnet": {"default": "deny", "allow": ["vellum.beast.amplifiedpartners.ai", "beast-amplified.tail27a0cc.ts.net", "100.64.0.0/10"]},
+      "beast-read": {"default": "deny", "allow": ["*.beast.amplifiedpartners.ai", "beast-amplified.tail27a0cc.ts.net", "100.64.0.0/10"]},
+      "web+searxng+beast-read": {"default": "deny", "allow": ["search.beast.amplifiedpartners.ai", "*.beast.amplifiedpartners.ai", "beast-amplified.tail27a0cc.ts.net", "100.64.0.0/10"], "note": "pipe_run union"},
+      "ssrf_caveat": "Cursor blocks RFC1918 + cloud-metadata by default; tailnet is CGNAT 100.64.0.0/10. If the hardcoded SSRF guard refuses the tailnet CIDR, estate reach falls back to public *.beast.amplifiedpartners.ai DNS — degrades gracefully, not a hard stop."
+    },
+    "permissions_schema_note": "Cursor permissions.json has NO terminalDenylist; 'deny' intent = autoRun.block_instructions (soft) + the fail-closed hook hard-deny. Only active with a Run Mode; NOT a security boundary (cursor.com/docs/reference/permissions).",
+    "sandbox_protected_paths": "~/.cursor/*.json (INCL hooks.json), .git/config, .git/hooks/**, .cursorignore, .vscode/** are always write-protected by the sandbox; .cursor/{rules,commands,worktrees,skills,agents}/ are writable (cursor.com/docs/reference/sandbox)."
+  },
   "doors": [
     {
       "name": "research_read",

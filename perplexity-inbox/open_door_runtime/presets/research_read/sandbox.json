@@ -1,0 +1,17 @@
+{
+  "type": "workspace_readonly",
+  "additionalReadonlyPaths": [
+    "/Users/ewansair/ingestion-to-research-pipe",
+    "/Users/ewansair/amplified-pipeline",
+    "/Users/ewansair/Code",
+    "/Users/ewansair/clean-build",
+    "/Users/ewansair/ESTATE-NOTES.md",
+    "/Users/ewansair/AGENTS.md"
+  ],
+  "networkPolicy": {
+    "default": "deny",
+    "allow": [
+      "search.beast.amplifiedpartners.ai"
+    ]
+  }
+}

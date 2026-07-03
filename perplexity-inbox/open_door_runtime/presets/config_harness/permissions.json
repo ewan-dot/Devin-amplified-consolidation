@@ -1,0 +1,26 @@
+// STAGED preset — door: config_harness (edit hooks/rules/harness — the sensitive door). NOT wired.
+// git-write: commit-local (push always denied). Split permission (SSOT D1):
+//   - hooks + scripts under ~/.cursor/hooks/**  -> agent-enterable (already unlocked).
+//   - rule .mdc under ~/.cursor/rules/**         -> architect bless required (a second key).
+// NOTE (sandbox reference): ~/.cursor/*.json (INCLUDING hooks.json) is always write-protected by the
+// Seatbelt sandbox and will PROMPT even here — that is intended. Editing hook .sh scripts is free.
+{
+  "terminalAllowlist": [
+    "ls", "cat", "head", "tail", "rg", "grep", "find", "echo", "pwd", "diff",
+    "git status", "git log", "git diff", "git add", "git commit",
+    "python3", "bash", "chmod", "cp"
+  ],
+  "autoRun": {
+    "allow_instructions": [
+      "Editing hook scripts under ~/.cursor/hooks/, running config-lock.sh and update-config-manifest.py, and 'git add/commit' of the harness are the purpose of this door — fine to auto-run.",
+      "Reading anything under ~/.cursor/ for harness work is fine."
+    ],
+    "block_instructions": [
+      "Any change to a rule '.mdc' under ~/.cursor/rules/ MUST go through approval (architect bless: unlock -> edit -> update-config-manifest.py -> lock). Agents must NOT self-rewrite the rules that bind them.",
+      "Editing ~/.cursor/hooks.json (or any ~/.cursor/*.json) should go through approval — it is a sandbox-protected file.",
+      "NEVER 'git push' or push to any remote on this Mac — landing goes via Beast/Devin PR (AGENTS.md, read-only Mac). Route any push to approval.",
+      "Never read, print, copy, or exfiltrate credential material (.env, keys.env, secrets, id_rsa, ~/.ssh, Infisical, op://) — no door opens these.",
+      "Route any destructive command to approval first: 'rm -rf', 'sudo rm', 'dd if=', 'mkfs', 'git reset --hard', 'git push --force', or piping curl/wget into a shell."
+    ]
+  }
+}

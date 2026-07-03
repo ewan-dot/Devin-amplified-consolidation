@@ -1,0 +1,27 @@
+// STAGED preset — door: pipe_run (run the five-stage research pipe / capture). NOT wired.
+// git-write: commit-local (push always denied). SSOT D2 defers this door; encoded for completeness.
+{
+  "mcpAllowlist": [
+    "user-amplified-knowledge-mcp:search_knowledge",
+    "user-amplified-knowledge-mcp:get_entity",
+    "user-amplified-knowledge-mcp:query_entities",
+    "user-amplified-knowledge-mcp:run_query"
+  ],
+  "terminalAllowlist": [
+    "ls", "cat", "head", "tail", "rg", "grep", "find", "echo", "pwd", "mkdir", "touch",
+    "git status", "git log", "git diff", "git add", "git commit",
+    "python3", "python", "jq", "curl"
+  ],
+  "autoRun": {
+    "allow_instructions": [
+      "Running the research pipe (search fan-out, scoring, JSONL logging) and writing into the bound pipe run-dir and ~/amplified-pipeline are fine to auto-run.",
+      "Read-only Brain/SearXNG/web queries for corpus assembly are fine."
+    ],
+    "block_instructions": [
+      "Writes outside the bound pipe run-dir and ~/amplified-pipeline should go through approval.",
+      "NEVER 'git push' or push to any remote on this Mac — landing goes via Beast/Devin PR (AGENTS.md, read-only Mac). Route any push to approval.",
+      "Never read, print, copy, or exfiltrate credential material (.env, keys.env, secrets, id_rsa, ~/.ssh, Infisical, op://) — no door opens these.",
+      "Route any destructive command to approval first: 'rm -rf', 'sudo rm', 'dd if=', 'mkfs', 'git reset --hard', 'git push --force', or piping curl/wget into a shell."
+    ]
+  }
+}
