@@ -1,0 +1,50 @@
+---
+description: All data and artefacts are atomized chunks — fixed packet shape, pointer home, bronze immutable
+alwaysApply: true
+---
+
+# Atomized chunks (fleet default)
+
+**Going forward:** all data is stored as atomized chunks; all artefacts are **created** as atomized chunks. No monolithic prose as SSOT.
+
+## Packet shape
+
+Schema: `amplified-atom-v1` (see `PACKET-SCHEMA__amplified-atom-v1.json` in active corpus folders).
+
+Every atom carries at minimum:
+
+- `atom_id` — content-addressable (normalized hash)
+- `value_type` — LEARNING, DECISION, FILE_PATH, RAW, etc.
+- `content` — the span
+- `pointer_home` — `source_original`, `line_range`, `conversation_id` where applicable
+- `content_date` — not mtime as primary
+- `normalizer_version` — reproducible dedup
+- `epistemic.tier` — INTUITED unless promoted
+
+## Storage ladder
+
+| Layer | What | Rule |
+|-------|------|------|
+| **Bronze** | Raw + all atoms | Immutable; originals never deleted |
+| **Silver** | Projections / indexes | Derived; can rebuild from bronze |
+| **Synthesis** | Maps, answers | Overlay only; architect-gated; not truth |
+
+Markdown/PDF exports are **views**, not source of truth.
+
+## When creating anything
+
+- Research conclusions, batons, learnings, path indexes, methodology records → emit **JSONL atoms** (+ optional human-readable view)
+- Idea dedup at atom grain; nuance (`only_in_older`) preserved — do not silent latest-wins
+- `FILE_PATH` atoms for every path mentioned — "where is everything" is first-class
+
+## Reference implementation
+
+- Cursor threads corpus: `~/amplified-pipeline/cursor-threads__consolidation__v02__2026-07-05/`
+- Scripts: `skill/scripts/atomize_versions.py`, `extract_path_index.py`, `query_atoms.py`
+- Skill: `amplified-spike-swarm-consolidation` (gather → spike → atomize → nuance)
+
+## Non-goals
+
+- Do not ship large unstructured blobs as the durable artefact
+- Do not auto-synthesize "best technique" without architect gate
+- Do not drop superseded spans — bronze keeps everything
