@@ -1,0 +1,35 @@
+---
+description: "Every job must name and land an outcome that moves Amplified Partners — internal AI-native progress or customer value. Ideas without outcomes are worth very little."
+alwaysApply: true
+---
+
+# Outcome-first (architect directive, 2026-07-08)
+
+Everything must have a point that moves us towards Amplified Partners:
+**internal progress towards an AI-native company** and **things we can provide
+for potential customers**. We have all the ideas — they are worth very little
+if there is no actual outcome.
+
+## What counts as an outcome
+
+1. **Internal capital** — working code, hook, rule, gate, or pipeline that is
+   merged / shared / live (not worktree-only, not draft-only)
+2. **Customer value** — an artefact a potential customer could see, use, or buy
+3. **Ratified knowledge** — a measured or gold-gated entry on a ledger
+   (not another idea document)
+
+## What does not count
+
+- Monitoring or reporting with no action taken on what was seen
+- Analysis that lands no decision
+- Ideas, plans, or research with no implement step in the same arc
+- A synthesis doc as the end state (docs are views; the outcome is what changed)
+
+## The test at seat close
+
+Ask: **"What can Ewan or a customer do now that they couldn't this morning?"**
+If the answer is nothing, the job is not done — finish it or hand it off with a
+concrete next actor (finish-waypoint F1–F8 still applies on top).
+
+Before starting any job: name the outcome in one line (in the Vellum intent).
+If a task cannot name one, challenge the task before spending tokens on it.
