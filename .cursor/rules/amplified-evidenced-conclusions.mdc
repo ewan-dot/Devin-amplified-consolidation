@@ -1,0 +1,54 @@
+---
+description: "Amplified evidenced conclusions digest — data/atomisation/labelling doctrine, evidence classes, keystone chain. Load when working on chunking, labelling, calibration, corpus, retrieval, or synthesis pipeline design."
+alwaysApply: false
+---
+
+# Amplified Evidenced Conclusions (reference digest)
+
+Full document (SSOT, with citations and artifact checks):
+`/Users/ewansair/Scoped-agentic-work-space-01-07-2026/AMPLIFIED-CONCLUSIONS__evidenced-handoff__v02__2026-07-08.md`
+
+Tally: 22 `DOCTRINE` · 4 `CITED` · 3 `MEASURED` · 1 `OPEN`. Checks bound fabrication, not
+correctness — "32/32 passed" means nothing is invented, not everything is true. Doctrine is
+tested only by the entry-22 calibration experiment (not yet run).
+
+## Evidence classes
+
+- `MEASURED` — estate number/state, rerunnable script
+- `CITED` — published research, fetched + title-matched
+- `DOCTRINE` — ratified design choice; build on it, but it is a choice, not a fact
+- `OPEN` — not concluded
+
+## Core doctrine (build to this)
+
+- **Chunk first** — the atom (one topic/fact) is the unit; labelling/translation/rating are per-atom lenses, never whole-file ops
+- **Lossless bronze, curated projection** — keep everything verbatim; curation is a rebuildable projection over bronze, never a trim of it
+- **Provenance is positional** — folder = source, subfolder = day; capture writes no metadata
+- **Consistency > accuracy** in labels — a consistent label is an address; correctness is earned only by calibration against gold
+- **Deterministic-first labelling** — swarm proposes, fixed vocabulary normalises
+- **Granularity is a SPEC** (proposition grain), not a model property — else each model drifts to its own prior (CITED)
+- **Harden/synthesise split** — deterministic orchestrator gates sequence/state, never judges merit; model synthesises inside each gated stage
+- **Test design is human, prior-art-grounded** — never authored by the AI it judges; judge = different model, position randomised (CITED)
+- **Two value axes kept apart** — epistemic confidence (min-rule tier invariant) vs salience (0–5)
+- **Gold is borrowed, not hand-authored** — calibrate against published corpora; Krippendorff's α ≥ 0.8 accept (≥ 0.667 tentative) (CITED)
+- **Artefact ≠ conclusion** — raw thread is ground truth; generated synthesis is cross-checked against it, never overrides it
+
+## The keystone chain
+
+Small chunk ⇒ small labelling jump ⇒ accurate probabilistic choice ⇒ accurate blocks narrow
+output spread ⇒ curate corpus to fit the weights (context-engineering over fine-tuning) ⇒
+deterministic scaffold gates every seam (per-step accuracy multiplies — one ungated link rots
+downstream) ⇒ retrieval lenses (vector/graph/relational) over one substrate; cross-lens
+agreement = evidence, disagreement = gate flag ⇒ gates teach: bounce with counterexample,
+model re-chooses, loop converges.
+
+## Load-bearing next step
+
+**Entry 22: calibrate ONE labelling axis to MEASURED** against borrowed gold + α. This is the
+single experiment that converts the doctrine from choice to tested choice. Prioritise it over
+adding new doctrine.
+
+## Measured base (as of 2026-07-08)
+
+651 labelled atoms (line-counted) · 95 chunk-lake files (embeddings/categorisation pending) ·
+9,496 claims-lens points across 83 files · prompt-cache re-reads $0.003–0.009/doc.
