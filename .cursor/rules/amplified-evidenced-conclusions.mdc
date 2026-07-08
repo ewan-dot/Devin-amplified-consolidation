@@ -8,9 +8,16 @@ alwaysApply: false
 Full document (SSOT, with citations and artifact checks):
 `/Users/ewansair/Scoped-agentic-work-space-01-07-2026/AMPLIFIED-CONCLUSIONS__evidenced-handoff__v02__2026-07-08.md`
 
+**Update 2026-07-08 evening — current SSOT is v03** (adds Part 8 delta):
+`/Users/ewansair/Scoped-agentic-work-space-01-07-2026/AMPLIFIED-CONCLUSIONS__evidenced-handoff__v03__2026-07-08.md`
+Internal ledger with machine-checked L/R evidence IDs and validator:
+`/Users/ewansair/Scoped-agentic-work-space-01-07-2026/00-CONCLUSIONS__v2-EVIDENCED__2026-07-08.md`
+
 Tally: 22 `DOCTRINE` · 4 `CITED` · 3 `MEASURED` · 1 `OPEN`. Checks bound fabrication, not
 correctness — "32/32 passed" means nothing is invented, not everything is true. Doctrine is
 tested only by the entry-22 calibration experiment (not yet run).
+*Update 2026-07-08 evening: the experiment HAS now run — see "Calibration status" below;
+v03 tally is 27 `DOCTRINE` · 4 `CITED` · 6 `MEASURED` · 1 `OPEN`.*
 
 ## Evidence classes
 
@@ -48,7 +55,29 @@ model re-chooses, loop converges.
 single experiment that converts the doctrine from choice to tested choice. Prioritise it over
 adding new doctrine.
 
+## Calibration status (update 2026-07-08 evening)
+
+**First run COMPLETE and FAILED promotion: α = 0.398 < 0.667 gate** (speech_act axis vs
+published gold). Exact agreement 0.767; estate inter-rater α negative → the label **scheme
+definitions** are at fault, not the raters. Promotion refused; α-recompute with the 0.667
+threshold pinned in CI. Read every DOCTRINE entry as a choice whose first test bounced with
+a counterexample — the loop working, not failing.
+
+## Delta doctrine (2026-07-08 evening, v03 Part 8)
+
+- **Worktree contract is the unit of work** — one task = one worktree = one branch = one
+  witness; third-party CI green is the only "done"; gate-file edits need a second identity
+- **"Fix it as you find it"** — smallest reversible fix immediately, witnessed
+- **Should→How conversion** — each DOCTRINE→CITED/MEASURED promotion removes a "should" and
+  leaves a schedulable "how"; a failed gate that merely schedules the next attempt proves the
+  foundation sound
+- **Structural usefulness rater** — usefulness = counts over structure (field-spread,
+  claim–evidence–warrant completeness, pattern centrality); architect ratifies axes only;
+  supersedes architect-as-gold-rater
+- **Consolidation ratio 0.60 measured** (small n) for the recall→consolidate model pair
+
 ## Measured base (as of 2026-07-08)
 
 651 labelled atoms (line-counted) · 95 chunk-lake files (embeddings/categorisation pending) ·
-9,496 claims-lens points across 83 files · prompt-cache re-reads $0.003–0.009/doc.
+9,496 claims-lens points across 83 files · prompt-cache re-reads $0.003–0.009/doc ·
+speech_act calibration α 0.398 (failed gate, re-run in CI) · consolidation ratio 0.60 (small n).
