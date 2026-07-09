@@ -1,24 +1,28 @@
 #!/usr/bin/env bash
-# beforeReadFile — nudge noisy paths; fail-open (push door)
-set -euo pipefail
+# =============================================================================
+# LIVE open-door wrapper for beforeReadFile (activated 2026-07-03).
+# Profile: door-scope = NUDGE only (blocks nothing); deny-core secret probe
+# still applies. Chains: door check -> original noisy-path nudge
+# (before-read-file.orig.sh). Fail-open everywhere. NO failClosed in hooks.json
+# on purpose (read boundary is .cursorignore, not this hook).
+# Backups: before-read-file.sh.pre-door.<ts>.bak ; chain: before-read-file.orig.sh
+# =============================================================================
+set -uo pipefail
 INPUT=$(cat)
+# Hardcoded because Cursor hook processes do not inherit the interactive shell env.
+OPEN_DOOR_HOME="${OPEN_DOOR_HOME:-/Users/ewansair/_worktrees/open-door-phase0/perplexity-inbox/open_door_runtime}"
+ORIG="$(dirname "$0")/before-read-file.orig.sh"
 
-PATH_VAL=""
-if command -v jq >/dev/null 2>&1; then
-  PATH_VAL=$(echo "$INPUT" | jq -r '.path // .file_path // .tool_input.path // empty' 2>/dev/null || true)
+DOUT=$(printf '%s' "$INPUT" | python3 "$OPEN_DOOR_HOME/hook_adapter.py" read 2>/dev/null || echo '{"permission":"allow"}')
+
+if printf '%s' "$DOUT" | grep -q '"permission"[[:space:]]*:[[:space:]]*"deny"'; then
+  printf '%s\n' "$DOUT"; exit 0
 fi
-
-if [[ -z "$PATH_VAL" ]]; then
+if printf '%s' "$DOUT" | grep -q 'additional_context'; then
+  printf '%s\n' "$DOUT"; exit 0
+fi
+if [[ -f "$ORIG" ]]; then
+  printf '%s' "$INPUT" | bash "$ORIG"
+else
   echo '{"permission":"allow"}'
-  exit 0
 fi
-
-case "$PATH_VAL" in
-  *.lock|*.min.js|*.map|*/node_modules/*|*/__pycache__/*|*/.pytest_cache/*)
-    echo '{"permission":"allow","agent_message":"beforeReadFile: noisy path — prefer rg/head on a slice; proceed if you need the full file.","additional_context":"[read-nudge] Token-heavy path — rg/head first unless you deliberately need the whole file."}'
-    exit 0
-    ;;
-esac
-
-echo '{"permission":"allow"}'
-exit 0
