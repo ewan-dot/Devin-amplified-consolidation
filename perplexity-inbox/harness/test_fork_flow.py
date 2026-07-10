@@ -58,6 +58,7 @@ class TestForkFlow(unittest.TestCase):
     def registry(self) -> dict:
         return {
             "schema_version": "armamentarium/v1",
+            "required_aspects": ["discovery-forking"],
             "working_hypotheses": [{
                 "id": "fork-flow-baseline-v1",
                 "aspect": "discovery-forking",
@@ -84,6 +85,14 @@ class TestForkFlow(unittest.TestCase):
                 },
             ],
         }
+
+    def test_resolver_rejects_missing_required_aspect(self):
+        with TemporaryDirectory() as temporary:
+            contract = self.contract(Path(temporary))
+            registry = self.registry()
+            registry["required_aspects"] = ["discovery-forking", "review-gate"]
+            with self.assertRaisesRegex(ValueError, "required aspect unselected: review-gate"):
+                resolve(contract, registry)
 
     def test_valid_contract_with_resolving_paths(self):
         with TemporaryDirectory() as temporary:

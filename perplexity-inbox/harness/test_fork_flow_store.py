@@ -2,6 +2,7 @@
 """Tests for the append-only fork-flow lifecycle store."""
 from __future__ import annotations
 
+import os
 import sys
 import unittest
 from pathlib import Path
@@ -13,20 +14,20 @@ HARNESS_DIR = Path(__file__).resolve().parent
 sys.path.append(str(HARNESS_DIR))
 
 from fork_flow import validate_index
-from fork_flow_store import build_projection, create, load_events, transition, write_projection
+from fork_flow_store import build_projection, create, load_events, resume, transition, write_projection
 
 
 class TestForkFlowStore(unittest.TestCase):
-    def write_contract(self, root: Path) -> Path:
+    def write_contract(self, root: Path, fork_id: str = "fork-store-001") -> Path:
         worktree = root / "worktree"
         output = root / "output"
         validation = root / "validation"
         baton = root / "baton"
         for path in (worktree, output, validation, baton):
-            path.mkdir()
+            path.mkdir(exist_ok=True)
         contract = {
             "schema_version": "fork-contract/v1",
-            "fork_id": "fork-store-001",
+            "fork_id": fork_id,
             "parent_job": "parent-test",
             "discovery_trigger": "A bounded discovery needs its own lane.",
             "working_hypothesis": {"role": "investigating", "statement": "Events preserve the lifecycle."},
@@ -97,6 +98,31 @@ class TestForkFlowStore(unittest.TestCase):
             transition(store, "fork-store-001", "checked")
             with self.assertRaisesRegex(ValueError, "verdict_path"):
                 transition(store, "fork-store-001", "used")
+
+    def test_park_resume_claim_collision_and_blocked_baton(self):
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            os.environ["AMPLIFIED_INBOX"] = str(root / "inbox")
+            (root / "inbox" / "batons" / "active").mkdir(parents=True)
+            contract = self.write_contract(root)
+            store = root / "store"
+            create(store, contract)
+            resume(store, "fork-store-001", owner="cursor-child")
+            transition(store, "fork-store-001", "running")
+            transition(store, "fork-store-001", "parked", reason="pause")
+            with self.assertRaisesRegex(ValueError, "claim collision"):
+                resume(store, "fork-store-001", owner="other-agent")
+            resume(store, "fork-store-001", owner="cursor-child")
+            transition(store, "fork-store-001", "running")
+            blocked = transition(
+                store,
+                "fork-store-001",
+                "blocked",
+                reason="needs handoff",
+            )
+            self.assertTrue(Path(blocked["baton_path"]).is_file())
+            projection = build_projection(store)
+            self.assertIn("fork-store-001", projection["views"]["blocked"])
 
 
 if __name__ == "__main__":
