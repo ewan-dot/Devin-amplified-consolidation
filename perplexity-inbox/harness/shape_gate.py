@@ -132,7 +132,8 @@ def _metadata_has_secret(fm: dict[str, Any]) -> bool:
 
 def _path_ok(path: str) -> bool:
     try:
-        resolved = Path(path).expanduser().resolve()
+        candidate = Path(path).expanduser()
+        resolved = (ssot_root() / candidate).resolve() if not candidate.is_absolute() else candidate.resolve()
     except OSError:
         return False
     roots = [

@@ -1,0 +1,8 @@
+# The external reviewer completes this receipt; an absent receipt keeps promotion pending.
+schema_version: armamentarium-review-receipt/v1
+reviewer: <attributable-reviewer-identity>
+pack_sha256: <sha256-of-review-pack.json>
+verdict: pass # pass | fail | uncertain
+dissent: ""
+evidence_pointers:
+  - <review-url-or-immutable-output-path>

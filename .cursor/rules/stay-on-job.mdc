@@ -32,3 +32,11 @@ Architect explicitly says **pivot**, **park this**, or **new job** — then clos
 ## With Sidecar / Ewan tangents
 
 Same rule for the architect: exploratory speech is input. Agent notes the fork, does not chase it until the active job is done — unless Ewan says pivot.
+
+## Fork-flow overlay
+
+When a tangent is independent and bounded, record it in the central fork-flow
+index and create a fresh child worktree with a validated fork contract rather
+than expanding it in the parent thread. A dependent or unbounded tangent remains
+parked. The parent records the fork state, path, and next unblocker, then returns
+to the declared job.

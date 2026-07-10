@@ -8,6 +8,9 @@ working_hypotheses:
     statement: "A bounded discovery is recorded as a fork or park before it can interrupt its parent job."
     evidence_pointers:
       - /Users/ewansair/.cursor/plans/fork-flow_f7830bcf.plan.md
+      - https://developers.openai.com/api/docs/guides/agents/orchestration
+      - https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+      - https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/evaluation-agents
     replacement_history: []
   - id: fork-flow-dogfood-candidate-v1
     aspect: discovery-forking
