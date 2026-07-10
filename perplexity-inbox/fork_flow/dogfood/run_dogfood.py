@@ -256,7 +256,8 @@ def main() -> int:
     if left != right:
         print(f"FAIL: projections diverged; see {compare_path}", file=sys.stderr)
         return 1
-    # Record harness suite output into the dogfood folder.
+    # Record harness suite output into the dogfood folder (exclude this dogfood
+    # smoke itself to avoid recursive re-entry).
     suite = subprocess.run(
         [
             sys.executable,
@@ -266,7 +267,6 @@ def main() -> int:
             "test_fork_flow_store",
             "test_armamentarium_review",
             "test_armamentarium_friction",
-            "test_fork_flow_dogfood",
         ],
         cwd=str(HARNESS),
         capture_output=True,

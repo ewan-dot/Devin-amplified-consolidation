@@ -29,11 +29,41 @@ receipt supports a deliberate promotion.
 
 ```sh
 python3 perplexity-inbox/harness/fork_flow_store.py create /absolute/contract.yaml
+python3 perplexity-inbox/harness/fork_flow_store.py park --contract /absolute/contract.yaml
+python3 perplexity-inbox/harness/fork_flow_store.py resume <fork-id> --owner <agent>
 python3 perplexity-inbox/harness/fork_flow_store.py claim <fork-id> --owner <agent>
 python3 perplexity-inbox/harness/fork_flow_store.py transition <fork-id> running
+python3 perplexity-inbox/harness/fork_flow_store.py transition <fork-id> blocked --reason "handoff"
+python3 perplexity-inbox/harness/fork_flow_store.py validate <fork-id>
 python3 perplexity-inbox/harness/fork_flow_store.py rebuild-index \
-  --output /absolute/fork-park-index.yaml
+  --output ~/amplified-pipeline/data/fork-flow/fork-park-index.yaml
 ```
+
+Blocked transitions write a baton and record `baton_path` in the event log.
+
+## Friction and promotion
+
+Friction events point at a frozen selection manifest and emit a proposed registry
+delta. Promotion still requires a local validation receipt **and** a third-party
+review receipt with `verdict: pass`.
+
+```sh
+python3 perplexity-inbox/harness/armamentarium_friction.py record \
+  /absolute/selection-manifest.json \
+  --aspect discovery-forking \
+  --observation "..." \
+  --proposed-change /absolute/proposed-change.yaml \
+  --output /absolute/friction-events.jsonl
+```
+
+## Local dogfood
+
+```sh
+python3 perplexity-inbox/fork_flow/dogfood/run_dogfood.py
+```
+
+Receipts land under `~/amplified-pipeline/data/fork-flow/dogfood/`. Third-party
+review remains `pending` until an attributable receipt is supplied.
 
 ## External review gate
 
