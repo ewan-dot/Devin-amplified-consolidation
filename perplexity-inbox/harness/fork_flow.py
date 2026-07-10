@@ -190,6 +190,22 @@ def resolve(contract: dict[str, Any], registry: dict[str, Any]) -> dict[str, Any
                 if not isinstance(item.get(field), str) or not item[field].strip():
                     errors.append(f"registry pathway {identifier}: missing {field}")
             selected_pathways.append(item)
+
+    required_aspects = registry.get("required_aspects", [])
+    if not isinstance(required_aspects, list):
+        errors.append("registry.required_aspects: expected a list")
+        required_aspects = []
+    selected_aspects = {
+        item.get("aspect") for item in selected_hypotheses if isinstance(item.get("aspect"), str)
+    }
+    missing_aspects = [
+        aspect
+        for aspect in required_aspects
+        if isinstance(aspect, str) and aspect.strip() and aspect not in selected_aspects
+    ]
+    for aspect in missing_aspects:
+        errors.append(f"armamentarium_selection: required aspect unselected: {aspect}")
+
     if errors:
         raise ValueError("\n".join(errors))
     return {
@@ -200,6 +216,8 @@ def resolve(contract: dict[str, Any], registry: dict[str, Any]) -> dict[str, Any
         "compounding_goal": contract["goals"]["compounding"],
         "hypotheses": selected_hypotheses,
         "pathways": selected_pathways,
+        "selected_aspects": sorted(selected_aspects),
+        "required_aspects": list(required_aspects),
         "checkpoints": contract["checkpoints"],
         "validation": contract["validation"],
         "return": contract["return"],

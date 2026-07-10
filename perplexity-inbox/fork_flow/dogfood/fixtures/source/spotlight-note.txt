@@ -1,0 +1,3 @@
+Parent continuity note: keep the declared job moving.
+
+Child discovery: a bounded fork should park, resume, validate, and close with a used or discarded verdict while third-party review stays pending.

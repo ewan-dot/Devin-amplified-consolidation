@@ -1,11 +1,19 @@
 schema_version: armamentarium/v1
 status: working_hypothesis
+required_aspects:
+  - discovery-forking
 working_hypotheses:
   - id: fork-flow-baseline-v1
     aspect: discovery-forking
     role: in_use
     version: v1
+    validation_status: local_dogfood_only
     statement: "A bounded discovery is recorded as a fork or park before it can interrupt its parent job."
+    constituent_parts:
+      - contract
+      - event-log
+      - selection-manifest
+      - review-receipt-gate
     evidence_pointers:
       - /Users/ewansair/.cursor/plans/fork-flow_f7830bcf.plan.md
       - https://developers.openai.com/api/docs/guides/agents/orchestration
@@ -16,7 +24,11 @@ working_hypotheses:
     aspect: discovery-forking
     role: investigating
     version: v1
+    validation_status: pending_third_party_review
     statement: "Dogfood evidence can refine the baseline without promoting a prose claim."
+    constituent_parts:
+      - fixture-dogfood
+      - friction-delta
     evidence_pointers: []
     replacement_history: []
 pathways:

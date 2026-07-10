@@ -12,8 +12,9 @@ INPUT=$(cat)
 compact=$(echo "$INPUT" | python3 "$DIR/stop-compact-nudge.py")
 compound=$(echo "$INPUT" | python3 "$DIR/stop-self-compound-check.py")
 vellum=$(echo "$INPUT" | python3 "$DIR/stop-vellum-actual.py")
+chase=$(python3 "$DIR/fork-checkpoint-chase.py" || echo '{}')
 
-python3 - "$compact" "$compound" "$vellum" <<'PY'
+python3 - "$compact" "$compound" "$vellum" "$chase" <<'PY'
 import json, sys
 msgs = []
 for raw in sys.argv[1:]:
