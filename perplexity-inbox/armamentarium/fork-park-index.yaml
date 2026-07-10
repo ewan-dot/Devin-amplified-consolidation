@@ -1,0 +1,5 @@
+schema_version: fork-park-index/v1
+status: working_hypothesis
+# One compact record per discovery. The index and baton are authoritative until
+# a durable task registry replaces them.
+forks: []

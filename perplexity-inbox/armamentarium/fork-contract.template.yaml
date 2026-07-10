@@ -1,0 +1,53 @@
+# Copy, replace every <...> value, then run fork_flow.py validate.
+schema_version: fork-contract/v1
+fork_id: <unique-fork-id>
+parent_job: <parent-job-id>
+discovery_trigger: <concrete-discovery-trigger>
+working_hypothesis:
+  role: investigating
+  statement: <testable-working-hypothesis>
+goals:
+  actual: <concrete-result-for-this-fork>
+  compounding: <reusable-capital-created-by-this-fork>
+ownership:
+  seat: cursor
+  owner: <one-accountable-agent>
+paths:
+  worktree: /absolute/path/to/isolated-worktree
+  branch: <branch-name>
+  shared_output: /absolute/path/to/shared-output
+  validation: /absolute/path/to/validation-output
+  baton: /absolute/path/to/baton
+file_scope:
+  - perplexity-inbox/armamentarium/**
+checkpoints:
+  - id: contract-and-paths
+    required: true
+    pass_condition: "Contract validates and declared paths resolve."
+  - id: worktree-and-scope
+    required: true
+    pass_condition: "Worktree is isolated and changes remain inside file_scope."
+  - id: validation
+    required: true
+    pass_condition: "Declared deterministic and independent checks are recorded."
+  - id: return
+    required: true
+    pass_condition: "Shared output and a used/discarded verdict exist."
+validation:
+  commands:
+    - python3 perplexity-inbox/harness/fork_flow.py validate <contract> --require-existing-paths
+  acceptance_checks:
+    - <pre-registered-check>
+  independent_review:
+    - <external-source-or-separate-ai-review>
+return:
+  condition: "All required checkpoints pass."
+  parent_update: <parent-gets-state-link-and-next-unblocker>
+  verdict_path: /absolute/path/to/used-or-discarded-verdict
+  verdict: used
+armamentarium_selection:
+  hypotheses:
+    - fork-flow-baseline-v1
+  pathways:
+    - fork-contract-validator-v1
+    - worktree-isolation-v1

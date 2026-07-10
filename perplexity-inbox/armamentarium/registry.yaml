@@ -1,0 +1,37 @@
+schema_version: armamentarium/v1
+status: working_hypothesis
+working_hypotheses:
+  - id: fork-flow-baseline-v1
+    aspect: discovery-forking
+    role: in_use
+    version: v1
+    statement: "A bounded discovery is recorded as a fork or park before it can interrupt its parent job."
+    evidence_pointers:
+      - /Users/ewansair/.cursor/plans/fork-flow_f7830bcf.plan.md
+    replacement_history: []
+  - id: fork-flow-dogfood-candidate-v1
+    aspect: discovery-forking
+    role: investigating
+    version: v1
+    statement: "Dogfood evidence can refine the baseline without promoting a prose claim."
+    evidence_pointers: []
+    replacement_history: []
+pathways:
+  - id: fork-contract-validator-v1
+    kind: harness
+    trigger: "before a fork is marked checked"
+    deterministic_check: "Validate required contract fields, safe file scope, roles, goals, checkpoints, validation, and return conditions."
+    failure_outcome: "chase: correct the contract before marking checked"
+    ssot_path: perplexity-inbox/harness/fork_flow.py
+  - id: worktree-isolation-v1
+    kind: harness
+    trigger: "before child implementation"
+    deterministic_check: "Verify the child has a declared isolated worktree and branch."
+    failure_outcome: "chase: create or correct the isolated worktree"
+    ssot_path: perplexity-inbox/harness/agentic_checks.py
+  - id: stop-checkpoint-nudge-v1
+    kind: hook
+    trigger: "subagentStop or seat stop"
+    deterministic_check: "Surface a missing contract, shared output, validation result, or used/discarded return verdict."
+    failure_outcome: "warning/chase only; no hard block until dogfood evidence"
+    ssot_path: perplexity-inbox/.cursor/hooks/stop.sh
