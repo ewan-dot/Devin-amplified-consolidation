@@ -12,7 +12,8 @@ Behaviour is controlled by env OPEN_DOOR_MODE (default "scaffold" = pass-through
     deny     : out-of-scope -> "deny" for enforcing doors only; else nudge.
 
 Two failure stances, on purpose (research: hooks are fail-open unless failClosed:true):
-  * HARD-DENY CORE (secrets, Red-core destroy/launder, git push on Mac) is
+  * HARD-DENY CORE (secrets, Red-core destroy/launder, protected-branch pushes,
+    and merge commands) is
     evaluated FIRST by a self-contained, manifest-independent probe and is
     FAIL-CLOSED for shell/MCP: if that probe itself errors, the call is DENIED.
     Pair this with `"failClosed": true` on the wired hook in hooks.json
@@ -84,8 +85,10 @@ def _probe_hard_deny(event, data):
     for frag in _CORE_SECRET_FRAGS:
         if frag in probe:
             return f"secrets/credential material ('{frag}') — NO DOOR EVER"
-    if re.search(r"\bgit\s+push\b", cmd):
-        return "git push on Mac is universal-Red — land via Beast / Devin PR"
+    if re.search(r"\bgit\s+merge\b|\bgh\s+pr\s+merge\b", cmd):
+        return "merge is the approval gate; present a branch for review instead"
+    if re.search(r"\bgit\s+push\b.*(?:\bmain\b|\bmaster\b)", cmd):
+        return "protected-branch push is denied; push a feature branch for review"
     low = cmd.lower()
     for frag in _CORE_RED_FRAGS:
         if frag in low:

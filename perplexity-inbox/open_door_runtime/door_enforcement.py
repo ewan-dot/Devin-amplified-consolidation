@@ -17,8 +17,8 @@ allow / nudge / deny. Staging is explicit:
                       enforcing set (default = manifest first_hard_deny_doors),
                       NUDGE for the rest.
 
-Door-INDEPENDENT hard lines (secrets, Red-core destroy/launder, git push on
-Mac) return DENY in EVERY mode — they are never gated by a door, and staging
+Door-INDEPENDENT hard lines (secrets, Red-core destroy/launder, protected-branch
+pushes, and merges) return DENY in EVERY mode — they are never gated by a door, and staging
 does not soften them. (This is decision logic only; nothing is wired.)
 
 Renamed/created per SSOT open-door-harness v01 §C-4 (runtime home = open_door_runtime/).
@@ -212,12 +212,17 @@ def decide(action: dict,
                        "universal.secrets_infisical", active_door,
                        "no door opens this; leave it alone", door_independent=True)
 
-    # 2. git push on Mac — universal Red.
+    # 2. Feature-branch pushes present work for external judgement; direct merges
+    # and protected-branch pushes remain outside an agent's authority.
     if action.get("kind") == "git" and action.get("op") == "push":
-        return Verdict(VERDICT_DENY,
-                       "git push on Mac is universal-Red — land via Beast / Devin PR",
-                       "universal.git_push_on_mac", active_door,
-                       "no door grants push", door_independent=True)
+        command = action.get("command", "")
+        if re.search(r"\b(?:main|master)\b", command):
+            return Verdict(VERDICT_DENY,
+                           "protected-branch push is denied",
+                           "universal.protected_branch_push", active_door,
+                           "push a feature branch for review", door_independent=True)
+        return Verdict(VERDICT_ALLOW, "feature-branch push permitted for review",
+                       "door.git.push_feature_branch", active_door)
 
     # 3. Red core destroy/launder commands.
     if action.get("kind") == "shell":
@@ -341,10 +346,12 @@ def _selftest() -> int:
             chk(r.verdict == VERDICT_DENY and r.door_independent,
                 f"secret read -> deny door-independent ({door}/{mode})")
 
-    # 5. git push: DENY under every mode, door-independent.
+    # 5. Feature-branch push presents work; protected-branch push is denied.
     for mode in ("scaffold", "nudge", "deny"):
-        r = decide({"kind": "git", "op": "push"}, "worktree_feature", m, mode)
-        chk(r.verdict == VERDICT_DENY and r.door_independent, f"git push -> deny ({mode})")
+        r = decide({"kind": "git", "op": "push", "command": "git push -u origin HEAD"}, "worktree_feature", m, mode)
+        chk(r.verdict == VERDICT_ALLOW, f"feature push -> allow ({mode})")
+        r = decide({"kind": "git", "op": "push", "command": "git push origin main"}, "worktree_feature", m, mode)
+        chk(r.verdict == VERDICT_DENY and r.door_independent, f"protected push -> deny ({mode})")
 
     # 6. Red-core shell: DENY even in scaffold.
     r = decide({"kind": "shell", "command": "sudo rm -rf /tmp/x"}, "agentsmini_build", m, "scaffold")
