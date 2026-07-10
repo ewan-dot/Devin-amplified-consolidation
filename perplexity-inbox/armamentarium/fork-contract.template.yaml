@@ -44,7 +44,7 @@ return:
   condition: "All required checkpoints pass."
   parent_update: <parent-gets-state-link-and-next-unblocker>
   verdict_path: /absolute/path/to/used-or-discarded-verdict
-  verdict: used
+  verdict: <used or discarded> # replace with used or discarded
 armamentarium_selection:
   hypotheses:
     - fork-flow-baseline-v1

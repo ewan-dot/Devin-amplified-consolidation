@@ -6,6 +6,12 @@
         "command": ".cursor/hooks/after-file-edit-shape-gate.py",
         "matcher": "Write"
       }
+    ],
+    "subagentStop": [
+      {
+        "command": ".cursor/hooks/subagent-stop.sh",
+        "timeout": 5
+      }
     ]
   }
 }

@@ -87,6 +87,8 @@ def validate_contract(contract: dict[str, Any], require_existing_paths: bool = F
             errors.append(f"{field}: required")
     for field in ("schema_version", "fork_id", "parent_job", "discovery_trigger"):
         require_nonempty(contract.get(field), field, errors)
+    if contract.get("schema_version") != "fork-contract/v1":
+        errors.append("schema_version: expected fork-contract/v1")
 
     hypothesis = require_mapping(contract.get("working_hypothesis"), "working_hypothesis", errors)
     require_nonempty(hypothesis.get("statement"), "working_hypothesis.statement", errors)
