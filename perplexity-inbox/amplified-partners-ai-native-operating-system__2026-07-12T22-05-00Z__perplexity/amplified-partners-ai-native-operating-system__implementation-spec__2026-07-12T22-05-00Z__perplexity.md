@@ -37,7 +37,7 @@ preconditions:
   - "Text normalisation version-pinned before any exact-substring gate (norm_v1)."
   - "Frozen corpus + splits pinned before any scored run."
   - "Validators calibrated by planted faults before any validator number is trusted."
-  - "Ewan (or a logged AI_PARTNER_PROXY where the constitution permits) ratifies before any production promotion."
+  - "Ewan ratifies before any production promotion; AI may only prepare and present, never sign or ratify."
 contradiction_status: flagged
 known_contradictions:
   - "Role decomposition helps (CMAS/DocETL) vs decomposition is not worth its cost (Independent Sampling/MAST) — resolved by experiment, not assertion (see §12, §14)."
@@ -63,7 +63,8 @@ companion_research_artefacts:
   - "SYNTHESIS__four-threads-one-engine__v01__2026-07-08__cascade-mac.md"
 provenance:
   canon: "private fleet-config vault (internal provenance): GOALS, CONSTITUTION, HOW-WE-WORK, VELLUM, GITHUB-METHOD, KAIZEN, SHAPE, DIRECTORY, POLICY"
-  doctrine_skills: "amplified-constitution, min-rule, amplified-standing-grants, end-to-end-closure, amplified-research-yaml-frontmatter"
+  doctrine_skills_verified: "validation-gate, vellum-witness, vellum-identity, baton-pass, operator-contract, chunklab-obsidian (present in fleet-config)"
+  doctrine_skills_referenced_not_verified: "NOT VERIFIED — amplified-constitution, min-rule, amplified-standing-grants, end-to-end-closure, amplified-research-yaml-frontmatter (named by doctrine; existence not confirmed in the inspected vault)"
   external: "primary public sources cited inline (arXiv, ACL, ISO, W3C, provider docs)"
 source_refs:
   - https://arxiv.org/abs/2407.21787
@@ -172,7 +173,7 @@ Each principle is translated into a machine-checkable invariant. The same law ap
 | P7 | Security | Least privilege, deny-by-default; secret detection is a hard gate | HARD-HALT on privilege escalation or secret exposure; else degrade | code | loosened perms → blocked |
 | P8 | Sovereignty | Estate runs on its own spine; no external single point of control; client owns their data | HARD-HALT on a dependency that makes a third party load-bearing truth or that writes client data outside client control | code + Ewan | external dep as truth → refused |
 
-- **Ratifier authority (current, provisional).** Ewan holds the pen. AI may act only as `AI_PARTNER_PROXY`, and every proxy act is logged as proxy so it can never hide as Ewan's own; Ewan's own ratification supersedes the proxy the instant it appears. No bare boolean authority: ratification = named signer + reason + timestamp. AI is substrate; **AI is never a signer of record.**
+- **Ratifier authority (current, provisional).** Ewan holds the pen and is the sole ratifier of record. `AI_PARTNER_PROXY` covers only logged *mechanical* acts (e.g. a repo write through the pipe drop-point) — never ratification, never a signature; every proxy act is logged as proxy so it can never hide as Ewan's own. No bare boolean authority: ratification = named human signer + reason + timestamp. AI is substrate; **AI is never a signer or ratifier of record.**
 - **Enforcement is a runtime layer, not a hope.** Pre-submit constitutional hook + Vellum witness make these operable. A seat has standing permission to refuse work that violates a rod.
 
 ## 6a. The no-stranglehold behaviour rule and the progress invariant (binding)
@@ -285,7 +286,7 @@ Capture → normalisation → extraction/sampling → deterministic gates → in
                                                     (append-only, hash-chained, attributed;
                                                      references + decisions, never payloads)
 
-  RATIFICATION: Ewan (or logged AI_PARTNER_PROXY where permitted) ratifies world-changing acts.
+  RATIFICATION: Ewan alone ratifies world-changing acts; AI prepares/presents only, never signs.
   NO DIRECT BEAST WRITE — the only road into Beast is the pipe + the one allowed change path.
   BREAK-GLASS: named, logged, witnessed, reconciled by post-hoc PR ≤24h (the only bypass).
 ```
