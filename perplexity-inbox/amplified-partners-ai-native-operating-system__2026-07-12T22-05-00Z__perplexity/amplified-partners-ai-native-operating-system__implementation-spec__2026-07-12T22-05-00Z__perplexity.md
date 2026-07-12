@@ -25,10 +25,12 @@ epistemic_role: risk_control
 effective_tier_rule: min-rule
 hypothesis:
   status: current_working_hypothesis
-  version: v01
+  version: v02
   valid_until: "2026-10-12"
   amendment_path: "versioned amendment via the one allowed change path (branch → PR → gate → witness); supersede, never edit live"
   falsification: "any gate, threshold or component below fails its stated kill/demotion test → demote and amend this spec"
+  amendments:
+    - "v02 (2026-07-12): incorporate Ewan's final binding clarifications without weakening prior content — blinkers-without-ceilings engineering model (§6b); harness toolbox / push-door law + harness_manifest schema (§6c); agreement-is-a-trigger-not-evidence with agreement_detected → external_validation route (§6a, §9, §15); external validation as a productive anti-mirror feature (§7, §10, §22); compounding-Kaizen over all process evidence (§16); blameless-measurement invariant, no league tables (§15, §21); AI-facing company law (intro, §1, §21)."
 min_rule:
   tiers: [INTUITED, STRUCTURED, MEASURED, PROVEN]
   effective_tier: "minimum of own claim, inputs' tiers, verified preconditions"
@@ -94,7 +96,7 @@ source_refs:
 
 # Amplified Partners — AI-Native Operating System Implementation Specification
 
-*Agent-facing first. This document is the canonical control surface: an executing AI reads the YAML, the enums, the reason codes, the schemas, the tables and the baton, and can act without asking a human to translate the system. Every human-readable paragraph here is a rendered view of a machine-readable contract, not a separate source of truth. Human sovereignty is undiminished: agents may understand state, constraints, evidence and the next permitted action, but ratification of world-changing acts remains with Ewan. Everything below is a **current working hypothesis** — versioned, attributable, falsifiable and replaceable — except the constitutional and privacy/security/sovereignty invariants, which are absolute for now and change only through the ratified amendment path.*
+*Agent-facing first. This document is the canonical control surface: an executing AI reads the YAML, the enums, the reason codes, the schemas, the tables and the baton, and can act without asking a human to translate the system. **AI-facing company law (§1): everything the company creates first answers "what helps the AI complete the job in hand?" — canonical artefacts minimise translation and expose state, evidence, constraints and `next_action`, machine-executable.** Every human-readable paragraph here is a rendered view of that same machine-readable source, not a separate truth. Human sovereignty is undiminished: agent-facing does not mean AI authority inflation — agents may understand state, constraints, evidence and the next permitted action, but ratification of world-changing acts remains with Ewan. Everything below is a **current working hypothesis** — versioned, attributable, falsifiable and replaceable — except the constitutional and privacy/security/sovereignty invariants, which are absolute for now and change only through the ratified amendment path.*
 
 ## 1. The spine (today)
 
@@ -106,6 +108,8 @@ source_refs:
 - **Principles (enforced, current).** Radical honesty, radical transparency, radical attribution, win-win only, idea meritocracy — plus privacy, security, sovereignty. Enforced in code until legitimately superseded through the versioned amendment path.
 - **Composition (current).** Python orchestration + Rust enforcement + specialist code + Vellum deterministic attribution/ledger + deterministic foundation + decentralised intelligence + databases + telemetry + chezmoi configuration + GitHub/GitKraken change control + Kaizen + AI substrate + Ewan's human judgment/ratification = Amplified.
 - **The pipe (ingestion law).** `Python + Rust + Vellum + AI + Human = Amplified`. Nothing enters Beast except through the approved pipe. No direct Beast write, ever.
+- **AI-facing company law (current).** Every artefact, schema, event, gate, map and work package the company produces first answers *"what helps the AI complete the job in hand?"* Canonical form is machine-readable and machine-executable, minimises translation, and exposes state, evidence, constraints and `next_action`. Human views are transparent renderings of that same source, never a separate truth. This serves the north star (the system keeps turning without a human as keystone) and never inflates AI authority (ratification stays human, §7).
+- **Blinkers-without-ceilings engineering model (current).** The rails — hooks, harnesses, deterministic code, isolated worktrees and external validators — are *blinkers*: they bound the path, not the capability. Inside the rails an AI engineer has **no artificial capability ceiling** and is free to create new solutions without infrastructure or security friction, because security, provenance and isolation are **pre-built into the path** rather than imposed as after-the-fact review bureaucracy (see §6b).
 
 ## 2. The lens — why this spec exists tonight
 
@@ -183,7 +187,7 @@ Each principle is translated into a machine-checkable invariant. The same law ap
 - **Code is the deterministic foundation and current enforcement rail, not a frozen cage.** Prefer safe degradation, quarantine, alternate routes, bounded experimentation and reversible progress over blanket blocking.
 - **HARD-HALT is reserved** for exactly: (1) current constitutional violations; (2) privacy/security/sovereignty breaches; (3) direct-Beast side doors; (4) missing attribution/provenance at a production boundary; (5) irreversible authority violations (e.g. AI signing as Ewan, an un-ratified binding commitment). Nothing else halts the world.
 - **Every other failed gate MUST emit:** a `reason_code`, the `evidence`, a `repair_path`, an `amendment_or_falsification_route`, and the `least_restrictive_safe_next_action`.
-- **Progress is an invariant (no-dead-end rule, machine-checkable).** Every non-terminal rejection MUST route to exactly one of: `retry` · `quarantine_with_owner` · `research` · `deterministic_repair_candidate` · `explicit_human_gate` · `hypothesis_amendment`. No warning-only limbo; no circular approval queue. A rejection with no `next_action` + `owner` is itself a P0 (the system failed the progress invariant).
+- **Progress is an invariant (no-dead-end rule, machine-checkable).** Every non-terminal rejection MUST route to exactly one of: `retry` · `quarantine_with_owner` · `research` · `deterministic_repair_candidate` · `external_validation` · `explicit_human_gate` · `hypothesis_amendment`. No warning-only limbo; no circular approval queue. A rejection with no `next_action` + `owner` is itself a P0 (the system failed the progress invariant).
 
 ```yaml
 gate_result_schema:            # every gate in this spec returns this
@@ -192,14 +196,58 @@ gate_result_schema:            # every gate in this spec returns this
   reason_code: <enum, §Reason codes>
   evidence: {<field>: <value>}          # what was observed
   repair_path: <string>                 # how to fix, if degrade
-  route: retry | quarantine_with_owner | research | deterministic_repair_candidate | explicit_human_gate | hypothesis_amendment | none   # none only if verdict=pass
+  route: retry | quarantine_with_owner | research | deterministic_repair_candidate | external_validation | explicit_human_gate | hypothesis_amendment | none   # none only if verdict=pass
   next_action: <imperative>
   owner: <seat, §10>
+  harness_ref: <harness_id(s) that produced this verdict, §6c>   # null only for un-harnessed deterministic gates
   amendment_route: <ref to §4 amendment_path when the rule itself is in question>
   witnessed: true|false                 # Vellum entry emitted
 ```
 
-**Reason-code enum (canonical, extensible via amendment):** `unbacked_claim` · `tier_launder` · `transparency_missing` · `provenance_missing` · `winwin_fail` · `authority_smuggled` · `secret_exposed` · `privilege_escalation` · `external_truth_dep` · `beast_side_door` · `quote_mismatch` · `offset_error` · `schema_violation` · `label_error` · `identity_error` · `unsupported_claim` · `merge_nondestruction_violation` · `consistency_vs_accuracy_conflation` · `stale_valid_until` · `precondition_failed` · `other`.
+**Reason-code enum (canonical, extensible via amendment):** `unbacked_claim` · `tier_launder` · `transparency_missing` · `provenance_missing` · `winwin_fail` · `authority_smuggled` · `secret_exposed` · `privilege_escalation` · `external_truth_dep` · `beast_side_door` · `quote_mismatch` · `offset_error` · `schema_violation` · `label_error` · `identity_error` · `unsupported_claim` · `merge_nondestruction_violation` · `consistency_vs_accuracy_conflation` · `agreement_detected` · `harness_missing` · `harness_unfit` · `measurement_misuse` · `stale_valid_until` · `precondition_failed` · `other`.
+
+- **`agreement_detected` is a trigger, never an acceptance (binding, §6a).** Human↔AI, AI↔AI, repeated-run, or validator agreement raises `agreement_detected` and MUST route to `external_validation` — it *increases* the need for independent checking and never gates acceptance by itself. Agreement/consistency and truth/validity stay distinct (§15). This is the anti-mirror rule: convergence is a question, not an answer.
+
+## 6b. Blinkers-without-ceilings engineering model (binding)
+
+*Ewan's binding clarification, 2026-07-12. This governs how capability relates to control.*
+
+- **The rails are blinkers, not a ceiling.** Hooks, harnesses, deterministic code, isolated worktrees and external validators bound *where* work can go (provenance, isolation, tests, constitutional checks, security, admission) — they do **not** cap *how good or how novel* the solution inside those rails may be.
+- **No artificial capability ceiling inside the rails.** An AI engineer working inside a chosen harness is free to invent, refactor, and reach for the best available solution without infrastructure or security friction, and without asking permission for ordinary engineering moves. Friction that does not protect a HARD-HALT concern (§6a) is a defect to remove, not a control to keep.
+- **Security, provenance and isolation are pre-built into the path, not bolted on after.** They live in the harness the agent picks up (§6c), so the safe path is the easy path. Review bureaucracy imposed *after* the fact is an anti-pattern: shift-left the guarantees into the door.
+- **This does not touch human sovereignty.** A higher capability ceiling for engineering is not a higher authority ceiling: ratification of world-changing acts (§22 G-a..G-e) stays human, and the constitutional / privacy / security / sovereignty invariants (§6) remain absolute.
+
+## 6c. Harness toolbox and push-door law (binding)
+
+*Ewan's binding clarification, 2026-07-12. This governs how harnesses are selected and composed.*
+
+- **Every harness is a modular push-door.** Passing through a door enforces the guarantees it owns (provenance, isolation, tests, constitutional checks, security, admission) while leaving the *solution path open* on the far side. A door constrains entry conditions, not creativity.
+- **Minimum-sufficient selection, agent-chosen.** The working agent selects the minimum sufficient harness — or composition of harnesses — from an agent-facing toolbox according to the job. **No central workflow forces every task through every harness.** Choosing more doors than the job needs is friction; choosing fewer than it needs is a `harness_unfit` degrade.
+- **Record the selection (machine-readable).** Every job records the `harness_manifest` below: which doors were chosen and why, which requirements each satisfied, what evidence each emitted, and which available doors were deliberately **not** used (with reason). Unused-door logging is what keeps selection honest and auditable.
+- **Build a new door through the same path.** If no existing harness fits, the agent MAY propose or build a bounded new harness — through the one allowed change path (§17): branch → PR → gate → Vellum witness. A new harness is itself a hypothesis (§4) with a falsification test; it is never hand-installed outside the path.
+
+```yaml
+harness_manifest:                 # emitted once per job; the agent's door-selection record
+  job_id: <slug>
+  selected: [{harness_id, version, why_selected, requirements_satisfied: [provenance|isolation|tests|constitutional|security|admission], evidence_emitted: [<ref>]}]
+  not_selected: [{harness_id, reason_not_needed}]      # deliberate omissions, audited
+  composition_order: [<harness_id>]                    # if doors are chained
+  new_harness_proposed:                                # null unless none fit
+    {harness_id, purpose, bounded_scope, hypothesis_ref, change_path_pr}
+  selection_rule: "minimum sufficient for the job's HARD-HALT surface + declared requirements; more is friction, less is harness_unfit"
+
+harness_def:                      # one registry entry per available door
+  harness_id: <slug>
+  version: <vNN>
+  guarantees: [provenance|isolation|tests|constitutional|security|admission]
+  applies_to: [<job class>]
+  inputs_required: [<field>]
+  evidence_schema: <ref>
+  measured: {calibrated_with_faults: true|false, false_kill_rate: <n|CALIBRATE>}   # a harness is itself measured (§15)
+  status: active | superseded | proposed
+```
+
+- **Selection rule (machine-checkable).** `harness_missing` degrade if a required guarantee for the job class has no selected door; `harness_unfit` degrade if a selected door does not cover a declared requirement. Both route to `research` or `deterministic_repair_candidate` (or `hypothesis_amendment` to add a door), never to a dead end.
 
 ## 7. Partnership and authority model
 
@@ -209,9 +257,9 @@ Different seats, equal dignity, non-interchangeable authority. No AI-as-hidden-s
 |---|---|---|---|---|
 | Ewan (human, architect) | Lived context, values, consent, judgment, ratification | Doctrine, policy_change, win-win calls, legal/Ulysses commitments | Be the per-task process bottleneck (design goal is to free him) | Is the ratifier of record; his sign supersedes any proxy |
 | Client humans (SMB) | Their data, their consent, their business context, final decisions on their operations | What is discovered, ingested, automated, exported, deleted in *their* tenancy | — | Consent gates every access; they own and can export/delete their data |
-| AI substrate (producer seats) | Scale, search, synthesis, continuous operation, congruence checking | Drafts, recommendations, Tier-A/B acts within standing grants | Sign as Ewan; write Beast directly; ratify binding acts | Acts as logged `AI_PARTNER_PROXY` only where the constitution permits |
-| Validators (semantic + deterministic) | Independent checking (absence-of-wrong) | Accept/reject with reason code | Validate their own producer's output; be same model family as producer | External validation gates acceptance; agreement never does |
-| Code (deterministic core) | Enforcement, determinism, gates | Deterministic pass/degrade/hard-halt per §6/§6a | Become a stranglehold; halt outside the HARD-HALT set | Enforces invariants; routes everything else to progress |
+| AI substrate (producer seats) | Scale, search, synthesis, continuous operation, congruence checking | Drafts, recommendations, Tier-A/B acts within standing grants; **any engineering solution inside the chosen rails (no capability ceiling, §6b)** | Sign as Ewan; write Beast directly; ratify binding acts | Acts as logged `AI_PARTNER_PROXY` only where the constitution permits; capability is uncapped, authority is not |
+| Validators (external, semantic + deterministic) | Independent checking (absence-of-wrong); the **anti-mirror** seat | Accept/reject with reason code and emitted evidence | Validate their own producer's output; be same model family as producer; become a human review queue | Independent of producer where feasible, narrow, evidence-emitting, calibrated with known faults, and itself measured (§15); external validation gates acceptance, **agreement never does** (§6a) |
+| Code (deterministic core + harnesses) | Enforcement, determinism, gates, push-doors | Deterministic pass/degrade/hard-halt per §6/§6a; which guarantees a door owns | Become a stranglehold; halt outside the HARD-HALT set; force all tasks through all harnesses | Enforces invariants and bounds the path (blinkers), never caps capability; routes everything else to progress |
 
 - **No impersonation.** AI never presents as the human; the human is never spoofed as a signer. Every artefact names its author-seat.
 
@@ -236,7 +284,7 @@ Permissioned, reversible, measured at every stage. Each stage names its artefact
 
 ## 9. End-to-end architecture and data flow
 
-Capture → normalisation → extraction/sampling → deterministic gates → independent checking → union/select → provenance → DB routing → telemetry → failure ledger → Kaizen → GitHub admission → deployment → Vellum witness → SMB insight. Smart probabilistic edges; dumb deterministic core.
+Capture → normalisation → extraction/sampling → deterministic gates → independent (external) checking → union/select → provenance → DB routing → telemetry → failure ledger → Kaizen → GitHub admission → deployment → Vellum witness → SMB insight. Smart probabilistic edges; dumb deterministic core. Each stage is entered through a **push-door harness** (§6c): the door enforces provenance/isolation/tests/constitutional/security/admission, and leaves the solution path open (blinkers, not ceiling — §6b). **Detected agreement (human↔AI, AI↔AI, repeated-run, validator) does not shortcut the flow — it raises `agreement_detected` and routes into external validation, never to acceptance.**
 
 ```
                          AMPLIFIED AI-NATIVE OPERATING SYSTEM (data + control flow)
@@ -253,8 +301,10 @@ Capture → normalisation → extraction/sampling → deterministic gates → in
                                     │         identity)  [code, free]        quarantine_with_owner│
                                     │                    │                                        │
                                     │                    ▼                                        │
-                                    │        LAYER-B INDEPENDENT CHECK (different model family,    │
-                                    │        narrow question, blinded)  ── no self-validation      │
+                                    │        LAYER-B EXTERNAL VALIDATION (different model family,  │
+                                    │        narrow question, blinded, fault-calibrated) ◀── any    │
+                                    │        agreement raises agreement_detected → HERE, not accept │
+                                    │        (anti-mirror; no self-validation)                     │
                                     │                    │                                        │
                                     │                    ▼                                        │
                                     │        UNION then SELECT (no synthesis) + recurrence weight │
@@ -289,6 +339,10 @@ Capture → normalisation → extraction/sampling → deterministic gates → in
   RATIFICATION: Ewan alone ratifies world-changing acts; AI prepares/presents only, never signs.
   NO DIRECT BEAST WRITE — the only road into Beast is the pipe + the one allowed change path.
   BREAK-GLASS: named, logged, witnessed, reconciled by post-hoc PR ≤24h (the only bypass).
+  HARNESSES = push-doors: each stage is entered via the minimum-sufficient door(s) (harness_manifest); no central rail forces all doors.
+  BLINKERS-NOT-CEILING: doors bound the path (provenance/isolation/tests/security); capability inside is uncapped (§6b).
+  AGREEMENT = TRIGGER: convergence never accepts; it routes to external validation (anti-mirror).
+  MEASUREMENT = BLAMELESS: telemetry aggregates process signal only; no people/agent league tables (§15).
 ```
 
 ## 10. Seat / component contracts
@@ -299,6 +353,8 @@ For each: may read · may decide · may write · must reject · authority ceilin
 |---|---|---|---|---|---|---|
 | Python (orchestration) | corpus, config, queues | task routing, sequencing | workspace, queues | out-of-schema tasks | orchestration only; no enforcement verdicts | run logs, seeds |
 | Rust (enforcement) | normalised text, rules | deterministic pass/degrade/hard-halt | gate verdicts | anything violating invariants | deterministic core; no probabilistic calls | `gate_result_schema` |
+| Harness toolbox (push-doors) | job class, declared requirements | which minimum-sufficient door(s) apply | door-enforced guarantees + `harness_manifest` | forcing all tasks through all doors; capping capability | bounds the path only (blinkers, §6b/§6c) | `harness_manifest`, `harness_def`, evidence per door |
+| External validators (anti-mirror) | {producer output, narrow question, known-fault battery} | accept/reject + reason + evidence | verdict, reason code, false-kill stats | validating own producer/family; becoming a review queue | independent-where-feasible, calibrated, itself measured (§15) | verdict, catch/false-kill, family id, agreement-trigger link |
 | Specialist code (roles→code) | scoped inputs | deterministic sub-decisions once licensed | candidate outputs | inputs outside licence domain | bounded by expressibility licence (§13) | fault/pass counts |
 | Databases (client tenancy, Brain via MCP) | own tenancy | storage/retrieval | records (via pipe) | cross-tenant reads | data plane; no ratification | provenance refs |
 | AI producers (substrate) | task chunk | draft candidates | drafts to workspace | claims without evidence | INTUITED at runtime; proxy only where permitted | candidate + seed |
@@ -424,8 +480,12 @@ Report per arm/stage with 95% CI. **Never conflate consistency and accuracy** (I
 | cost / latency / cache | κ_t (cost per accepted atom), latency, prefix-cache hit-rate | economics ([DeepSeek pricing](https://api-docs.deepseek.com/quick_start/pricing)) |
 | privacy/security events | leak attempts, secret hits, tenancy violations | P6/P7 telemetry |
 | agreement under skew | Gwet AC1 + Krippendorff α with CI (NOT Cohen's κ alone) | ([Gwet AC1 vs kappa](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/1471-2288-13-61)) |
+| agreement-trigger rate | fraction of items where `agreement_detected` fired and routed to external validation; and the external verdict on them | anti-mirror health — agreement is input, not outcome (§6a) |
+| external-validator quality | catch-rate on the known-fault battery + false-kill on known-good, per validator | a validator is itself measured before its numbers are trusted ([DeepMutation](https://arxiv.org/pdf/1805.05206)) |
+| harness selection | per job: doors selected vs available, `harness_unfit`/`harness_missing` rate, evidence emitted per door | keeps push-door selection honest (§6c) |
 
 - **Deterministic join IDs.** Every accepted item carries `{doc_id, char_start, char_end, role_id, run_seed, checker_verdict, reason_code}`; the join key `hash(doc_id,char_start,char_end)` links model output → code gate → DB record → Git change → client outcome, so a single atom is traceable end-to-end.
+- **Blameless-measurement invariant (binding, current).** Measurement exists to aggregate signal, improve processes and compound learning — **never to score, rank, punish or blame** a human or AI participant. Telemetry and failure ledgers measure the *process and system conditions*, not character or worth. **People/agent league tables and punitive use are forbidden** unless a separately ratified legal/safety obligation requires an audit, and even then only objective events are recorded, never moral labels. Attribution (P3) answers "which process/seat produced this artefact so we can improve it", not "who is to blame". A telemetry or ledger use that ranks or blames a participant is a `measurement_misuse` degrade routed to `explicit_human_gate`.
 
 ## 16. Kaizen / deterministic ratchet
 
@@ -443,6 +503,7 @@ failure ledger (reason-coded wrong-examples)
 ```
 
 - Improvement flows through the researched YAML scorecard gate, never through Ewan as a review queue. Failure-shapes are the primary writer of compound learning; a proven failure-shape is permanent. A role whose validator kill-rate → ~0 with concentrated near-miss errors is a code candidate → expressibility licence (explicit f(x), fresh-sample Wilson ≥ CALIBRATE [STRUCTURED]) → becomes code and leaves the swarm; roles that plateau stay AI, bounded by measured (ρ*, p̂).
+- **Compounding invariant (binding, current).** Every test, failure, rejection, retry, fix, downstream outcome **and validator disagreement** is *attributed process evidence* that feeds back to improve future prompts, harnesses (§6c), deterministic code, routing and context. **Nothing useful is discarded** — a rejection or a disagreement is a labelled example, not waste; it is written to the failure/outcome ledger with its `reason_code`, `harness_ref` and provenance. **No one-off is promoted without replication** (§21): a single good run is INTUITED signal, not a MEASURED result. This compounding is blameless (§15): it improves the process, it does not score the participant. Validator *disagreement* is especially high-value — it is exactly the anti-mirror signal that agreement is not, and it routes to `external_validation` / `research`, never to a dead end.
 
 ## 17. Configuration / change / deployment path (no side doors)
 
@@ -467,12 +528,14 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 
 | WP | Output (exact) | Depends on | Verification | Owner/seat | Stop condition | Parallel? |
 |---|---|---|---|---|---|---|
-| WP-1 | Agent-facing JSON schemas: `gate_result_schema`, `hypothesis_record`, `attribution_record`, `canonical_unit`, join-ID record | — | schemas parse; validate against sample instances | Rust/code | any schema unparseable → fix before proceeding | no (foundation) |
+| WP-1 | Agent-facing JSON schemas: `gate_result_schema` (incl. `external_validation` route + `harness_ref`), `hypothesis_record`, `attribution_record`, `canonical_unit`, `harness_manifest`, `harness_def`, join-ID record | — | schemas parse; validate against sample instances | Rust/code | any schema unparseable → fix before proceeding | no (foundation) |
+| WP-1b | Harness toolbox registry + minimum-sufficient selection-rule validator (`harness_missing`/`harness_unfit`); assert no-force-all-doors | WP-1 | selection validator green on sample jobs; unused-door logging present | code | selection can force all doors → fix | with WP-2 |
 | WP-2 | Deterministic validation harness for this spec (§20 checks) | WP-1 | harness runs green on this file | code | HARD-HALT check false-negative → stop | with WP-3 |
 | WP-3 | `norm_v1` spec + `corpus_v1.lock` (frozen ids) + split manifest | — | determinism (identical in→out); hashes pinned | Python | corpus not freezable tonight → mark TARGET, gate later | with WP-2 |
 | WP-4 | Planted-fault battery generator (5 fault classes) + known-good set loader | WP-1, WP-3 | generates ≥50 faults/role + ≥100 good; deterministic | code | non-deterministic faults → fix | after WP-3 |
 | WP-5 | Reason-code + next_action enums wired into gate stubs (no-dead-end assertion) | WP-1 | every rejection path yields route+owner; no-dead-end test passes | code | any dead-end path → P0, stop | after WP-1 |
-| WP-6 | This spec committed to PR #4 branch + PR retitled/updated (draft) | WP-1..WP-5 authored | byte-identical to workspace (sha256); only 3 files in PR | devin (proxy, logged) | non-identical copies → stop | last |
+| WP-5b | Agreement-detection wiring: `agreement_detected` (human↔AI, AI↔AI, repeated-run, validator) always routes to `external_validation`; blameless-measurement assertion (no league-table field) | WP-1, WP-5 | agreement never reaches an accept path; `measurement_misuse` guard green | code | agreement gates acceptance → P0, stop | after WP-5 |
+| WP-6 | This spec committed to PR #4 branch + PR retitled/updated (draft) | WP-1..WP-5b authored | byte-identical to workspace (sha256); only 3 files in PR | devin (proxy, logged) | non-identical copies → stop | last |
 
 - **Out of tonight's scope (named):** running scored arms, Beast promotion, live deploy, client onboarding — all require calibration + ratification first.
 
@@ -499,6 +562,10 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 - [ ] No private repo URLs in the body.
 - [ ] Every gate returns `gate_result_schema` with a progress `route` (no-dead-end).
 - [ ] Every human-facing view points to this canonical agent artefact.
+- [ ] Every job emits a `harness_manifest` (selected + not-selected doors); no task forced through all harnesses.
+- [ ] Every `agreement_detected` routes to `external_validation`; agreement never gates acceptance.
+- [ ] No people/agent league-table field anywhere; measurement is process-only (blameless).
+- [ ] No friction inside the rails that protects no HARD-HALT concern (capability uncapped).
 
 **RESEARCH CHECKLIST (receiving AI, before any scored run):**
 - [ ] `attribution_record` exists for every mechanism entering production.
@@ -515,7 +582,7 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 
 ## 21. Acceptance, kill, promotion, demotion, rollback, amendment
 
-- **Acceptance checks (Ewan's binding set, machine-checkable):** (1) no unexplained halt — every HARD-HALT maps to the §6a HARD-HALT set; (2) every gate has a progress route; (3) every artefact has an agent schema; (4) every human-facing document points to the canonical agent artefact; (5) every rejection records `next_action` + `owner`; (6) every enforced rule has `version` + `falsification` + `amendment` fields.
+- **Acceptance checks (Ewan's binding set, machine-checkable):** (1) no unexplained halt — every HARD-HALT maps to the §6a HARD-HALT set; (2) every gate has a progress route; (3) every artefact has an agent schema; (4) every human-facing document points to the canonical agent artefact; (5) every rejection records `next_action` + `owner`; (6) every enforced rule has `version` + `falsification` + `amendment` fields; (7) **every job records a `harness_manifest` (selected + not-selected doors); no task is forced through all harnesses** (§6c); (8) **no acceptance is gated by agreement alone — every `agreement_detected` routes to `external_validation`** (§6a); (9) **no capability ceiling inside the rails — friction that protects no HARD-HALT concern is a defect** (§6b); (10) **measurement is blameless — no people/agent league tables; any ranking/punitive use is `measurement_misuse`** (§15); (11) **AI-facing-first — every canonical artefact is machine-executable and exposes state/evidence/constraints/`next_action`, and every human view renders that same source** (§1).
 - **Kill:** composed extraction design killed if arms B/C/D do not beat A on quote-gate accept by margin `M` at ≤ cost× `C` (CALIBRATE [STRUCTURED]); or if the no-roles arm dominates on cost per dollar AND per call.
 - **Promotion:** INTUITED→STRUCTURED via rubric codification; STRUCTURED→MEASURED via empirical calibration (≥10 events/param/outcome, held-out, drift monitor); MEASURED→PROVEN via formal proof with verified preconditions. Tier-skipping is a P0.
 - **Demotion:** automatic on drift, elapsed `valid_until`, failed precondition, or LLM-in-loop (caps at INTUITED). Hiding a demotion is a P0.
@@ -525,7 +592,7 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 
 ## 22. Risks, contradictions, unresolved questions, human ratification gates
 
-- **Risks:** over-decomposition adds cost without removing measured error ([MAST](https://arxiv.org/html/2503.13657v2)); union without a strong selector banks noise (precision ~12–15%, [L3X](https://people.mpi-inf.mpg.de/~ssinghan/tacl_paper.pdf)); same-family checkers give false consistency ([Kuncheva & Whitaker](http://machine-learning.martinsewell.com/ensembles/KunchevaWhitaker2003.pdf)); threshold over-portability across corpora; silent nuance loss on merge; Brain zero-row contradiction blocks retrieval trust.
+- **Risks:** over-decomposition adds cost without removing measured error ([MAST](https://arxiv.org/html/2503.13657v2)); union without a strong selector banks noise (precision ~12–15%, [L3X](https://people.mpi-inf.mpg.de/~ssinghan/tacl_paper.pdf)); same-family checkers give false consistency ([Kuncheva & Whitaker](http://machine-learning.martinsewell.com/ensembles/KunchevaWhitaker2003.pdf)); threshold over-portability across corpora; silent nuance loss on merge; Brain zero-row contradiction blocks retrieval trust. **Mirror trap** — treating human↔AI or AI↔AI agreement as evidence rather than a trigger (mitigated by §6a `agreement_detected` → `external_validation`). **Harness proliferation / friction** — either a maze of doors that becomes central bureaucracy, or under-selection that skips a required guarantee (mitigated by the minimum-sufficient selection rule + `harness_manifest` unused-door logging, §6c). **Measurement misuse** — telemetry or failure ledgers repurposed to rank or blame participants (mitigated by the blameless invariant + `measurement_misuse` degrade, §15). **External-validator capture** — validators drifting into a human review queue or into producer dependence, defeating autonomous progress (mitigated by independence-where-feasible + itself-measured, §7/§10).
 - **Contradictions:** decomposition helps vs is-not-worth-it — resolved by the four-arm experiment, not assertion. Consistency-vs-accuracy conflation — resolved by INV-9 separation.
 - **Research-resolvable (resolve, do not gate):** aggregation policy (union-then-select, no synthesis — resolved [Selection Bottleneck](https://arxiv.org/html/2603.20324v1)); different-family checker (resolved [FACTS Grounding](https://deepmind.google/blog/facts-grounding-a-new-benchmark-for-evaluating-the-factuality-of-large-language-models/)); stop rules (resolved as curves, not fixed counts).
 - **Genuine human ratification gates (only these):** (G-a) win-win call on any money-in logic; (G-b) legal/Ulysses/give-away commitments (solicitor + signed `===--- yes`); (G-c) policy_change / rod-set edits; (G-d) client consent scope and client data deletion/export authority; (G-e) destructive delete of canonical. Everything else is either agent-actionable or logged-proxy.
@@ -534,14 +601,16 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 
 A receiving AI executes these in order; the only permitted pauses are named CALIBRATE runs and the §22 human gates.
 
-1. Author WP-1 schemas from the inline definitions in §6a/§4/§5/§14/§15. **No design choice required.**
-2. Author WP-2 validation harness implementing every §20 SPEC CHECKLIST item + §21 acceptance checks. **No design choice.**
-3. Author WP-3 `norm_v1` + `corpus_v1.lock` + splits; if the corpus cannot be frozen tonight, mark it TARGET and gate the scored runs on it (do not fabricate ids). **CALIBRATE: exact file ids.**
-4. Author WP-4 planted-fault battery + known-good loader. **No design choice** (fault classes fixed in §14).
-5. Wire WP-5 reason-code/next_action enums into gate stubs; run the no-dead-end assertion. **No design choice.**
-6. Execute WP-6: write this spec into the PR #4 branch path (§19), confirm byte-identity (sha256), commit with attribution, push, retitle/update PR #4, leave draft + unmerged. **Logged proxy act.**
-7. STOP for human gates only where §22 (G-a..G-e) applies. Emit the session-close manifest (§24).
-8. Scored arms, calibration of `M`/`C`/bands, Beast promotion and deploy are the *next* baton, gated on §21 promotion rules — not tonight.
+1. Author WP-1 schemas from the inline definitions in §6a/§6c/§4/§5/§14/§15 (incl. `harness_manifest`, `harness_def`, `external_validation` route, `harness_ref`). **No design choice required.**
+2. Author WP-1b harness toolbox registry + minimum-sufficient selection-rule validator; assert no-force-all-doors and unused-door logging. **No design choice** (rule fixed in §6c).
+3. Author WP-2 validation harness implementing every §20 SPEC CHECKLIST item + §21 acceptance checks (1)–(11). **No design choice.**
+4. Author WP-3 `norm_v1` + `corpus_v1.lock` + splits; if the corpus cannot be frozen tonight, mark it TARGET and gate the scored runs on it (do not fabricate ids). **CALIBRATE: exact file ids.**
+5. Author WP-4 planted-fault battery + known-good loader; these also calibrate the external validators before any validator number is trusted. **No design choice** (fault classes fixed in §14).
+6. Wire WP-5 reason-code/next_action enums into gate stubs; run the no-dead-end assertion. **No design choice.**
+7. Wire WP-5b agreement-detection: assert every `agreement_detected` routes to `external_validation` and that no telemetry field ranks/blames a participant (blameless). **No design choice** (rule fixed in §6a/§15).
+8. Execute WP-6: write this spec into the PR #4 branch path (§19), confirm byte-identity (sha256), commit with attribution, push, retitle/update PR #4, leave draft + unmerged. **Logged proxy act.**
+9. STOP for human gates only where §22 (G-a..G-e) applies. Emit the session-close manifest (§24).
+10. Scored arms, calibration of `M`/`C`/bands, Beast promotion and deploy are the *next* baton, gated on §21 promotion rules — not tonight.
 
 ## 24. Session-close manifest schema and Vellum event templates
 
@@ -573,6 +642,6 @@ vellum_open_question:{type: open_question, ref, question, owner}
 
 ## 25. Closure
 
-This specification is a current working hypothesis (v01, STRUCTURED), agent-facing first, with human sovereignty and ratification intact and constitutional/privacy/security/sovereignty invariants absolute for now. Its highest-priority executable work package is **WP-1: author the agent-facing JSON schemas and the deterministic validation harness**, because every other gate, route and acceptance check in this document depends on those schemas existing and parsing.
+This specification is a current working hypothesis (v02, STRUCTURED), agent-facing first, with human sovereignty and ratification intact and constitutional/privacy/security/sovereignty invariants absolute for now. v02 adds the blinkers-without-ceilings engineering model (§6b), the harness toolbox / push-door law (§6c), agreement-as-a-trigger routing to external validation (§6a), external validation as a productive anti-mirror feature (§7/§10), compounding-Kaizen over all process evidence (§16), the blameless-measurement invariant (§15), and AI-facing company law (§1) — without weakening any prior content or invariant. Its highest-priority executable work package is **WP-1: author the agent-facing JSON schemas and the deterministic validation harness** (now including `harness_manifest`/`harness_def` and the `external_validation` route), because every other gate, route and acceptance check in this document depends on those schemas existing and parsing.
 
-[CLOSURE] branch=PLAN | proxy=1 logged (repo write via pipe drop-point) | gates=human ratification G-a..G-e deferred to next baton | inbox=amplified-partners-ai-native-operating-system__implementation-spec__2026-07-12T22-05-00Z__perplexity.md | tier=STRUCTURED
+[CLOSURE] branch=PLAN | proxy=1 logged (repo write via pipe drop-point) | gates=human ratification G-a..G-e deferred to next baton | inbox=amplified-partners-ai-native-operating-system__implementation-spec__2026-07-12T22-05-00Z__perplexity.md | tier=STRUCTURED | version=v02
