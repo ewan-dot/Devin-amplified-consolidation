@@ -25,13 +25,14 @@ epistemic_role: risk_control
 effective_tier_rule: min-rule
 hypothesis:
   status: current_working_hypothesis
-  version: v03
+  version: v04
   valid_until: "2026-10-12"
   amendment_path: "versioned amendment via the one allowed change path (branch → PR → gate → witness); supersede, never edit live"
   falsification: "any gate, threshold or component below fails its stated kill/demotion test → demote and amend this spec"
   amendments:
     - "v02 (2026-07-12): incorporate Ewan's final binding clarifications without weakening prior content — blinkers-without-ceilings engineering model (§6b); harness toolbox / push-door law + harness_manifest schema (§6c); agreement-is-a-trigger-not-evidence with agreement_detected → external_validation route (§6a, §9, §15); external validation as a productive anti-mirror feature (§7, §10, §22); compounding-Kaizen over all process evidence (§16); blameless-measurement invariant, no league tables (§15, §21); AI-facing company law (intro, §1, §21)."
     - "v03 (2026-07-12): resolve the independent prior-art-completeness audit (verdict PARTIAL → AMEND_REQUIRED) by applying all 22 audit amendments without weakening any prior content or invariant. Attribute and operationalise the infrastructure/sociotechnical prior art the spec was practising but not citing — SLSA v1.0 + Sigstore/cosign/Fulcio/Rekor + CycloneDX SBOM (§17/§18), NIST SP 800-207 zero trust (§6/§11), MCP 2025-06-18 (§9/§10), OpenTelemetry (§9/§15), OpenGitOps (§17), git worktrees (§6b/§6c), event sourcing (§9/§11), SRE blameless postmortem + error budgets (§15/§16/§21), Open Data Contract Standard (§8/§10), sociotechnical systems theory + HITL (§1/§7), W3C PROV + Web Annotation (§9), local-first (§3/§11), chezmoi/Temporal licences (§5), SPC/Taguchi (§15); record policy-as-code (OPA/Rego) and progressive-delivery/canary as DEFERRED_WITH_REASON tradition names (§5). Restore the canonical extraction preregistration's distinct authority + non-duplication boundary and its dropped statistical rigour — primary comparison, Holm–Bonferroni + effect sizes, five-branch decision table, KILL-VALIDATOR, SPLIT_TUNE/SPLIT_TEST discipline (§14/§15/§21/§22). Add Ewan's binding prior-art execution-loop baton + prior_art_disposition schema (§14a). Add the PROPOSED_NOT_RUN multi-lens spec-validation protocol + spec_validation_manifest (§24a). Add the acceptance law: data-driven, principle-led, independently validated, no theatre, outcomes only (§21)."
+    - "v04 (2026-07-12): add Ewan's binding agent-productive-artefact law without weakening any prior content or invariant (§1a) — the executable form of the AI-facing company law (§1). Every artefact is perfected for agent use first; the canonical form is machine-readable and executable/directly decision-enabling, carrying explicit objective/inputs/outputs/provenance/epistemic_tier/constraints/state/owner/next_action/stop-acceptance/machine-readable-closure (agent_productive_artefact schema); no human theatre; lossless-for-action compression (nuance, contradictions, minority variants, qualifiers, evidence, gaps preserved); agent-actionable without human translation; human views are generated, traceably-linked, non-authoritative renderings. Add deterministic acceptance checks + reason codes agent_schema_missing/nuance_loss_detected/human_theatre_detected/translation_required/next_action_missing/duplicate_truth_surface/unresolved_choice_hidden to the §6a canonical enum, each routed through the no-dead-end next_action system. Apply the law to the checklists (§20), work packages (§18), repository/file map (§19), telemetry contract (§15) and session-close manifest (§24); wire it into WP-1 schemas, §21 acceptance check (13), §23 baton and §24a stage-0."
 min_rule:
   tiers: [INTUITED, STRUCTURED, MEASURED, PROVEN]
   effective_tier: "minimum of own claim, inputs' tiers, verified preconditions"
@@ -51,6 +52,7 @@ ratifier: Ewan
 beast_write: forbidden
 no_dead_end: enforced
 agent_facing_first: true
+agent_productive_artefact: enforced
 outcome:
   class: production_candidate
   reason: >-
@@ -131,6 +133,46 @@ source_refs:
 - **The pipe (ingestion law).** `Python + Rust + Vellum + AI + Human = Amplified`. Nothing enters Beast except through the approved pipe. No direct Beast write, ever.
 - **AI-facing company law (current).** Every artefact, schema, event, gate, map and work package the company produces first answers *"what helps the AI complete the job in hand?"* Canonical form is machine-readable and machine-executable, minimises translation, and exposes state, evidence, constraints and `next_action`. Human views are transparent renderings of that same source, never a separate truth. This serves the north star (the system keeps turning without a human as keystone) and never inflates AI authority (ratification stays human, §7).
 - **Blinkers-without-ceilings engineering model (current).** The rails — hooks, harnesses, deterministic code, isolated worktrees and external validators — are *blinkers*: they bound the path, not the capability. Inside the rails an AI engineer has **no artificial capability ceiling** and is free to create new solutions without infrastructure or security friction, because security, provenance and isolation are **pre-built into the path** rather than imposed as after-the-fact review bureaucracy (see §6b).
+
+## 1a. Agent-productive artefact law (binding)
+
+*Ewan's binding artefact law (v04, 2026-07-12). This is the executable form of the AI-facing company law (§1): it fixes the canonical shape of every artefact the company produces so a qualified agent can act on it without a human translating it, inferring a missing choice, or rediscovering a source. It strengthens, and never weakens, every prior invariant, and it does not inflate AI authority — ratification of world-changing acts stays with Ewan (§7).*
+
+- **Perfected for agent use first.** Every artefact is designed and refined for agent consumption before any human-facing rendering exists. "Done" means agent-actionable, not human-readable.
+- **Canonical form is machine-actionable.** The canonical artefact is machine-readable and either directly executable or directly decision-enabling, and carries — explicitly, in machine-readable fields — `objective`, `inputs`, `outputs`, `provenance`, `epistemic_tier`, `constraints`, `state`, `owner`, `next_action`, stop/`acceptance` conditions, and a machine-readable `closure`. A canonical artefact missing any of these is `agent_schema_missing`.
+- **No human theatre.** No decorative executive prose, performative summaries, human-only duplication of a truth already held in machine-readable form, motivational padding, green-check theatre, or formatting that does not improve execution. Such a surface is `human_theatre_detected` (or `duplicate_truth_surface` when it re-states an existing canonical truth in a second, human-only place).
+- **Succinct and complete (lossless-for-action compression).** The canonical form is the smallest representation that preserves every decision-relevant nuance — contradictions, minority variants, qualifiers, evidence and unresolved gaps included. Compression that drops any such nuance is `nuance_loss_detected` (this mirrors the merge-non-destruction rule, §14). Brevity never overrides completeness with respect to future agent action.
+- **Agent-productive.** Another qualified agent can act on the artefact without asking a human to translate it, infer a missing choice, or rediscover a source. A gap that forces a human translation is `translation_required`; a decision left implicit is `unresolved_choice_hidden`; a missing forward step for a non-terminal state is `next_action_missing`.
+- **Human views are generated renderings.** Any human view is a rendering generated from the canonical agent artefact, traceably linked to it, and never authoritative over it. On conflict the canonical agent artefact governs; a human view without a linked canonical source is itself `duplicate_truth_surface`.
+
+```yaml
+agent_productive_artefact:        # every canonical artefact conforms; WP-1 deliverable; asserted by WP-2 and §20
+  artefact_id: <slug>
+  objective: <what this artefact is for>
+  inputs: [<ref>]
+  outputs: [<ref>]
+  provenance: <PROV record id + author-seat>
+  epistemic_tier: INTUITED | STRUCTURED | MEASURED | PROVEN
+  constraints: [<invariant/gate ref>]
+  state: <machine-readable status>
+  owner: <seat, §10>
+  next_action: <imperative, §6a route enum>
+  stop_conditions: [<machine-checkable acceptance/stop condition>]
+  closure: <machine-readable closure line>
+  human_render: {generated_from: <artefact_id>, authoritative: false, link: <ref> | null}
+  checks:                         # deterministic; each failure emits gate_result_schema (§6a) with a route + owner
+    - agent_schema_missing        # a required canonical field above is absent
+    - nuance_loss_detected        # compression dropped a contradiction / variant / qualifier / evidence / gap
+    - human_theatre_detected      # decorative prose / performative summary / padding / green-check theatre
+    - translation_required        # an agent cannot act without a human translating
+    - next_action_missing         # no forward step for a non-terminal state
+    - duplicate_truth_surface     # a truth restated in a second, human-only place
+    - unresolved_choice_hidden    # a decision left implicit rather than surfaced
+  status: active | superseded | refuted
+  # rule: every failed check routes through the §6a no-dead-end next_action system — never a warning-only limbo.
+```
+
+- **Enforcement (machine-checkable, no-dead-end).** Each check is a deterministic gate returning `gate_result_schema` (§6a); a failure `degrade`s with its `reason_code` (above), `evidence`, a `repair_path` and exactly one progress `route` (`retry` · `research` · `deterministic_repair_candidate` · `quarantine_with_owner` · `hypothesis_amendment`), never a dead end. These seven codes are added to the §6a canonical reason-code enum. This law applies to every artefact class in this spec — the checklists (§20), work packages (§18), repository/file map (§19), telemetry contract (§15) and session-close manifest (§24) — each of which is itself an `agent_productive_artefact`.
 
 ## 2. The lens — why this spec exists tonight
 
@@ -227,7 +269,7 @@ gate_result_schema:            # every gate in this spec returns this
   witnessed: true|false                 # Vellum entry emitted
 ```
 
-**Reason-code enum (canonical, extensible via amendment):** `unbacked_claim` · `tier_launder` · `transparency_missing` · `provenance_missing` · `winwin_fail` · `authority_smuggled` · `secret_exposed` · `privilege_escalation` · `external_truth_dep` · `beast_side_door` · `quote_mismatch` · `offset_error` · `schema_violation` · `label_error` · `identity_error` · `unsupported_claim` · `merge_nondestruction_violation` · `consistency_vs_accuracy_conflation` · `agreement_detected` · `harness_missing` · `harness_unfit` · `measurement_misuse` · `stale_valid_until` · `precondition_failed` · `other`.
+**Reason-code enum (canonical, extensible via amendment):** `unbacked_claim` · `tier_launder` · `transparency_missing` · `provenance_missing` · `winwin_fail` · `authority_smuggled` · `secret_exposed` · `privilege_escalation` · `external_truth_dep` · `beast_side_door` · `quote_mismatch` · `offset_error` · `schema_violation` · `label_error` · `identity_error` · `unsupported_claim` · `merge_nondestruction_violation` · `consistency_vs_accuracy_conflation` · `agreement_detected` · `harness_missing` · `harness_unfit` · `measurement_misuse` · `stale_valid_until` · `precondition_failed` · `agent_schema_missing` · `nuance_loss_detected` · `human_theatre_detected` · `translation_required` · `next_action_missing` · `duplicate_truth_surface` · `unresolved_choice_hidden` · `other`.
 
 - **`agreement_detected` is a trigger, never an acceptance (binding, §6a).** Human↔AI, AI↔AI, repeated-run, or validator agreement raises `agreement_detected` and MUST route to `external_validation` — it *increases* the need for independent checking and never gates acceptance by itself. Agreement/consistency and truth/validity stay distinct (§15). This is the anti-mirror rule: convergence is a question, not an answer.
 
@@ -571,6 +613,7 @@ Report per arm/stage with 95% CI. **Never conflate consistency and accuracy** (I
 | agreement-trigger rate | fraction of items where `agreement_detected` fired and routed to external validation; and the external verdict on them | anti-mirror health — agreement is input, not outcome (§6a) |
 | external-validator quality | catch-rate on the known-fault battery + false-kill on known-good, per validator | a validator is itself measured before its numbers are trusted ([DeepMutation](https://arxiv.org/pdf/1805.05206)) |
 | harness selection | per job: doors selected vs available, `harness_unfit`/`harness_missing` rate, evidence emitted per door | keeps push-door selection honest (§6c) |
+| artefact productivity | per artefact: `agent_schema_missing`/`nuance_loss_detected`/`human_theatre_detected`/`translation_required`/`next_action_missing`/`duplicate_truth_surface`/`unresolved_choice_hidden` rate, and share of human views generated-and-linked vs authored-by-hand | keeps artefacts agent-productive (§1a); process signal only, blameless |
 
 - **Deterministic join IDs.** Every accepted item carries `{doc_id, char_start, char_end, role_id, run_seed, checker_verdict, reason_code}`; the join key `hash(doc_id,char_start,char_end)` links model output → code gate → DB record → Git change → client outcome, so a single atom is traceable end-to-end.
 - **Blameless-measurement invariant (binding, current).** Measurement exists to aggregate signal, improve processes and compound learning — **never to score, rank, punish or blame** a human or AI participant. Telemetry and failure ledgers measure the *process and system conditions*, not character or worth. **People/agent league tables and punitive use are forbidden** unless a separately ratified legal/safety obligation requires an audit, and even then only objective events are recorded, never moral labels. Attribution (P3) answers "which process/seat produced this artefact so we can improve it", not "who is to blame". A telemetry or ledger use that ranks or blames a participant is a `measurement_misuse` degrade routed to `explicit_human_gate`. This invariant adopts the SRE **blameless postmortem** principle in spirit — *fix the system and the conditions, never the individual* ([Google SRE, Postmortem Culture](https://sre.google/sre-book/postmortem-culture/)); attribution (P3) answers "which process/seat produced this so we can improve it", never "who is to blame".
@@ -623,7 +666,7 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 
 | WP | Output (exact) | Depends on | Verification | Owner/seat | Stop condition | Parallel? |
 |---|---|---|---|---|---|---|
-| WP-1 | Agent-facing JSON schemas: `gate_result_schema` (incl. `external_validation` route + `harness_ref`), `hypothesis_record`, `attribution_record`, `canonical_unit`, `harness_manifest`, `harness_def`, `prior_art_disposition` (§14a), `spec_validation_manifest` (§24a), join-ID record | — | schemas parse; validate against sample instances | Rust/code | any schema unparseable → fix before proceeding | no (foundation) |
+| WP-1 | Agent-facing JSON schemas: `gate_result_schema` (incl. `external_validation` route + `harness_ref`), `hypothesis_record`, `attribution_record`, `canonical_unit`, `harness_manifest`, `harness_def`, `prior_art_disposition` (§14a), `agent_productive_artefact` (§1a), `spec_validation_manifest` (§24a), join-ID record | — | schemas parse; validate against sample instances | Rust/code | any schema unparseable → fix before proceeding | no (foundation) |
 | WP-1b | Harness toolbox registry + minimum-sufficient selection-rule validator (`harness_missing`/`harness_unfit`); assert no-force-all-doors | WP-1 | selection validator green on sample jobs; unused-door logging present | code | selection can force all doors → fix | with WP-2 |
 | WP-2 | Deterministic validation harness for this spec (§20 checks) | WP-1 | harness runs green on this file | code | HARD-HALT check false-negative → stop | with WP-3 |
 | WP-3 | `norm_v1` spec + `corpus_v1.lock` (frozen ids) + split manifest | — | determinism (identical in→out); hashes pinned | Python | corpus not freezable tonight → mark TARGET, gate later | with WP-2 |
@@ -632,6 +675,7 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 | WP-5b | Agreement-detection wiring: `agreement_detected` (human↔AI, AI↔AI, repeated-run, validator) always routes to `external_validation`; blameless-measurement assertion (no league-table field) | WP-1, WP-5 | agreement never reaches an accept path; `measurement_misuse` guard green | code | agreement gates acceptance → P0, stop | after WP-5 |
 | WP-6 | This spec committed to PR #4 branch + PR retitled/updated (draft) | WP-1..WP-5b authored | byte-identical to workspace (sha256); only 3 files in PR | devin (proxy, logged) | non-identical copies → stop | last |
 
+- **Agent-productive-artefact conformance (§1a).** Each WP row is itself an `agent_productive_artefact` — it carries an objective (Output), inputs (Depends on), a machine-checkable acceptance/stop (Verification + Stop condition), an owner (Owner/seat) and a forward `next_action`; there is no human-only WP prose. WP-1 emits the `agent_productive_artefact` schema and WP-2 asserts every canonical artefact in this spec passes the §1a checks (no `agent_schema_missing`/`human_theatre_detected`/`nuance_loss_detected`/`translation_required`/`duplicate_truth_surface`/`unresolved_choice_hidden`/`next_action_missing`), routing any failure through the §6a no-dead-end system.
 - **Next-baton work packages (named, out of tonight's scope — recorded so they are not lost):** **WP-7** — prior-art execution loop (§14a): implement each `IMPLEMENT_IN_ISOLATED_ARM` disposition in an isolated worktree, re-run vs the frozen baseline, promote only durability- + third-party-validated survivors (depends on WP-1 + the canonical four-arm baseline). **WP-8** — CycloneDX SBOM generation + Sigstore/SLSA attestation check at the deploy stage (§17). **WP-9** — `data_contract` (ODCS) conformance test at the V3 boundary (§8/§10). **WP-10** — run the §24a multi-lens spec-validation protocol and record its results in a separate artefact. All four are gated on calibration + ratification and belong to the deploy/scored-run baton.
 - **Out of tonight's scope (named):** running scored arms, Beast promotion, live deploy, client onboarding, WP-7..WP-10 — all require calibration + ratification first.
 
@@ -646,6 +690,8 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 | Schemas (WP-1) | TARGET PATH: `perplexity-inbox/amplified-partners-ai-native-operating-system__2026-07-12T22-05-00Z__perplexity/schemas/` — create through PR | TARGET |
 | Validation harness (WP-2) | TARGET PATH: same folder `/harness/` — create through PR | TARGET |
 | Canon (constitution, goals, etc.) | Private fleet-config vault (internal provenance) — read-only, not modified here | VERIFIED (read) |
+
+- **This map is an `agent_productive_artefact` (§1a).** Every row carries a machine-readable `path` (the artefact's canonical location, an input/output reference), a `state` (Status) and — via the owning section — an owner and forward `next_action`; TARGET rows name the WP that produces them (their `next_action`), never leaving an unresolved choice hidden. No private repo URLs and no human-only duplicate of these locations exist elsewhere (`duplicate_truth_surface` guard).
 
 ## 20. Checklists (outcome tests, not generic steps)
 
@@ -668,6 +714,7 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 - [ ] Every found prior-art method has exactly one `prior_art_disposition`; no silent omission; no contradictory methods in one arm; baseline stays frozen (§14a).
 - [ ] Acceptance law present: improvement claimed only on data-driven, principle-led, independently-validated outcomes — activity/agreement/green-checks/polished-docs are not evidence (§21).
 - [ ] §24a multi-lens validation is marked PROPOSED / NOT RUN; the spec is not reported as multi-lens validated.
+- [ ] Agent-productive-artefact law holds (§1a): every canonical artefact carries objective/inputs/outputs/provenance/epistemic_tier/constraints/state/owner/next_action/stop-acceptance/machine-readable-closure; no human theatre; no nuance loss; agent-actionable without human translation; every human view is a generated, linked, non-authoritative rendering — checks `agent_schema_missing`/`nuance_loss_detected`/`human_theatre_detected`/`translation_required`/`next_action_missing`/`duplicate_truth_surface`/`unresolved_choice_hidden` each route via §6a.
 
 **RESEARCH CHECKLIST (receiving AI, before any scored run):**
 - [ ] `attribution_record` exists for every mechanism entering production.
@@ -684,7 +731,7 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 
 ## 21. Acceptance, kill, promotion, demotion, rollback, amendment
 
-- **Acceptance checks (Ewan's binding set, machine-checkable):** (1) no unexplained halt — every HARD-HALT maps to the §6a HARD-HALT set; (2) every gate has a progress route; (3) every artefact has an agent schema; (4) every human-facing document points to the canonical agent artefact; (5) every rejection records `next_action` + `owner`; (6) every enforced rule has `version` + `falsification` + `amendment` fields; (7) **every job records a `harness_manifest` (selected + not-selected doors); no task is forced through all harnesses** (§6c); (8) **no acceptance is gated by agreement alone — every `agreement_detected` routes to `external_validation`** (§6a); (9) **no capability ceiling inside the rails — friction that protects no HARD-HALT concern is a defect** (§6b); (10) **measurement is blameless — no people/agent league tables; any ranking/punitive use is `measurement_misuse`** (§15); (11) **AI-facing-first — every canonical artefact is machine-executable and exposes state/evidence/constraints/`next_action`, and every human view renders that same source** (§1); (12) **the acceptance law holds — improvement is claimed only on data-driven, principle-led, independently-validated outcomes; activity, agreement, green checks and polished documents are explicitly not evidence of improvement** (see below).
+- **Acceptance checks (Ewan's binding set, machine-checkable):** (1) no unexplained halt — every HARD-HALT maps to the §6a HARD-HALT set; (2) every gate has a progress route; (3) every artefact has an agent schema; (4) every human-facing document points to the canonical agent artefact; (5) every rejection records `next_action` + `owner`; (6) every enforced rule has `version` + `falsification` + `amendment` fields; (7) **every job records a `harness_manifest` (selected + not-selected doors); no task is forced through all harnesses** (§6c); (8) **no acceptance is gated by agreement alone — every `agreement_detected` routes to `external_validation`** (§6a); (9) **no capability ceiling inside the rails — friction that protects no HARD-HALT concern is a defect** (§6b); (10) **measurement is blameless — no people/agent league tables; any ranking/punitive use is `measurement_misuse`** (§15); (11) **AI-facing-first — every canonical artefact is machine-executable and exposes state/evidence/constraints/`next_action`, and every human view renders that same source** (§1); (12) **the acceptance law holds — improvement is claimed only on data-driven, principle-led, independently-validated outcomes; activity, agreement, green checks and polished documents are explicitly not evidence of improvement** (see below); (13) **the agent-productive-artefact law holds — every canonical artefact is machine-readable and executable/decision-enabling, carries the full §1a field set (objective/inputs/outputs/provenance/epistemic_tier/constraints/state/owner/next_action/stop-acceptance/closure), contains no human theatre, loses no decision-relevant nuance, is actionable without human translation, and every human view is a generated, linked, non-authoritative rendering** (§1a).
 - **Acceptance law (binding, current).** A change is accepted as an improvement only when it is **data-driven** (grounded in measured outcomes, not opinion), **principle-led** (consistent with the constitution and invariants), **independently validated** (external, different-family validation gates acceptance — agreement never does, §6a), and shows **real outcomes** (a moved metric or a completed job, §15 downstream usefulness / V10). **No theatre:** activity, human↔AI or AI↔AI agreement, passing (green) checks, and polished documents are **not** evidence of improvement — they are inputs at most. Outcomes only.
 - **Kill:** the composed extraction design's disposition follows the canonical contract's **five-branch decision table** (ADOPT D / ADOPT C / KILL / PROMOTE role→code / HOLD-on-durability-band, contract §16 authoritative), keyed on the primary comparison (D vs A on `quote_gate_accept_rate` and `atoms_per_dollar`, §14). Composed design is KILLED if arms B/C/D do not beat A by margin `M` at ≤ cost× `C` (CALIBRATE [STRUCTURED], fixed on SPLIT_TUNE) or the no-roles arm dominates on cost per dollar AND per call. Independently, **KILL-VALIDATOR** demotes Arm D if Layer-B false-kill exceeds the calibrated ceiling or it rubber-stamps below the seeded-fault catch target (§14 step 2).
 - **Promotion:** INTUITED→STRUCTURED via rubric codification; STRUCTURED→MEASURED via empirical calibration (≥10 events/param/outcome, held-out, drift monitor); MEASURED→PROVEN via formal proof with verified preconditions. Tier-skipping is a P0. **Promotion is additionally gated by a defined SLO and error budget: promotion halts when the error budget is exhausted** (threshold `CALIBRATE [STRUCTURED]`) ([Google SRE, Embracing Risk](https://sre.google/sre-book/embracing-risk/); [Error budget policy](https://sre.google/workbook/error-budget-policy/)).
@@ -704,9 +751,9 @@ Do not imply all implementation finishes tonight. This defines the highest-value
 
 A receiving AI executes these in order; the only permitted pauses are named CALIBRATE runs and the §22 human gates.
 
-1. Author WP-1 schemas from the inline definitions in §6a/§6c/§4/§5/§14/§14a/§15/§24a (incl. `harness_manifest`, `harness_def`, `prior_art_disposition`, `spec_validation_manifest`, `external_validation` route, `harness_ref`). **No design choice required.**
+1. Author WP-1 schemas from the inline definitions in §1a/§6a/§6c/§4/§5/§14/§14a/§15/§24a (incl. `agent_productive_artefact`, `harness_manifest`, `harness_def`, `prior_art_disposition`, `spec_validation_manifest`, `external_validation` route, `harness_ref`). **No design choice required.**
 2. Author WP-1b harness toolbox registry + minimum-sufficient selection-rule validator; assert no-force-all-doors and unused-door logging. **No design choice** (rule fixed in §6c).
-3. Author WP-2 validation harness implementing every §20 SPEC CHECKLIST item + §21 acceptance checks (1)–(11). **No design choice.**
+3. Author WP-2 validation harness implementing every §20 SPEC CHECKLIST item + §21 acceptance checks (1)–(13), including the §1a agent-productive-artefact checks. **No design choice.**
 4. Author WP-3 `norm_v1` + `corpus_v1.lock` + splits; if the corpus cannot be frozen tonight, mark it TARGET and gate the scored runs on it (do not fabricate ids). **CALIBRATE: exact file ids.**
 5. Author WP-4 planted-fault battery + known-good loader; these also calibrate the external validators before any validator number is trusted. **No design choice** (fault classes fixed in §14).
 6. Wire WP-5 reason-code/next_action enums into gate stubs; run the no-dead-end assertion. **No design choice.**
@@ -718,18 +765,21 @@ A receiving AI executes these in order; the only permitted pauses are named CALI
 ## 24. Session-close manifest schema and Vellum event templates
 
 ```yaml
-session_close_manifest:
+session_close_manifest:          # itself an agent_productive_artefact (§1a): objective + owner + next_action + machine-readable closure
   session_id: <slug>
-  seat: <author-seat>
+  objective: <what this session set out to produce>
+  seat: <author-seat>            # owner
   date_utc: <iso>
-  artefacts: [{path, sha256, status}]
+  artefacts: [{path, sha256, status, agent_productive_artefact_conformance: pass|degrade, reason_code: <null|§6a code>}]
   gates_evaluated: [{gate_id, verdict, reason_code, route}]
   proxy_acts: [{act, reason, timestamp}]         # AI_PARTNER_PROXY, logged
   open_questions: [<id>]
   human_gates_pending: [<G-a..G-e>]
-  next_action: <imperative>
-  closure_line: "<[CLOSURE] ...>"
+  next_action: <imperative, §6a route enum>
+  closure_line: "<[CLOSURE] ...>"                # machine-readable closure; no human-only summary substitutes for it
 ```
+
+- **Manifest conformance (§1a).** The session-close manifest is a canonical agent artefact, not a human report: it exposes objective/owner/state/`next_action`/machine-readable `closure` and records each artefact's `agent_productive_artefact` conformance (`pass`/`degrade` + reason code). Any human-readable session summary is a generated rendering of this manifest, traceably linked and never authoritative over it (`duplicate_truth_surface` if it becomes a second truth).
 
 ```yaml
 vellum_event_templates:  # references + decisions only; no payloads; AI entries epistemic_tier=INTUITED
@@ -747,7 +797,7 @@ vellum_open_question:{type: open_question, ref, question, owner}
 
 *Ewan's binding validation requirement for the specification **itself**. This is a **proposed protocol; it has NOT been executed.** The v03 revision is a single-model authoring pass reconciled against a single-model independent audit; it is **not** multi-lens validated. Do not report the spec as "multi-lens validated" until this protocol is actually run and its results recorded in a separate artefact. The protocol mirrors the spec's own anti-mirror (§6a), calibration (§14 step 2) and blameless (§15) laws, and exists to prevent correlated-error laundering — same-model agreement is a trigger for external validation, never proof.*
 
-- **Stage 0 — deterministic shape gate (code, free, first).** Before any model pass: YAML front matter parses; exactly one H1; required sections present; every gate block returns `gate_result_schema`; all schema blocks (`hypothesis_record`, `attribution_record`, `gate_result_schema`, `harness_manifest`, `harness_def`, `prior_art_disposition`, `canonical_unit`, `session_close_manifest`, `spec_validation_manifest`) parse; no placeholder tokens; no private repo URLs; no AI-as-signer language; every `agreement_detected` routes to `external_validation`; no league-table field. In an isolated worktree (§6b): assert sha256 byte-identity of workspace vs repo copy and only permitted files present in the PR. This is the §20 SPEC CHECKLIST turned executable; any HARD-HALT-family failure hard-halts.
+- **Stage 0 — deterministic shape gate (code, free, first).** Before any model pass: YAML front matter parses; exactly one H1; required sections present; every gate block returns `gate_result_schema`; all schema blocks (`hypothesis_record`, `attribution_record`, `gate_result_schema`, `harness_manifest`, `harness_def`, `prior_art_disposition`, `agent_productive_artefact`, `canonical_unit`, `session_close_manifest`, `spec_validation_manifest`) parse; no placeholder tokens; no private repo URLs; no AI-as-signer language; every `agreement_detected` routes to `external_validation`; no league-table field. In an isolated worktree (§6b): assert sha256 byte-identity of workspace vs repo copy and only permitted files present in the PR. This is the §20 SPEC CHECKLIST turned executable; any HARD-HALT-family failure hard-halts.
 - **Stage 1 — multiple independent DeepSeek specialist lenses (producers).** Divide the spec by expertise; each lens is a narrow, frozen-prompt reviewer run **≥3 independent seeds** (positive temperature, fresh sessions — independence per [Large Language Monkeys](https://arxiv.org/abs/2407.21787)). Lenses: constitution/partnership; SMB value/process; architecture/dataflow; privacy/security/sovereignty; prior-art/attribution (re-runs the completeness check); measurement/Kaizen; agent-facing schemas/harness; execution/GitHub/Vellum.
 - **Stage 2 — union of findings with support counts (no synthesis).** Keep every finding any lens/seed produced; attach `support_count` and `run_ids`; do not collapse to a representative (mirrors §14 merge-non-destruction). Recurrence is an importance weight, not an acceptance.
 - **Stage 3 — agreement is a trigger, not proof.** Where lenses/seeds agree, raise `agreement_detected` and route to external validation — convergence among same-model lenses is exactly the correlated-error risk ([Kuncheva & Whitaker](http://machine-learning.martinsewell.com/ensembles/KunchevaWhitaker2003.pdf); [Reliability without Validity](https://arxiv.org/pdf/2606.19544v1.pdf)). Agreement never closes a finding.
@@ -761,7 +811,8 @@ spec_validation_manifest:      # PROPOSED — not yet executed
   stage0_deterministic:
     checks: [yaml_parses, single_h1, required_sections_present, all_schema_blocks_parse,
              every_gate_returns_gate_result_schema, no_placeholder_tokens, no_private_repo_urls,
-             no_ai_as_signer_language, agreement_routes_to_external_validation, no_league_table_field]
+             no_ai_as_signer_language, agreement_routes_to_external_validation, no_league_table_field,
+             agent_productive_artefact_conformance]
     worktree: {isolated_worktree: true, sha256_byte_identity: true, only_permitted_files_in_pr: true}
     result: null            # code fills; hard-halt on any HARD-HALT-family failure
   stage1_specialist_lenses:   # DeepSeek producers, >=3 seeds each, frozen prompts
@@ -774,7 +825,7 @@ spec_validation_manifest:      # PROPOSED — not yet executed
       - {lens_id: privacy_security_sovereignty, sections: [6,11]}
       - {lens_id: prior_art_attribution,    sections: [4,5]}
       - {lens_id: measurement_kaizen,       sections: [15,16]}
-      - {lens_id: agent_schemas_harness,    sections: ["6a","6c",10,24]}
+      - {lens_id: agent_schemas_harness,    sections: ["1a","6a","6c",10,24]}
       - {lens_id: execution_github_vellum,  sections: [17,18,19,23]}
   stage2_union:
     keep_all_findings: true
@@ -802,6 +853,6 @@ spec_validation_manifest:      # PROPOSED — not yet executed
 
 ## 25. Closure
 
-This specification is a current working hypothesis (v03, STRUCTURED), agent-facing first, with human sovereignty and ratification intact and constitutional/privacy/security/sovereignty invariants absolute for now. It preserves every v02 refinement — no-stranglehold and the progress invariant (§6a), agent-facing first (§1), blinkers-without-ceilings (§6b), the harness toolbox / push-door law (§6c), agreement-as-a-trigger (§6a), external validation as a productive anti-mirror feature (§7/§10), compounding-Kaizen (§16), blameless measurement (§15), human/client sovereignty (§6/§7/§11), the current-working-hypothesis law (§4) and no direct Beast write. v03 additionally resolves the independent prior-art-completeness audit (PARTIAL → AMEND_REQUIRED) by applying all 22 amendments: it names, sources and licenses the infrastructure/sociotechnical prior art it was practising (SLSA/Sigstore/CycloneDX §17/§18, NIST 800-207 §6/§11, MCP §9/§10, OpenTelemetry §9/§15, OpenGitOps §17, git worktrees §6b/§6c, event sourcing §9/§11, SRE blameless + error budgets §15/§16/§21, ODCS §8/§10, sociotechnical + HITL §1/§7, W3C PROV §9, local-first §11, SPC/Taguchi §15), records OPA/Rego and canary as DEFERRED_WITH_REASON (§5/§17), restores the canonical extraction contract's distinct authority and dropped statistical rigour (§14), adds Ewan's prior-art execution loop + `prior_art_disposition` (§14a), the PROPOSED-NOT-RUN multi-lens spec-validation protocol (§24a), and the acceptance law (§21) — without weakening any prior content or invariant. Its highest-priority executable work package remains **WP-1: author the agent-facing JSON schemas and the deterministic validation harness** (now including `harness_manifest`/`harness_def`/`prior_art_disposition`/`spec_validation_manifest` and the `external_validation` route), because every other gate, route and acceptance check depends on those schemas existing and parsing.
+This specification is a current working hypothesis (v04, STRUCTURED), agent-facing first, with human sovereignty and ratification intact and constitutional/privacy/security/sovereignty invariants absolute for now. It preserves every v02 refinement — no-stranglehold and the progress invariant (§6a), agent-facing first (§1), blinkers-without-ceilings (§6b), the harness toolbox / push-door law (§6c), agreement-as-a-trigger (§6a), external validation as a productive anti-mirror feature (§7/§10), compounding-Kaizen (§16), blameless measurement (§15), human/client sovereignty (§6/§7/§11), the current-working-hypothesis law (§4) and no direct Beast write. v03 additionally resolves the independent prior-art-completeness audit (PARTIAL → AMEND_REQUIRED) by applying all 22 amendments: it names, sources and licenses the infrastructure/sociotechnical prior art it was practising (SLSA/Sigstore/CycloneDX §17/§18, NIST 800-207 §6/§11, MCP §9/§10, OpenTelemetry §9/§15, OpenGitOps §17, git worktrees §6b/§6c, event sourcing §9/§11, SRE blameless + error budgets §15/§16/§21, ODCS §8/§10, sociotechnical + HITL §1/§7, W3C PROV §9, local-first §11, SPC/Taguchi §15), records OPA/Rego and canary as DEFERRED_WITH_REASON (§5/§17), restores the canonical extraction contract's distinct authority and dropped statistical rigour (§14), adds Ewan's prior-art execution loop + `prior_art_disposition` (§14a), the PROPOSED-NOT-RUN multi-lens spec-validation protocol (§24a), and the acceptance law (§21) — without weakening any prior content or invariant. **v04 additionally adds Ewan's binding agent-productive-artefact law (§1a)** — the executable form of the AI-facing company law: every artefact is perfected for agent use first, its canonical form machine-readable and executable/decision-enabling with the full field set (objective/inputs/outputs/provenance/epistemic_tier/constraints/state/owner/next_action/stop-acceptance/machine-readable-closure), no human theatre, losslessly compressed for future agent action, actionable without human translation, and every human view a generated, traceably-linked, non-authoritative rendering; seven deterministic reason codes (`agent_schema_missing`/`nuance_loss_detected`/`human_theatre_detected`/`translation_required`/`next_action_missing`/`duplicate_truth_surface`/`unresolved_choice_hidden`) join the §6a canonical enum and every failed check routes through the no-dead-end next_action system; the law is applied to the checklists (§20), work packages (§18), repository/file map (§19), telemetry (§15) and session-close manifest (§24), and wired into WP-1, §21 acceptance check (13), §23 and §24a — again without weakening any prior content or invariant. Its highest-priority executable work package remains **WP-1: author the agent-facing JSON schemas and the deterministic validation harness** (now including `harness_manifest`/`harness_def`/`prior_art_disposition`/`spec_validation_manifest` and the `external_validation` route), because every other gate, route and acceptance check depends on those schemas existing and parsing.
 
-[CLOSURE] branch=PLAN | proxy=1 logged (repo write via pipe drop-point) | gates=human ratification G-a..G-e deferred to next baton | audit=PARTIAL→AMEND_REQUIRED resolved (22/22 applied; 0 impossible) | spec-multi-lens-validation=PROPOSED_NOT_RUN | inbox=amplified-partners-ai-native-operating-system__implementation-spec__2026-07-12T22-05-00Z__perplexity.md | tier=STRUCTURED | version=v03
+[CLOSURE] branch=PLAN | proxy=1 logged (repo write via pipe drop-point) | gates=human ratification G-a..G-e deferred to next baton | audit=PARTIAL→AMEND_REQUIRED resolved (22/22 applied; 0 impossible) | agent-productive-artefact-law=enforced (§1a) | spec-multi-lens-validation=PROPOSED_NOT_RUN | inbox=amplified-partners-ai-native-operating-system__implementation-spec__2026-07-12T22-05-00Z__perplexity.md | tier=STRUCTURED | version=v04
