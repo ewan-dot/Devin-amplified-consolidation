@@ -1,0 +1,62 @@
+# automerge-arm — the deterministic merge actuator (doctrine: github-method #29).
+# Arms GitHub native auto-merge; the ruleset-required checks (estate-gate,
+# verifier-gate, validator-pipeline) remain the ONLY merge authority. No LLM,
+# no judgment, no approval step (0 approvals required; a seat approving its own
+# work is banned by the rods, and org policy keeps Actions unable to approve).
+#
+# Tier-C checklist item 7 CLOSED by Ewan, 2026-08-03: auto-merge ON for all
+# validated PRs. Org var ESTATE_AUTOMERGE_FREEZE=1 is the estate-wide brake
+# (arming withheld, gates keep running). Named exception: dependabot
+# semver-major PRs are never armed — they wait for Ewan.
+#
+# SECURITY: pull_request_target grants a write token, so this job MUST NEVER
+# check out or execute PR code. It reads event metadata and calls gh only.
+# Same-repo heads only: fork PRs are never armed.
+#
+# SSOT: amplified-fleet-config governance/templates/automerge-arm.yml — edit
+# there, fan out; a local edit here is drift.
+# Seat: cascade-mac | 2026-08-03
+name: automerge-arm
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review, labeled]
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  arm:
+    runs-on: ubuntu-latest
+    if: >-
+      github.event.pull_request.draft == false &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Freeze brake
+        if: vars.ESTATE_AUTOMERGE_FREEZE == '1'
+        run: echo "::notice::ESTATE_AUTOMERGE_FREEZE=1 — arming withheld; required gates keep running."
+
+      - name: Dependabot metadata
+        id: metadata
+        if: vars.ESTATE_AUTOMERGE_FREEZE != '1' && github.actor == 'dependabot[bot]'
+        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98 # v3.1.0
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Arm auto-merge
+        if: >-
+          vars.ESTATE_AUTOMERGE_FREEZE != '1' &&
+          (github.actor != 'dependabot[bot]' ||
+           steps.metadata.outputs.update-type != 'version-update:semver-major')
+        run: |
+          # Doctrine github-method #29: ARMING is the only merge action this
+          # workflow may take — GitHub itself merges once every ruleset-required
+          # check passes. No direct-merge fallback: when --auto is refused the
+          # PR is already in a decided state, and that door belongs to the
+          # sanctioned manual path, never to this job.
+          if gh pr merge --auto --squash "$PR_URL"; then
+            echo "armed: GitHub merges when every required check passes"
+          else
+            echo "::notice::arming refused — PR already in a decided state; use the sanctioned manual door if it should land"
+          fi
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
